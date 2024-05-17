@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<b>Hello World</b> 
+<div id="time"></div>
+</body>
+<script type="text/javascript">
+  const currentTime = (new Date()).toISOString().slice(0, 19).replace(/-/g, "/").replace("T", " ");
+  document.getElementById("time").innerHTML = currentTime;
+</script>
+</html>
