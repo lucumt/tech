@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/db/es/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/db/es/top-6-es-use-cases/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/linux/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/linux/system/</loc>
@@ -50,13 +56,19 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/java/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/security/session-vs-jwt/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/code/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/microservice/</loc>
+    <loc>https://tech.lucumt.info/docs/monitor/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/cloud/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/db/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/microservice/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/develop/microservice-best-practices/</loc>
   </url><url>

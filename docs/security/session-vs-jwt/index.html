@@ -3,25 +3,38 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="What’s the difference between Session-based authentication and JWTs?
+Here’s a simple breakdown for both approaches:
+Session-Based Authentication
+In this approach, you store the session information in a database or session store and hand over a session ID to the user.
+Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.
+Here’s how it works:
+1 - The user makes a login request and the frontend app sends the request to the backend server.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/linux/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/security/session-vs-jwt/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="Linux">
+  <meta property="og:title" content="Session和JWT的对比">
+  <meta property="og:description" content="What’s the difference between Session-based authentication and JWTs?
+Here’s a simple breakdown for both approaches:
+Session-Based Authentication
+In this approach, you store the session information in a database or session store and hand over a session ID to the user.
+Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.
+Here’s how it works:
+1 - The user makes a login request and the frontend app sends the request to the backend server.">
   <meta property="og:locale" content="zh_cn">
-  <meta property="og:type" content="website">
-<title>Linux | 个人笔记</title>
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Session和JWT的对比 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/linux/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/security/session-vs-jwt/">
 <link rel="stylesheet" href="/book.min.ab82d6254717c0331f51dc4e4c363df29059b2ef00cfa2b23e8d24372d4137e4.css" integrity="sha256-q4LWJUcXwDMfUdxOTDY98pBZsu8Az6KyPo0kNy1BN&#43;Q=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.2b8eca1434db30bc57be9bc9dff806d3b4a602459f9da6f07f6f3bcb38c06680.js" integrity="sha256-K47KFDTbMLxXvpvJ3/gG07SmAkWfnabwf287yzjAZoA=" crossorigin="anonymous"></script>
 
   
 
-<link rel="alternate" type="application/rss+xml" href="https://tech.lucumt.info/docs/linux/index.xml" title="个人笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -74,9 +87,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-52a19f941dcfe66de6ed1cd418a84103" class="toggle" checked />
+    <input type="checkbox" id="section-52a19f941dcfe66de6ed1cd418a84103" class="toggle"  />
     <label for="section-52a19f941dcfe66de6ed1cd418a84103" class="flex justify-between">
-      <a role="button" class="active">Linux</a>
+      <a role="button" class="">Linux</a>
     </label>
   
 
@@ -325,7 +338,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-2c49013a399c9c118baaabbde9c86f47" class="toggle"  />
+    <input type="checkbox" id="section-2c49013a399c9c118baaabbde9c86f47" class="toggle" checked />
     <label for="section-2c49013a399c9c118baaabbde9c86f47" class="flex justify-between">
       <a role="button" class="">安全</a>
     </label>
@@ -367,7 +380,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/security/session-vs-jwt/" class="">Session和JWT的对比</a>
+    <a href="/docs/security/session-vs-jwt/" class="active">Session和JWT的对比</a>
   
 
         </li>
@@ -699,7 +712,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Linux</strong>
+  <strong>Session和JWT的对比</strong>
 
   <label for="toc-control">
     
@@ -724,7 +737,29 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"></article>
+  <article class="markdown book-article"><p><img src="/img/security/session-vs-jwt.gif" alt="Session和JWT的对比" /></p>
+<p>What’s the difference between Session-based authentication and JWTs?</p>
+<p>Here’s a simple breakdown for both approaches:</p>
+<p>Session-Based Authentication</p>
+<p>In this approach, you store the session information in a database or session store and hand over a session ID to the user.</p>
+<p>Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.</p>
+<p>Here’s how it works:</p>
+<p>1 - The user makes a login request and the frontend app sends the request to the backend server.</p>
+<p>2 - The backend creates a session using a secret key and stores the data in session storage.</p>
+<p>3 - The server sends a cookie back to the client with the unique session ID.</p>
+<p>4 - The user makes a new request and the browser sends the session ID along with the request.</p>
+<p>5 - The server authenticates the user using the session ID.</p>
+<p>JWT-Based Authentication</p>
+<p>In the JWT-based approach, you don’t store the session information in the session store.</p>
+<p>The entire information is available within the token.</p>
+<p>Think of it like getting the flight ticket along with all the details available on the ticket but encoded.</p>
+<p>Here’s how it works:</p>
+<p>1 - The user makes a login request and it goes to the backend server.</p>
+<p>2 - The server verifies the credentials and issues a JWT. The JWT is signed using a private key and no session storage is involved.</p>
+<p>3 - The JWT is passed to the client, either as a cookie or in the response body. Both approaches have their pros and cons but we’ve gone with the cookie approach.</p>
+<p>4 - For every subsequent request, the browser sends the cookie with the JWT.</p>
+<p>5 - The server verifies the JWT using the secret private key and extracts the user info.</p>
+</article>
  
       
 
@@ -748,6 +783,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+  
+  <div class="book-comments">
+
+</div>
   
  
 

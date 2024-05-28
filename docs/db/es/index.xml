@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ElasticSearch on 个人笔记</title>
+    <link>https://tech.lucumt.info/docs/db/es/</link>
+    <description>Recent content in ElasticSearch on 个人笔记</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://tech.lucumt.info/docs/db/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ES使用最高的6个场景</title>
+      <link>https://tech.lucumt.info/docs/db/es/top-6-es-use-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/es/top-6-es-use-cases/</guid>
+      <description>Top 6 ElasticSearch Use Cases. . . Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram below shows the top 6 use cases:&#xA;🔹 Full-Text Search Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.&#xA;🔹 Real-Time Analytics Elasticsearch&amp;rsquo;s ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.</description>
+    </item>
+  </channel>
+</rss>
