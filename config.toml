@@ -8,6 +8,8 @@ title = '个人笔记'
 pygmentsCodefencesGuessSyntax = true
 
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.tableOfContents]
 	startLevel = 1
   [markup.highlight]
