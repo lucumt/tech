@@ -1,7 +1,7 @@
 ---
 bookCollapseSection: true
 weight: 1
-title: 个人笔记
+title: 主页
 ---
 
 # 相关指令
