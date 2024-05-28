@@ -1,0 +1,11 @@
+baseURL = 'https://tech.lucumt.info'
+languageCode = 'zh-cn'
+title = '个人笔记'
+
+[params]
+  BookTheme = 'auto'
+
+
+[markup]
+  [markup.tableOfContents]
+	startLevel = 1

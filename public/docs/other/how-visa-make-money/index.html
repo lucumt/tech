@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Why is the credit card called “𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 product in banks”? How does VISA/Mastercard make money?
+The diagram below shows the economics of the credit card payment flow.
+The cardholder pays a merchant $100 to buy a product.
+The merchant benefits from the use of the credit card with higher sales volume, and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the “𝐦𝐞𝐫𝐜𝐡𝐚𝐧𝐭 𝐝𝐢𝐬𝐜𝐨𝐮𝐧𝐭 𝐟𝐞𝐞.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/other/how-visa-make-money/">
+  <meta property="og:site_name" content="个人笔记">
+  <meta property="og:title" content="Visa是如何挣钱的">
+  <meta property="og:description" content="Why is the credit card called “𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 product in banks”? How does VISA/Mastercard make money?
+The diagram below shows the economics of the credit card payment flow.
+The cardholder pays a merchant $100 to buy a product.
+The merchant benefits from the use of the credit card with higher sales volume, and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the “𝐦𝐞𝐫𝐜𝐡𝐚𝐧𝐭 𝐝𝐢𝐬𝐜𝐨𝐮𝐧𝐭 𝐟𝐞𝐞.">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Visa是如何挣钱的 | 个人笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/other/how-visa-make-money/">
+<link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.83c540870aa1a3f78af256f80ba8bd49056438697bf1bc71de1182758ad13818.js" integrity="sha256-g8VAhwqho/eK8lb4C6i9SQVkOGl78bxx3hGCdYrROBg=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>个人笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-52a19f941dcfe66de6ed1cd418a84103" class="toggle"  />
+    <label for="section-52a19f941dcfe66de6ed1cd418a84103" class="flex justify-between">
+      <a role="button" class="">Linux</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a7afcaf46e150f46a978893f31be4a48" class="toggle"  />
+    <label for="section-a7afcaf46e150f46a978893f31be4a48" class="flex justify-between">
+      <a role="button" class="">Linux系统</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-file-system/" class="">文件类型说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-file-permissions/" class="">文件权限说明</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5d396b9ad5f816a37baf43734deffc7c" class="toggle"  />
+    <label for="section-5d396b9ad5f816a37baf43734deffc7c" class="flex justify-between">
+      <a role="button" class="">网络</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/http-status/" class="">HTTP状态码</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle"  />
+    <label for="section-b0b4a016bddda14181aeb79f92565d38" class="flex justify-between">
+      <a role="button" class="">编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/language-compare/" class="">不同语言的工作原理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2c49013a399c9c118baaabbde9c86f47" class="toggle"  />
+    <label for="section-2c49013a399c9c118baaabbde9c86f47" class="flex justify-between">
+      <a role="button" class="">安全相关</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/identity-manage-types/" class="">不同的身份管理方式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/authentication-types-compare/" class="">不同认证方式的对比</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d94d98ae724428f34f2a0587e52dd96c" class="toggle"  />
+    <label for="section-d94d98ae724428f34f2a0587e52dd96c" class="flex justify-between">
+      <a role="button" class="">微服务</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd46b2f9bd0e36ee3189e636de386fc" class="toggle"  />
+    <label for="section-bfd46b2f9bd0e36ee3189e636de386fc" class="flex justify-between">
+      <a role="button" class="">微服务开发</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/what-does-api-gateway-do/" class="">网关的作用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/microservice-best-practices/" class="">微服务最佳实践</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f333c9def04102358b545028113318cb" class="toggle"  />
+    <label for="section-f333c9def04102358b545028113318cb" class="flex justify-between">
+      <a role="button" class="">测试相关</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/test/test-method-compare/" class="">测试方法对比</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/test/9-types-api-testing/" class="">9中API测试方式</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fd2a4e7f9ddea45452efb530b97de696" class="toggle" checked />
+    <label for="section-fd2a4e7f9ddea45452efb530b97de696" class="flex justify-between">
+      <a role="button" class="">其它</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/other/how-visa-make-money/" class="active">Visa是如何挣钱的</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Visa是如何挣钱的</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p><img src="/img/other/how-visa-make-money.gif" alt="Visa如何挣钱的" /></p>
+<p>Why is the credit card called “𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 product in banks”? How does VISA/Mastercard make money?</p>
+<p>The diagram below shows the economics of the credit card payment flow.</p>
+<ol>
+<li>
+<p>The cardholder pays a merchant $100 to buy a product.</p>
+</li>
+<li>
+<p>The merchant benefits from the use of the credit card with higher sales volume, and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the “𝐦𝐞𝐫𝐜𝐡𝐚𝐧𝐭 𝐝𝐢𝐬𝐜𝐨𝐮𝐧𝐭 𝐟𝐞𝐞.”</p>
+<p>3 - 4. The acquiring bank keeps $0.25 as the 𝐚𝐜𝐪𝐮𝐢𝐫𝐢𝐧𝐠 𝐦𝐚𝐫𝐤𝐮𝐩, and $1.75 is paid to the issuing bank as the 𝐢𝐧𝐭𝐞𝐫𝐜𝐡𝐚𝐧𝐠𝐞 𝐟𝐞𝐞. The merchant discount fee should cover the interchange fee.</p>
+</li>
+</ol>
+<p>The interchange fee is set by the card network because it is less efficient for each issuing bank to negotiate fees with each merchant.</p>
+<ol start="5">
+<li>
+<p>The card network sets up the 𝐧𝐞𝐭𝐰𝐨𝐫𝐤 𝐚𝐬𝐬𝐞𝐬𝐬𝐦𝐞𝐧𝐭𝐬 𝐚𝐧𝐝 𝐟𝐞𝐞𝐬 with each bank, which pays the card network for its services every month. For example, VISA charges a 0.11% assessment, plus a $0.0195 usage fee, for every swipe.</p>
+</li>
+<li>
+<p>The cardholder pays the issuing bank for its services.</p>
+</li>
+</ol>
+<p>Why should the issuing bank be compensated?
+🔹The issuer pays the merchant even if the cardholder fails to pay the issuer.
+🔹The issuer pays the merchant before the cardholder pays the issuer.
+🔹The issuer has other operating costs, including managing customer accounts, providing statements, fraud detection, risk management, clearing &amp; settlement, etc.</p>
+<p>Over to you: Does the card network charge the same interchange fee for big merchants as for small merchants?</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
