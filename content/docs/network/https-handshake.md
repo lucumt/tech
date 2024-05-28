@@ -1,6 +1,6 @@
 ---
-title: "HTTP状态码说明"
-weight: 3
+title: "HTTPS连接建立过程"
+weight: 2
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -9,4 +9,4 @@ weight: 3
 # bookSearchExclude: false
 ---
 
-![HTTP状态码](/img/network/http-status-code.jfif)
+![HTTPS连接建立过程](/img/network/https-handshake.jpeg)

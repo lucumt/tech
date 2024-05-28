@@ -1,6 +1,6 @@
 ---
-title: "HTTP状态码说明"
-weight: 3
+title: "TCP状态变化图"
+weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -9,4 +9,4 @@ weight: 3
 # bookSearchExclude: false
 ---
 
-![HTTP状态码](/img/network/http-status-code.jfif)
+![TCP状态变化图](/img/network/tcp-status-change.png)

@@ -1,6 +1,6 @@
 ---
-title: "HTTP状态码说明"
-weight: 3
+title: "云原生技术栈"
+weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -9,4 +9,4 @@ weight: 3
 # bookSearchExclude: false
 ---
 
-![HTTP状态码](/img/network/http-status-code.jfif)
+![云原生技术栈](/img/cloud/cloud-tech-stack.jpg)
