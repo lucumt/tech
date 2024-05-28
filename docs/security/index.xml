@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>安全相关 on 个人笔记</title>
-    <link>http://localhost:1313/docs/security/</link>
+    <link>https://tech.lucumt.info/docs/security/</link>
     <description>Recent content in 安全相关 on 个人笔记</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:1313/docs/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tech.lucumt.info/docs/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>不同的身份管理方式</title>
-      <link>http://localhost:1313/docs/security/identity-manage-types/</link>
+      <link>https://tech.lucumt.info/docs/security/identity-manage-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/security/identity-manage-types/</guid>
+      <guid>https://tech.lucumt.info/docs/security/identity-manage-types/</guid>
       <description></description>
     </item>
     <item>
       <title>不同认证方式的对比</title>
-      <link>http://localhost:1313/docs/security/authentication-types-compare/</link>
+      <link>https://tech.lucumt.info/docs/security/authentication-types-compare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/security/authentication-types-compare/</guid>
+      <guid>https://tech.lucumt.info/docs/security/authentication-types-compare/</guid>
       <description></description>
     </item>
   </channel>

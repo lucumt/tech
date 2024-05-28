@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>测试相关 on 个人笔记</title>
-    <link>http://localhost:1313/docs/test/</link>
+    <link>https://tech.lucumt.info/docs/test/</link>
     <description>Recent content in 测试相关 on 个人笔记</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:1313/docs/test/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tech.lucumt.info/docs/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试方法对比</title>
-      <link>http://localhost:1313/docs/test/test-method-compare/</link>
+      <link>https://tech.lucumt.info/docs/test/test-method-compare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/test/test-method-compare/</guid>
+      <guid>https://tech.lucumt.info/docs/test/test-method-compare/</guid>
       <description></description>
     </item>
     <item>
       <title>9中API测试方式</title>
-      <link>http://localhost:1313/docs/test/9-types-api-testing/</link>
+      <link>https://tech.lucumt.info/docs/test/9-types-api-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/test/9-types-api-testing/</guid>
+      <guid>https://tech.lucumt.info/docs/test/9-types-api-testing/</guid>
       <description>Explaining 9 types of API testing.&#xA;🔹 Smoke Testing This is done after API development is complete. Simply validate if the APIs are working and nothing breaks.&#xA;🔹 Functional Testing This creates a test plan based on the functional requirements and compares the results with the expected results.&#xA;🔹 Integration Testing This test combines several API calls to perform end-to-end tests. The intra-service communications and data transmissions are tested.</description>
     </item>
   </channel>
