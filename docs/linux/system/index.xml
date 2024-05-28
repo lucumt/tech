@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux系统 on 个人笔记</title>
+    <link>http://localhost:1313/docs/linux/system/</link>
+    <description>Recent content in Linux系统 on 个人笔记</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/docs/linux/system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文件类型说明</title>
+      <link>http://localhost:1313/docs/linux/system/linux-file-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/linux/system/linux-file-system/</guid>
+      <description>The Linux file system used to resemble an unorganized town where individuals constructed their houses wherever they pleased. However, in 1994, the Filesystem Hierarchy Standard (FHS) was introduced to bring order to the Linux file system.&#xA;By implementing a standard like the FHS, software can ensure a consistent layout across various Linux distributions. Nonetheless, not all Linux distributions strictly adhere to this standard. They often incorporate their own unique elements or cater to specific requirements.</description>
+    </item>
+    <item>
+      <title>文件权限说明</title>
+      <link>http://localhost:1313/docs/linux/system/linux-file-permissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/linux/system/linux-file-permissions/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
