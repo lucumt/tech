@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content=" 图解1 # 图解2 # ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/test/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/java/thread-lifecycle/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="测试">
+  <meta property="og:title" content="线程生命周期说明">
+  <meta property="og:description" content=" 图解1 # 图解2 # ">
   <meta property="og:locale" content="zh_cn">
-  <meta property="og:type" content="website">
-<title>测试 | 个人笔记</title>
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>线程生命周期说明 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/test/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/code/java/thread-lifecycle/">
 <link rel="stylesheet" href="/book.min.ab82d6254717c0331f51dc4e4c363df29059b2ef00cfa2b23e8d24372d4137e4.css" integrity="sha256-q4LWJUcXwDMfUdxOTDY98pBZsu8Az6KyPo0kNy1BN&#43;Q=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.fe733516a810bb0c1c9bda1990d6ab026425fb56fefd888d0bc89b5ef311da2d.js" integrity="sha256-/nM1FqgQuwwcm9oZkNarAmQl&#43;1b&#43;/YiNC8ibXvMR2i0=" crossorigin="anonymous"></script>
 
   
 
-<link rel="alternate" type="application/rss+xml" href="https://tech.lucumt.info/docs/test/index.xml" title="个人笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -202,7 +203,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle"  />
+    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle" checked />
     <label for="section-b0b4a016bddda14181aeb79f92565d38" class="flex justify-between">
       <a role="button" class="">编程</a>
     </label>
@@ -286,7 +287,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-e79c038fdd9b76f7ca5c8fa97f276374" class="toggle"  />
+    <input type="checkbox" id="section-e79c038fdd9b76f7ca5c8fa97f276374" class="toggle" checked />
     <label for="section-e79c038fdd9b76f7ca5c8fa97f276374" class="flex justify-between">
       <a role="button" class="">java</a>
     </label>
@@ -302,7 +303,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/code/java/thread-lifecycle/" class="">线程生命周期说明</a>
+    <a href="/docs/code/java/thread-lifecycle/" class="active">线程生命周期说明</a>
   
 
         </li>
@@ -474,9 +475,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-f333c9def04102358b545028113318cb" class="toggle" checked />
+    <input type="checkbox" id="section-f333c9def04102358b545028113318cb" class="toggle"  />
     <label for="section-f333c9def04102358b545028113318cb" class="flex justify-between">
-      <a role="button" class="active">测试</a>
+      <a role="button" class="">测试</a>
     </label>
   
 
@@ -597,7 +598,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>测试</strong>
+  <strong>线程生命周期说明</strong>
 
   <label for="toc-control">
     
@@ -611,7 +612,12 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#图解1">图解1</a></li>
+    <li><a href="#图解2">图解2</a></li>
+  </ul>
+</nav>
 
 
 
@@ -622,7 +628,19 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"></article>
+  <article class="markdown book-article"><h1 id="图解1">
+  图解1
+  <a class="anchor" href="#%e5%9b%be%e8%a7%a31">#</a>
+</h1>
+<p><img src="/img/code/java/%e7%ba%bf%e7%a8%8b%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f.jpg" alt="线程生命周期" title="线程生命周期"/></p>
+<h1 id="图解2">
+  图解2
+  <a class="anchor" href="#%e5%9b%be%e8%a7%a32">#</a>
+</h1>
+<ul>
+<li><img src="/img/code/java/%e7%ba%bf%e7%a8%8b%e7%8a%b6%e6%80%81%e5%88%87%e6%8d%a2.png" alt="线程状态切换" title="线程状态切换"/></li>
+</ul>
+</article>
  
       
 
@@ -647,6 +665,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -657,7 +679,12 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#图解1">图解1</a></li>
+    <li><a href="#图解2">图解2</a></li>
+  </ul>
+</nav>
 
 
  

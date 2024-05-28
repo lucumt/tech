@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tech.lucumt.info/docs/network/http-status/</loc>
-  </url><url>
     <loc>https://tech.lucumt.info/docs/linux/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/linux/system/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/other/how-visa-make-money/</loc>
+    <loc>https://tech.lucumt.info/docs/other/stop-the-war/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/network/tcp-status-change/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/identity-manage-types/</loc>
   </url><url>
@@ -18,6 +18,8 @@
   </url><url>
     <loc>https://tech.lucumt.info/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/cloud/cloud-tech-stack/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/code/block/mysql-batch-create-data/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/linux/system/linux-file-system/</loc>
@@ -26,9 +28,15 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/code/java/thread-lifecycle/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/develop/what-does-api-gateway-do/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/test/9-types-api-testing/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/network/https-handshake/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/other/how-visa-make-money/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/block/</loc>
   </url><url>
@@ -38,11 +46,17 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/network/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/network/http-status/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/code/java/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/code/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/cloud/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/develop/microservice-best-practices/</loc>
   </url><url>

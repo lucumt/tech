@@ -8,18 +8,18 @@
     <language>zh-cn</language>
     <atom:link href="https://tech.lucumt.info/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HTTP状态码</title>
-      <link>https://tech.lucumt.info/docs/network/http-status/</link>
+      <title>Stop The War</title>
+      <link>https://tech.lucumt.info/docs/other/stop-the-war/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
+      <guid>https://tech.lucumt.info/docs/other/stop-the-war/</guid>
       <description></description>
     </item>
     <item>
-      <title>Visa是如何挣钱的</title>
-      <link>https://tech.lucumt.info/docs/other/how-visa-make-money/</link>
+      <title>TCP状态变化图</title>
+      <link>https://tech.lucumt.info/docs/network/tcp-status-change/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/other/how-visa-make-money/</guid>
-      <description>Why is the credit card called “𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 product in banks”? How does VISA/Mastercard make money?&#xA;The diagram below shows the economics of the credit card payment flow.&#xA;The cardholder pays a merchant $100 to buy a product.&#xA;The merchant benefits from the use of the credit card with higher sales volume, and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the “𝐦𝐞𝐫𝐜𝐡𝐚𝐧𝐭 𝐝𝐢𝐬𝐜𝐨𝐮𝐧𝐭 𝐟𝐞𝐞.</description>
+      <guid>https://tech.lucumt.info/docs/network/tcp-status-change/</guid>
+      <description></description>
     </item>
     <item>
       <title>不同的身份管理方式</title>
@@ -40,6 +40,13 @@
       <link>https://tech.lucumt.info/docs/code/theory/language-compare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/language-compare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>云原生技术栈</title>
+      <link>https://tech.lucumt.info/docs/cloud/cloud-tech-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/cloud/cloud-tech-stack/</guid>
       <description></description>
     </item>
     <item>
@@ -64,6 +71,13 @@
       <description></description>
     </item>
     <item>
+      <title>线程生命周期说明</title>
+      <link>https://tech.lucumt.info/docs/code/java/thread-lifecycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/java/thread-lifecycle/</guid>
+      <description> 图解1 # 图解2 # </description>
+    </item>
+    <item>
       <title>网关的作用</title>
       <link>https://tech.lucumt.info/docs/microservice/develop/what-does-api-gateway-do/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -78,10 +92,31 @@
       <description>Explaining 9 types of API testing.&#xA;🔹 Smoke Testing This is done after API development is complete. Simply validate if the APIs are working and nothing breaks.&#xA;🔹 Functional Testing This creates a test plan based on the functional requirements and compares the results with the expected results.&#xA;🔹 Integration Testing This test combines several API calls to perform end-to-end tests. The intra-service communications and data transmissions are tested.</description>
     </item>
     <item>
+      <title>HTTPS连接建立过程</title>
+      <link>https://tech.lucumt.info/docs/network/https-handshake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/https-handshake/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Visa是如何挣钱的</title>
+      <link>https://tech.lucumt.info/docs/other/how-visa-make-money/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/other/how-visa-make-money/</guid>
+      <description>Why is the credit card called “𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 product in banks”? How does VISA/Mastercard make money?&#xA;The diagram below shows the economics of the credit card payment flow.&#xA;The cardholder pays a merchant $100 to buy a product.&#xA;The merchant benefits from the use of the credit card with higher sales volume, and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the “𝐦𝐞𝐫𝐜𝐡𝐚𝐧𝐭 𝐝𝐢𝐬𝐜𝐨𝐮𝐧𝐭 𝐟𝐞𝐞.</description>
+    </item>
+    <item>
       <title>文件权限说明</title>
       <link>https://tech.lucumt.info/docs/linux/system/linux-file-permissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/linux/system/linux-file-permissions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTP状态码说明</title>
+      <link>https://tech.lucumt.info/docs/network/http-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
       <description></description>
     </item>
     <item>
