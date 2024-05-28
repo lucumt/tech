@@ -1,4 +1,4 @@
-name: tech-auto-build-deploy
+name: pages-auto-build-deploy
 on:
   # workflow_dispatch: 
   push:
