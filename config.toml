@@ -5,7 +5,18 @@ title = '个人笔记'
 [params]
   BookTheme = 'auto'
 
+pygmentsCodefencesGuessSyntax = true
 
 [markup]
   [markup.tableOfContents]
 	startLevel = 1
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "perldoc"
+    tabWidth = 4
