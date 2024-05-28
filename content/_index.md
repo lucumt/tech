@@ -21,6 +21,7 @@ hugo server -w -D --renderToMemory
 * [当你问代理机制的时候？指的是Agent,Proxy,Broker还是Delegate呢？](https://cloud.tencent.com/developer/article/1470232)
 * [安全背后: 浏览器是如何校验证书的](https://cjting.me/2021/03/02/how-to-validate-tls-certificate/) 
 * [技术文章配图指南](https://draveness.me/sketch-and-sketch/)
+* [Streaming ELT 同步 MySQL 到 StarRocks](https://nightlies.apache.org/flink/flink-cdc-docs-master/zh/docs/get-started/quickstart/mysql-to-starrocks/)
 
 # 博客网站
 
