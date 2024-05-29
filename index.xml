@@ -54,7 +54,7 @@
       <link>https://tech.lucumt.info/docs/code/theory/language-compare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/language-compare/</guid>
-      <description></description>
+      <description>How Do C++, Java, Python Work?&#xA;The diagram shows how the compilation and execution work.&#xA;Compiled languages are compiled into machine code by the compiler. The machine code can later be executed directly by the CPU. Examples: C, C++, Go.&#xA;A bytecode language like Java, compiles the source code into bytecode first, then the JVM executes the program. Sometimes JIT (Just-In-Time) compiler compiles the source code into machine code to speed up the execution.</description>
     </item>
     <item>
       <title>云原生技术栈</title>
