@@ -1,5 +1,5 @@
 ---
-title: "批量制造数据"
+title: "MySQL批量制造数据"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
