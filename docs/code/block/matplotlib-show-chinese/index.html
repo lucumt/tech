@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="在Matplotlib中展示中文，防止乱码
+核心代码：
+1plt.rcParams[&#39;font.sans-serif&#39;]=[&#39;SimHei&#39;] #用来正常显示中文标签 2plt.rcParams[&#39;axes.unicode_minus&#39;] = False #用来正常显示负号 完整代码：
+1import numpy as np 2import matplotlib.pyplot as plt 3from sklearn.linear_model import Lasso 4 5plt.rcParams[&#39;font.sans-serif&#39;]=[&#39;SimHei&#39;] #用来正常显示中文标签 6plt.rcParams[&#39;axes.unicode_minus&#39;] = False #用来正常显示负号 7 8# 生成模拟数据 9np.random.seed(42) 10disciple_count = np.random.randint(50, 200, size=20) 11establishment_years = np.random.randint(1, 100, size=20) 12weapon_types = np.random.randint(1, 10, size=20) 13master_skill = 2 * disciple_count &#43; 1.5 * establishment_years &#43; 3 * weapon_types &#43; np.random.randn(20) * 20 &#43; 100 14 15# 数据转换为二维数组 16X = np.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/block/matplotlib-show-chinese/">
+  <meta property="og:site_name" content="个人笔记">
+  <meta property="og:title" content="Matplotlib展示中文">
+  <meta property="og:description" content="在Matplotlib中展示中文，防止乱码
+核心代码：
+1plt.rcParams[&#39;font.sans-serif&#39;]=[&#39;SimHei&#39;] #用来正常显示中文标签 2plt.rcParams[&#39;axes.unicode_minus&#39;] = False #用来正常显示负号 完整代码：
+1import numpy as np 2import matplotlib.pyplot as plt 3from sklearn.linear_model import Lasso 4 5plt.rcParams[&#39;font.sans-serif&#39;]=[&#39;SimHei&#39;] #用来正常显示中文标签 6plt.rcParams[&#39;axes.unicode_minus&#39;] = False #用来正常显示负号 7 8# 生成模拟数据 9np.random.seed(42) 10disciple_count = np.random.randint(50, 200, size=20) 11establishment_years = np.random.randint(1, 100, size=20) 12weapon_types = np.random.randint(1, 10, size=20) 13master_skill = 2 * disciple_count &#43; 1.5 * establishment_years &#43; 3 * weapon_types &#43; np.random.randn(20) * 20 &#43; 100 14 15# 数据转换为二维数组 16X = np.">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Matplotlib展示中文 | 个人笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://tech.lucumt.info/docs/code/block/matplotlib-show-chinese/">
+<link rel="stylesheet" href="/book.min.ab82d6254717c0331f51dc4e4c363df29059b2ef00cfa2b23e8d24372d4137e4.css" integrity="sha256-q4LWJUcXwDMfUdxOTDY98pBZsu8Az6KyPo0kNy1BN&#43;Q=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.c075c16c526c175c4f5310a947c8a447f04e069ac3284421976ca946edbe5ff7.js" integrity="sha256-wHXBbFJsF1xPUxCpR8ikR/BOBprDKEQhl2ypRu2&#43;X/c=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>个人笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-52a19f941dcfe66de6ed1cd418a84103" class="toggle"  />
+    <label for="section-52a19f941dcfe66de6ed1cd418a84103" class="flex justify-between">
+      <a role="button" class="">Linux</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a7afcaf46e150f46a978893f31be4a48" class="toggle"  />
+    <label for="section-a7afcaf46e150f46a978893f31be4a48" class="flex justify-between">
+      <a role="button" class="">Linux系统</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-file-system/" class="">文件类型说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-file-permissions/" class="">文件权限说明</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5d396b9ad5f816a37baf43734deffc7c" class="toggle"  />
+    <label for="section-5d396b9ad5f816a37baf43734deffc7c" class="flex justify-between">
+      <a role="button" class="">网络</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/tcp-status-change/" class="">TCP状态变化图</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/https-handshake/" class="">HTTPS连接建立过程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/http-status/" class="">HTTP状态码说明</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle" checked />
+    <label for="section-b0b4a016bddda14181aeb79f92565d38" class="flex justify-between">
+      <a role="button" class="">编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-568f71b95ca56c34a1f8e3361712f1c0" class="toggle"  />
+    <label for="section-568f71b95ca56c34a1f8e3361712f1c0" class="flex justify-between">
+      <a role="button" class="">理论</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/language-compare/" class="">不同语言的工作原理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a492e0e982492102fba29e206d0fb4b6" class="toggle" checked />
+    <label for="section-a492e0e982492102fba29e206d0fb4b6" class="flex justify-between">
+      <a role="button" class="">代码块</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/mysql-batch-create-data/" class="">MySQL批量制造数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/matplotlib-show-chinese/" class="active">Matplotlib展示中文</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e79c038fdd9b76f7ca5c8fa97f276374" class="toggle"  />
+    <label for="section-e79c038fdd9b76f7ca5c8fa97f276374" class="flex justify-between">
+      <a role="button" class="">java</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/java/thread-lifecycle/" class="">线程生命周期说明</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2c49013a399c9c118baaabbde9c86f47" class="toggle"  />
+    <label for="section-2c49013a399c9c118baaabbde9c86f47" class="flex justify-between">
+      <a role="button" class="">安全</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/identity-manage-types/" class="">不同的身份管理方式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/authentication-types-compare/" class="">不同认证方式的对比</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/session-vs-jwt/" class="">Session和JWT的对比</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-87454da32634ac3c44203f52e01458ea" class="toggle"  />
+    <label for="section-87454da32634ac3c44203f52e01458ea" class="flex justify-between">
+      <a role="button" class="">运维</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/top-9-cases-behind-cpu-high-usage/" class="">CPU使用达到100%的9个场景</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-592e3c4a3c4d07f73224af75385d9ef5" class="toggle"  />
+    <label for="section-592e3c4a3c4d07f73224af75385d9ef5" class="flex justify-between">
+      <a role="button" class="">云原生</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud/cloud-tech-stack/" class="">云原生技术栈</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0a244151e57cf93152c22fb180e3c337" class="toggle"  />
+    <label for="section-0a244151e57cf93152c22fb180e3c337" class="flex justify-between">
+      <a role="button" class="">数据库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-500d0439cb719d1250ee28df8179759c" class="toggle"  />
+    <label for="section-500d0439cb719d1250ee28df8179759c" class="flex justify-between">
+      <a role="button" class="">ElasticSearch</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/es/top-6-es-use-cases/" class="">ES使用最高的6个场景</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d94d98ae724428f34f2a0587e52dd96c" class="toggle"  />
+    <label for="section-d94d98ae724428f34f2a0587e52dd96c" class="flex justify-between">
+      <a role="button" class="">微服务</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd46b2f9bd0e36ee3189e636de386fc" class="toggle"  />
+    <label for="section-bfd46b2f9bd0e36ee3189e636de386fc" class="flex justify-between">
+      <a role="button" class="">微服务开发</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/what-does-api-gateway-do/" class="">网关的作用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/microservice-best-practices/" class="">微服务最佳实践</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f333c9def04102358b545028113318cb" class="toggle"  />
+    <label for="section-f333c9def04102358b545028113318cb" class="flex justify-between">
+      <a role="button" class="">测试</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/test/test-method-compare/" class="">测试方法对比</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/test/9-types-api-testing/" class="">9中API测试方式</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fd2a4e7f9ddea45452efb530b97de696" class="toggle"  />
+    <label for="section-fd2a4e7f9ddea45452efb530b97de696" class="flex justify-between">
+      <a role="button" class="">其它</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/other/stop-the-war/" class="">Stop The War</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/other/how-visa-make-money/" class="">Visa是如何挣钱的</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Matplotlib展示中文</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>在<a href="https://matplotlib.org/"><strong>Matplotlib</strong></a>中展示中文，防止乱码</p>
+<p>核心代码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>plt.rcParams[<span style="color:#cd5555">&#39;font.sans-serif&#39;</span>]=[<span style="color:#cd5555">&#39;SimHei&#39;</span>] <span style="color:#228b22">#用来正常显示中文标签</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>plt.rcParams[<span style="color:#cd5555">&#39;axes.unicode_minus&#39;</span>] = <span style="color:#8b008b;font-weight:bold">False</span> <span style="color:#228b22">#用来正常显示负号</span>
+</span></span></code></pre></div><p>完整代码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">numpy</span> <span style="color:#8b008b;font-weight:bold">as</span> <span style="color:#008b45;text-decoration:underline">np</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">matplotlib.pyplot</span> <span style="color:#8b008b;font-weight:bold">as</span> <span style="color:#008b45;text-decoration:underline">plt</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#8b008b;font-weight:bold">from</span> <span style="color:#008b45;text-decoration:underline">sklearn.linear_model</span> <span style="color:#8b008b;font-weight:bold">import</span> Lasso
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>plt.rcParams[<span style="color:#cd5555">&#39;font.sans-serif&#39;</span>]=[<span style="color:#cd5555">&#39;SimHei&#39;</span>] <span style="color:#228b22">#用来正常显示中文标签</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>plt.rcParams[<span style="color:#cd5555">&#39;axes.unicode_minus&#39;</span>] = <span style="color:#8b008b;font-weight:bold">False</span> <span style="color:#228b22">#用来正常显示负号</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#228b22"># 生成模拟数据</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>np.random.seed(<span style="color:#b452cd">42</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>disciple_count = np.random.randint(<span style="color:#b452cd">50</span>, <span style="color:#b452cd">200</span>, size=<span style="color:#b452cd">20</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>establishment_years = np.random.randint(<span style="color:#b452cd">1</span>, <span style="color:#b452cd">100</span>, size=<span style="color:#b452cd">20</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>weapon_types = np.random.randint(<span style="color:#b452cd">1</span>, <span style="color:#b452cd">10</span>, size=<span style="color:#b452cd">20</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>master_skill = <span style="color:#b452cd">2</span> * disciple_count + <span style="color:#b452cd">1.5</span> * establishment_years + <span style="color:#b452cd">3</span> * weapon_types + np.random.randn(<span style="color:#b452cd">20</span>) * <span style="color:#b452cd">20</span> + <span style="color:#b452cd">100</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span><span style="color:#228b22"># 数据转换为二维数组</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>X = np.column_stack((disciple_count, establishment_years, weapon_types))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>y = master_skill
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span><span style="color:#228b22"># 创建Lasso回归模型并训练</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>lasso_reg = Lasso(alpha=<span style="color:#b452cd">0.1</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>lasso_reg.fit(X, y)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span><span style="color:#228b22"># 打印模型参数</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span><span style="color:#658b00">print</span>(<span style="color:#cd5555">&#34;截距:&#34;</span>, lasso_reg.intercept_)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span><span style="color:#658b00">print</span>(<span style="color:#cd5555">&#34;系数:&#34;</span>, lasso_reg.coef_)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span><span style="color:#228b22"># 可视化回归平面（这里只能展示两个特征的二维平面图）</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>plt.scatter(disciple_count, master_skill, color=<span style="color:#cd5555">&#39;blue&#39;</span>, label=<span style="color:#cd5555">&#39;实际数据&#39;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>plt.plot(disciple_count, lasso_reg.intercept_ + lasso_reg.coef_[<span style="color:#b452cd">0</span>] * disciple_count + lasso_reg.coef_[<span style="color:#b452cd">1</span>] * np.mean(establishment_years), color=<span style="color:#cd5555">&#39;red&#39;</span>, linewidth=<span style="color:#b452cd">2</span>, label=<span style="color:#cd5555">&#39;回归直线&#39;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span>plt.title(<span style="color:#cd5555">&#34;武侠小说中的Lasso回归示例&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span>plt.xlabel(<span style="color:#cd5555">&#34;弟子数量&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span>plt.ylabel(<span style="color:#cd5555">&#34;掌门武功修为&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span>plt.legend()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span><span>plt.show()
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

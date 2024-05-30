@@ -8,11 +8,18 @@
     <language>zh-cn</language>
     <atom:link href="https://tech.lucumt.info/docs/code/block/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>批量制造数据</title>
+      <title>MySQL批量制造数据</title>
       <link>https://tech.lucumt.info/docs/code/block/mysql-batch-create-data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/block/mysql-batch-create-data/</guid>
       <description>利用mysql的存储过程快速插入大量数据&#xA;1DELIMITER $$ 2 3USE `test`$$ 4 5DROP PROCEDURE IF EXISTS `add_user_batch`$$ 6 7CREATE DEFINER=`root`@`%` PROCEDURE `add_user_batch`(IN COUNT INT) 8BEGIN 9 DECLARE i INT; 10 DECLARE t_name VARCHAR(8); 11 DECLARE t_tag VARCHAR(20); 12 DECLARE t_age INT(2); 13 DECLARE t_sql_template VARCHAR(100); 14 DECLARE t_sql TEXT; 15 DECLARE t_tag_mod_val INT DEFAULT(25); 16 DECLARE t_commit_mod_val INT DEFAULT(100); 17 18 DECLARE t_start_time DATETIME; 19 DECLARE t_end_time DATETIME; 20 21 TRUNCATE TABLE `system_user`; 22 23 SET t_start_time=NOW(); 24 SET t_sql_template = &amp;#34;INSERT INTO `system_user`(NAME, age, tag) VALUES&amp;#34;; 25 SET t_sql = t_sql_template; 26 SET i = 1; 27 WHILE i &amp;lt;= COUNT 28 DO 29 SET t_age = FLOOR(1 + RAND() * 60); 30 SET t_name = LEFT(UUID(), 8); 31 -- 给tag随机制造空值 32 IF MOD(i, t_tag_mod_val) = 0 THEN 33 SET t_tag = &amp;#34;NULL&amp;#34;; 34 ELSE 35 SET t_tag = CONCAT(&amp;#34;&amp;#39;&amp;#34;,LEFT(UUID(), 8),&amp;#34;&amp;#39;&amp;#34;); 36 END IF; 37 38 SET t_sql = CONCAT(t_sql,&amp;#34;(&amp;#39;&amp;#34;,t_name,&amp;#34;&amp;#39;,&amp;#34;,t_age,&amp;#34;,&amp;#34;,t_tag,&amp;#34;)&amp;#34;); 39 40 IF MOD(i,t_commit_mod_val) !</description>
+    </item>
+    <item>
+      <title>Matplotlib展示中文</title>
+      <link>https://tech.lucumt.info/docs/code/block/matplotlib-show-chinese/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/block/matplotlib-show-chinese/</guid>
+      <description>在Matplotlib中展示中文，防止乱码&#xA;核心代码：&#xA;1plt.rcParams[&amp;#39;font.sans-serif&amp;#39;]=[&amp;#39;SimHei&amp;#39;] #用来正常显示中文标签 2plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False #用来正常显示负号 完整代码：&#xA;1import numpy as np 2import matplotlib.pyplot as plt 3from sklearn.linear_model import Lasso 4 5plt.rcParams[&amp;#39;font.sans-serif&amp;#39;]=[&amp;#39;SimHei&amp;#39;] #用来正常显示中文标签 6plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False #用来正常显示负号 7 8# 生成模拟数据 9np.random.seed(42) 10disciple_count = np.random.randint(50, 200, size=20) 11establishment_years = np.random.randint(1, 100, size=20) 12weapon_types = np.random.randint(1, 10, size=20) 13master_skill = 2 * disciple_count + 1.5 * establishment_years + 3 * weapon_types + np.random.randn(20) * 20 + 100 14 15# 数据转换为二维数组 16X = np.</description>
     </item>
   </channel>
 </rss>
