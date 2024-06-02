@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
-weight: 3
+weight: 6
 title: 消息中间件
 ---

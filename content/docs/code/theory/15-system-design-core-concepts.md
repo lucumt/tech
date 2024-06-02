@@ -1,6 +1,6 @@
 ---
-title: "微服务最佳实践"
-weight: 2
+title: "系统设计的15个核心概念"
+weight: 8
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -9,4 +9,4 @@ weight: 2
 # bookSearchExclude: false
 ---
 
-![微服务最佳实践](/img/microservice/develop/microservice-best-practices.jfif)
+![系统设计的15个核心概念](/img/code/theory/15-system-design-core-concepts.gif)

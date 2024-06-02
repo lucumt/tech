@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
-weight: 3
-title: ElasticSearch
+weight: 2
+title: Redis
 ---

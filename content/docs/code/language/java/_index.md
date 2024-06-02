@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
-weight: 4
+weight: 1
 title: java
 ---
