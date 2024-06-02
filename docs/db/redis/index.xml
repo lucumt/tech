@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redis on 个人笔记</title>
+    <link>https://tech.lucumt.info/docs/db/redis/</link>
+    <description>Recent content in Redis on 个人笔记</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://tech.lucumt.info/docs/db/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Redis架构演进</title>
+      <link>https://tech.lucumt.info/docs/db/redis/redis-architecture-evolve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/redis/redis-architecture-evolve/</guid>
+      <description>Rome wasn&amp;rsquo;t built in a day.&#xA;How does Redis architecture evolve?&#xA;Redis is a popular in-memory cache. How did it evolve to the architecture it is today?&#xA;🔹 2010 - Standalone Redis When Redis 1.0 was released in 2010, the architecture was quite simple. It is usually used as a cache to the business application.&#xA;However, Redis stores data in memory. When we restart Redis, we will lose all the data and the traffic directly hits the database.</description>
+    </item>
+  </channel>
+</rss>

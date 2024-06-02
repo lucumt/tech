@@ -6,6 +6,12 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/es/top-6-es-use-cases/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/code/framework/grpc/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/code/language/java/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/code/front/how-does-javascript-work/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/mq/top-5-kafka-use-cases/</loc>
@@ -15,6 +21,8 @@
     <loc>https://tech.lucumt.info/docs/linux/system/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/block/mysql-batch-create-data/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/db/redis/redis-architecture-evolve/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/other/stop-the-war/</loc>
   </url><url>
@@ -32,6 +40,8 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/bigdata/data-pipelines-overview/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/linux/system/linux-file-system/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/test/test-method-compare/</loc>
@@ -40,7 +50,7 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/theory/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/code/java/thread-lifecycle/</loc>
+    <loc>https://tech.lucumt.info/docs/code/language/java/thread-lifecycle/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/develop/what-does-api-gateway-do/</loc>
   </url><url>
@@ -48,13 +58,13 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/test/9-types-api-testing/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/db/es/</loc>
-  </url><url>
     <loc>https://tech.lucumt.info/docs/network/http-status/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/mq/can-kafka-lose-messages/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/block/matplotlib-show-chinese/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/db/redis/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/other/how-visa-make-money/</loc>
   </url><url>
@@ -64,19 +74,25 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/develop/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/microservice/develop/microservice-best-practices/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/linux/system/linux-file-permissions/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/network/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/db/es/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/network/https-handshake/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/session-vs-jwt/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/cloud/cloud-cost-reduction-techniques/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/code/block/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/code/mq/</loc>
+    <loc>https://tech.lucumt.info/docs/microservice/develop/9-best-practices-for-building-microservices/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/design-effective-and-safe-apis/</loc>
   </url><url>
@@ -84,9 +100,9 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/network/how-https-works/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/code/java/</loc>
-  </url><url>
     <loc>https://tech.lucumt.info/docs/security/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/code/language/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/monitor/</loc>
   </url><url>
@@ -94,13 +110,27 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/cloud/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/code/framework/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/db/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/microservice/develop/microservice-best-practices/</loc>
+    <loc>https://tech.lucumt.info/docs/code/mq/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/network/what-is-osi-model/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/code/theory/12-factor-app/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/code/theory/10-good-coding-principle/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/bigdata/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/code/theory/15-system-design-core-concepts/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/test/</loc>
   </url><url>

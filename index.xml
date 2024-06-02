@@ -22,6 +22,13 @@
       <description>Top 6 ElasticSearch Use Cases. . . Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram below shows the top 6 use cases:&#xA;🔹 Full-Text Search Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.&#xA;🔹 Real-Time Analytics Elasticsearch&amp;rsquo;s ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.</description>
     </item>
     <item>
+      <title>gRPC如何工作的</title>
+      <link>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</guid>
+      <description>How does 𝐠𝐑𝐏𝐂 work? RPC (Remote Procedure Call) is called “𝐫𝐞𝐦𝐨𝐭𝐞” because it enables communications between remote services when services are deployed to different servers under microservice architecture. From the user’s point of view, it acts like a local function call.&#xA;The diagram below illustrates the overall data flow for 𝐠𝐑𝐏𝐂.&#xA;Step 1: A REST call is made from the client. The request body is usually in JSON format.</description>
+    </item>
+    <item>
       <title>JavaScript是如何执行的</title>
       <link>https://tech.lucumt.info/docs/code/front/how-does-javascript-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -41,6 +48,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/block/mysql-batch-create-data/</guid>
       <description>利用mysql的存储过程快速插入大量数据&#xA;1DELIMITER $$ 2 3USE `test`$$ 4 5DROP PROCEDURE IF EXISTS `add_user_batch`$$ 6 7CREATE DEFINER=`root`@`%` PROCEDURE `add_user_batch`(IN COUNT INT) 8BEGIN 9 DECLARE i INT; 10 DECLARE t_name VARCHAR(8); 11 DECLARE t_tag VARCHAR(20); 12 DECLARE t_age INT(2); 13 DECLARE t_sql_template VARCHAR(100); 14 DECLARE t_sql TEXT; 15 DECLARE t_tag_mod_val INT DEFAULT(25); 16 DECLARE t_commit_mod_val INT DEFAULT(100); 17 18 DECLARE t_start_time DATETIME; 19 DECLARE t_end_time DATETIME; 20 21 TRUNCATE TABLE `system_user`; 22 23 SET t_start_time=NOW(); 24 SET t_sql_template = &amp;#34;INSERT INTO `system_user`(NAME, age, tag) VALUES&amp;#34;; 25 SET t_sql = t_sql_template; 26 SET i = 1; 27 WHILE i &amp;lt;= COUNT 28 DO 29 SET t_age = FLOOR(1 + RAND() * 60); 30 SET t_name = LEFT(UUID(), 8); 31 -- 给tag随机制造空值 32 IF MOD(i, t_tag_mod_val) = 0 THEN 33 SET t_tag = &amp;#34;NULL&amp;#34;; 34 ELSE 35 SET t_tag = CONCAT(&amp;#34;&amp;#39;&amp;#34;,LEFT(UUID(), 8),&amp;#34;&amp;#39;&amp;#34;); 36 END IF; 37 38 SET t_sql = CONCAT(t_sql,&amp;#34;(&amp;#39;&amp;#34;,t_name,&amp;#34;&amp;#39;,&amp;#34;,t_age,&amp;#34;,&amp;#34;,t_tag,&amp;#34;)&amp;#34;); 39 40 IF MOD(i,t_commit_mod_val) !</description>
+    </item>
+    <item>
+      <title>Redis架构演进</title>
+      <link>https://tech.lucumt.info/docs/db/redis/redis-architecture-evolve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/redis/redis-architecture-evolve/</guid>
+      <description>Rome wasn&amp;rsquo;t built in a day.&#xA;How does Redis architecture evolve?&#xA;Redis is a popular in-memory cache. How did it evolve to the architecture it is today?&#xA;🔹 2010 - Standalone Redis When Redis 1.0 was released in 2010, the architecture was quite simple. It is usually used as a cache to the business application.&#xA;However, Redis stores data in memory. When we restart Redis, we will lose all the data and the traffic directly hits the database.</description>
     </item>
     <item>
       <title>Stop The War</title>
@@ -92,6 +106,13 @@
       <description>8 Key Data Structures That Power Modern Databases 🔹Skiplist: a common in-memory index type. Used in Redis 🔹Hash index: a very common implementation of the “Map” data structure (or “Collection”) 🔹SSTable: immutable on-disk “Map” implementation 🔹LSM tree: Skiplist + SSTable. High write throughput 🔹B-tree: disk-based solution. Consistent read/write performance 🔹Inverted index: used for document indexing. Used in Lucene 🔹Suffix tree: for string pattern search 🔹R-tree: multi-dimension search, such as finding the nearest neighbor</description>
     </item>
     <item>
+      <title>数据管道概览</title>
+      <link>https://tech.lucumt.info/docs/bigdata/data-pipelines-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/bigdata/data-pipelines-overview/</guid>
+      <description>Data pipelines are a fundamental component of managing and processing data efficiently within modern systems. These pipelines typically encompass 5 predominant phases: Collect, Ingest, Store, Compute, and Consume.&#xA;\1. Collect: Data is acquired from data stores, data streams, and applications, sourced remotely from devices, applications, or business systems.&#xA;\2. Ingest: During the ingestion process, data is loaded into systems and organized within event queues.&#xA;\3. Store: Post ingestion, organized data is stored in data warehouses, data lakes, and data lakehouses, along with various systems like databases, ensuring post-ingestion storage.</description>
+    </item>
+    <item>
       <title>文件类型说明</title>
       <link>https://tech.lucumt.info/docs/linux/system/linux-file-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -107,9 +128,9 @@
     </item>
     <item>
       <title>线程生命周期说明</title>
-      <link>https://tech.lucumt.info/docs/code/java/thread-lifecycle/</link>
+      <link>https://tech.lucumt.info/docs/code/language/java/thread-lifecycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/code/java/thread-lifecycle/</guid>
+      <guid>https://tech.lucumt.info/docs/code/language/java/thread-lifecycle/</guid>
       <description> 图解1 # 图解2 # </description>
     </item>
     <item>
@@ -117,7 +138,7 @@
       <link>https://tech.lucumt.info/docs/microservice/develop/what-does-api-gateway-do/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/microservice/develop/what-does-api-gateway-do/</guid>
-      <description></description>
+      <description>What does API gateway do? The diagram below shows the detail.&#xA;Step 1 - The client sends an HTTP request to the API gateway.&#xA;Step 2 - The API gateway parses and validates the attributes in the HTTP request.&#xA;Step 3 - The API gateway performs allow-list/deny-list checks.&#xA;Step 4 - The API gateway talks to an identity provider for authentication and authorization.&#xA;Step 5 - The rate limiting rules are applied to the request.</description>
     </item>
     <item>
       <title>6种云消息传递模式</title>
@@ -169,6 +190,13 @@
       <description>Things Every Developer Should Know: Concurrency is 𝐍𝐎𝐓 parallelism.&#xA;In system design, it is important to understand the difference between concurrency and parallelism.&#xA;As Rob Pyke(one of the creators of GoLang) stated:“ Concurrency is about 𝐝𝐞𝐚𝐥𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 lots of things at once. Parallelism is about 𝐝𝐨𝐢𝐧𝐠 lots of things at once.&amp;quot; This distinction emphasizes that concurrency is more about the 𝐝𝐞𝐬𝐢𝐠𝐧 of a program, while parallelism is about the 𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐨𝐧.</description>
     </item>
     <item>
+      <title>微服务最佳实践</title>
+      <link>https://tech.lucumt.info/docs/microservice/develop/microservice-best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/microservice/develop/microservice-best-practices/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>文件权限说明</title>
       <link>https://tech.lucumt.info/docs/linux/system/linux-file-permissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -195,6 +223,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/security/session-vs-jwt/</guid>
       <description>What’s the difference between Session-based authentication and JWTs?&#xA;Here’s a simple breakdown for both approaches:&#xA;Session-Based Authentication&#xA;In this approach, you store the session information in a database or session store and hand over a session ID to the user.&#xA;Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.&#xA;Here’s how it works:&#xA;1 - The user makes a login request and the frontend app sends the request to the backend server.</description>
+    </item>
+    <item>
+      <title>云计算成本降低技术</title>
+      <link>https://tech.lucumt.info/docs/cloud/cloud-cost-reduction-techniques/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/cloud/cloud-cost-reduction-techniques/</guid>
+      <description>Irrational Cloud Cost is the biggest challenge many organizations are battling as they navigate the complexities of cloud computing.&#xA;Efficiently managing these costs is crucial for optimizing cloud usage and maintaining financial health.&#xA;The following techniques can help businesses effectively control and minimize their cloud expenses.&#xA;Reduce Usage: Fine-tune the volume and scale of resources to ensure efficiency without compromising on the performance of applications (e.g., downsizing instances, minimizing storage space, consolidating services).</description>
+    </item>
+    <item>
+      <title>微服务开发的9个最佳实践</title>
+      <link>https://tech.lucumt.info/docs/microservice/develop/9-best-practices-for-building-microservices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/microservice/develop/9-best-practices-for-building-microservices/</guid>
+      <description>Creating a system using microservices is extremely difficult unless you follow some strong principles.&#xA;9 best practices that you must know before building microservices:&#xA;1 - Design For Failure A distributed system with microservices is going to fail.&#xA;You must design the system to tolerate failure at multiple levels such as infrastructure, database, and individual services. Use circuit breakers, bulkheads, or graceful degradation methods to deal with failures.&#xA;2 - Build Small Services A microservice should not do multiple things at once.</description>
     </item>
     <item>
       <title>编写出安全有效的API</title>
@@ -225,10 +267,38 @@
       <description>Top 9 Architectural Patterns for Data and Communication Flow&#xA;🔹 Peer-to-Peer The Peer-to-Peer pattern involves direct communication between two components without the need for a central coordinator.&#xA;🔹 API Gateway An API Gateway acts as a single entry point for all client requests to the backend services of an application.&#xA;🔹 Pub-Sub The Pub-Sub pattern decouples the producers of messages (publishers) from the consumers of messages (subscribers) through a message broker.</description>
     </item>
     <item>
-      <title>微服务最佳实践</title>
-      <link>https://tech.lucumt.info/docs/microservice/develop/microservice-best-practices/</link>
+      <title>网络安全学习线路图</title>
+      <link>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/microservice/develop/microservice-best-practices/</guid>
+      <guid>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</guid>
+      <description>Cybersecurity is crucial for protecting information and systems from theft, damage, and unauthorized access. Whether you&amp;rsquo;re a beginner or looking to advance your technical skills, there are numerous resources and paths you can take to learn more about cybersecurity. Here are some structured suggestions to help you get started or deepen your knowledge:&#xA;🔹 Security Architecture 🔹 Frameworks &amp;amp; Standards 🔹 Application Security 🔹 Risk Assessment 🔹 Enterprise Risk Management 🔹 Threat Intelligence 🔹 Security Operation</description>
+    </item>
+    <item>
+      <title>网络7层模型</title>
+      <link>https://tech.lucumt.info/docs/network/what-is-osi-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/what-is-osi-model/</guid>
+      <description>How is data sent over the network? Why do we need so many layers in the OSI model?&#xA;The diagram below shows how data is encapsulated and de-encapsulated when transmitting over the network.&#xA;🔹 Step 1: When Device A sends data to Device B over the network via the HTTP protocol, it is first added an HTTP header at the application layer.&#xA;🔹 Step 2: Then a TCP or a UDP header is added to the data.</description>
+    </item>
+    <item>
+      <title>软件开发12准则</title>
+      <link>https://tech.lucumt.info/docs/code/theory/12-factor-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/12-factor-app/</guid>
+      <description>Have you heard of the 12-Factor App?&#xA;The &amp;ldquo;12 Factor App&amp;rdquo; offers a set of best practices for building modern software applications. Following these 12 principles can help developers and teams in building reliable, scalable, and manageable applications.&#xA;Here&amp;rsquo;s a brief overview of each principle:&#xA;Codebase: Have one place to keep all your code, and manage it using version control like Git.&#xA;Dependencies: List all the things your app needs to work properly, and make sure they&amp;rsquo;re easy to install.</description>
+    </item>
+    <item>
+      <title>10个良好编码准则</title>
+      <link>https://tech.lucumt.info/docs/code/theory/10-good-coding-principle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/10-good-coding-principle/</guid>
+      <description>Software development requires good system designs and coding standards. We list 10 good coding principles in the diagram below.&#xA;🔹 01 Follow Code Specifications When we write code, it is important to follow the industry&amp;rsquo;s well-established norms, like “PEP 8”, “Google Java Style”, adhering to a set of agreed-upon code specifications ensures that the quality of the code is consistent and readable.&#xA;🔹 02 Documentation and Comments Good code should be clearly documented and commented to explain complex logic and decisions, and comments should explain why a certain approach was taken (“Why”) rather than what exactly is being done (“What”).</description>
+    </item>
+    <item>
+      <title>系统设计的15个核心概念</title>
+      <link>https://tech.lucumt.info/docs/code/theory/15-system-design-core-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/15-system-design-core-concepts/</guid>
       <description></description>
     </item>
   </channel>

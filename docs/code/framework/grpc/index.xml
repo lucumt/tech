@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gRPC on 个人笔记</title>
+    <link>https://tech.lucumt.info/docs/code/framework/grpc/</link>
+    <description>Recent content in gRPC on 个人笔记</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://tech.lucumt.info/docs/code/framework/grpc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gRPC如何工作的</title>
+      <link>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</guid>
+      <description>How does 𝐠𝐑𝐏𝐂 work? RPC (Remote Procedure Call) is called “𝐫𝐞𝐦𝐨𝐭𝐞” because it enables communications between remote services when services are deployed to different servers under microservice architecture. From the user’s point of view, it acts like a local function call.&#xA;The diagram below illustrates the overall data flow for 𝐠𝐑𝐏𝐂.&#xA;Step 1: A REST call is made from the client. The request body is usually in JSON format.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>大数据 on 个人笔记</title>
+    <link>https://tech.lucumt.info/docs/bigdata/</link>
+    <description>Recent content in 大数据 on 个人笔记</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://tech.lucumt.info/docs/bigdata/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据管道概览</title>
+      <link>https://tech.lucumt.info/docs/bigdata/data-pipelines-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/bigdata/data-pipelines-overview/</guid>
+      <description>Data pipelines are a fundamental component of managing and processing data efficiently within modern systems. These pipelines typically encompass 5 predominant phases: Collect, Ingest, Store, Compute, and Consume.&#xA;\1. Collect: Data is acquired from data stores, data streams, and applications, sourced remotely from devices, applications, or business systems.&#xA;\2. Ingest: During the ingestion process, data is loaded into systems and organized within event queues.&#xA;\3. Store: Post ingestion, organized data is stored in data warehouses, data lakes, and data lakehouses, along with various systems like databases, ensuring post-ingestion storage.</description>
+    </item>
+  </channel>
+</rss>

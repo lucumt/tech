@@ -35,5 +35,19 @@
       <guid>https://tech.lucumt.info/docs/network/how-https-works/</guid>
       <description>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.&#xA;SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.&#xA;Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.&#xA;HTML&amp;rsquo;s Role: Peek into HTML&amp;rsquo;s role in structuring the web.</description>
     </item>
+    <item>
+      <title>网络安全学习线路图</title>
+      <link>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</guid>
+      <description>Cybersecurity is crucial for protecting information and systems from theft, damage, and unauthorized access. Whether you&amp;rsquo;re a beginner or looking to advance your technical skills, there are numerous resources and paths you can take to learn more about cybersecurity. Here are some structured suggestions to help you get started or deepen your knowledge:&#xA;🔹 Security Architecture 🔹 Frameworks &amp;amp; Standards 🔹 Application Security 🔹 Risk Assessment 🔹 Enterprise Risk Management 🔹 Threat Intelligence 🔹 Security Operation</description>
+    </item>
+    <item>
+      <title>网络7层模型</title>
+      <link>https://tech.lucumt.info/docs/network/what-is-osi-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/what-is-osi-model/</guid>
+      <description>How is data sent over the network? Why do we need so many layers in the OSI model?&#xA;The diagram below shows how data is encapsulated and de-encapsulated when transmitting over the network.&#xA;🔹 Step 1: When Device A sends data to Device B over the network via the HTTP protocol, it is first added an HTTP header at the application layer.&#xA;🔹 Step 2: Then a TCP or a UDP header is added to the data.</description>
+    </item>
   </channel>
 </rss>

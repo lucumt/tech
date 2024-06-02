@@ -42,5 +42,26 @@
       <guid>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</guid>
       <description>Top 9 Architectural Patterns for Data and Communication Flow&#xA;🔹 Peer-to-Peer The Peer-to-Peer pattern involves direct communication between two components without the need for a central coordinator.&#xA;🔹 API Gateway An API Gateway acts as a single entry point for all client requests to the backend services of an application.&#xA;🔹 Pub-Sub The Pub-Sub pattern decouples the producers of messages (publishers) from the consumers of messages (subscribers) through a message broker.</description>
     </item>
+    <item>
+      <title>软件开发12准则</title>
+      <link>https://tech.lucumt.info/docs/code/theory/12-factor-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/12-factor-app/</guid>
+      <description>Have you heard of the 12-Factor App?&#xA;The &amp;ldquo;12 Factor App&amp;rdquo; offers a set of best practices for building modern software applications. Following these 12 principles can help developers and teams in building reliable, scalable, and manageable applications.&#xA;Here&amp;rsquo;s a brief overview of each principle:&#xA;Codebase: Have one place to keep all your code, and manage it using version control like Git.&#xA;Dependencies: List all the things your app needs to work properly, and make sure they&amp;rsquo;re easy to install.</description>
+    </item>
+    <item>
+      <title>10个良好编码准则</title>
+      <link>https://tech.lucumt.info/docs/code/theory/10-good-coding-principle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/10-good-coding-principle/</guid>
+      <description>Software development requires good system designs and coding standards. We list 10 good coding principles in the diagram below.&#xA;🔹 01 Follow Code Specifications When we write code, it is important to follow the industry&amp;rsquo;s well-established norms, like “PEP 8”, “Google Java Style”, adhering to a set of agreed-upon code specifications ensures that the quality of the code is consistent and readable.&#xA;🔹 02 Documentation and Comments Good code should be clearly documented and commented to explain complex logic and decisions, and comments should explain why a certain approach was taken (“Why”) rather than what exactly is being done (“What”).</description>
+    </item>
+    <item>
+      <title>系统设计的15个核心概念</title>
+      <link>https://tech.lucumt.info/docs/code/theory/15-system-design-core-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/15-system-design-core-concepts/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
