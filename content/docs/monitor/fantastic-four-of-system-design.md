@@ -1,6 +1,6 @@
 ---
 title: "系统设计的4大关键"
-weight: 2
+weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -9,7 +9,7 @@ weight: 2
 # bookSearchExclude: false
 ---
 
-![云原生技术栈](/img/monitor/fantastic-four-of-system-design.gif)
+![系统设计的4大关键](/img/monitor/fantastic-four-of-system-design.gif)
 
 Who are the Fantastic Four of System Design? 
 
