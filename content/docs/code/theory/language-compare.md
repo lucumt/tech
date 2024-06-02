@@ -9,7 +9,7 @@ weight: 1
 # bookSearchExclude: false
 ---
 
-![不同编程语言的工作原理](/img/code/code-language-compare.gif)
+![不同编程语言的工作原理](/img/code/theory/code-language-compare.gif)
 
 How Do C++, Java, Python Work? 
 

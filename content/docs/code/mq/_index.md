@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
-weight: 4
-title: java
+weight: 3
+title: 消息中间件
 ---
