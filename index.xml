@@ -22,6 +22,20 @@
       <description>Top 6 ElasticSearch Use Cases. . . Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram below shows the top 6 use cases:&#xA;🔹 Full-Text Search Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.&#xA;🔹 Real-Time Analytics Elasticsearch&amp;rsquo;s ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.</description>
     </item>
     <item>
+      <title>JavaScript是如何执行的</title>
+      <link>https://tech.lucumt.info/docs/code/front/how-does-javascript-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/front/how-does-javascript-work/</guid>
+      <description>The cheat sheet below shows most important characteristics of Javascript.&#xA;🔹 Interpreted Language JavaScript code is executed by the browser or JavaScript engine rather than being compiled into machine language beforehand. This makes it highly portable across different platforms. Modern engines such as V8 utilize Just-In-Time (JIT) technology to compile code into directly executable machine code.&#xA;🔹 Function is First-Class Citizen In JavaScript, functions are treated as first-class citizens, meaning they can be stored in variables, passed as arguments to other functions, and returned from functions.</description>
+    </item>
+    <item>
+      <title>Kafka的5种使用场景</title>
+      <link>https://tech.lucumt.info/docs/code/mq/top-5-kafka-use-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/mq/top-5-kafka-use-cases/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>MySQL批量制造数据</title>
       <link>https://tech.lucumt.info/docs/code/block/mysql-batch-create-data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -71,6 +85,13 @@
       <description></description>
     </item>
     <item>
+      <title>数据库中的8个关键数据结构</title>
+      <link>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</guid>
+      <description>8 Key Data Structures That Power Modern Databases 🔹Skiplist: a common in-memory index type. Used in Redis 🔹Hash index: a very common implementation of the “Map” data structure (or “Collection”) 🔹SSTable: immutable on-disk “Map” implementation 🔹LSM tree: Skiplist + SSTable. High write throughput 🔹B-tree: disk-based solution. Consistent read/write performance 🔹Inverted index: used for document indexing. Used in Lucene 🔹Suffix tree: for string pattern search 🔹R-tree: multi-dimension search, such as finding the nearest neighbor</description>
+    </item>
+    <item>
       <title>文件类型说明</title>
       <link>https://tech.lucumt.info/docs/linux/system/linux-file-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -99,6 +120,13 @@
       <description></description>
     </item>
     <item>
+      <title>6种云消息传递模式</title>
+      <link>https://tech.lucumt.info/docs/cloud/top-6-clould-message-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/cloud/top-6-clould-message-patterns/</guid>
+      <description>How do services communicate with each other? The diagram below shows 6 cloud messaging patterns.&#xA;🔹 Asynchronous Request-Reply&#xA;This pattern aims at providing determinism for long-running backend tasks. It decouples backend processing from frontend clients.&#xA;In the diagram below, the client makes a synchronous call to the API, triggering a long-running operation on the backend. The API returns an HTTP 202 (Accepted) status code, acknowledging that the request has been received for processing.</description>
+    </item>
+    <item>
       <title>9中API测试方式</title>
       <link>https://tech.lucumt.info/docs/test/9-types-api-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -111,6 +139,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>kakfa丢失消息的场景</title>
+      <link>https://tech.lucumt.info/docs/code/mq/can-kafka-lose-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/mq/can-kafka-lose-messages/</guid>
+      <description>Error handling is one of the most important aspects of building reliable systems.&#xA;Today, we will discuss an important topic: Can Kafka lose messages?&#xA;A common belief among many developers is that Kafka, by its very design, guarantees no message loss. However, understanding the nuances of Kafka&amp;rsquo;s architecture and configuration is essential to truly grasp how and when it might lose messages, and more importantly, how to prevent such scenarios.</description>
     </item>
     <item>
       <title>Matplotlib展示中文</title>
@@ -127,11 +162,25 @@
       <description>Why is the credit card called “𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 product in banks”? How does VISA/Mastercard make money?&#xA;The diagram below shows the economics of the credit card payment flow.&#xA;The cardholder pays a merchant $100 to buy a product.&#xA;The merchant benefits from the use of the credit card with higher sales volume, and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the “𝐦𝐞𝐫𝐜𝐡𝐚𝐧𝐭 𝐝𝐢𝐬𝐜𝐨𝐮𝐧𝐭 𝐟𝐞𝐞.</description>
     </item>
     <item>
+      <title>并发不是并行</title>
+      <link>https://tech.lucumt.info/docs/code/theory/concurrency-is-not-parallelism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/concurrency-is-not-parallelism/</guid>
+      <description>Things Every Developer Should Know: Concurrency is 𝐍𝐎𝐓 parallelism.&#xA;In system design, it is important to understand the difference between concurrency and parallelism.&#xA;As Rob Pyke(one of the creators of GoLang) stated:“ Concurrency is about 𝐝𝐞𝐚𝐥𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 lots of things at once. Parallelism is about 𝐝𝐨𝐢𝐧𝐠 lots of things at once.&amp;quot; This distinction emphasizes that concurrency is more about the 𝐝𝐞𝐬𝐢𝐠𝐧 of a program, while parallelism is about the 𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐨𝐧.</description>
+    </item>
+    <item>
       <title>文件权限说明</title>
       <link>https://tech.lucumt.info/docs/linux/system/linux-file-permissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/linux/system/linux-file-permissions/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>系统设计的4大关键</title>
+      <link>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</guid>
+      <description>Who are the Fantastic Four of System Design?&#xA;Scalability, Availability, Reliability, and Performance.&#xA;They are the most critical components to crafting successful software systems.&#xA;Let’s look at each of them with implementation techniques:&#xA;1 - Scalability Scalability ensures that your application can handle more load without compromising performance.&#xA;2 - Availability Availability makes sure that your application is always ready to serve the users and downtime is minimal.&#xA;3 - Reliability Reliability is about building software that consistently delivers correct results.</description>
     </item>
     <item>
       <title>HTTPS连接建立过程</title>
@@ -148,11 +197,32 @@
       <description>What’s the difference between Session-based authentication and JWTs?&#xA;Here’s a simple breakdown for both approaches:&#xA;Session-Based Authentication&#xA;In this approach, you store the session information in a database or session store and hand over a session ID to the user.&#xA;Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.&#xA;Here’s how it works:&#xA;1 - The user makes a login request and the frontend app sends the request to the backend server.</description>
     </item>
     <item>
+      <title>编写出安全有效的API</title>
+      <link>https://tech.lucumt.info/docs/code/theory/design-effective-and-safe-apis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/design-effective-and-safe-apis/</guid>
+      <description>Note that API design is not just URL path design. Most of the time, we need to choose the proper resource names, identifiers, and path patterns. It is equally important to design proper HTTP header fields or to design effective rate-limiting rules within the API gateway.</description>
+    </item>
+    <item>
       <title>HTTPS是如何工作的</title>
       <link>https://tech.lucumt.info/docs/network/how-https-works/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/network/how-https-works/</guid>
       <description>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.&#xA;SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.&#xA;Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.&#xA;HTML&amp;rsquo;s Role: Peek into HTML&amp;rsquo;s role in structuring the web.</description>
+    </item>
+    <item>
+      <title>REST API vs GraphQL</title>
+      <link>https://tech.lucumt.info/docs/code/theory/top-9-system-integrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/top-9-system-integrations/</guid>
+      <description>REST API Vs. GraphQL When it comes to API design, REST and GraphQL each have their own strengths and weaknesses.&#xA;REST - Uses standard HTTP methods like GET, POST, PUT, DELETE for CRUD operations. - Works well when you need simple, uniform interfaces between separate services/applications. - Caching strategies are straightforward to implement. - The downside is it may require multiple roundtrips to assemble related data from separate endpoints.</description>
+    </item>
+    <item>
+      <title>数据通信的9种架构模式</title>
+      <link>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</guid>
+      <description>Top 9 Architectural Patterns for Data and Communication Flow&#xA;🔹 Peer-to-Peer The Peer-to-Peer pattern involves direct communication between two components without the need for a central coordinator.&#xA;🔹 API Gateway An API Gateway acts as a single entry point for all client requests to the backend services of an application.&#xA;🔹 Pub-Sub The Pub-Sub pattern decouples the producers of messages (publishers) from the consumers of messages (subscribers) through a message broker.</description>
     </item>
     <item>
       <title>微服务最佳实践</title>

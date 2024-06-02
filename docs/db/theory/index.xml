@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>理论 on 个人笔记</title>
+    <link>https://tech.lucumt.info/docs/db/theory/</link>
+    <description>Recent content in 理论 on 个人笔记</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://tech.lucumt.info/docs/db/theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据库中的8个关键数据结构</title>
+      <link>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</guid>
+      <description>8 Key Data Structures That Power Modern Databases 🔹Skiplist: a common in-memory index type. Used in Redis 🔹Hash index: a very common implementation of the “Map” data structure (or “Collection”) 🔹SSTable: immutable on-disk “Map” implementation 🔹LSM tree: Skiplist + SSTable. High write throughput 🔹B-tree: disk-based solution. Consistent read/write performance 🔹Inverted index: used for document indexing. Used in Lucene 🔹Suffix tree: for string pattern search 🔹R-tree: multi-dimension search, such as finding the nearest neighbor</description>
+    </item>
+  </channel>
+</rss>

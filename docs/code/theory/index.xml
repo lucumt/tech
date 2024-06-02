@@ -14,5 +14,33 @@
       <guid>https://tech.lucumt.info/docs/code/theory/language-compare/</guid>
       <description>How Do C++, Java, Python Work?&#xA;The diagram shows how the compilation and execution work.&#xA;Compiled languages are compiled into machine code by the compiler. The machine code can later be executed directly by the CPU. Examples: C, C++, Go.&#xA;A bytecode language like Java, compiles the source code into bytecode first, then the JVM executes the program. Sometimes JIT (Just-In-Time) compiler compiles the source code into machine code to speed up the execution.</description>
     </item>
+    <item>
+      <title>并发不是并行</title>
+      <link>https://tech.lucumt.info/docs/code/theory/concurrency-is-not-parallelism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/concurrency-is-not-parallelism/</guid>
+      <description>Things Every Developer Should Know: Concurrency is 𝐍𝐎𝐓 parallelism.&#xA;In system design, it is important to understand the difference between concurrency and parallelism.&#xA;As Rob Pyke(one of the creators of GoLang) stated:“ Concurrency is about 𝐝𝐞𝐚𝐥𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 lots of things at once. Parallelism is about 𝐝𝐨𝐢𝐧𝐠 lots of things at once.&amp;quot; This distinction emphasizes that concurrency is more about the 𝐝𝐞𝐬𝐢𝐠𝐧 of a program, while parallelism is about the 𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐨𝐧.</description>
+    </item>
+    <item>
+      <title>编写出安全有效的API</title>
+      <link>https://tech.lucumt.info/docs/code/theory/design-effective-and-safe-apis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/design-effective-and-safe-apis/</guid>
+      <description>Note that API design is not just URL path design. Most of the time, we need to choose the proper resource names, identifiers, and path patterns. It is equally important to design proper HTTP header fields or to design effective rate-limiting rules within the API gateway.</description>
+    </item>
+    <item>
+      <title>REST API vs GraphQL</title>
+      <link>https://tech.lucumt.info/docs/code/theory/top-9-system-integrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/top-9-system-integrations/</guid>
+      <description>REST API Vs. GraphQL When it comes to API design, REST and GraphQL each have their own strengths and weaknesses.&#xA;REST - Uses standard HTTP methods like GET, POST, PUT, DELETE for CRUD operations. - Works well when you need simple, uniform interfaces between separate services/applications. - Caching strategies are straightforward to implement. - The downside is it may require multiple roundtrips to assemble related data from separate endpoints.</description>
+    </item>
+    <item>
+      <title>数据通信的9种架构模式</title>
+      <link>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</guid>
+      <description>Top 9 Architectural Patterns for Data and Communication Flow&#xA;🔹 Peer-to-Peer The Peer-to-Peer pattern involves direct communication between two components without the need for a central coordinator.&#xA;🔹 API Gateway An API Gateway acts as a single entry point for all client requests to the backend services of an application.&#xA;🔹 Pub-Sub The Pub-Sub pattern decouples the producers of messages (publishers) from the consumers of messages (subscribers) through a message broker.</description>
+    </item>
   </channel>
 </rss>
