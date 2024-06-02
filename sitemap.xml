@@ -40,7 +40,7 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/test/9-types-api-testing/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/https-handshake/</loc>
+    <loc>https://tech.lucumt.info/docs/network/http-status/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/block/matplotlib-show-chinese/</loc>
   </url><url>
@@ -54,13 +54,15 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/network/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/http-status/</loc>
+    <loc>https://tech.lucumt.info/docs/network/https-handshake/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/java/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/session-vs-jwt/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/network/how-https-works/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/</loc>
   </url><url>

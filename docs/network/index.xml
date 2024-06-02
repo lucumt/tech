@@ -15,6 +15,13 @@
       <description></description>
     </item>
     <item>
+      <title>HTTP状态码说明</title>
+      <link>https://tech.lucumt.info/docs/network/http-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>HTTPS连接建立过程</title>
       <link>https://tech.lucumt.info/docs/network/https-handshake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -22,11 +29,11 @@
       <description></description>
     </item>
     <item>
-      <title>HTTP状态码说明</title>
-      <link>https://tech.lucumt.info/docs/network/http-status/</link>
+      <title>HTTPS是如何工作的</title>
+      <link>https://tech.lucumt.info/docs/network/how-https-works/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
-      <description></description>
+      <guid>https://tech.lucumt.info/docs/network/how-https-works/</guid>
+      <description>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.&#xA;SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.&#xA;Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.&#xA;HTML&amp;rsquo;s Role: Peek into HTML&amp;rsquo;s role in structuring the web.</description>
     </item>
   </channel>
 </rss>

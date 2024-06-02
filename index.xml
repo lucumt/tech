@@ -106,10 +106,10 @@
       <description>Explaining 9 types of API testing.&#xA;🔹 Smoke Testing This is done after API development is complete. Simply validate if the APIs are working and nothing breaks.&#xA;🔹 Functional Testing This creates a test plan based on the functional requirements and compares the results with the expected results.&#xA;🔹 Integration Testing This test combines several API calls to perform end-to-end tests. The intra-service communications and data transmissions are tested.</description>
     </item>
     <item>
-      <title>HTTPS连接建立过程</title>
-      <link>https://tech.lucumt.info/docs/network/https-handshake/</link>
+      <title>HTTP状态码说明</title>
+      <link>https://tech.lucumt.info/docs/network/http-status/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/https-handshake/</guid>
+      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
       <description></description>
     </item>
     <item>
@@ -134,10 +134,10 @@
       <description></description>
     </item>
     <item>
-      <title>HTTP状态码说明</title>
-      <link>https://tech.lucumt.info/docs/network/http-status/</link>
+      <title>HTTPS连接建立过程</title>
+      <link>https://tech.lucumt.info/docs/network/https-handshake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
+      <guid>https://tech.lucumt.info/docs/network/https-handshake/</guid>
       <description></description>
     </item>
     <item>
@@ -146,6 +146,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/security/session-vs-jwt/</guid>
       <description>What’s the difference between Session-based authentication and JWTs?&#xA;Here’s a simple breakdown for both approaches:&#xA;Session-Based Authentication&#xA;In this approach, you store the session information in a database or session store and hand over a session ID to the user.&#xA;Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.&#xA;Here’s how it works:&#xA;1 - The user makes a login request and the frontend app sends the request to the backend server.</description>
+    </item>
+    <item>
+      <title>HTTPS是如何工作的</title>
+      <link>https://tech.lucumt.info/docs/network/how-https-works/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/how-https-works/</guid>
+      <description>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.&#xA;SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.&#xA;Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.&#xA;HTML&amp;rsquo;s Role: Peek into HTML&amp;rsquo;s role in structuring the web.</description>
     </item>
     <item>
       <title>微服务最佳实践</title>
