@@ -3,25 +3,30 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content=" 添加与取消代理(局部)
+1# 添加代理 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)
+1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/security/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/tools/git/git-commands/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="安全">
+  <meta property="og:title" content="Git常用指令">
+  <meta property="og:description" content=" 添加与取消代理(局部)
+1# 添加代理 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)
+1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy ">
   <meta property="og:locale" content="zh_cn">
-  <meta property="og:type" content="website">
-<title>安全 | 个人笔记</title>
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Git常用指令 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/security/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/tools/git/git-commands/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.0acc5035e60d0a9e8fa11eb46b2dee074260fe1f3ebe26e6c5191934d1626520.js" integrity="sha256-CsxQNeYNCp6PoR60ay3uB0Jg/h8&#43;vibmxRkZNNFiZSA=" crossorigin="anonymous"></script>
 
   
 
-<link rel="alternate" type="application/rss+xml" href="https://tech.lucumt.info/docs/security/index.xml" title="个人笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -288,9 +293,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-2c49013a399c9c118baaabbde9c86f47" class="toggle" checked />
+    <input type="checkbox" id="section-2c49013a399c9c118baaabbde9c86f47" class="toggle"  />
     <label for="section-2c49013a399c9c118baaabbde9c86f47" class="flex justify-between">
-      <a role="button" class="active">安全</a>
+      <a role="button" class="">安全</a>
     </label>
   
 
@@ -421,7 +426,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-28a50411accaecc16bc0763b9c190330" class="toggle"  />
+    <input type="checkbox" id="section-28a50411accaecc16bc0763b9c190330" class="toggle" checked />
     <label for="section-28a50411accaecc16bc0763b9c190330" class="flex justify-between">
       <a role="button" class="">工具</a>
     </label>
@@ -437,7 +442,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1a59dcdcff5a7ac71a7de17eb2aaad29" class="toggle"  />
+    <input type="checkbox" id="section-1a59dcdcff5a7ac71a7de17eb2aaad29" class="toggle" checked />
     <label for="section-1a59dcdcff5a7ac71a7de17eb2aaad29" class="flex justify-between">
       <a role="button" class="">Git</a>
     </label>
@@ -453,7 +458,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/tools/git/git-commands/" class="">Git常用指令</a>
+    <a href="/docs/tools/git/git-commands/" class="active">Git常用指令</a>
   
 
         </li>
@@ -1346,7 +1351,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>安全</strong>
+  <strong>Git常用指令</strong>
 
   <label for="toc-control">
     
@@ -1371,7 +1376,29 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"></article>
+  <article class="markdown book-article"><ul>
+<li>
+<p>添加与取消代理(局部)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#228b22"># 添加代理</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>git config http.proxy http://127.0.0.1:7890
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>git config https.proxy https://127.0.0.1:7890
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#228b22"># 去掉代理</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>git config --unset http.proxy
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>git config --unset https.proxy
+</span></span></code></pre></div></li>
+<li>
+<p>添加与取消代理(全局)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#228b22"># 添加代理</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>git config --global http.proxy http://127.0.0.1:7890
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>git config --global https.proxy https://127.0.0.1:7890
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#228b22"># 去掉代理</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>git config --global --unset http.proxy
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>git config --global --unset https.proxy
+</span></span></code></pre></div></li>
+</ul>
+</article>
  
       
 
@@ -1395,6 +1422,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+  
+  <div class="book-comments">
+
+</div>
   
  
 

@@ -22,6 +22,13 @@
       <description>Top 6 ElasticSearch Use Cases. . . Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram below shows the top 6 use cases:&#xA;🔹 Full-Text Search Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.&#xA;🔹 Real-Time Analytics Elasticsearch&amp;rsquo;s ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.</description>
     </item>
     <item>
+      <title>Git常用指令</title>
+      <link>https://tech.lucumt.info/docs/tools/git/git-commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/tools/git/git-commands/</guid>
+      <description> 添加与取消代理(局部)&#xA;1# 添加代理 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)&#xA;1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy </description>
+    </item>
+    <item>
       <title>JavaScript是如何执行的</title>
       <link>https://tech.lucumt.info/docs/code/front/how-does-javascript-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
