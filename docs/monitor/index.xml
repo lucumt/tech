@@ -8,6 +8,13 @@
     <language>zh-cn</language>
     <atom:link href="https://tech.lucumt.info/docs/monitor/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>系统设计的4大关键</title>
+      <link>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</guid>
+      <description>Who are the Fantastic Four of System Design?&#xA;Scalability, Availability, Reliability, and Performance.&#xA;They are the most critical components to crafting successful software systems.&#xA;Let’s look at each of them with implementation techniques:&#xA;1 - Scalability Scalability ensures that your application can handle more load without compromising performance.&#xA;2 - Availability Availability makes sure that your application is always ready to serve the users and downtime is minimal.&#xA;3 - Reliability Reliability is about building software that consistently delivers correct results.</description>
+    </item>
+    <item>
       <title>CPU使用达到100%的9个场景</title>
       <link>https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -15,11 +22,18 @@
       <description></description>
     </item>
     <item>
-      <title>系统设计的4大关键</title>
-      <link>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</link>
+      <title>网站的9大性能指标</title>
+      <link>https://tech.lucumt.info/docs/monitor/top-9-website-performance-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</guid>
-      <description>Who are the Fantastic Four of System Design?&#xA;Scalability, Availability, Reliability, and Performance.&#xA;They are the most critical components to crafting successful software systems.&#xA;Let’s look at each of them with implementation techniques:&#xA;1 - Scalability Scalability ensures that your application can handle more load without compromising performance.&#xA;2 - Availability Availability makes sure that your application is always ready to serve the users and downtime is minimal.&#xA;3 - Reliability Reliability is about building software that consistently delivers correct results.</description>
+      <guid>https://tech.lucumt.info/docs/monitor/top-9-website-performance-metrics/</guid>
+      <description>Top 9 website performance metrics you cannot ignore:&#xA;Load Time: This is the time taken by the web browser to download and display the webpage. It’s measured in milliseconds.&#xA;Time to First Byte (TTFB): It’s the time taken by the browser to receive the first byte of data from the web server. TTFB is crucial because it indicates the general ability of the server to handle traffic.&#xA;Request Count: The number of HTTP requests a browser has to make to fully load the page.</description>
+    </item>
+    <item>
+      <title>6种心跳检测机制</title>
+      <link>https://tech.lucumt.info/docs/monitor/top-6-heartbeat-detection-mechanisms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/monitor/top-6-heartbeat-detection-mechanisms/</guid>
+      <description>How do we detect node failures in distributed systems? . . The diagram below shows top 6 Heartbeat Detection Mechanisms.&#xA;Heartbeat mechanisms are crucial in distributed systems for monitoring the health and status of various components. Here are several types of heartbeat detection mechanisms commonly used in distributed systems:&#xA;🔹 Push-Based Heartbeat The most basic form of heartbeat involves a periodic signal sent from one node to another or to a monitoring service.</description>
     </item>
   </channel>
 </rss>

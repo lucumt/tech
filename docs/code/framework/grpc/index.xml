@@ -8,6 +8,13 @@
     <language>zh-cn</language>
     <atom:link href="https://tech.lucumt.info/docs/code/framework/grpc/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>什么是gRPC</title>
+      <link>https://tech.lucumt.info/docs/code/framework/grpc/what-is-grpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/framework/grpc/what-is-grpc/</guid>
+      <description>What is gRPC?&#xA;The diagram below shows important aspects of understanding gRPC.&#xA;gRPC is a high-performance, open-source universal RPC (Remote Procedure Call) framework initially developed by Google. It leverages HTTP/2 for transport, Protocol Buffers as the interface description language, and provides features such as authentication, load balancing, and more. gRPC is designed to enable efficient and robust communication between services in a microservices architecture, making it a popular choice for building distributed systems and APIs.</description>
+    </item>
+    <item>
       <title>gRPC如何工作的</title>
       <link>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

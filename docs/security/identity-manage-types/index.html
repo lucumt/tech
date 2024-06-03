@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="When you login to a website, your identity needs to be managed. Here is how different solutions work:
+- Session - The server stores your identity and gives the browser a session ID cookie. This allows the server to track login state. But cookies don&rsquo;t work well across devices.
+- Token - Your identity is encoded into a token sent to the browser. The browser sends this token on future requests for authentication.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/security/identity-manage-types/">
   <meta property="og:site_name" content="个人笔记">
   <meta property="og:title" content="不同的身份管理方式">
+  <meta property="og:description" content="When you login to a website, your identity needs to be managed. Here is how different solutions work:
+- Session - The server stores your identity and gives the browser a session ID cookie. This allows the server to track login state. But cookies don’t work well across devices.
+- Token - Your identity is encoded into a token sent to the browser. The browser sends this token on future requests for authentication.">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -18,7 +23,7 @@
 <link rel="canonical" href="https://tech.lucumt.info/docs/security/identity-manage-types/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.fa8857a6e84ed55b5c53d3d607c66e4ce272f8bbd81310f832339b863eae9b78.js" integrity="sha256-&#43;ohXpuhO1VtcU9PWB8ZuTOJy&#43;LvYExD4MjObhj6um3g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.aa04bc9ba79778dbc9e92f8075f0bf317d7414ef210e01c7deccb9a79f5ffc20.js" integrity="sha256-qgS8m6eXeNvJ6S&#43;AdfC/MX10FO8hDgHH3sy5p59f/CA=" crossorigin="anonymous"></script>
 
   
 
@@ -120,6 +125,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/linux/system/linux-file-permissions/" class="">文件权限说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-boot-process-explained/" class="">Linux启动过程详解</a>
   
 
         </li>
@@ -370,6 +388,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/encoding-vs-encryption-vs-tokenization/" class="">编码/加密/分词</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -550,6 +581,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/code/framework/grpc/what-is-grpc/" class="">什么是gRPC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/code/framework/grpc/how-does-grpc-work/" class="">gRPC如何工作的</a>
   
 
@@ -701,6 +745,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/monitor/fantastic-four-of-system-design/" class="">系统设计的4大关键</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/monitor/top-9-cases-behind-cpu-high-usage/" class="">CPU使用达到100%的9个场景</a>
   
 
@@ -714,7 +771,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/monitor/fantastic-four-of-system-design/" class="">系统设计的4大关键</a>
+    <a href="/docs/monitor/top-9-website-performance-metrics/" class="">网站的9大性能指标</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/top-6-heartbeat-detection-mechanisms/" class="">6种心跳检测机制</a>
   
 
         </li>
@@ -825,6 +895,45 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/db/theory/8-key-data-structures-that-power-modern-databases/" class="">数据库中的8个关键数据结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/how-does-search-engine-work/" class="">搜索引擎如何工作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/top-6-data-manage-patterns/" class="">6种数据管理模式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/top-6-database-models/" class="">6种数据模型</a>
   
 
         </li>
@@ -1030,6 +1139,40 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-bf811b2740dc219e21d86019d2c3653d" class="toggle"  />
+    <label for="section-bf811b2740dc219e21d86019d2c3653d" class="flex justify-between">
+      <a role="button" class="">AI</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ai/how-does-chatgpt-work/" class="">ChatGPT工作原理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-f333c9def04102358b545028113318cb" class="toggle"  />
     <label for="section-f333c9def04102358b545028113318cb" class="flex justify-between">
       <a role="button" class="">测试</a>
@@ -1179,6 +1322,13 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown book-article"><p><img src="/img/security/identity-manage-types.gif" alt="不同的身份管理方式" /></p>
+<p>When you login to a website, your identity needs to be managed. Here is how different solutions work:</p>
+<p>- Session - The server stores your identity and gives the browser a session ID cookie. This allows the server to track login state. But cookies don&rsquo;t work well across devices.</p>
+<p>- Token - Your identity is encoded into a token sent to the browser. The browser sends this token on future requests for authentication. No server session storage is required. But tokens need encryption/decryption.</p>
+<p>- JWT - JSON Web Tokens standardize identity tokens using digital signatures for trust. The signature is contained in the token so no server session is needed.</p>
+<p>- SSO - Single Sign On uses a central authentication service. This allows a single login to work across multiple sites.</p>
+<p>- OAuth2 - Allows limited access to your data on one site by another site, without giving away passwords.</p>
+<p>- QR Code - Encodes a random token into a QR code for mobile login. Scanning the code logs you in without typing a password.</p>
 </article>
  
       

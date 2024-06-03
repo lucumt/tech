@@ -12,7 +12,7 @@
       <link>https://tech.lucumt.info/docs/security/identity-manage-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/security/identity-manage-types/</guid>
-      <description></description>
+      <description>When you login to a website, your identity needs to be managed. Here is how different solutions work:&#xA;- Session - The server stores your identity and gives the browser a session ID cookie. This allows the server to track login state. But cookies don&amp;rsquo;t work well across devices.&#xA;- Token - Your identity is encoded into a token sent to the browser. The browser sends this token on future requests for authentication.</description>
     </item>
     <item>
       <title>不同认证方式的对比</title>

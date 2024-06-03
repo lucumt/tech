@@ -14,5 +14,26 @@
       <guid>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</guid>
       <description>8 Key Data Structures That Power Modern Databases 🔹Skiplist: a common in-memory index type. Used in Redis 🔹Hash index: a very common implementation of the “Map” data structure (or “Collection”) 🔹SSTable: immutable on-disk “Map” implementation 🔹LSM tree: Skiplist + SSTable. High write throughput 🔹B-tree: disk-based solution. Consistent read/write performance 🔹Inverted index: used for document indexing. Used in Lucene 🔹Suffix tree: for string pattern search 🔹R-tree: multi-dimension search, such as finding the nearest neighbor</description>
     </item>
+    <item>
+      <title>搜索引擎如何工作</title>
+      <link>https://tech.lucumt.info/docs/db/theory/how-does-search-engine-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/how-does-search-engine-work/</guid>
+      <description>The diagram below shows a high-level walk-through of a search engine.&#xA;▶️ Step 1 - Crawling Web Crawlers scan the internet for web pages. They follow the URL links from one page to another and store URLs in the URL store. The crawlers discover new content, including web pages, images, videos, and files.&#xA;▶️ Step 2 - Indexing Once a web page is crawled, the search engine parses the page and indexes the content found on the page in a database.</description>
+    </item>
+    <item>
+      <title>6种数据管理模式</title>
+      <link>https://tech.lucumt.info/docs/db/theory/top-6-data-manage-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/top-6-data-manage-patterns/</guid>
+      <description>How do we manage data? Here are top 6 data management patterns.&#xA;🔹 Cache Aside When an application needs to access data, it first checks the cache. If the data is not present (a cache miss), it fetches the data from the data store, stores it in the cache, and then returns the data to the user. This pattern is particularly useful for scenarios where data is read frequently but updated less often.</description>
+    </item>
+    <item>
+      <title>6种数据模型</title>
+      <link>https://tech.lucumt.info/docs/db/theory/top-6-database-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/top-6-database-models/</guid>
+      <description>The diagram below shows top 6 data models.&#xA;🔹 Flat Model The flat data model is one of the simplest forms of database models. It organizes data into a single table where each row represents a record and each column represents an attribute. This model is similar to a spreadsheet and is straightforward to understand and implement. However, it lacks the ability to efficiently handle complex relationships between data entities.</description>
+    </item>
   </channel>
 </rss>

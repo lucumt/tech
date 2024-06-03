@@ -8,11 +8,11 @@
     <language>zh-cn</language>
     <atom:link href="https://tech.lucumt.info/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CPU使用达到100%的9个场景</title>
-      <link>https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/</link>
+      <title>ChatGPT工作原理</title>
+      <link>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/</guid>
-      <description></description>
+      <guid>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</guid>
+      <description>How does ChatGPT-like system work?&#xA;Since OpenAI hasn&amp;rsquo;t provided all the details, some parts of the diagram may be inaccurate.&#xA;We attempted to explain how it works in the diagram below. The process can be broken down into two parts.&#xA;Training. To train a ChatGPT model, there are two stages:&#xA;- Pre-training: In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data.</description>
     </item>
     <item>
       <title>ES使用最高的6个场景</title>
@@ -20,13 +20,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/db/es/top-6-es-use-cases/</guid>
       <description>Top 6 ElasticSearch Use Cases. . . Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram below shows the top 6 use cases:&#xA;🔹 Full-Text Search Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.&#xA;🔹 Real-Time Analytics Elasticsearch&amp;rsquo;s ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.</description>
-    </item>
-    <item>
-      <title>gRPC如何工作的</title>
-      <link>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</guid>
-      <description>How does 𝐠𝐑𝐏𝐂 work? RPC (Remote Procedure Call) is called “𝐫𝐞𝐦𝐨𝐭𝐞” because it enables communications between remote services when services are deployed to different servers under microservice architecture. From the user’s point of view, it acts like a local function call.&#xA;The diagram below illustrates the overall data flow for 𝐠𝐑𝐏𝐂.&#xA;Step 1: A REST call is made from the client. The request body is usually in JSON format.</description>
     </item>
     <item>
       <title>JavaScript是如何执行的</title>
@@ -75,7 +68,7 @@
       <link>https://tech.lucumt.info/docs/security/identity-manage-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/security/identity-manage-types/</guid>
-      <description></description>
+      <description>When you login to a website, your identity needs to be managed. Here is how different solutions work:&#xA;- Session - The server stores your identity and gives the browser a session ID cookie. This allows the server to track login state. But cookies don&amp;rsquo;t work well across devices.&#xA;- Token - Your identity is encoded into a token sent to the browser. The browser sends this token on future requests for authentication.</description>
     </item>
     <item>
       <title>不同认证方式的对比</title>
@@ -97,6 +90,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/cloud/cloud-tech-stack/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>什么是gRPC</title>
+      <link>https://tech.lucumt.info/docs/code/framework/grpc/what-is-grpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/framework/grpc/what-is-grpc/</guid>
+      <description>What is gRPC?&#xA;The diagram below shows important aspects of understanding gRPC.&#xA;gRPC is a high-performance, open-source universal RPC (Remote Procedure Call) framework initially developed by Google. It leverages HTTP/2 for transport, Protocol Buffers as the interface description language, and provides features such as authentication, load balancing, and more. gRPC is designed to enable efficient and robust communication between services in a microservices architecture, making it a popular choice for building distributed systems and APIs.</description>
     </item>
     <item>
       <title>数据库中的8个关键数据结构</title>
@@ -127,6 +127,13 @@
       <description></description>
     </item>
     <item>
+      <title>系统设计的4大关键</title>
+      <link>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</guid>
+      <description>Who are the Fantastic Four of System Design?&#xA;Scalability, Availability, Reliability, and Performance.&#xA;They are the most critical components to crafting successful software systems.&#xA;Let’s look at each of them with implementation techniques:&#xA;1 - Scalability Scalability ensures that your application can handle more load without compromising performance.&#xA;2 - Availability Availability makes sure that your application is always ready to serve the users and downtime is minimal.&#xA;3 - Reliability Reliability is about building software that consistently delivers correct results.</description>
+    </item>
+    <item>
       <title>线程生命周期说明</title>
       <link>https://tech.lucumt.info/docs/code/language/java/thread-lifecycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -153,6 +160,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/test/9-types-api-testing/</guid>
       <description>Explaining 9 types of API testing.&#xA;🔹 Smoke Testing This is done after API development is complete. Simply validate if the APIs are working and nothing breaks.&#xA;🔹 Functional Testing This creates a test plan based on the functional requirements and compares the results with the expected results.&#xA;🔹 Integration Testing This test combines several API calls to perform end-to-end tests. The intra-service communications and data transmissions are tested.</description>
+    </item>
+    <item>
+      <title>CPU使用达到100%的9个场景</title>
+      <link>https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>gRPC如何工作的</title>
+      <link>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</guid>
+      <description>How does 𝐠𝐑𝐏𝐂 work? RPC (Remote Procedure Call) is called “𝐫𝐞𝐦𝐨𝐭𝐞” because it enables communications between remote services when services are deployed to different servers under microservice architecture. From the user’s point of view, it acts like a local function call.&#xA;The diagram below illustrates the overall data flow for 𝐠𝐑𝐏𝐂.&#xA;Step 1: A REST call is made from the client. The request body is usually in JSON format.</description>
     </item>
     <item>
       <title>HTTP状态码说明</title>
@@ -197,6 +218,13 @@
       <description></description>
     </item>
     <item>
+      <title>搜索引擎如何工作</title>
+      <link>https://tech.lucumt.info/docs/db/theory/how-does-search-engine-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/how-does-search-engine-work/</guid>
+      <description>The diagram below shows a high-level walk-through of a search engine.&#xA;▶️ Step 1 - Crawling Web Crawlers scan the internet for web pages. They follow the URL links from one page to another and store URLs in the URL store. The crawlers discover new content, including web pages, images, videos, and files.&#xA;▶️ Step 2 - Indexing Once a web page is crawled, the search engine parses the page and indexes the content found on the page in a database.</description>
+    </item>
+    <item>
       <title>文件权限说明</title>
       <link>https://tech.lucumt.info/docs/linux/system/linux-file-permissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -204,11 +232,11 @@
       <description></description>
     </item>
     <item>
-      <title>系统设计的4大关键</title>
-      <link>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</link>
+      <title>6种数据管理模式</title>
+      <link>https://tech.lucumt.info/docs/db/theory/top-6-data-manage-patterns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/monitor/fantastic-four-of-system-design/</guid>
-      <description>Who are the Fantastic Four of System Design?&#xA;Scalability, Availability, Reliability, and Performance.&#xA;They are the most critical components to crafting successful software systems.&#xA;Let’s look at each of them with implementation techniques:&#xA;1 - Scalability Scalability ensures that your application can handle more load without compromising performance.&#xA;2 - Availability Availability makes sure that your application is always ready to serve the users and downtime is minimal.&#xA;3 - Reliability Reliability is about building software that consistently delivers correct results.</description>
+      <guid>https://tech.lucumt.info/docs/db/theory/top-6-data-manage-patterns/</guid>
+      <description>How do we manage data? Here are top 6 data management patterns.&#xA;🔹 Cache Aside When an application needs to access data, it first checks the cache. If the data is not present (a cache miss), it fetches the data from the data store, stores it in the cache, and then returns the data to the user. This pattern is particularly useful for scenarios where data is read frequently but updated less often.</description>
     </item>
     <item>
       <title>HTTPS连接建立过程</title>
@@ -216,6 +244,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/network/https-handshake/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Linux启动过程详解</title>
+      <link>https://tech.lucumt.info/docs/linux/system/linux-boot-process-explained/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/linux/system/linux-boot-process-explained/</guid>
+      <description>Linux Boot Process Illustrated&#xA;The diagram below shows the steps.&#xA;Step 1 - When we turn on the power, BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) firmware is loaded from non-volatile memory, and executes POST (Power On Self Test).&#xA;Step 2 - BIOS/UEFI detects the devices connected to the system, including CPU, RAM, and storage.&#xA;Step 3 - Choose a booting device to boot the OS from.</description>
     </item>
     <item>
       <title>Session和JWT的对比</title>
@@ -244,6 +279,27 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/design-effective-and-safe-apis/</guid>
       <description>Note that API design is not just URL path design. Most of the time, we need to choose the proper resource names, identifiers, and path patterns. It is equally important to design proper HTTP header fields or to design effective rate-limiting rules within the API gateway.</description>
+    </item>
+    <item>
+      <title>网站的9大性能指标</title>
+      <link>https://tech.lucumt.info/docs/monitor/top-9-website-performance-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/monitor/top-9-website-performance-metrics/</guid>
+      <description>Top 9 website performance metrics you cannot ignore:&#xA;Load Time: This is the time taken by the web browser to download and display the webpage. It’s measured in milliseconds.&#xA;Time to First Byte (TTFB): It’s the time taken by the browser to receive the first byte of data from the web server. TTFB is crucial because it indicates the general ability of the server to handle traffic.&#xA;Request Count: The number of HTTP requests a browser has to make to fully load the page.</description>
+    </item>
+    <item>
+      <title>6种心跳检测机制</title>
+      <link>https://tech.lucumt.info/docs/monitor/top-6-heartbeat-detection-mechanisms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/monitor/top-6-heartbeat-detection-mechanisms/</guid>
+      <description>How do we detect node failures in distributed systems? . . The diagram below shows top 6 Heartbeat Detection Mechanisms.&#xA;Heartbeat mechanisms are crucial in distributed systems for monitoring the health and status of various components. Here are several types of heartbeat detection mechanisms commonly used in distributed systems:&#xA;🔹 Push-Based Heartbeat The most basic form of heartbeat involves a periodic signal sent from one node to another or to a monitoring service.</description>
+    </item>
+    <item>
+      <title>6种数据模型</title>
+      <link>https://tech.lucumt.info/docs/db/theory/top-6-database-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/top-6-database-models/</guid>
+      <description>The diagram below shows top 6 data models.&#xA;🔹 Flat Model The flat data model is one of the simplest forms of database models. It organizes data into a single table where each row represents a record and each column represents an attribute. This model is similar to a spreadsheet and is straightforward to understand and implement. However, it lacks the ability to efficiently handle complex relationships between data entities.</description>
     </item>
     <item>
       <title>HTTPS是如何工作的</title>
@@ -300,6 +356,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/15-system-design-core-concepts/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>编码/加密/分词</title>
+      <link>https://tech.lucumt.info/docs/code/theory/encoding-vs-encryption-vs-tokenization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/encoding-vs-encryption-vs-tokenization/</guid>
+      <description>Encoding vs Encryption vs Tokenization. Encoding, encryption, and tokenization are three distinct processes that handle data in different ways for various purposes, including data transmission, security, and compliance. In system designs, we need to select the right approach for handling sensitive information.&#xA;🔹 Encoding Encoding converts data into a different format using a scheme that can be easily reversed. Examples include Base64 encoding, which encodes binary data into ASCII characters, making it easier to transmit data over media that are designed to deal with textual data.</description>
     </item>
   </channel>
 </rss>

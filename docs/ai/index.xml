@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on 个人笔记</title>
+    <link>https://tech.lucumt.info/docs/ai/</link>
+    <description>Recent content in AI on 个人笔记</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://tech.lucumt.info/docs/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT工作原理</title>
+      <link>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</guid>
+      <description>How does ChatGPT-like system work?&#xA;Since OpenAI hasn&amp;rsquo;t provided all the details, some parts of the diagram may be inaccurate.&#xA;We attempted to explain how it works in the diagram below. The process can be broken down into two parts.&#xA;Training. To train a ChatGPT model, there are two stages:&#xA;- Pre-training: In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data.</description>
+    </item>
+  </channel>
+</rss>

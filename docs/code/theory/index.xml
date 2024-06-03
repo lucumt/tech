@@ -63,5 +63,12 @@
       <guid>https://tech.lucumt.info/docs/code/theory/15-system-design-core-concepts/</guid>
       <description></description>
     </item>
+    <item>
+      <title>编码/加密/分词</title>
+      <link>https://tech.lucumt.info/docs/code/theory/encoding-vs-encryption-vs-tokenization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/encoding-vs-encryption-vs-tokenization/</guid>
+      <description>Encoding vs Encryption vs Tokenization. Encoding, encryption, and tokenization are three distinct processes that handle data in different ways for various purposes, including data transmission, security, and compliance. In system designs, we need to select the right approach for handling sensitive information.&#xA;🔹 Encoding Encoding converts data into a different format using a scheme that can be easily reversed. Examples include Base64 encoding, which encodes binary data into ASCII characters, making it easier to transmit data over media that are designed to deal with textual data.</description>
+    </item>
   </channel>
 </rss>

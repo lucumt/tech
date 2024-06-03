@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The diagram below shows top 6 data models.
+🔹 Flat Model The flat data model is one of the simplest forms of database models. It organizes data into a single table where each row represents a record and each column represents an attribute. This model is similar to a spreadsheet and is straightforward to understand and implement. However, it lacks the ability to efficiently handle complex relationships between data entities.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/db/theory/top-6-database-models/">
+  <meta property="og:site_name" content="个人笔记">
+  <meta property="og:title" content="6种数据模型">
+  <meta property="og:description" content="The diagram below shows top 6 data models.
+🔹 Flat Model The flat data model is one of the simplest forms of database models. It organizes data into a single table where each row represents a record and each column represents an attribute. This model is similar to a spreadsheet and is straightforward to understand and implement. However, it lacks the ability to efficiently handle complex relationships between data entities.">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>6种数据模型 | 个人笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://tech.lucumt.info/docs/db/theory/top-6-database-models/">
+<link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.aa04bc9ba79778dbc9e92f8075f0bf317d7414ef210e01c7deccb9a79f5ffc20.js" integrity="sha256-qgS8m6eXeNvJ6S&#43;AdfC/MX10FO8hDgHH3sy5p59f/CA=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>个人笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-52a19f941dcfe66de6ed1cd418a84103" class="toggle"  />
+    <label for="section-52a19f941dcfe66de6ed1cd418a84103" class="flex justify-between">
+      <a role="button" class="">Linux</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a7afcaf46e150f46a978893f31be4a48" class="toggle"  />
+    <label for="section-a7afcaf46e150f46a978893f31be4a48" class="flex justify-between">
+      <a role="button" class="">Linux系统</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-file-system/" class="">文件类型说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-file-permissions/" class="">文件权限说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-boot-process-explained/" class="">Linux启动过程详解</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5d396b9ad5f816a37baf43734deffc7c" class="toggle"  />
+    <label for="section-5d396b9ad5f816a37baf43734deffc7c" class="flex justify-between">
+      <a role="button" class="">网络</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/tcp-status-change/" class="">TCP状态变化图</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/http-status/" class="">HTTP状态码说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/https-handshake/" class="">HTTPS连接建立过程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/how-https-works/" class="">HTTPS是如何工作的</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/rodamap-for-learning-cyber-security/" class="">网络安全学习线路图</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/what-is-osi-model/" class="">网络7层模型</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle"  />
+    <label for="section-b0b4a016bddda14181aeb79f92565d38" class="flex justify-between">
+      <a role="button" class="">编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-568f71b95ca56c34a1f8e3361712f1c0" class="toggle"  />
+    <label for="section-568f71b95ca56c34a1f8e3361712f1c0" class="flex justify-between">
+      <a role="button" class="">理论</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/language-compare/" class="">不同语言的工作原理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/concurrency-is-not-parallelism/" class="">并发不是并行</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/design-effective-and-safe-apis/" class="">编写出安全有效的API</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/top-9-system-integrations/" class="">REST API vs GraphQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/rest-api-vs-graphql/" class="">数据通信的9种架构模式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/12-factor-app/" class="">软件开发12准则</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/10-good-coding-principle/" class="">10个良好编码准则</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/15-system-design-core-concepts/" class="">系统设计的15个核心概念</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/encoding-vs-encryption-vs-tokenization/" class="">编码/加密/分词</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-355a174475df5241187c1a79bd3c62e8" class="toggle"  />
+    <label for="section-355a174475df5241187c1a79bd3c62e8" class="flex justify-between">
+      <a role="button" class="">前端</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/front/how-does-javascript-work/" class="">JavaScript是如何执行的</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a492e0e982492102fba29e206d0fb4b6" class="toggle"  />
+    <label for="section-a492e0e982492102fba29e206d0fb4b6" class="flex justify-between">
+      <a role="button" class="">代码块</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/mysql-batch-create-data/" class="">MySQL批量制造数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/matplotlib-show-chinese/" class="">Matplotlib展示中文</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-696d705a2b46c69b305b09d50c7e21e8" class="toggle"  />
+    <label for="section-696d705a2b46c69b305b09d50c7e21e8" class="flex justify-between">
+      <a role="button" class="">编程语言</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60c2211b06a947c255130fbdea00bc3c" class="toggle"  />
+    <label for="section-60c2211b06a947c255130fbdea00bc3c" class="flex justify-between">
+      <a role="button" class="">java</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/language/java/thread-lifecycle/" class="">线程生命周期说明</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fb3f827690f0c1bd664db67a92929f52" class="toggle"  />
+    <label for="section-fb3f827690f0c1bd664db67a92929f52" class="flex justify-between">
+      <a role="button" class="">应用框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-587392c7c45ae1c4da4ea615ec7f0634" class="toggle"  />
+    <label for="section-587392c7c45ae1c4da4ea615ec7f0634" class="flex justify-between">
+      <a role="button" class="">gRPC</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/framework/grpc/what-is-grpc/" class="">什么是gRPC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/framework/grpc/how-does-grpc-work/" class="">gRPC如何工作的</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1af73868bc0e4dde76f5f0bc39ab26ed" class="toggle"  />
+    <label for="section-1af73868bc0e4dde76f5f0bc39ab26ed" class="flex justify-between">
+      <a role="button" class="">消息中间件</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/mq/top-5-kafka-use-cases/" class="">Kafka的5种使用场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/mq/can-kafka-lose-messages/" class="">kakfa丢失消息的场景</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2c49013a399c9c118baaabbde9c86f47" class="toggle"  />
+    <label for="section-2c49013a399c9c118baaabbde9c86f47" class="flex justify-between">
+      <a role="button" class="">安全</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/identity-manage-types/" class="">不同的身份管理方式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/authentication-types-compare/" class="">不同认证方式的对比</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/session-vs-jwt/" class="">Session和JWT的对比</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-87454da32634ac3c44203f52e01458ea" class="toggle"  />
+    <label for="section-87454da32634ac3c44203f52e01458ea" class="flex justify-between">
+      <a role="button" class="">运维</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/fantastic-four-of-system-design/" class="">系统设计的4大关键</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/top-9-cases-behind-cpu-high-usage/" class="">CPU使用达到100%的9个场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/top-9-website-performance-metrics/" class="">网站的9大性能指标</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/top-6-heartbeat-detection-mechanisms/" class="">6种心跳检测机制</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-592e3c4a3c4d07f73224af75385d9ef5" class="toggle"  />
+    <label for="section-592e3c4a3c4d07f73224af75385d9ef5" class="flex justify-between">
+      <a role="button" class="">云原生</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud/cloud-tech-stack/" class="">云原生技术栈</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud/top-6-clould-message-patterns/" class="">6种云消息传递模式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud/cloud-cost-reduction-techniques/" class="">云计算成本降低技术</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0a244151e57cf93152c22fb180e3c337" class="toggle" checked />
+    <label for="section-0a244151e57cf93152c22fb180e3c337" class="flex justify-between">
+      <a role="button" class="">数据库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5743d422546d9ab3986588e18d5e3ad4" class="toggle" checked />
+    <label for="section-5743d422546d9ab3986588e18d5e3ad4" class="flex justify-between">
+      <a role="button" class="">理论</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/8-key-data-structures-that-power-modern-databases/" class="">数据库中的8个关键数据结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/how-does-search-engine-work/" class="">搜索引擎如何工作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/top-6-data-manage-patterns/" class="">6种数据管理模式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/top-6-database-models/" class="active">6种数据模型</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-92687266628f975c50a36e588bcd92df" class="toggle"  />
+    <label for="section-92687266628f975c50a36e588bcd92df" class="flex justify-between">
+      <a role="button" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/redis/redis-architecture-evolve/" class="">Redis架构演进</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-500d0439cb719d1250ee28df8179759c" class="toggle"  />
+    <label for="section-500d0439cb719d1250ee28df8179759c" class="flex justify-between">
+      <a role="button" class="">ElasticSearch</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/es/top-6-es-use-cases/" class="">ES使用最高的6个场景</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d94d98ae724428f34f2a0587e52dd96c" class="toggle"  />
+    <label for="section-d94d98ae724428f34f2a0587e52dd96c" class="flex justify-between">
+      <a role="button" class="">微服务</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd46b2f9bd0e36ee3189e636de386fc" class="toggle"  />
+    <label for="section-bfd46b2f9bd0e36ee3189e636de386fc" class="flex justify-between">
+      <a role="button" class="">微服务开发</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/what-does-api-gateway-do/" class="">网关的作用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/microservice-best-practices/" class="">微服务最佳实践</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/9-best-practices-for-building-microservices/" class="">微服务开发的9个最佳实践</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8c073bff87aa3a3939e0bb0c1cec0d44" class="toggle"  />
+    <label for="section-8c073bff87aa3a3939e0bb0c1cec0d44" class="flex justify-between">
+      <a role="button" class="">大数据</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/bigdata/data-pipelines-overview/" class="">数据管道概览</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bf811b2740dc219e21d86019d2c3653d" class="toggle"  />
+    <label for="section-bf811b2740dc219e21d86019d2c3653d" class="flex justify-between">
+      <a role="button" class="">AI</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ai/how-does-chatgpt-work/" class="">ChatGPT工作原理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f333c9def04102358b545028113318cb" class="toggle"  />
+    <label for="section-f333c9def04102358b545028113318cb" class="flex justify-between">
+      <a role="button" class="">测试</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/test/test-method-compare/" class="">测试方法对比</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/test/9-types-api-testing/" class="">9中API测试方式</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fd2a4e7f9ddea45452efb530b97de696" class="toggle"  />
+    <label for="section-fd2a4e7f9ddea45452efb530b97de696" class="flex justify-between">
+      <a role="button" class="">其它</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/other/stop-the-war/" class="">Stop The War</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/other/how-visa-make-money/" class="">Visa是如何挣钱的</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>6种数据模型</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p><img src="/img/db/theory/top-6-database-models.gif" alt="6种数据模型" /></p>
+<p>The diagram below shows top 6 data models.</p>
+<p>🔹 Flat Model
+The flat data model is one of the simplest forms of database models. It organizes data into a single table where each row represents a record and each column represents an attribute. This model is similar to a spreadsheet and is straightforward to understand and implement. However, it lacks the ability to efficiently handle complex relationships between data entities.</p>
+<p>🔹 Hierarchical Model
+The hierarchical data model organizes data into a tree-like structure, where each record has a single parent but can have multiple children. This model is efficient for scenarios with a clear &ldquo;parent-child&rdquo; relationship among data entities. However, it struggles with many-to-many relationships and can become complex and rigid.</p>
+<p>🔹 Relational Model
+Introduced by E.F. Codd in 1970, the relational model represents data in tables (relations), consisting of rows (tuples) and columns (attributes). It supports data integrity and avoids redundancy through the use of keys and normalization. The relational model&rsquo;s strength lies in its flexibility and the simplicity of its query language, SQL (Structured Query Language), making it the most widely used data model for traditional database systems. It efficiently handles many-to-many relationships and supports complex queries and transactions.</p>
+<p>🔹 Star Schema
+The star schema is a specialized data model used in data warehousing for OLAP (Online Analytical Processing) applications. It features a central fact table that contains measurable, quantitative data, surrounded by dimension tables that contain descriptive attributes related to the fact data. This model is optimized for query performance in analytical applications, offering simplicity and fast data retrieval by minimizing the number of joins needed for queries.</p>
+<p>🔹 Snowflake Model
+The snowflake model is a variation of the star schema where the dimension tables are normalized into multiple related tables, reducing redundancy and improving data integrity. This results in a structure that resembles a snowflake. While the snowflake model can lead to more complex queries due to the increased number of joins, it offers benefits in terms of storage efficiency and can be advantageous in scenarios where dimension tables are large or frequently updated.</p>
+<p>🔹 Network Model
+The network data model allows each record to have multiple parents and children, forming a graph structure that can represent complex relationships between data entities. This model overcomes some of the hierarchical model&rsquo;s limitations by efficiently handling many-to-many relationships.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

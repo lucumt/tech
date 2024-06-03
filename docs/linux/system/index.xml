@@ -21,5 +21,12 @@
       <guid>https://tech.lucumt.info/docs/linux/system/linux-file-permissions/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Linux启动过程详解</title>
+      <link>https://tech.lucumt.info/docs/linux/system/linux-boot-process-explained/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/linux/system/linux-boot-process-explained/</guid>
+      <description>Linux Boot Process Illustrated&#xA;The diagram below shows the steps.&#xA;Step 1 - When we turn on the power, BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) firmware is loaded from non-volatile memory, and executes POST (Power On Self Test).&#xA;Step 2 - BIOS/UEFI detects the devices connected to the system, including CPU, RAM, and storage.&#xA;Step 3 - Choose a booting device to boot the OS from.</description>
+    </item>
   </channel>
 </rss>
