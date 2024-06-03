@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
-weight: 8
+weight: 1
 title: AI
 ---
