@@ -12,7 +12,7 @@ weight: 1
 * 添加与取消代理(局部)
 
   ```bash
-  # 添加代理
+  # 添加代理 其中7890是clash对外暴露的端口
   git config http.proxy http://127.0.0.1:7890
   git config https.proxy https://127.0.0.1:7890
   
