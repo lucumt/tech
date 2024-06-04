@@ -26,7 +26,7 @@
       <link>https://tech.lucumt.info/docs/tools/git/git-commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/tools/git/git-commands/</guid>
-      <description> 添加与取消代理(局部)&#xA;1# 添加代理 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)&#xA;1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy </description>
+      <description> 添加与取消代理(局部)&#xA;1# 添加代理 其中7890是clash对外暴露的端口 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)&#xA;1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy </description>
     </item>
     <item>
       <title>JavaScript是如何执行的</title>
@@ -356,6 +356,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/10-good-coding-principle/</guid>
       <description>Software development requires good system designs and coding standards. We list 10 good coding principles in the diagram below.&#xA;🔹 01 Follow Code Specifications When we write code, it is important to follow the industry&amp;rsquo;s well-established norms, like “PEP 8”, “Google Java Style”, adhering to a set of agreed-upon code specifications ensures that the quality of the code is consistent and readable.&#xA;🔹 02 Documentation and Comments Good code should be clearly documented and commented to explain complex logic and decisions, and comments should explain why a certain approach was taken (“Why”) rather than what exactly is being done (“What”).</description>
+    </item>
+    <item>
+      <title>8种主要的网络协议</title>
+      <link>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</guid>
+      <description></description>
     </item>
     <item>
       <title>系统设计的15个核心概念</title>

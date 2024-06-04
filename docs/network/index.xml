@@ -49,5 +49,12 @@
       <guid>https://tech.lucumt.info/docs/network/what-is-osi-model/</guid>
       <description>How is data sent over the network? Why do we need so many layers in the OSI model?&#xA;The diagram below shows how data is encapsulated and de-encapsulated when transmitting over the network.&#xA;🔹 Step 1: When Device A sends data to Device B over the network via the HTTP protocol, it is first added an HTTP header at the application layer.&#xA;🔹 Step 2: Then a TCP or a UDP header is added to the data.</description>
     </item>
+    <item>
+      <title>8种主要的网络协议</title>
+      <link>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
