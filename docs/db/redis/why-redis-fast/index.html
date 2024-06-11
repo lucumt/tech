@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Top 6 ElasticSearch Use Cases. . . Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram below shows the top 6 use cases:
-🔹 Full-Text Search Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.
-🔹 Real-Time Analytics Elasticsearch&rsquo;s ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.">
+<meta name="description" content="Why is Redis Fast?
+Redis is fast for in-memory data storage. Its speed has made it popular for caching, session storage, and real-time analytics. But what gives Redis its blazing speed? Let&rsquo;s explore:
+𝗥𝗔𝗠-𝗕𝗮𝘀𝗲𝗱 𝗦𝘁𝗼𝗿𝗮𝗴𝗲
+At its core, Redis primarily uses main memory for storing data. Accessing data from RAM is orders of magnitude faster than from disk. This is a major reason for Redis&rsquo;s speed.
+However, RAM is volatile.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/db/es/top-6-es-use-cases/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/db/redis/why-redis-fast/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="ES使用最高的6个场景">
-  <meta property="og:description" content="Top 6 ElasticSearch Use Cases. . . Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram below shows the top 6 use cases:
-🔹 Full-Text Search Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.
-🔹 Real-Time Analytics Elasticsearch’s ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.">
+  <meta property="og:title" content="Redis为啥这么快">
+  <meta property="og:description" content="Why is Redis Fast?
+Redis is fast for in-memory data storage. Its speed has made it popular for caching, session storage, and real-time analytics. But what gives Redis its blazing speed? Let’s explore:
+𝗥𝗔𝗠-𝗕𝗮𝘀𝗲𝗱 𝗦𝘁𝗼𝗿𝗮𝗴𝗲
+At its core, Redis primarily uses main memory for storing data. Accessing data from RAM is orders of magnitude faster than from disk. This is a major reason for Redis’s speed.
+However, RAM is volatile.">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>ES使用最高的6个场景 | 个人笔记</title>
+<title>Redis为啥这么快 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/db/es/top-6-es-use-cases/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/db/redis/why-redis-fast/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.5f9d72fb8783377c4481dc560c662f74a094a3f0f07b434dfed1224049b44cc6.js" integrity="sha256-X51y&#43;4eDN3xEgdxWDGYvdKCUo/Dwe0NN/tEiQEm0TMY=" crossorigin="anonymous"></script>
@@ -1066,7 +1070,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-92687266628f975c50a36e588bcd92df" class="toggle"  />
+    <input type="checkbox" id="section-92687266628f975c50a36e588bcd92df" class="toggle" checked />
     <label for="section-92687266628f975c50a36e588bcd92df" class="flex justify-between">
       <a role="button" class="">Redis</a>
     </label>
@@ -1095,7 +1099,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/db/redis/why-redis-fast/" class="">Redis为啥这么快</a>
+    <a href="/docs/db/redis/why-redis-fast/" class="active">Redis为啥这么快</a>
   
 
         </li>
@@ -1113,7 +1117,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-500d0439cb719d1250ee28df8179759c" class="toggle" checked />
+    <input type="checkbox" id="section-500d0439cb719d1250ee28df8179759c" class="toggle"  />
     <label for="section-500d0439cb719d1250ee28df8179759c" class="flex justify-between">
       <a role="button" class="">ElasticSearch</a>
     </label>
@@ -1129,7 +1133,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/db/es/top-6-es-use-cases/" class="active">ES使用最高的6个场景</a>
+    <a href="/docs/db/es/top-6-es-use-cases/" class="">ES使用最高的6个场景</a>
   
 
         </li>
@@ -1390,7 +1394,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>ES使用最高的6个场景</strong>
+  <strong>Redis为啥这么快</strong>
 
   <label for="toc-control">
     
@@ -1415,23 +1419,26 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p><img src="/img/db/es/top-6-es-use-cases.gif" alt="ES使用最高的6个场景" /></p>
-<p>Top 6 ElasticSearch Use Cases.
-.
-.
-Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram below shows the top 6 use cases:</p>
-<p>🔹 Full-Text Search
-Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.</p>
-<p>🔹 Real-Time Analytics
-Elasticsearch&rsquo;s ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.</p>
-<p>🔹 Machine Learning
-With the addition of the machine learning feature in X-Pack, Elasticsearch can automatically detect anomalies, patterns, and trends in the data.</p>
-<p>🔹 Geo-Data Applications
-Elasticsearch supports geo-data through geospatial indexing and searching capabilities. This is useful for applications that need to manage and visualize geographical information, such as mapping and location-based services.</p>
-<p>🔹 Log and Event Data Analysis
-Organizations use Elasticsearch to aggregate, monitor, and analyze logs and event data from various sources. It&rsquo;s a key component of the ELK stack (Elasticsearch, Logstash, Kibana), which is popular for managing system and application logs to identify issues and monitor system health.</p>
-<p>🔹 Security Information and Event Management (SIEM)
-Elasticsearch can be used as a tool for SIEM, helping organizations to analyze security events in real time.</p>
+  <article class="markdown book-article"><p><img src="/img/db/redis/why-redis-fast.jfif" alt="Redis为啥这么快" /></p>
+<p>Why is Redis Fast?</p>
+<p>Redis is fast for in-memory data storage. Its speed has made it popular for caching, session storage, and real-time analytics. But what gives Redis its blazing speed? Let&rsquo;s explore:</p>
+<p>𝗥𝗔𝗠-𝗕𝗮𝘀𝗲𝗱 𝗦𝘁𝗼𝗿𝗮𝗴𝗲</p>
+<p>At its core, Redis primarily uses main memory for storing data. Accessing data from RAM is orders of magnitude faster than from disk. This is a major reason for Redis&rsquo;s speed.</p>
+<p>However, RAM is volatile. To persist data, Redis supports disk snapshots and append-only file logging. This combines RAM&rsquo;s performance with disk&rsquo;s permanence.</p>
+<p>There is a tradeoff though - recovery from disk is slow. If a Redis instance fails, restarting from disk can be slow compared to failing over to a replica instance fully in memory. So while Redis offers durability via disk, it comes at the cost of slower recovery.</p>
+<p>A better solution is Redis replication. With a synchronized replica kept in memory, failover is instant with no rehydration. This maintains speed and near-instant recovery.</p>
+<p>𝗜𝗢 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗲𝘅𝗶𝗻𝗴 &amp; 𝗦𝗶𝗻𝗴𝗹𝗲-𝘁𝗵𝗿𝗲𝗮𝗱𝗲𝗱 𝗥𝗲𝗮𝗱/𝗪𝗿𝗶𝘁𝗲</p>
+<p>Redis uses an event-driven, single-threaded model for its core operations. A main event loop handles all client requests and data operations sequentially. This single-threaded execution avoids context switching and synchronization overhead typical of multi-threaded systems.</p>
+<p>Redis uses non-blocking I/O to handle multiple connections asynchronously. This allows it to support many client connections with very low overhead,</p>
+<p>Redis does leverage threading in certain areas:</p>
+<p>- Background tasks like taking snapshots.
+- I/O threads are used for certain operations.
+- Modules can use threads.
+- Since Redis 6.0, it supports multi-threaded I/O for network communication, improving performance on multi-core systems.</p>
+<p>Redis also uses pipelining for high throughput. Clients pipeline commands without waiting for each response. This allows more efficient network round trips, boosting overall performance.</p>
+<p>𝗘𝗳𝗳𝗶𝗰𝗶𝗲𝗻𝘁 𝗗𝗮𝘁𝗮 𝗦𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲𝘀</p>
+<p>Redis supports various optimized data structures, from linked lists, zip lists, and skip lists to sets, hashes, and sorted sets, among others. Each is carefully designed for specific use cases for quick and efficient data access.</p>
+<p>Over to you: With Redis now supporting some multi-threading, how should we configure it to fully utilize all the CPU cores of modern hardware when deploying in production?</p>
 </article>
  
       

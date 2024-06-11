@@ -14,5 +14,12 @@
       <guid>https://tech.lucumt.info/docs/db/redis/redis-architecture-evolve/</guid>
       <description>Rome wasn&amp;rsquo;t built in a day.&#xA;How does Redis architecture evolve?&#xA;Redis is a popular in-memory cache. How did it evolve to the architecture it is today?&#xA;🔹 2010 - Standalone Redis When Redis 1.0 was released in 2010, the architecture was quite simple. It is usually used as a cache to the business application.&#xA;However, Redis stores data in memory. When we restart Redis, we will lose all the data and the traffic directly hits the database.</description>
     </item>
+    <item>
+      <title>Redis为啥这么快</title>
+      <link>https://tech.lucumt.info/docs/db/redis/why-redis-fast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/redis/why-redis-fast/</guid>
+      <description>Why is Redis Fast?&#xA;Redis is fast for in-memory data storage. Its speed has made it popular for caching, session storage, and real-time analytics. But what gives Redis its blazing speed? Let&amp;rsquo;s explore:&#xA;𝗥𝗔𝗠-𝗕𝗮𝘀𝗲𝗱 𝗦𝘁𝗼𝗿𝗮𝗴𝗲&#xA;At its core, Redis primarily uses main memory for storing data. Accessing data from RAM is orders of magnitude faster than from disk. This is a major reason for Redis&amp;rsquo;s speed.&#xA;However, RAM is volatile.</description>
+    </item>
   </channel>
 </rss>

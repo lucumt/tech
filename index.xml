@@ -8,6 +8,13 @@
     <language>zh-cn</language>
     <atom:link href="https://tech.lucumt.info/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>8个关键数据结构</title>
+      <link>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</guid>
+      <description>&#xA;8 Key Data Structures That Power Modern Databases&#xA;Skiplist: a common in-memory index type. Used in Redis Hash index: a very common implementation of the “Map” data structure (or “Collection”) SSTable: immutable on-disk “Map” implementation LSM tree: Skiplist + SSTable. High write throughput B-tree: disk-based solution. Consistent read/write performance Inverted index: used for document indexing. Used in Lucene Suffix tree: for string pattern search R-tree: multi-dimension search, such as finding the nearest neighbor </description>
+    </item>
+    <item>
       <title>ChatGPT工作原理</title>
       <link>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -106,13 +113,6 @@
       <description>What is gRPC?&#xA;The diagram below shows important aspects of understanding gRPC.&#xA;gRPC is a high-performance, open-source universal RPC (Remote Procedure Call) framework initially developed by Google. It leverages HTTP/2 for transport, Protocol Buffers as the interface description language, and provides features such as authentication, load balancing, and more. gRPC is designed to enable efficient and robust communication between services in a microservices architecture, making it a popular choice for building distributed systems and APIs.</description>
     </item>
     <item>
-      <title>数据库中的8个关键数据结构</title>
-      <link>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/db/theory/8-key-data-structures-that-power-modern-databases/</guid>
-      <description>8 Key Data Structures That Power Modern Databases 🔹Skiplist: a common in-memory index type. Used in Redis 🔹Hash index: a very common implementation of the “Map” data structure (or “Collection”) 🔹SSTable: immutable on-disk “Map” implementation 🔹LSM tree: Skiplist + SSTable. High write throughput 🔹B-tree: disk-based solution. Consistent read/write performance 🔹Inverted index: used for document indexing. Used in Lucene 🔹Suffix tree: for string pattern search 🔹R-tree: multi-dimension search, such as finding the nearest neighbor</description>
-    </item>
-    <item>
       <title>数据管道概览</title>
       <link>https://tech.lucumt.info/docs/bigdata/data-pipelines-overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -202,6 +202,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/block/matplotlib-show-chinese/</guid>
       <description>在Matplotlib中展示中文，防止乱码&#xA;核心代码：&#xA;1plt.rcParams[&amp;#39;font.sans-serif&amp;#39;]=[&amp;#39;SimHei&amp;#39;] #用来正常显示中文标签 2plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False #用来正常显示负号 完整代码：&#xA;1import numpy as np 2import matplotlib.pyplot as plt 3from sklearn.linear_model import Lasso 4 5plt.rcParams[&amp;#39;font.sans-serif&amp;#39;]=[&amp;#39;SimHei&amp;#39;] #用来正常显示中文标签 6plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False #用来正常显示负号 7 8# 生成模拟数据 9np.random.seed(42) 10disciple_count = np.random.randint(50, 200, size=20) 11establishment_years = np.random.randint(1, 100, size=20) 12weapon_types = np.random.randint(1, 10, size=20) 13master_skill = 2 * disciple_count + 1.5 * establishment_years + 3 * weapon_types + np.random.randn(20) * 20 + 100 14 15# 数据转换为二维数组 16X = np.</description>
+    </item>
+    <item>
+      <title>Redis为啥这么快</title>
+      <link>https://tech.lucumt.info/docs/db/redis/why-redis-fast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/redis/why-redis-fast/</guid>
+      <description>Why is Redis Fast?&#xA;Redis is fast for in-memory data storage. Its speed has made it popular for caching, session storage, and real-time analytics. But what gives Redis its blazing speed? Let&amp;rsquo;s explore:&#xA;𝗥𝗔𝗠-𝗕𝗮𝘀𝗲𝗱 𝗦𝘁𝗼𝗿𝗮𝗴𝗲&#xA;At its core, Redis primarily uses main memory for storing data. Accessing data from RAM is orders of magnitude faster than from disk. This is a major reason for Redis&amp;rsquo;s speed.&#xA;However, RAM is volatile.</description>
     </item>
     <item>
       <title>Visa是如何挣钱的</title>
@@ -335,6 +342,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</guid>
       <description>Cybersecurity is crucial for protecting information and systems from theft, damage, and unauthorized access. Whether you&amp;rsquo;re a beginner or looking to advance your technical skills, there are numerous resources and paths you can take to learn more about cybersecurity. Here are some structured suggestions to help you get started or deepen your knowledge:&#xA;🔹 Security Architecture 🔹 Frameworks &amp;amp; Standards 🔹 Application Security 🔹 Risk Assessment 🔹 Enterprise Risk Management 🔹 Threat Intelligence 🔹 Security Operation</description>
+    </item>
+    <item>
+      <title>选择合适的数据库</title>
+      <link>https://tech.lucumt.info/docs/db/theory/choosing-the-right-database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/choosing-the-right-database/</guid>
+      <description>Choosing the Right Database&#xA;When deciding which type of database to use, it can be overwhelming to choose from the many available options. Here&amp;rsquo;s a brief summary of some common database architectures and their use cases:&#xA;Relational databases: These are versatile and can solve almost any problem. They are suitable for structured data with well-defined relationships between entities.&#xA;In-memory stores: With their high speed and limited data size, in-memory databases are perfect for applications that require fast operations, such as caching or real-time analytics.</description>
     </item>
     <item>
       <title>网络7层模型</title>
