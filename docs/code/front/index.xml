@@ -14,5 +14,12 @@
       <guid>https://tech.lucumt.info/docs/code/front/how-does-javascript-work/</guid>
       <description>The cheat sheet below shows most important characteristics of Javascript.&#xA;🔹 Interpreted Language JavaScript code is executed by the browser or JavaScript engine rather than being compiled into machine language beforehand. This makes it highly portable across different platforms. Modern engines such as V8 utilize Just-In-Time (JIT) technology to compile code into directly executable machine code.&#xA;🔹 Function is First-Class Citizen In JavaScript, functions are treated as first-class citizens, meaning they can be stored in variables, passed as arguments to other functions, and returned from functions.</description>
     </item>
+    <item>
+      <title>如何提高前端网站加载速度</title>
+      <link>https://tech.lucumt.info/docs/code/front/fronted-performance-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/front/fronted-performance-cheatsheet/</guid>
+      <description>How to load your websites at lightning speed?&#xA;Check out these 8 tips to boost frontend performance:&#xA;Compression Compress files and minimize data size before transmission to reduce network load.&#xA;Selective Rendering/Windowing Display only visible elements to optimize rendering performance. For example, in a dynamic list, only render visible items.&#xA;Modular Architecture with Code Splitting Split a bigger application bundle into multiple smaller bundles for efficient loading.&#xA;Priority-Based Loading Prioritize essential resources and visible (or above-the-fold) content for a better user experience.</description>
+    </item>
   </channel>
 </rss>

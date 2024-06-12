@@ -28,5 +28,12 @@
       <guid>https://tech.lucumt.info/docs/security/session-vs-jwt/</guid>
       <description>What’s the difference between Session-based authentication and JWTs?&#xA;Here’s a simple breakdown for both approaches:&#xA;Session-Based Authentication&#xA;In this approach, you store the session information in a database or session store and hand over a session ID to the user.&#xA;Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.&#xA;Here’s how it works:&#xA;1 - The user makes a login request and the frontend app sends the request to the backend server.</description>
     </item>
+    <item>
+      <title>Oauth2.0详解</title>
+      <link>https://tech.lucumt.info/docs/security/oauth-2.0-explained/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/security/oauth-2.0-explained/</guid>
+      <description>Oauth 2.0 Explained With Simple Terms.&#xA;OAuth 2.0 is a powerful and secure framework that allows different applications to securely interact with each other on behalf of users without sharing sensitive credentials.&#xA;The entities involved in OAuth are the User, the Server, and the Identity Provider (IDP).&#xA;What Can an OAuth Token Do?&#xA;When you use OAuth, you get an OAuth token that represents your identity and permissions. This token can do a few important things:</description>
+    </item>
   </channel>
 </rss>

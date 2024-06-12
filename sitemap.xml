@@ -84,6 +84,8 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/front/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/code/front/fronted-performance-cheatsheet/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/concurrency-is-not-parallelism/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/develop/</loc>
@@ -121,6 +123,8 @@
     <loc>https://tech.lucumt.info/docs/db/theory/top-6-database-models/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/network/how-https-works/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/security/oauth-2.0-explained/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/</loc>
   </url><url>
