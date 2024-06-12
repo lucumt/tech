@@ -42,5 +42,12 @@
       <guid>https://tech.lucumt.info/docs/db/theory/choosing-the-right-database/</guid>
       <description>Choosing the Right Database&#xA;When deciding which type of database to use, it can be overwhelming to choose from the many available options. Here&amp;rsquo;s a brief summary of some common database architectures and their use cases:&#xA;Relational databases: These are versatile and can solve almost any problem. They are suitable for structured data with well-defined relationships between entities.&#xA;In-memory stores: With their high speed and limited data size, in-memory databases are perfect for applications that require fast operations, such as caching or real-time analytics.</description>
     </item>
+    <item>
+      <title>扩展数据库的7种策略</title>
+      <link>https://tech.lucumt.info/docs/db/theory/database-scaling-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/database-scaling-cheatsheet/</guid>
+      <description>7 must-know strategies to scale your database.&#xA;1 - Indexing: Check the query patterns of your application and create the right indexes.&#xA;2 - Materialized Views: Pre-compute complex query results and store them for faster access.&#xA;3 - Denormalization: Reduce complex joins to improve query performance.&#xA;4 - Vertical Scaling Boost your database server by adding more CPU, RAM, or storage.&#xA;5 - Caching Store frequently accessed data in a faster storage layer to reduce database load.</description>
+    </item>
   </channel>
 </rss>

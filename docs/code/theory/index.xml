@@ -70,5 +70,12 @@
       <guid>https://tech.lucumt.info/docs/code/theory/encoding-vs-encryption-vs-tokenization/</guid>
       <description>Encoding vs Encryption vs Tokenization. Encoding, encryption, and tokenization are three distinct processes that handle data in different ways for various purposes, including data transmission, security, and compliance. In system designs, we need to select the right approach for handling sensitive information.&#xA;🔹 Encoding Encoding converts data into a different format using a scheme that can be easily reversed. Examples include Base64 encoding, which encodes binary data into ASCII characters, making it easier to transmit data over media that are designed to deal with textual data.</description>
     </item>
+    <item>
+      <title>如何进行失败重试</title>
+      <link>https://tech.lucumt.info/docs/code/theory/how-we-retry-on-failures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/how-we-retry-on-failures/</guid>
+      <description>How do we retry on failures?&#xA;In distributed systems and networked applications, retry strategies are crucial for handling transient errors and network instability effectively. The diagram shows 4 common retry strategies.&#xA;🔹 Linear Backoff Linear backoff involves waiting for a progressively increasing fixed interval between retry attempts.&#xA;Advantages: Simple to implement and understand.&#xA;Disadvantages: May not be ideal under high load or in high-concurrency environments as it could lead to resource contention or &amp;ldquo;retry storms&amp;rdquo;.</description>
+    </item>
   </channel>
 </rss>

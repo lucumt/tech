@@ -35,5 +35,12 @@
       <guid>https://tech.lucumt.info/docs/security/oauth-2.0-explained/</guid>
       <description>Oauth 2.0 Explained With Simple Terms.&#xA;OAuth 2.0 is a powerful and secure framework that allows different applications to securely interact with each other on behalf of users without sharing sensitive credentials.&#xA;The entities involved in OAuth are the User, the Server, and the Identity Provider (IDP).&#xA;What Can an OAuth Token Do?&#xA;When you use OAuth, you get an OAuth token that represents your identity and permissions. This token can do a few important things:</description>
     </item>
+    <item>
+      <title>XSS攻击详解</title>
+      <link>https://tech.lucumt.info/docs/security/cross-site-scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/security/cross-site-scripting/</guid>
+      <description>Everything You Need to Know About Cross-Site Scripting (XSS).&#xA;XSS, a prevalent vulnerability, occurs when malicious scripts are injected into web pages, often through input fields. Check out the diagram below for a deeper dive into how this vulnerability emerges when user input is improperly handled and subsequently returned to the client, leaving systems vulnerable to exploitation.&#xA;Understanding the distinction between Reflective and Stored XSS is crucial. Reflective XSS involves immediate execution of the injected script, while Stored XSS persists over time, posing long-term threats.</description>
+    </item>
   </channel>
 </rss>

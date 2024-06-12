@@ -274,6 +274,13 @@
       <description>Linux Boot Process Illustrated&#xA;The diagram below shows the steps.&#xA;Step 1 - When we turn on the power, BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) firmware is loaded from non-volatile memory, and executes POST (Power On Self Test).&#xA;Step 2 - BIOS/UEFI detects the devices connected to the system, including CPU, RAM, and storage.&#xA;Step 3 - Choose a booting device to boot the OS from.</description>
     </item>
     <item>
+      <title>Reddit核心架构</title>
+      <link>https://tech.lucumt.info/docs/code/mq/the-core-reddit-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/mq/the-core-reddit-architecture/</guid>
+      <description>A quick look at Reddit’s Core Architecture that helps it serve over 1 billion users every month.&#xA;This information is based on research from many Reddit engineering blogs. But since architecture is ever-evolving, things might have changed in some aspects.&#xA;The main points of Reddit’s architecture are as follows:&#xA;Reddit uses a Content Delivery Network (CDN) from Fastly as a front for the application&#xA;Reddit started using jQuery in early 2009.</description>
+    </item>
+    <item>
       <title>Session和JWT的对比</title>
       <link>https://tech.lucumt.info/docs/security/session-vs-jwt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -344,6 +351,13 @@
       <description>REST API Vs. GraphQL When it comes to API design, REST and GraphQL each have their own strengths and weaknesses.&#xA;REST - Uses standard HTTP methods like GET, POST, PUT, DELETE for CRUD operations. - Works well when you need simple, uniform interfaces between separate services/applications. - Caching strategies are straightforward to implement. - The downside is it may require multiple roundtrips to assemble related data from separate endpoints.</description>
     </item>
     <item>
+      <title>XSS攻击详解</title>
+      <link>https://tech.lucumt.info/docs/security/cross-site-scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/security/cross-site-scripting/</guid>
+      <description>Everything You Need to Know About Cross-Site Scripting (XSS).&#xA;XSS, a prevalent vulnerability, occurs when malicious scripts are injected into web pages, often through input fields. Check out the diagram below for a deeper dive into how this vulnerability emerges when user input is improperly handled and subsequently returned to the client, leaving systems vulnerable to exploitation.&#xA;Understanding the distinction between Reflective and Stored XSS is crucial. Reflective XSS involves immediate execution of the injected script, while Stored XSS persists over time, posing long-term threats.</description>
+    </item>
+    <item>
       <title>数据通信的9种架构模式</title>
       <link>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -363,6 +377,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/db/theory/choosing-the-right-database/</guid>
       <description>Choosing the Right Database&#xA;When deciding which type of database to use, it can be overwhelming to choose from the many available options. Here&amp;rsquo;s a brief summary of some common database architectures and their use cases:&#xA;Relational databases: These are versatile and can solve almost any problem. They are suitable for structured data with well-defined relationships between entities.&#xA;In-memory stores: With their high speed and limited data size, in-memory databases are perfect for applications that require fast operations, such as caching or real-time analytics.</description>
+    </item>
+    <item>
+      <title>扩展数据库的7种策略</title>
+      <link>https://tech.lucumt.info/docs/db/theory/database-scaling-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/database-scaling-cheatsheet/</guid>
+      <description>7 must-know strategies to scale your database.&#xA;1 - Indexing: Check the query patterns of your application and create the right indexes.&#xA;2 - Materialized Views: Pre-compute complex query results and store them for faster access.&#xA;3 - Denormalization: Reduce complex joins to improve query performance.&#xA;4 - Vertical Scaling Boost your database server by adding more CPU, RAM, or storage.&#xA;5 - Caching Store frequently accessed data in a faster storage layer to reduce database load.</description>
     </item>
     <item>
       <title>网络7层模型</title>
@@ -405,6 +426,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/encoding-vs-encryption-vs-tokenization/</guid>
       <description>Encoding vs Encryption vs Tokenization. Encoding, encryption, and tokenization are three distinct processes that handle data in different ways for various purposes, including data transmission, security, and compliance. In system designs, we need to select the right approach for handling sensitive information.&#xA;🔹 Encoding Encoding converts data into a different format using a scheme that can be easily reversed. Examples include Base64 encoding, which encodes binary data into ASCII characters, making it easier to transmit data over media that are designed to deal with textual data.</description>
+    </item>
+    <item>
+      <title>如何进行失败重试</title>
+      <link>https://tech.lucumt.info/docs/code/theory/how-we-retry-on-failures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/how-we-retry-on-failures/</guid>
+      <description>How do we retry on failures?&#xA;In distributed systems and networked applications, retry strategies are crucial for handling transient errors and network instability effectively. The diagram shows 4 common retry strategies.&#xA;🔹 Linear Backoff Linear backoff involves waiting for a progressively increasing fixed interval between retry attempts.&#xA;Advantages: Simple to implement and understand.&#xA;Disadvantages: May not be ideal under high load or in high-concurrency environments as it could lead to resource contention or &amp;ldquo;retry storms&amp;rdquo;.</description>
     </item>
   </channel>
 </rss>

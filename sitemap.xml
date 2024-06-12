@@ -104,6 +104,8 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/linux/system/linux-boot-process-explained/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/code/mq/the-core-reddit-architecture/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/security/session-vs-jwt/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/cloud/cloud-cost-reduction-techniques/</loc>
@@ -132,6 +134,8 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/top-9-system-integrations/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/security/cross-site-scripting/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/code/framework/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</loc>
@@ -143,6 +147,8 @@
     <loc>https://tech.lucumt.info/docs/db/theory/choosing-the-right-database/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/tools/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/db/theory/database-scaling-cheatsheet/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/mq/</loc>
   </url><url>
@@ -165,6 +171,8 @@
     <loc>https://tech.lucumt.info/docs/code/theory/encoding-vs-encryption-vs-tokenization/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/bigdata/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/code/theory/how-we-retry-on-failures/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/</loc>
   </url><url>
