@@ -46,3 +46,4 @@ hugo server -w -D --renderToMemory
 | [**Jerry Qu**](https://imququ.com/)                          | 前端大神屈屈的网站，有很多关于前端的高质量博文💚              |                |
 | [**随机的未知**](https://www.cnblogs.com/nicaicai)           | 部分`Java`和`MySQL`博文的质量较高                            |                |
 | [**面向信仰编程**](https://draveness.me/)                    | 有很多关于`Golang`和计算机基础的高质量博文                   |                |
+| [**bin的技术小屋**](https://www.cnblogs.com/binlovetech)     | 有部分关于`JVM`的高质量博文                                  |                |
