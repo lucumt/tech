@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Python脚本
+<meta name="description" content="Python脚本用于对网站的sitemap.xml文件进行解析
 1from lxml import etree 2import requests, os 3 4if __name__ == &#34;__main__&#34;: 5 6 file_path = r&#34;e:\urls.txt&#34; 7 try: 8 os.remove(file_path) 9 except OSError: 10 pass 11 12 with open(file_path, &#39;a&#39;) as url_file: 13 xml_dict = {} 14 15 r = requests.get(&#34;https://lucumt.info/sitemap.xml&#34;) 16 root = etree.fromstring(r.content) 17 count = 0 18 for sitemap in root: 19 data = sitemap.getchildren()[0].text 20 if &#39;tags&#39; in data or &#39;categories&#39; in data: 21 continue 22 count = count &#43; 1 23 url_file.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/block/python-generate-site-url/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="通过脚本生成站点的URL列表">
-  <meta property="og:description" content="Python脚本
+  <meta property="og:title" content="通过脚本生成网站URL列表">
+  <meta property="og:description" content="Python脚本用于对网站的sitemap.xml文件进行解析
 1from lxml import etree 2import requests, os 3 4if __name__ == &#34;__main__&#34;: 5 6 file_path = r&#34;e:\urls.txt&#34; 7 try: 8 os.remove(file_path) 9 except OSError: 10 pass 11 12 with open(file_path, &#39;a&#39;) as url_file: 13 xml_dict = {} 14 15 r = requests.get(&#34;https://lucumt.info/sitemap.xml&#34;) 16 root = etree.fromstring(r.content) 17 count = 0 18 for sitemap in root: 19 data = sitemap.getchildren()[0].text 20 if &#39;tags&#39; in data or &#39;categories&#39; in data: 21 continue 22 count = count &#43; 1 23 url_file.">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>通过脚本生成站点的URL列表 | 个人笔记</title>
+<title>通过脚本生成网站URL列表 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
 <link rel="canonical" href="https://tech.lucumt.info/docs/code/block/python-generate-site-url/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.80bd45ae2efcac70073c292d5d7264be5c4957339566c3294f4b70b47b1ce718.js" integrity="sha256-gL1Fri78rHAHPCktXXJkvlxJVzOVZsMpT0twtHsc5xg=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.44cecf6d22a6373383a10440fed7988382bbe31b155aaead40ecb9f11514fd82.js" integrity="sha256-RM7PbSKmNzODoQRA/teYg4K74xsVWq6tQOy58RUU/YI=" crossorigin="anonymous"></script>
 
   
 
@@ -774,7 +774,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/code/block/python-generate-site-url/" class="active">通过脚本生成站点的URL列表</a>
+    <a href="/docs/code/block/python-generate-site-url/" class="active">通过脚本生成网站URL列表</a>
   
 
         </li>
@@ -1479,7 +1479,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>通过脚本生成站点的URL列表</strong>
+  <strong>通过脚本生成网站URL列表</strong>
 
   <label for="toc-control">
     
@@ -1504,7 +1504,7 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p><code>Python</code>脚本</p>
+  <article class="markdown book-article"><p><code>Python</code>脚本用于对网站的<code>sitemap.xml</code>文件进行解析</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">from</span> <span style="color:#008b45;text-decoration:underline">lxml</span> <span style="color:#8b008b;font-weight:bold">import</span> etree
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">requests</span>, <span style="color:#008b45;text-decoration:underline">os</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>
@@ -1529,7 +1529,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>            count = count + <span style="color:#b452cd">1</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>            url_file.write(data + <span style="color:#cd5555">&#39;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#39;</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>        <span style="color:#658b00">print</span>(<span style="color:#cd5555">f</span><span style="color:#cd5555">&#34;Url files write success,total count </span><span style="color:#cd5555">{</span>count<span style="color:#cd5555">}</span><span style="color:#cd5555">&#34;</span>)
-</span></span></code></pre></div><p>提交百度收录</p>
+</span></span></code></pre></div><p>使用生成的<code>urls.txt</code>文件利用<code>curl</code>命令提交百度收录</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>curl -H <span style="color:#cd5555">&#39;Content-Type:text/plain&#39;</span> --data-binary @urls.txt <span style="color:#cd5555">&#34;http://data.zz.baidu.com/urls?site=https://lucumt.info&amp;token=xxx&#34;</span>
 </span></span></code></pre></div></article>
  
