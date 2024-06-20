@@ -22,7 +22,7 @@
       <description>在Matplotlib中展示中文，防止乱码&#xA;核心代码：&#xA;1plt.rcParams[&amp;#39;font.sans-serif&amp;#39;]=[&amp;#39;SimHei&amp;#39;] #用来正常显示中文标签 2plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False #用来正常显示负号 完整代码：&#xA;1import numpy as np 2import matplotlib.pyplot as plt 3from sklearn.linear_model import Lasso 4 5plt.rcParams[&amp;#39;font.sans-serif&amp;#39;]=[&amp;#39;SimHei&amp;#39;] #用来正常显示中文标签 6plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False #用来正常显示负号 7 8# 生成模拟数据 9np.random.seed(42) 10disciple_count = np.random.randint(50, 200, size=20) 11establishment_years = np.random.randint(1, 100, size=20) 12weapon_types = np.random.randint(1, 10, size=20) 13master_skill = 2 * disciple_count + 1.5 * establishment_years + 3 * weapon_types + np.random.randn(20) * 20 + 100 14 15# 数据转换为二维数组 16X = np.</description>
     </item>
     <item>
-      <title>通过Python脚本生成站点的</title>
+      <title>通过脚本生成站点的URL列表</title>
       <link>https://tech.lucumt.info/docs/code/block/python-generate-site-url/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/block/python-generate-site-url/</guid>
