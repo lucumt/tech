@@ -316,6 +316,13 @@
       <description>Top 9 website performance metrics you cannot ignore:&#xA;Load Time: This is the time taken by the web browser to download and display the webpage. It’s measured in milliseconds.&#xA;Time to First Byte (TTFB): It’s the time taken by the browser to receive the first byte of data from the web server. TTFB is crucial because it indicates the general ability of the server to handle traffic.&#xA;Request Count: The number of HTTP requests a browser has to make to fully load the page.</description>
     </item>
     <item>
+      <title>通过Python脚本生成站点的</title>
+      <link>https://tech.lucumt.info/docs/code/block/python-generate-site-url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/block/python-generate-site-url/</guid>
+      <description>Python脚本&#xA;1from lxml import etree 2import requests, os 3 4if __name__ == &amp;#34;__main__&amp;#34;: 5 6 file_path = r&amp;#34;e:\urls.txt&amp;#34; 7 try: 8 os.remove(file_path) 9 except OSError: 10 pass 11 12 with open(file_path, &amp;#39;a&amp;#39;) as url_file: 13 xml_dict = {} 14 15 r = requests.get(&amp;#34;https://lucumt.info/sitemap.xml&amp;#34;) 16 root = etree.fromstring(r.content) 17 count = 0 18 for sitemap in root: 19 data = sitemap.getchildren()[0].text 20 if &amp;#39;tags&amp;#39; in data or &amp;#39;categories&amp;#39; in data: 21 continue 22 count = count + 1 23 url_file.</description>
+    </item>
+    <item>
       <title>6种心跳检测机制</title>
       <link>https://tech.lucumt.info/docs/monitor/top-6-heartbeat-detection-mechanisms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
