@@ -1,5 +1,5 @@
 ---
-title: "通过脚本生成站点的URL列表"
+title: "通过脚本生成网站URL列表"
 weight: 3
 # bookFlatSection: false
 # bookToc: true
@@ -9,7 +9,7 @@ weight: 3
 # bookSearchExclude: false
 ---
 
-`Python`脚本
+`Python`脚本用于对网站的`sitemap.xml`文件进行解析
 
 ```python
 from lxml import etree
@@ -38,7 +38,7 @@ if __name__ == "__main__":
         print(f"Url files write success,total count {count}")
 ```
 
-提交百度收录
+使用生成的`urls.txt`文件利用`curl`命令提交百度收录
 
 ```bash
 curl -H 'Content-Type:text/plain' --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=https://lucumt.info&token=xxx"
