@@ -1,5 +1,5 @@
 ---
-title: "通过Python脚本生成站点的"
+title: "通过脚本生成站点的URL列表"
 weight: 3
 # bookFlatSection: false
 # bookToc: true
