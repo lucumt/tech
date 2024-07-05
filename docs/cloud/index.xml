@@ -28,5 +28,12 @@
       <guid>https://tech.lucumt.info/docs/cloud/cloud-cost-reduction-techniques/</guid>
       <description>Irrational Cloud Cost is the biggest challenge many organizations are battling as they navigate the complexities of cloud computing.&#xA;Efficiently managing these costs is crucial for optimizing cloud usage and maintaining financial health.&#xA;The following techniques can help businesses effectively control and minimize their cloud expenses.&#xA;Reduce Usage: Fine-tune the volume and scale of resources to ensure efficiency without compromising on the performance of applications (e.g., downsizing instances, minimizing storage space, consolidating services).</description>
     </item>
+    <item>
+      <title>通过docker-compose创建Jenkins</title>
+      <link>https://tech.lucumt.info/docs/cloud/create-jenkins-via-docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/cloud/create-jenkins-via-docker/</guid>
+      <description> 1version: &amp;#39;3&amp;#39; 2services: 3 docker_jenkins: 4 user: root 5 restart: always 6 image: jenkins/jenkins:lts 7 container_name: jenkins_local 8 ports: 9 - 30180:8080 10 - 50000:50000 11 volumes: 12 - $PWD/jenkins_home/:/var/jenkins_home 13 - /var/run/docker.sock:/var/run/docker.sock 14 - /usr/bin/docker:/usr/bin/docker 15 - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose </description>
+    </item>
   </channel>
 </rss>

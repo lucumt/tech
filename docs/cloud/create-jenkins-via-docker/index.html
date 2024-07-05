@@ -3,26 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="在Matplotlib中展示中文，防止乱码
-核心代码：
-1plt.rcParams[&#39;font.sans-serif&#39;]=[&#39;SimHei&#39;] #用来正常显示中文标签 2plt.rcParams[&#39;axes.unicode_minus&#39;] = False #用来正常显示负号 完整代码：
-1import numpy as np 2import matplotlib.pyplot as plt 3from sklearn.linear_model import Lasso 4 5plt.rcParams[&#39;font.sans-serif&#39;]=[&#39;SimHei&#39;] #用来正常显示中文标签 6plt.rcParams[&#39;axes.unicode_minus&#39;] = False #用来正常显示负号 7 8# 生成模拟数据 9np.random.seed(42) 10disciple_count = np.random.randint(50, 200, size=20) 11establishment_years = np.random.randint(1, 100, size=20) 12weapon_types = np.random.randint(1, 10, size=20) 13master_skill = 2 * disciple_count &#43; 1.5 * establishment_years &#43; 3 * weapon_types &#43; np.random.randn(20) * 20 &#43; 100 14 15# 数据转换为二维数组 16X = np.">
+<meta name="description" content=" 1version: &#39;3&#39; 2services: 3 docker_jenkins: 4 user: root 5 restart: always 6 image: jenkins/jenkins:lts 7 container_name: jenkins_local 8 ports: 9 - 30180:8080 10 - 50000:50000 11 volumes: 12 - $PWD/jenkins_home/:/var/jenkins_home 13 - /var/run/docker.sock:/var/run/docker.sock 14 - /usr/bin/docker:/usr/bin/docker 15 - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/block/matplotlib-show-chinese/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/cloud/create-jenkins-via-docker/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="Matplotlib展示中文">
-  <meta property="og:description" content="在Matplotlib中展示中文，防止乱码
-核心代码：
-1plt.rcParams[&#39;font.sans-serif&#39;]=[&#39;SimHei&#39;] #用来正常显示中文标签 2plt.rcParams[&#39;axes.unicode_minus&#39;] = False #用来正常显示负号 完整代码：
-1import numpy as np 2import matplotlib.pyplot as plt 3from sklearn.linear_model import Lasso 4 5plt.rcParams[&#39;font.sans-serif&#39;]=[&#39;SimHei&#39;] #用来正常显示中文标签 6plt.rcParams[&#39;axes.unicode_minus&#39;] = False #用来正常显示负号 7 8# 生成模拟数据 9np.random.seed(42) 10disciple_count = np.random.randint(50, 200, size=20) 11establishment_years = np.random.randint(1, 100, size=20) 12weapon_types = np.random.randint(1, 10, size=20) 13master_skill = 2 * disciple_count &#43; 1.5 * establishment_years &#43; 3 * weapon_types &#43; np.random.randn(20) * 20 &#43; 100 14 15# 数据转换为二维数组 16X = np.">
+  <meta property="og:title" content="通过docker-compose创建Jenkins">
+  <meta property="og:description" content=" 1version: &#39;3&#39; 2services: 3 docker_jenkins: 4 user: root 5 restart: always 6 image: jenkins/jenkins:lts 7 container_name: jenkins_local 8 ports: 9 - 30180:8080 10 - 50000:50000 11 volumes: 12 - $PWD/jenkins_home/:/var/jenkins_home 13 - /var/run/docker.sock:/var/run/docker.sock 14 - /usr/bin/docker:/usr/bin/docker 15 - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose ">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>Matplotlib展示中文 | 个人笔记</title>
+<title>通过docker-compose创建Jenkins | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/code/block/matplotlib-show-chinese/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/cloud/create-jenkins-via-docker/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.53d9c5ed32f408c6dc0be34d122159b7991339349a0380068267049977f56c67.js" integrity="sha256-U9nF7TL0CMbcC&#43;NNEiFZt5kTOTSaA4AGgmcEmXf1bGc=" crossorigin="anonymous"></script>
@@ -522,7 +516,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle" checked />
+    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle"  />
     <label for="section-b0b4a016bddda14181aeb79f92565d38" class="flex justify-between">
       <a role="button" class="">编程</a>
     </label>
@@ -736,7 +730,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a492e0e982492102fba29e206d0fb4b6" class="toggle" checked />
+    <input type="checkbox" id="section-a492e0e982492102fba29e206d0fb4b6" class="toggle"  />
     <label for="section-a492e0e982492102fba29e206d0fb4b6" class="flex justify-between">
       <a role="button" class="">代码块</a>
     </label>
@@ -765,7 +759,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/code/block/matplotlib-show-chinese/" class="active">Matplotlib展示中文</a>
+    <a href="/docs/code/block/matplotlib-show-chinese/" class="">Matplotlib展示中文</a>
   
 
         </li>
@@ -997,7 +991,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-592e3c4a3c4d07f73224af75385d9ef5" class="toggle"  />
+    <input type="checkbox" id="section-592e3c4a3c4d07f73224af75385d9ef5" class="toggle" checked />
     <label for="section-592e3c4a3c4d07f73224af75385d9ef5" class="flex justify-between">
       <a role="button" class="">云原生</a>
     </label>
@@ -1052,7 +1046,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/cloud/create-jenkins-via-docker/" class="">通过docker-compose创建Jenkins</a>
+    <a href="/docs/cloud/create-jenkins-via-docker/" class="active">通过docker-compose创建Jenkins</a>
   
 
         </li>
@@ -1509,7 +1503,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Matplotlib展示中文</strong>
+  <strong>通过docker-compose创建Jenkins</strong>
 
   <label for="toc-control">
     
@@ -1534,46 +1528,22 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p>在<a href="https://matplotlib.org/"><strong>Matplotlib</strong></a>中展示中文，防止乱码</p>
-<p>核心代码：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>plt.rcParams[<span style="color:#cd5555">&#39;font.sans-serif&#39;</span>]=[<span style="color:#cd5555">&#39;SimHei&#39;</span>] <span style="color:#228b22">#用来正常显示中文标签</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>plt.rcParams[<span style="color:#cd5555">&#39;axes.unicode_minus&#39;</span>] = <span style="color:#8b008b;font-weight:bold">False</span> <span style="color:#228b22">#用来正常显示负号</span>
-</span></span></code></pre></div><p>完整代码：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">numpy</span> <span style="color:#8b008b;font-weight:bold">as</span> <span style="color:#008b45;text-decoration:underline">np</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">matplotlib.pyplot</span> <span style="color:#8b008b;font-weight:bold">as</span> <span style="color:#008b45;text-decoration:underline">plt</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#8b008b;font-weight:bold">from</span> <span style="color:#008b45;text-decoration:underline">sklearn.linear_model</span> <span style="color:#8b008b;font-weight:bold">import</span> Lasso
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>plt.rcParams[<span style="color:#cd5555">&#39;font.sans-serif&#39;</span>]=[<span style="color:#cd5555">&#39;SimHei&#39;</span>] <span style="color:#228b22">#用来正常显示中文标签</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>plt.rcParams[<span style="color:#cd5555">&#39;axes.unicode_minus&#39;</span>] = <span style="color:#8b008b;font-weight:bold">False</span> <span style="color:#228b22">#用来正常显示负号</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#228b22"># 生成模拟数据</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>np.random.seed(<span style="color:#b452cd">42</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>disciple_count = np.random.randint(<span style="color:#b452cd">50</span>, <span style="color:#b452cd">200</span>, size=<span style="color:#b452cd">20</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>establishment_years = np.random.randint(<span style="color:#b452cd">1</span>, <span style="color:#b452cd">100</span>, size=<span style="color:#b452cd">20</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>weapon_types = np.random.randint(<span style="color:#b452cd">1</span>, <span style="color:#b452cd">10</span>, size=<span style="color:#b452cd">20</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>master_skill = <span style="color:#b452cd">2</span> * disciple_count + <span style="color:#b452cd">1.5</span> * establishment_years + <span style="color:#b452cd">3</span> * weapon_types + np.random.randn(<span style="color:#b452cd">20</span>) * <span style="color:#b452cd">20</span> + <span style="color:#b452cd">100</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span><span style="color:#228b22"># 数据转换为二维数组</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>X = np.column_stack((disciple_count, establishment_years, weapon_types))
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>y = master_skill
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span><span style="color:#228b22"># 创建Lasso回归模型并训练</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>lasso_reg = Lasso(alpha=<span style="color:#b452cd">0.1</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>lasso_reg.fit(X, y)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span><span style="color:#228b22"># 打印模型参数</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span><span style="color:#658b00">print</span>(<span style="color:#cd5555">&#34;截距:&#34;</span>, lasso_reg.intercept_)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span><span style="color:#658b00">print</span>(<span style="color:#cd5555">&#34;系数:&#34;</span>, lasso_reg.coef_)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span><span style="color:#228b22"># 可视化回归平面（这里只能展示两个特征的二维平面图）</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>plt.scatter(disciple_count, master_skill, color=<span style="color:#cd5555">&#39;blue&#39;</span>, label=<span style="color:#cd5555">&#39;实际数据&#39;</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>plt.plot(disciple_count, lasso_reg.intercept_ + lasso_reg.coef_[<span style="color:#b452cd">0</span>] * disciple_count + lasso_reg.coef_[<span style="color:#b452cd">1</span>] * np.mean(establishment_years), color=<span style="color:#cd5555">&#39;red&#39;</span>, linewidth=<span style="color:#b452cd">2</span>, label=<span style="color:#cd5555">&#39;回归直线&#39;</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span>plt.title(<span style="color:#cd5555">&#34;武侠小说中的Lasso回归示例&#34;</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span>plt.xlabel(<span style="color:#cd5555">&#34;弟子数量&#34;</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span>plt.ylabel(<span style="color:#cd5555">&#34;掌门武功修为&#34;</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span>plt.legend()
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span><span>plt.show()
-</span></span></code></pre></div></article>
+  <article class="markdown book-article"><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">version</span>:<span style="color:#bbb"> </span><span style="color:#cd5555">&#39;3&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">services</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#bbb">  </span><span style="color:#8b008b;font-weight:bold">docker_jenkins</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">user</span>:<span style="color:#bbb"> </span>root<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">restart</span>:<span style="color:#bbb"> </span>always<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">image</span>:<span style="color:#bbb"> </span>jenkins/jenkins:lts<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">container_name</span>:<span style="color:#bbb"> </span>jenkins_local<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">ports</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span><span style="color:#bbb">      </span>- <span style="color:#b452cd">30180</span>:<span style="color:#b452cd">8080</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span><span style="color:#bbb">      </span>- <span style="color:#b452cd">50000</span>:<span style="color:#b452cd">50000</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">volumes</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span><span style="color:#bbb">      </span>- $PWD/jenkins_home/:/var/jenkins_home<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span><span style="color:#bbb">      </span>- /var/run/docker.sock:/var/run/docker.sock<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span><span style="color:#bbb">      </span>- /usr/bin/docker:/usr/bin/docker<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span><span style="color:#bbb">      </span>- /usr/local/bin/docker-compose:/usr/local/bin/docker-compose<span style="color:#bbb">
+</span></span></span></code></pre></div></article>
  
       
 

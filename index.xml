@@ -358,6 +358,13 @@
       <description>检测数组a中的元素是否模糊包含数组b中的一个或多个元素&#xA;1#!/bin/bash 2 3# 数组a和数组b的定义 4a=(&amp;#34;tainan&amp;#34; &amp;#34;taipei&amp;#34; &amp;#34;taichung&amp;#34; &amp;#34;keelung&amp;#34; &amp;#34;taoyuan&amp;#34; &amp;#34;changhua&amp;#34; &amp;#34;nantou&amp;#34; &amp;#34;kinmen&amp;#34;) 5b=(&amp;#34;tai&amp;#34; &amp;#34;nan&amp;#34;) 6 7 8for element_a in &amp;#34;${a[@]}&amp;#34;; do 9 contains=false 10 for pattern in &amp;#34;${b[@]}&amp;#34;; do 11 if [[ $element_a =~ $pattern ]]; then 12 contains=true 13 break 14 fi 15 done 16 if [ &amp;#34;$contains&amp;#34; = true ] ; then 17 echo &amp;#34;----------$element_a符合要求---------------&amp;#34; 18 else 19 echo &amp;#34;**********$element_a不符合要求************&amp;#34; 20 fi 21done 下述改进版的，可避免双重循环&#xA;1#!/bin/bash 2 3# 数组a和数组b的定义 4a=(&amp;#34;tainan&amp;#34; &amp;#34;taipei&amp;#34; &amp;#34;taichung&amp;#34; &amp;#34;keelung&amp;#34; &amp;#34;taoyuan&amp;#34; &amp;#34;changhua&amp;#34; &amp;#34;nantou&amp;#34; &amp;#34;kinmen&amp;#34;) 5b=(&amp;#34;tai&amp;#34; &amp;#34;nan&amp;#34;) 6 7# 将数组b中的元素连接成正则表达式 8regex=$(IFS=&amp;#39;|&amp;#39;; echo &amp;#34;${b[*]}&amp;#34;) 9 10for element_a in &amp;#34;${a[@]}&amp;#34;; do 11 if echo &amp;#34;$element_a&amp;#34; | egrep -iq &amp;#34;$regex&amp;#34;; then 12 echo &amp;#34;----------$element_a符合要求---------------&amp;#34; 13 else 14 echo &amp;#34;**********$element_a不符合要求************&amp;#34; 15 fi 16done </description>
     </item>
     <item>
+      <title>通过docker-compose创建Jenkins</title>
+      <link>https://tech.lucumt.info/docs/cloud/create-jenkins-via-docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/cloud/create-jenkins-via-docker/</guid>
+      <description> 1version: &amp;#39;3&amp;#39; 2services: 3 docker_jenkins: 4 user: root 5 restart: always 6 image: jenkins/jenkins:lts 7 container_name: jenkins_local 8 ports: 9 - 30180:8080 10 - 50000:50000 11 volumes: 12 - $PWD/jenkins_home/:/var/jenkins_home 13 - /var/run/docker.sock:/var/run/docker.sock 14 - /usr/bin/docker:/usr/bin/docker 15 - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose </description>
+    </item>
+    <item>
       <title>REST API vs GraphQL</title>
       <link>https://tech.lucumt.info/docs/code/theory/top-9-system-integrations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
