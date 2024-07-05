@@ -3,24 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Error handling is one of the most important aspects of building reliable systems.
-Today, we will discuss an important topic: Can Kafka lose messages?
-A common belief among many developers is that Kafka, by its very design, guarantees no message loss. However, understanding the nuances of Kafka&rsquo;s architecture and configuration is essential to truly grasp how and when it might lose messages, and more importantly, how to prevent such scenarios.">
+<meta name="description" content="检测数组a中的元素是否模糊包含数组b中的一个或多个元素
+1#!/bin/bash 2 3# 数组a和数组b的定义 4a=(&#34;tainan&#34; &#34;taipei&#34; &#34;taichung&#34; &#34;keelung&#34; &#34;taoyuan&#34; &#34;changhua&#34; &#34;nantou&#34; &#34;kinmen&#34;) 5b=(&#34;tai&#34; &#34;nan&#34;) 6 7 8for element_a in &#34;${a[@]}&#34;; do 9 contains=false 10 for pattern in &#34;${b[@]}&#34;; do 11 if [[ $element_a =~ $pattern ]]; then 12 contains=true 13 break 14 fi 15 done 16 if [ &#34;$contains&#34; = true ] ; then 17 echo &#34;----------$element_a符合要求---------------&#34; 18 else 19 echo &#34;**********$element_a不符合要求************&#34; 20 fi 21done ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/mq/can-kafka-lose-messages/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/block/shell-check-between-arrays/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="kakfa丢失消息的场景">
-  <meta property="og:description" content="Error handling is one of the most important aspects of building reliable systems.
-Today, we will discuss an important topic: Can Kafka lose messages?
-A common belief among many developers is that Kafka, by its very design, guarantees no message loss. However, understanding the nuances of Kafka’s architecture and configuration is essential to truly grasp how and when it might lose messages, and more importantly, how to prevent such scenarios.">
+  <meta property="og:title" content="Shell数组中模糊检测">
+  <meta property="og:description" content="检测数组a中的元素是否模糊包含数组b中的一个或多个元素
+1#!/bin/bash 2 3# 数组a和数组b的定义 4a=(&#34;tainan&#34; &#34;taipei&#34; &#34;taichung&#34; &#34;keelung&#34; &#34;taoyuan&#34; &#34;changhua&#34; &#34;nantou&#34; &#34;kinmen&#34;) 5b=(&#34;tai&#34; &#34;nan&#34;) 6 7 8for element_a in &#34;${a[@]}&#34;; do 9 contains=false 10 for pattern in &#34;${b[@]}&#34;; do 11 if [[ $element_a =~ $pattern ]]; then 12 contains=true 13 break 14 fi 15 done 16 if [ &#34;$contains&#34; = true ] ; then 17 echo &#34;----------$element_a符合要求---------------&#34; 18 else 19 echo &#34;**********$element_a不符合要求************&#34; 20 fi 21done ">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>kakfa丢失消息的场景 | 个人笔记</title>
+<title>Shell数组中模糊检测 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/code/mq/can-kafka-lose-messages/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/code/block/shell-check-between-arrays/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.e8c2d5c03cc020517f1d0e958840f3b38c151268ebaeeaecb3760e85f2bd0df5.js" integrity="sha256-6MLVwDzAIFF/HQ6ViEDzs4wVEmjrrurss3YOhfK9DfU=" crossorigin="anonymous"></script>
@@ -734,7 +732,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a492e0e982492102fba29e206d0fb4b6" class="toggle"  />
+    <input type="checkbox" id="section-a492e0e982492102fba29e206d0fb4b6" class="toggle" checked />
     <label for="section-a492e0e982492102fba29e206d0fb4b6" class="flex justify-between">
       <a role="button" class="">代码块</a>
     </label>
@@ -789,7 +787,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/code/block/shell-check-between-arrays/" class="">Shell数组中模糊检测</a>
+    <a href="/docs/code/block/shell-check-between-arrays/" class="active">Shell数组中模糊检测</a>
   
 
         </li>
@@ -930,7 +928,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1af73868bc0e4dde76f5f0bc39ab26ed" class="toggle" checked />
+    <input type="checkbox" id="section-1af73868bc0e4dde76f5f0bc39ab26ed" class="toggle"  />
     <label for="section-1af73868bc0e4dde76f5f0bc39ab26ed" class="flex justify-between">
       <a role="button" class="">消息中间件</a>
     </label>
@@ -959,7 +957,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/code/mq/can-kafka-lose-messages/" class="active">kakfa丢失消息的场景</a>
+    <a href="/docs/code/mq/can-kafka-lose-messages/" class="">kakfa丢失消息的场景</a>
   
 
         </li>
@@ -1494,7 +1492,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>kakfa丢失消息的场景</strong>
+  <strong>Shell数组中模糊检测</strong>
 
   <label for="toc-control">
     
@@ -1519,25 +1517,29 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p><img src="/img/code/mq/can-kafka-lose-messages.gif" alt="kakfa丢失消息的场景" title="kakfa丢失消息的场景"/></p>
-<p>Error handling is one of the most important aspects of building reliable systems.</p>
-<p>Today, we will discuss an important topic: Can Kafka lose messages?</p>
-<p>A common belief among many developers is that Kafka, by its very design, guarantees no message loss. However, understanding the nuances of Kafka&rsquo;s architecture and configuration is essential to truly grasp how and when it might lose messages, and more importantly, how to prevent such scenarios.</p>
-<p>The diagram below shows how a message can be lost during its lifecycle in Kafka.</p>
-<p>🔹 Producer
-When we call producer.send() to send a message, it doesn&rsquo;t get sent to the broker directly. There are two threads and a queue involved in the message-sending process:</p>
-<p>\1. Application thread
-\2. Record accumulator
-\3. Sender thread (I/O thread)</p>
-<p>We need to configure proper ‘acks’ and ‘retries’ for the producer to make sure messages are sent to the broker.</p>
-<p>🔹 Broker
-A broker cluster should not lose messages when it is functioning normally. However, we need to understand which extreme situations might lead to message loss:</p>
-<p>\1. The messages are usually flushed to the disk asynchronously for higher I/O throughput, so if the instance is down before the flush happens, the messages are lost.</p>
-<p>\2. The replicas in the Kafka cluster need to be properly configured to hold a valid copy of the data. The determinism in data synchronization is important.</p>
-<p>🔹 Consumer
-Kafka offers different ways to commit messages. Auto-committing might acknowledge the processing of records before they are actually processed. When the consumer is down in the middle of processing, some records may never be processed.</p>
-<p>A good practice is to combine both synchronous and asynchronous commits, where we use asynchronous commits in the processing loop for higher throughput and synchronous commits in exception handling to make sure the the last offset is always committed.</p>
-</article>
+  <article class="markdown book-article"><p>检测数组a中的元素是否模糊包含数组b中的一个或多个元素</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#1e889b">#!/bin/bash
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#1e889b"></span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#228b22"># 数组a和数组b的定义</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#00688b">a</span>=(<span style="color:#cd5555">&#34;tainan&#34;</span> <span style="color:#cd5555">&#34;taipei&#34;</span> <span style="color:#cd5555">&#34;taichung&#34;</span> <span style="color:#cd5555">&#34;keelung&#34;</span> <span style="color:#cd5555">&#34;taoyuan&#34;</span> <span style="color:#cd5555">&#34;changhua&#34;</span> <span style="color:#cd5555">&#34;nantou&#34;</span> <span style="color:#cd5555">&#34;kinmen&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#00688b">b</span>=(<span style="color:#cd5555">&#34;tai&#34;</span> <span style="color:#cd5555">&#34;nan&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#8b008b;font-weight:bold">for</span> element_a in <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">${</span><span style="color:#00688b">a</span>[@]<span style="color:#cd5555">}</span><span style="color:#cd5555">&#34;</span>; <span style="color:#8b008b;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    <span style="color:#00688b">contains</span>=<span style="color:#658b00">false</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    <span style="color:#8b008b;font-weight:bold">for</span> pattern in <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">${</span><span style="color:#00688b">b</span>[@]<span style="color:#cd5555">}</span><span style="color:#cd5555">&#34;</span>; <span style="color:#8b008b;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>        <span style="color:#8b008b;font-weight:bold">if</span> [[ <span style="color:#00688b">$element_a</span> =~ <span style="color:#00688b">$pattern</span> ]]; <span style="color:#8b008b;font-weight:bold">then</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>            <span style="color:#00688b">contains</span>=<span style="color:#658b00">true</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>            <span style="color:#658b00">break</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>        <span style="color:#8b008b;font-weight:bold">fi</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>    <span style="color:#8b008b;font-weight:bold">done</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>    <span style="color:#8b008b;font-weight:bold">if</span> [  <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$contains</span><span style="color:#cd5555">&#34;</span> = <span style="color:#658b00">true</span> ] ; <span style="color:#8b008b;font-weight:bold">then</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>      <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;----------</span><span style="color:#00688b">$element_a符合要求</span><span style="color:#cd5555">---------------&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>    <span style="color:#8b008b;font-weight:bold">else</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>      <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;**********</span><span style="color:#00688b">$element_a不符合要求</span><span style="color:#cd5555">************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>    <span style="color:#8b008b;font-weight:bold">fi</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span><span style="color:#8b008b;font-weight:bold">done</span>
+</span></span></code></pre></div></article>
  
       
 
