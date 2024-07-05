@@ -41,7 +41,7 @@ done
 #!/bin/bash
 
 # 数组a和数组b的定义
-a=("tainan" "taipei" "taichung" "taoyuan" "changhua" "nantou" "kinmen")
+a=("tainan" "taipei" "taichung" "keelung" "taoyuan" "changhua" "nantou" "kinmen")
 b=("tai" "nan")
 
 # 将数组b中的元素连接成正则表达式
