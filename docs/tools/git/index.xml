@@ -12,7 +12,7 @@
       <link>https://tech.lucumt.info/docs/tools/git/git-commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/tools/git/git-commands/</guid>
-      <description> 添加与取消代理(局部)&#xA;1# 添加代理 其中7890是clash对外暴露的端口 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)&#xA;1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy </description>
+      <description> 添加与取消代理(局部)&#xA;1# 添加代理 其中7890是clash对外暴露的端口 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)&#xA;1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy git添加别名&#xA;在Windows系统中需要在$PWD/etc/bash.bashrc的尾部添加类似如下内容&#xA;1alias git-log=&amp;#34;git log --abbrev-commit --pretty=oneline --graph&amp;#34; 2alias git-logs=&amp;#34;git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;&amp;#34; </description>
     </item>
   </channel>
 </rss>

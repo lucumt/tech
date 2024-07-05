@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content=" 添加与取消代理(局部)
 1# 添加代理 其中7890是clash对外暴露的端口 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)
-1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy ">
+1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy git添加别名
+在Windows系统中需要在$PWD/etc/bash.bashrc的尾部添加类似如下内容
+1alias git-log=&#34;git log --abbrev-commit --pretty=oneline --graph&#34; 2alias git-logs=&#34;git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:&#39;%Y-%m-%d %H:%M:%S&#39;&#34; ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/tools/git/git-commands/">
@@ -13,7 +15,9 @@
   <meta property="og:title" content="Git常用指令">
   <meta property="og:description" content=" 添加与取消代理(局部)
 1# 添加代理 其中7890是clash对外暴露的端口 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)
-1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy ">
+1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy git添加别名
+在Windows系统中需要在$PWD/etc/bash.bashrc的尾部添加类似如下内容
+1alias git-log=&#34;git log --abbrev-commit --pretty=oneline --graph&#34; 2alias git-logs=&#34;git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:&#39;%Y-%m-%d %H:%M:%S&#39;&#34; ">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -23,7 +27,7 @@
 <link rel="canonical" href="https://tech.lucumt.info/docs/tools/git/git-commands/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.ace9332e2417592af7ddffa9063e820776d57d0c5d79e9305ed9968008e1a80e.js" integrity="sha256-rOkzLiQXWSr33f&#43;pBj6CB3bVfQxdeekwXtmWgAjhqA4=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.022d092309423855a71a34161225db5b1b1711b9bbfa5464d247ca2d3b7eac84.js" integrity="sha256-Ai0JIwlCOFWnGjQWEiXbWxsXEbm7&#43;lRk0kfKLTt&#43;rIQ=" crossorigin="anonymous"></script>
 
   
 
@@ -1539,6 +1543,12 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#228b22"># 去掉代理</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>git config --global --unset http.proxy
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>git config --global --unset https.proxy
+</span></span></code></pre></div></li>
+<li>
+<p><code>git</code>添加别名</p>
+<p>在Windows系统中需要在<code>$PWD/etc/bash.bashrc</code>的尾部添加类似如下内容</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#658b00">alias</span> git-log=<span style="color:#cd5555">&#34;git log --abbrev-commit --pretty=oneline --graph&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#658b00">alias</span> git-logs=<span style="color:#cd5555">&#34;git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:&#39;%Y-%m-%d %H:%M:%S&#39;&#34;</span>
 </span></span></code></pre></div></li>
 </ul>
 </article>
