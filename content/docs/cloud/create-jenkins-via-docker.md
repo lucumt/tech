@@ -1,5 +1,5 @@
 ---
-title: "通过docker-compose创建Jenkins"
+title: "通过Docker创建Jenkins"
 weight: 4
 # bookFlatSection: false
 # bookToc: true
