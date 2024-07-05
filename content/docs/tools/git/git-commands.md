@@ -33,4 +33,13 @@ weight: 1
   git config --global --unset https.proxy
   ```
 
+* `git`添加别名
+
+  在Windows系统中需要在`$PWD/etc/bash.bashrc`的尾部添加类似如下内容
+
+  ```bash
+  alias git-log="git log --abbrev-commit --pretty=oneline --graph"
+  alias git-logs="git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:'%Y-%m-%d %H:%M:%S'"
+  ```
+
   
