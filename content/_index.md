@@ -22,6 +22,8 @@ hugo server -w -D --renderToMemory
 * [安全背后: 浏览器是如何校验证书的](https://cjting.me/2021/03/02/how-to-validate-tls-certificate/) 
 * [技术文章配图指南](https://draveness.me/sketch-and-sketch/)
 * [Streaming ELT 同步 MySQL 到 StarRocks](https://nightlies.apache.org/flink/flink-cdc-docs-master/zh/docs/get-started/quickstart/mysql-to-starrocks/)
+* [如何在 Bash 脚本中添加注释](https://linux.cn/article-16298-1.html)
+* [Git: Merge vs Rebase vs Cherry-Pick](https://medium.com/@meghatyagi003/git-merge-vs-rebase-vs-cherry-pick-acfa46acb170)
 
 # 博客网站
 
