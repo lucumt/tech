@@ -24,6 +24,7 @@ hugo server -w -D --renderToMemory
 * [Streaming ELT 同步 MySQL 到 StarRocks](https://nightlies.apache.org/flink/flink-cdc-docs-master/zh/docs/get-started/quickstart/mysql-to-starrocks/)
 * [如何在 Bash 脚本中添加注释](https://linux.cn/article-16298-1.html)
 * [Git: Merge vs Rebase vs Cherry-Pick](https://medium.com/@meghatyagi003/git-merge-vs-rebase-vs-cherry-pick-acfa46acb170)
+* [署名—非商业性使用—相同方式共享 4.0 协议国际版](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)
 
 # 博客网站
 
