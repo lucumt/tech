@@ -1,5 +1,5 @@
 ---
-title: "Java中利用Lambda进行复杂过滤"
+title: "Java中利用Lambda进行过滤"
 weight: 5
 # bookFlatSection: false
 # bookToc: true
@@ -8,6 +8,8 @@ weight: 5
 # bookComments: false
 # bookSearchExclude: false
 ---
+
+# 复杂的过滤
 
 ```java
 import com.google.common.collect.Lists;
@@ -65,4 +67,6 @@ public class FilterTest {
     }
 }
 ```
+
+
 
