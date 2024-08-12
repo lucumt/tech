@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="1import com.google.common.collect.Lists; 2import lombok.AllArgsConstructor; 3import lombok.Data; 4import org.apache.commons.lang3.StringUtils; 5 6import java.util.List; 7import java.util.stream.Collectors; 8 9public class FilterTest { 10 11 public static void testData() { 12 List&lt;Record&gt; recordsA = Lists.newArrayList( 13 new Record(&#34;A&#34;, &#34;a1&#34;), 14 new Record(&#34;A&#34;, &#34;a2&#34;), 15 new Record(&#34;A&#34;, &#34;a4&#34;), 16 new Record(&#34;A&#34;, &#34;a5&#34;), 17 new Record(&#34;B&#34;, &#34;b1&#34;), 18 new Record(&#34;B&#34;, &#34;b2&#34;), 19 new Record(&#34;B&#34;, &#34;b7&#34;), 20 new Record(&#34;D&#34;, &#34;b7&#34;) 21 ); 22 List&lt;Record&gt; recordsB = Lists.newArrayList( 23 new Record(&#34;A&#34;, &#34;a1&#34;), 24 new Record(&#34;A&#34;, &#34;a2&#34;), 25 new Record(&#34;A&#34;, &#34;a3&#34;), 26 new Record(&#34;B&#34;, &#34;b1&#34;), 27 new Record(&#34;B&#34;, &#34;b2&#34;), 28 new Record(&#34;B&#34;, &#34;b3&#34;), 29 new Record(&#34;B&#34;, &#34;a1&#34;), 30 new Record(&#34;C&#34;, &#34;c1&#34;), 31 new Record(&#34;C&#34;, &#34;c2&#34;), 32 new Record(&#34;C&#34;, &#34;b1&#34;) 33 ); 34 35 // 查找出新增的 36 List&lt;Record&gt; addRecordsA = recordsB.">
+<meta name="description" content="复杂的过滤 # 1import com.google.common.collect.Lists; 2import lombok.AllArgsConstructor; 3import lombok.Data; 4import org.apache.commons.lang3.StringUtils; 5 6import java.util.List; 7import java.util.stream.Collectors; 8 9public class FilterTest { 10 11 public static void testData() { 12 List&lt;Record&gt; recordsA = Lists.newArrayList( 13 new Record(&#34;A&#34;, &#34;a1&#34;), 14 new Record(&#34;A&#34;, &#34;a2&#34;), 15 new Record(&#34;A&#34;, &#34;a4&#34;), 16 new Record(&#34;A&#34;, &#34;a5&#34;), 17 new Record(&#34;B&#34;, &#34;b1&#34;), 18 new Record(&#34;B&#34;, &#34;b2&#34;), 19 new Record(&#34;B&#34;, &#34;b7&#34;), 20 new Record(&#34;D&#34;, &#34;b7&#34;) 21 ); 22 List&lt;Record&gt; recordsB = Lists.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/block/java-lambda-filter/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="Java中利用Lambda进行复杂过滤">
-  <meta property="og:description" content="1import com.google.common.collect.Lists; 2import lombok.AllArgsConstructor; 3import lombok.Data; 4import org.apache.commons.lang3.StringUtils; 5 6import java.util.List; 7import java.util.stream.Collectors; 8 9public class FilterTest { 10 11 public static void testData() { 12 List&lt;Record&gt; recordsA = Lists.newArrayList( 13 new Record(&#34;A&#34;, &#34;a1&#34;), 14 new Record(&#34;A&#34;, &#34;a2&#34;), 15 new Record(&#34;A&#34;, &#34;a4&#34;), 16 new Record(&#34;A&#34;, &#34;a5&#34;), 17 new Record(&#34;B&#34;, &#34;b1&#34;), 18 new Record(&#34;B&#34;, &#34;b2&#34;), 19 new Record(&#34;B&#34;, &#34;b7&#34;), 20 new Record(&#34;D&#34;, &#34;b7&#34;) 21 ); 22 List&lt;Record&gt; recordsB = Lists.newArrayList( 23 new Record(&#34;A&#34;, &#34;a1&#34;), 24 new Record(&#34;A&#34;, &#34;a2&#34;), 25 new Record(&#34;A&#34;, &#34;a3&#34;), 26 new Record(&#34;B&#34;, &#34;b1&#34;), 27 new Record(&#34;B&#34;, &#34;b2&#34;), 28 new Record(&#34;B&#34;, &#34;b3&#34;), 29 new Record(&#34;B&#34;, &#34;a1&#34;), 30 new Record(&#34;C&#34;, &#34;c1&#34;), 31 new Record(&#34;C&#34;, &#34;c2&#34;), 32 new Record(&#34;C&#34;, &#34;b1&#34;) 33 ); 34 35 // 查找出新增的 36 List&lt;Record&gt; addRecordsA = recordsB.">
+  <meta property="og:title" content="Java中利用Lambda进行过滤">
+  <meta property="og:description" content="复杂的过滤 # 1import com.google.common.collect.Lists; 2import lombok.AllArgsConstructor; 3import lombok.Data; 4import org.apache.commons.lang3.StringUtils; 5 6import java.util.List; 7import java.util.stream.Collectors; 8 9public class FilterTest { 10 11 public static void testData() { 12 List&lt;Record&gt; recordsA = Lists.newArrayList( 13 new Record(&#34;A&#34;, &#34;a1&#34;), 14 new Record(&#34;A&#34;, &#34;a2&#34;), 15 new Record(&#34;A&#34;, &#34;a4&#34;), 16 new Record(&#34;A&#34;, &#34;a5&#34;), 17 new Record(&#34;B&#34;, &#34;b1&#34;), 18 new Record(&#34;B&#34;, &#34;b2&#34;), 19 new Record(&#34;B&#34;, &#34;b7&#34;), 20 new Record(&#34;D&#34;, &#34;b7&#34;) 21 ); 22 List&lt;Record&gt; recordsB = Lists.">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>Java中利用Lambda进行复杂过滤 | 个人笔记</title>
+<title>Java中利用Lambda进行过滤 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
 <link rel="canonical" href="https://tech.lucumt.info/docs/code/block/java-lambda-filter/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.d9304b351990b34db3d7639769c3697b48d35b6c0c44179711922ee0bbd50ec0.js" integrity="sha256-2TBLNRmQs02z12OXacNpe0jTW2wMRBeXEZIu4LvVDsA=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.23429dd5d9517bb7476510c670c26577126bf8d0d325e766a3659b4c995b9173.js" integrity="sha256-I0Kd1dlRe7dHZRDGcMJldxJr&#43;NDTJedmo2WbTJlbkXM=" crossorigin="anonymous"></script>
 
   
 
@@ -798,7 +798,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/code/block/java-lambda-filter/" class="active">Java中利用Lambda进行复杂过滤</a>
+    <a href="/docs/code/block/java-lambda-filter/" class="active">Java中利用Lambda进行过滤</a>
   
 
         </li>
@@ -1516,7 +1516,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Java中利用Lambda进行复杂过滤</strong>
+  <strong>Java中利用Lambda进行过滤</strong>
 
   <label for="toc-control">
     
@@ -1530,7 +1530,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#复杂的过滤">复杂的过滤</a></li>
+  </ul>
+</nav>
 
 
 
@@ -1541,7 +1545,11 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#008b45;text-decoration:underline">com.google.common.collect.Lists</span>;<span style="color:#bbb">
+  <article class="markdown book-article"><h1 id="复杂的过滤">
+  复杂的过滤
+  <a class="anchor" href="#%e5%a4%8d%e6%9d%82%e7%9a%84%e8%bf%87%e6%bb%a4">#</a>
+</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#008b45;text-decoration:underline">com.google.common.collect.Lists</span>;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#008b45;text-decoration:underline">lombok.AllArgsConstructor</span>;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#008b45;text-decoration:underline">lombok.Data</span>;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#008b45;text-decoration:underline">org.apache.commons.lang3.StringUtils</span>;<span style="color:#bbb">
@@ -1634,7 +1642,11 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#复杂的过滤">复杂的过滤</a></li>
+  </ul>
+</nav>
 
 
  
