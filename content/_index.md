@@ -26,6 +26,7 @@ hugo server -w -D --renderToMemory
 * [Git: Merge vs Rebase vs Cherry-Pick](https://medium.com/@meghatyagi003/git-merge-vs-rebase-vs-cherry-pick-acfa46acb170)
 * [署名—非商业性使用—相同方式共享 4.0 协议国际版](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)
 * [Redis数据机构与使用合集](https://www.cnblogs.com/WinterSir/collections/11923)
+* [算法通关手册](https://algo.itcharge.cn/)
 
 # 博客网站
 
