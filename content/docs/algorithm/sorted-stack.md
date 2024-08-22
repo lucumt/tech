@@ -45,13 +45,15 @@ weight: 1
 
 * 找到数组右边第一个比它大的元素
 
+  算法1，自己有些看不懂
+  
   ```java
   public static void nextGreaterElement() {
       int[] data = {2, 7, 5, 4, 6, 3, 4, 2};
       int[] result = new int[data.length];
       Stack<Integer> stack = new Stack<>();
       // 单调递增
-      for (int i = 0; i < data.length; i++) {
+      for (int i = data.length - 1; i >= 0; i--) {
           int val = data[i];
           while (!stack.isEmpty() && stack.peek() <= val) {
               stack.pop();
@@ -61,7 +63,7 @@ weight: 1
       }
       System.out.println(stack);
       System.out.println(StringUtils.join(ArrayUtils.toObject(result), ","));
-  }
+}
   ```
-
+  
   
