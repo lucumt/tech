@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>算法 on 个人笔记</title>
+    <link>https://tech.lucumt.info/docs/algorithm/</link>
+    <description>Recent content in 算法 on 个人笔记</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://tech.lucumt.info/docs/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>单调栈</title>
+      <link>https://tech.lucumt.info/docs/algorithm/sorted-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/algorithm/sorted-stack/</guid>
+      <description>单调递增，从栈顶到栈底依次递增&#xA;1public static void sortStackIncrease() { 2 int[] data = {2, 7, 5, 4, 6, 3, 4, 2}; 3 Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); 4 for (Integer val : data) { 5 while (!stack.isEmpty() &amp;amp;&amp;amp; stack.peek() &amp;lt;= val) { 6 stack.pop(); 7 } 8 stack.push(val); 9 } 10 System.out.println(stack); 11} 单调递减，从栈顶到栈底依次递减&#xA;1public static void sortStackDecrease() { 2 int[] data = {4, 3, 2, 5, 7, 4, 6, 8}; 3 Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); 4 for (Integer val : data) { 5 while (!</description>
+    </item>
+  </channel>
+</rss>

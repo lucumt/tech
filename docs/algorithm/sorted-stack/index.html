@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The cheat sheet below shows most important characteristics of Javascript.
-🔹 Interpreted Language JavaScript code is executed by the browser or JavaScript engine rather than being compiled into machine language beforehand. This makes it highly portable across different platforms. Modern engines such as V8 utilize Just-In-Time (JIT) technology to compile code into directly executable machine code.
-🔹 Function is First-Class Citizen In JavaScript, functions are treated as first-class citizens, meaning they can be stored in variables, passed as arguments to other functions, and returned from functions.">
+<meta name="description" content="单调递增，从栈顶到栈底依次递增
+1public static void sortStackIncrease() { 2 int[] data = {2, 7, 5, 4, 6, 3, 4, 2}; 3 Stack&lt;Integer&gt; stack = new Stack&lt;&gt;(); 4 for (Integer val : data) { 5 while (!stack.isEmpty() &amp;&amp; stack.peek() &lt;= val) { 6 stack.pop(); 7 } 8 stack.push(val); 9 } 10 System.out.println(stack); 11} 单调递减，从栈顶到栈底依次递减
+1public static void sortStackDecrease() { 2 int[] data = {4, 3, 2, 5, 7, 4, 6, 8}; 3 Stack&lt;Integer&gt; stack = new Stack&lt;&gt;(); 4 for (Integer val : data) { 5 while (!">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/front/how-does-javascript-work/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/algorithm/sorted-stack/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="JavaScript是如何执行的">
-  <meta property="og:description" content="The cheat sheet below shows most important characteristics of Javascript.
-🔹 Interpreted Language JavaScript code is executed by the browser or JavaScript engine rather than being compiled into machine language beforehand. This makes it highly portable across different platforms. Modern engines such as V8 utilize Just-In-Time (JIT) technology to compile code into directly executable machine code.
-🔹 Function is First-Class Citizen In JavaScript, functions are treated as first-class citizens, meaning they can be stored in variables, passed as arguments to other functions, and returned from functions.">
+  <meta property="og:title" content="单调栈">
+  <meta property="og:description" content="单调递增，从栈顶到栈底依次递增
+1public static void sortStackIncrease() { 2 int[] data = {2, 7, 5, 4, 6, 3, 4, 2}; 3 Stack&lt;Integer&gt; stack = new Stack&lt;&gt;(); 4 for (Integer val : data) { 5 while (!stack.isEmpty() &amp;&amp; stack.peek() &lt;= val) { 6 stack.pop(); 7 } 8 stack.push(val); 9 } 10 System.out.println(stack); 11} 单调递减，从栈顶到栈底依次递减
+1public static void sortStackDecrease() { 2 int[] data = {4, 3, 2, 5, 7, 4, 6, 8}; 3 Stack&lt;Integer&gt; stack = new Stack&lt;&gt;(); 4 for (Integer val : data) { 5 while (!">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>JavaScript是如何执行的 | 个人笔记</title>
+<title>单调栈 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/code/front/how-does-javascript-work/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/algorithm/sorted-stack/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.42f2c65be7f00f5534c92f47676ef75520379c73d69fafccdf669eba2f5292dc.js" integrity="sha256-QvLGW&#43;fwD1U0yS9HZ273VSA3nHPWn6/M32aeui9Sktw=" crossorigin="anonymous"></script>
@@ -194,7 +194,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-cba71af17e8e2d095fdfaf1ec847ef89" class="toggle"  />
+    <input type="checkbox" id="section-cba71af17e8e2d095fdfaf1ec847ef89" class="toggle" checked />
     <label for="section-cba71af17e8e2d095fdfaf1ec847ef89" class="flex justify-between">
       <a role="button" class="">算法</a>
     </label>
@@ -210,7 +210,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/algorithm/sorted-stack/" class="">单调栈</a>
+    <a href="/docs/algorithm/sorted-stack/" class="active">单调栈</a>
   
 
         </li>
@@ -554,7 +554,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle" checked />
+    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle"  />
     <label for="section-b0b4a016bddda14181aeb79f92565d38" class="flex justify-between">
       <a role="button" class="">编程</a>
     </label>
@@ -721,7 +721,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-355a174475df5241187c1a79bd3c62e8" class="toggle" checked />
+    <input type="checkbox" id="section-355a174475df5241187c1a79bd3c62e8" class="toggle"  />
     <label for="section-355a174475df5241187c1a79bd3c62e8" class="flex justify-between">
       <a href="/docs/code/front/" class="">前端</a>
     </label>
@@ -737,7 +737,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/code/front/how-does-javascript-work/" class="active">JavaScript是如何执行的</a>
+    <a href="/docs/code/front/how-does-javascript-work/" class="">JavaScript是如何执行的</a>
   
 
         </li>
@@ -1554,7 +1554,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>JavaScript是如何执行的</strong>
+  <strong>单调栈</strong>
 
   <label for="toc-control">
     
@@ -1579,27 +1579,58 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p><img src="/img/code/front/how-does-javascript-work.gif" alt="JavaScript是如何执行的" title="JavaScript是如何执行的"/></p>
-<p>The cheat sheet below shows most important characteristics of Javascript.</p>
-<p>🔹 Interpreted Language<br/>
-JavaScript code is executed by the browser or JavaScript engine rather than being compiled into machine language beforehand. This makes it highly portable across different platforms. Modern engines such as V8 utilize Just-In-Time (JIT) technology to compile code into directly executable machine code.</p>
-<p>🔹 Function is First-Class Citizen<br/>
-In JavaScript, functions are treated as first-class citizens, meaning they can be stored in variables, passed as arguments to other functions, and returned from functions.</p>
-<p>🔹 Dynamic Typing<br/>
-JavaScript is a loosely typed or dynamic language, meaning we don&rsquo;t have to declare a variable&rsquo;s type ahead of time, and the type can change at runtime.</p>
-<p>🔹 Client-Side Execution<br/>
-JavaScript supports asynchronous programming, allowing operations like reading files, making HTTP requests, or querying databases to run in the background and trigger callbacks or promises when complete. This is particularly useful in web development for improving performance and user experience.</p>
-<p>🔹 Prototype-Based OOP<br/>
-Unlike class-based object-oriented languages, JavaScript uses prototypes for inheritance. This means that objects can inherit properties and methods from other objects.</p>
-<p>🔹 Automatic Garbage Collection<br/>
-Garbage collection in JavaScript is a form of automatic memory management. The primary goal of garbage collection is to reclaim memory occupied by objects that are no longer in use by the program, which helps prevent memory leaks and optimizes the performance of the application.</p>
-<p>🔹 Compared with Other Languages<br/>
-JavaScript is special compared to programming languages like Python or Java because of its position as a major language for web development.</p>
-<p>While Python is known to provide good code readability and versatility, and Java is known for its structure and robustness, JavaScript is an interpreted language that runs directly on the browser without compilation, emphasizing flexibility and dynamism.</p>
-<p>🔹 Relationship with Typescript<br/>
-TypeScript is a superset of JavaScript, which means that it extends JavaScript by adding features to the language, most notably type annotations. This relationship allows any valid JavaScript code to also be considered valid TypeScript code.</p>
-<p>🔹 Popular Javascript Frameworks<br/>
-React is known for its flexibility and large number of community-driven plugins, while Vue is clean and intuitive with highly integrated and responsive features. Angular, on the other hand, offers a strict set of development specifications for enterprise-level JS development.</p>
+  <article class="markdown book-article"><ul>
+<li>
+<p><strong>单调递增</strong>，从栈顶到栈底依次递增</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">sortStackIncrease</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>data<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>{2,<span style="color:#bbb"> </span>7,<span style="color:#bbb"> </span>5,<span style="color:#bbb"> </span>4,<span style="color:#bbb"> </span>6,<span style="color:#bbb"> </span>3,<span style="color:#bbb"> </span>4,<span style="color:#bbb"> </span>2};<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#bbb">    </span>Stack&lt;Integer&gt;<span style="color:#bbb"> </span>stack<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Stack&lt;&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(Integer<span style="color:#bbb"> </span>val<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>data)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(!stack.<span style="color:#658b00">isEmpty</span>()<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>stack.<span style="color:#658b00">peek</span>()<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>val)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#bbb">            </span>stack.<span style="color:#658b00">pop</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#bbb">        </span>stack.<span style="color:#658b00">push</span>(val);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(stack);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>单调递减</strong>，从栈顶到栈底依次递减</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">sortStackDecrease</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>data<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>{4,<span style="color:#bbb"> </span>3,<span style="color:#bbb"> </span>2,<span style="color:#bbb"> </span>5,<span style="color:#bbb"> </span>7,<span style="color:#bbb"> </span>4,<span style="color:#bbb"> </span>6,<span style="color:#bbb"> </span>8};<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#bbb">    </span>Stack&lt;Integer&gt;<span style="color:#bbb"> </span>stack<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Stack&lt;&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(Integer<span style="color:#bbb"> </span>val<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>data)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(!stack.<span style="color:#658b00">isEmpty</span>()<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>stack.<span style="color:#658b00">peek</span>()<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>val)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#bbb">            </span>stack.<span style="color:#658b00">pop</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#bbb">        </span>stack.<span style="color:#658b00">push</span>(val);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(stack);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>找到数组右边第一个比它大的元素</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">nextGreaterElement</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>data<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>{2,<span style="color:#bbb"> </span>7,<span style="color:#bbb"> </span>5,<span style="color:#bbb"> </span>4,<span style="color:#bbb"> </span>6,<span style="color:#bbb"> </span>3,<span style="color:#bbb"> </span>4,<span style="color:#bbb"> </span>2};<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>result<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[data.<span style="color:#658b00">length</span>];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#bbb">    </span>Stack&lt;Integer&gt;<span style="color:#bbb"> </span>stack<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Stack&lt;&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#bbb">    </span><span style="color:#228b22">// 单调递增</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>data.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>data[i];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(!stack.<span style="color:#658b00">isEmpty</span>()<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>stack.<span style="color:#658b00">peek</span>()<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>val)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span><span style="color:#bbb">            </span>stack.<span style="color:#658b00">pop</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span><span style="color:#bbb">        </span>result[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>stack.<span style="color:#658b00">empty</span>()<span style="color:#bbb"> </span>?<span style="color:#bbb"> </span>-1<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>stack.<span style="color:#658b00">peek</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span><span style="color:#bbb">        </span>stack.<span style="color:#658b00">push</span>(val);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(stack);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(StringUtils.<span style="color:#658b00">join</span>(ArrayUtils.<span style="color:#658b00">toObject</span>(result),<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;,&#34;</span>));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
 </article>
  
       

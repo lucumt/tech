@@ -113,6 +113,13 @@
       <description>What is gRPC?&#xA;The diagram below shows important aspects of understanding gRPC.&#xA;gRPC is a high-performance, open-source universal RPC (Remote Procedure Call) framework initially developed by Google. It leverages HTTP/2 for transport, Protocol Buffers as the interface description language, and provides features such as authentication, load balancing, and more. gRPC is designed to enable efficient and robust communication between services in a microservices architecture, making it a popular choice for building distributed systems and APIs.</description>
     </item>
     <item>
+      <title>单调栈</title>
+      <link>https://tech.lucumt.info/docs/algorithm/sorted-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/algorithm/sorted-stack/</guid>
+      <description>单调递增，从栈顶到栈底依次递增&#xA;1public static void sortStackIncrease() { 2 int[] data = {2, 7, 5, 4, 6, 3, 4, 2}; 3 Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); 4 for (Integer val : data) { 5 while (!stack.isEmpty() &amp;amp;&amp;amp; stack.peek() &amp;lt;= val) { 6 stack.pop(); 7 } 8 stack.push(val); 9 } 10 System.out.println(stack); 11} 单调递减，从栈顶到栈底依次递减&#xA;1public static void sortStackDecrease() { 2 int[] data = {4, 3, 2, 5, 7, 4, 6, 8}; 3 Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); 4 for (Integer val : data) { 5 while (!</description>
+    </item>
+    <item>
       <title>数据管道概览</title>
       <link>https://tech.lucumt.info/docs/bigdata/data-pipelines-overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
