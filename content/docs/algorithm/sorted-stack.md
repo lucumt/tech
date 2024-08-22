@@ -43,10 +43,8 @@ weight: 1
 
 ---
 
-* 找到数组右边第一个比它大的元素
+* 找到数组右边第一个比它大的元素，第1种实现，基于倒序号，自己有些看不懂
 
-  算法1，自己有些看不懂
-  
   ```java
   public static void nextGreaterElement() {
       int[] data = {2, 7, 5, 4, 6, 3, 4, 2};
@@ -63,7 +61,7 @@ weight: 1
       }
       System.out.println(stack);
       System.out.println(StringUtils.join(ArrayUtils.toObject(result), ","));
-}
+  }
   ```
-  
+
   
