@@ -64,4 +64,25 @@ weight: 1
   }
   ```
 
+  符合常规思维的从左到右的实现，此时记录的是下标值
+  
+  ```java
+  public static void nextGreaterElement() {
+      int[] data = {2, 7, 5, 4, 6, 3, 4, 2};
+      int[] result = new int[data.length];
+      Arrays.fill(result, -1);
+      Stack<Integer> stack = new Stack<>();
+      // 单调递增
+      for (int i = 0; i < data.length; i++) {
+          int val = data[i];
+          while (!stack.isEmpty() && data[stack.peek()] < val) {
+              result[stack.pop()] = val;
+          }
+          stack.push(i);
+      }
+      System.out.println(stack);
+      System.out.println(StringUtils.join(ArrayUtils.toObject(result), ","));
+  }
+  ```
+  
   
