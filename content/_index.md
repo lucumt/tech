@@ -26,7 +26,8 @@ hugo server -w -D --renderToMemory
 * [Git: Merge vs Rebase vs Cherry-Pick](https://medium.com/@meghatyagi003/git-merge-vs-rebase-vs-cherry-pick-acfa46acb170)
 * [署名—非商业性使用—相同方式共享 4.0 协议国际版](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)
 * [Redis数据机构与使用合集](https://www.cnblogs.com/WinterSir/collections/11923)
-* [算法通关手册](https://algo.itcharge.cn/)
+* [Bash编程导轮](https://github.com/bobbyiliev/introduction-to-bash-scripting)
+* [CPU执行流程介绍](https://cpu.land/)
 
 # 博客网站
 
@@ -42,6 +43,7 @@ hugo server -w -D --renderToMemory
 | [**cloudchewie.com**](https://cloudchewie.com/)              | 一个华中科技大学学生的个人博客，样式很炫                     |                |
 | [**Why技术-博客园**](https://www.cnblogs.com/thisiswhy/)<br/>[**Why技术-个人网站**](https://www.whywhy.vip/) | 里面有很多高质量的关于`Java`源码阅读分析的博文💚              | `why技术`      |
 | [**Hello 算法**](https://www.hello-algo.com/)                | 关于算法学习的网站                                           |                |
+| [**算法通关手册**](https://algo.itcharge.cn/)                | 关于算法学习与LeetCode题解的网站                             |                |
 | [**小林coding**](https://xiaolincoding.com/)                 | 关于计算机网络、计算机基础等的网站，质量很高💚                | `小林coding`   |
 | [**Xianhuii**](https://www.cnblogs.com/Xianhuii/)            | 关于`Spring`和`MyBatis`框架源码分析的博文，部分文章质量较高  |                |
 | [**努力的小雨**](https://www.cnblogs.com/guoxiaoyu/)         | 关于`Spring`源码和计算机网络的高质量博文💚                    |                |
