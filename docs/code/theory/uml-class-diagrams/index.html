@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="How does ChatGPT-like system work?
-Since OpenAI hasn&rsquo;t provided all the details, some parts of the diagram may be inaccurate.
-We attempted to explain how it works in the diagram below. The process can be broken down into two parts.
-Training. To train a ChatGPT model, there are two stages:
-- Pre-training: In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data.">
+<meta name="description" content="UML is a standard way to visualize the design of your system and class diagrams are used across the industry.
+They consist of:
+1 - Class Acts as the blueprint that defines the properties and behavior of an object.
+2 - Attributes Attributes in a UML class diagram represent the data fields of the class.
+3 - Methods Methods in a UML class diagram represent the behavior that a class can perform.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/theory/uml-class-diagrams/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="ChatGPT工作原理">
-  <meta property="og:description" content="How does ChatGPT-like system work?
-Since OpenAI hasn’t provided all the details, some parts of the diagram may be inaccurate.
-We attempted to explain how it works in the diagram below. The process can be broken down into two parts.
-Training. To train a ChatGPT model, there are two stages:
-- Pre-training: In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data.">
+  <meta property="og:title" content="UML类图说明">
+  <meta property="og:description" content="UML is a standard way to visualize the design of your system and class diagrams are used across the industry.
+They consist of:
+1 - Class Acts as the blueprint that defines the properties and behavior of an object.
+2 - Attributes Attributes in a UML class diagram represent the data fields of the class.
+3 - Methods Methods in a UML class diagram represent the behavior that a class can perform.">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>ChatGPT工作原理 | 个人笔记</title>
+<title>UML类图说明 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/code/theory/uml-class-diagrams/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.28845cde42a3eb36746e4feae867f4a8448c3bed8cd64c817264e4d0ee4af0d6.js" integrity="sha256-KIRc3kKj6zZ0bk/q6Gf0qESMO&#43;2M1kyBcmTk0O5K8NY=" crossorigin="anonymous"></script>
@@ -83,7 +83,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-bf811b2740dc219e21d86019d2c3653d" class="toggle" checked />
+    <input type="checkbox" id="section-bf811b2740dc219e21d86019d2c3653d" class="toggle"  />
     <label for="section-bf811b2740dc219e21d86019d2c3653d" class="flex justify-between">
       <a role="button" class="">AI</a>
     </label>
@@ -99,7 +99,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/ai/how-does-chatgpt-work/" class="active">ChatGPT工作原理</a>
+    <a href="/docs/ai/how-does-chatgpt-work/" class="">ChatGPT工作原理</a>
   
 
         </li>
@@ -558,7 +558,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle"  />
+    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle" checked />
     <label for="section-b0b4a016bddda14181aeb79f92565d38" class="flex justify-between">
       <a role="button" class="">编程</a>
     </label>
@@ -574,7 +574,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-568f71b95ca56c34a1f8e3361712f1c0" class="toggle"  />
+    <input type="checkbox" id="section-568f71b95ca56c34a1f8e3361712f1c0" class="toggle" checked />
     <label for="section-568f71b95ca56c34a1f8e3361712f1c0" class="flex justify-between">
       <a role="button" class="">理论</a>
     </label>
@@ -720,7 +720,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/code/theory/uml-class-diagrams/" class="">UML类图说明</a>
+    <a href="/docs/code/theory/uml-class-diagrams/" class="active">UML类图说明</a>
   
 
         </li>
@@ -1584,7 +1584,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>ChatGPT工作原理</strong>
+  <strong>UML类图说明</strong>
 
   <label for="toc-control">
     
@@ -1609,28 +1609,27 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p><img src="/img/ai/how-does-chatgpt-work.jfif" alt="ChatGPT工作原理" /></p>
-<p>How does ChatGPT-like system work?</p>
-<p>Since OpenAI hasn&rsquo;t provided all the details, some parts of the diagram may be inaccurate.</p>
-<p>We attempted to explain how it works in the diagram below. The process can be broken down into two parts.</p>
-<ol>
-<li>
-<p>Training. To train a ChatGPT model, there are two stages:</p>
-<p>- Pre-training: In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data. After the pre-training stage, the model can complete given sentences, but it is not capable of responding to questions.</p>
-<p>- Fine-tuning: This stage is a 3-step process that turns the pre-trained model into a question-answering ChatGPT model:</p>
-<p>1). Collect training data (questions and answers), and fine-tune the pre-trained model on this data. The model takes a question as input and learns to generate an answer similar to the training data.</p>
-<p>2). Collect more data (question, several answers) and train a reward model to rank these answers from most relevant to least relevant.</p>
-<p>3). Use reinforcement learning (PPO optimization) to fine-tune the model so the model&rsquo;s answers are more accurate.</p>
-</li>
-<li>
-<p>Answer a prompt</p>
-<p>🔹Step 1: The user enters the full question, “Explain how a classification algorithm works”.</p>
-<p>🔹Step 2: The question is sent to a content moderation component. This component ensures that the question does not violate safety guidelines and filters inappropriate questions.</p>
-<p>🔹Steps 3-4: If the input passes content moderation, it is sent to the chatGPT model. If the input doesn’t pass content moderation, it goes straight to template response generation.</p>
-<p>🔹Step 5-6: Once the model generates the response, it is sent to a content moderation component again. This ensures the generated response is safe, harmless, unbiased, etc.</p>
-<p>🔹Step 7: If the input passes content moderation, it is shown to the user. If the input doesn’t pass content moderation, it goes to template response generation and shows a template answer to the user.</p>
-</li>
-</ol>
+  <article class="markdown book-article"><p><img src="/img/code/theory/uml-class-diagrams.gif" alt="uml-class-diagrams" /></p>
+<p>UML is a standard way to visualize the design of your system and class diagrams are used across the industry.</p>
+<p>They consist of:</p>
+<p>1 - Class
+Acts as the blueprint that defines the properties and behavior of an object.</p>
+<p>2 - Attributes
+Attributes in a UML class diagram represent the data fields of the class.</p>
+<p>3 - Methods
+Methods in a UML class diagram represent the behavior that a class can perform.</p>
+<p>4 - Interfaces
+Defines a contract for classes that implement it. Includes a set of methods that the implementing classes must provide.</p>
+<p>5 - Enumeration
+A special data type that defines a set of named values such as product category or months in a year.</p>
+<p>6 - Relationships
+Determines how one class is related to another. Some common relationships are as follows:
+- Association
+- Aggregation
+- Composition
+- Inheritance
+- Implementation</p>
+<p>Over to you: What other building blocks have you seen in UML class diagrams?</p>
 </article>
  
       

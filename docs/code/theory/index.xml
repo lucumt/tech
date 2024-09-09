@@ -77,5 +77,12 @@
       <guid>https://tech.lucumt.info/docs/code/theory/how-we-retry-on-failures/</guid>
       <description>How do we retry on failures?&#xA;In distributed systems and networked applications, retry strategies are crucial for handling transient errors and network instability effectively. The diagram shows 4 common retry strategies.&#xA;🔹 Linear Backoff Linear backoff involves waiting for a progressively increasing fixed interval between retry attempts.&#xA;Advantages: Simple to implement and understand.&#xA;Disadvantages: May not be ideal under high load or in high-concurrency environments as it could lead to resource contention or &amp;ldquo;retry storms&amp;rdquo;.</description>
     </item>
+    <item>
+      <title>UML类图说明</title>
+      <link>https://tech.lucumt.info/docs/code/theory/uml-class-diagrams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/uml-class-diagrams/</guid>
+      <description>UML is a standard way to visualize the design of your system and class diagrams are used across the industry.&#xA;They consist of:&#xA;1 - Class Acts as the blueprint that defines the properties and behavior of an object.&#xA;2 - Attributes Attributes in a UML class diagram represent the data fields of the class.&#xA;3 - Methods Methods in a UML class diagram represent the behavior that a class can perform.</description>
+    </item>
   </channel>
 </rss>
