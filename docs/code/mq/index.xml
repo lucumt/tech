@@ -28,5 +28,12 @@
       <guid>https://tech.lucumt.info/docs/code/mq/the-core-reddit-architecture/</guid>
       <description>A quick look at Reddit’s Core Architecture that helps it serve over 1 billion users every month.&#xA;This information is based on research from many Reddit engineering blogs. But since architecture is ever-evolving, things might have changed in some aspects.&#xA;The main points of Reddit’s architecture are as follows:&#xA;Reddit uses a Content Delivery Network (CDN) from Fastly as a front for the application&#xA;Reddit started using jQuery in early 2009.</description>
     </item>
+    <item>
+      <title>Kafka核心概念</title>
+      <link>https://tech.lucumt.info/docs/code/mq/kafka-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/mq/kafka-101/</guid>
+      <description>The Ultimate Kafka 101 You Cannot Miss&#xA;Kafka is super-popular but can be overwhelming in the beginning.&#xA;Here are 8 simple steps that can help you understand the fundamentals of Kafka.&#xA;1 - What is Kafka? Kafka is a distributed event store and a streaming platform. It began as an internal project at LinkedIn and now powers some of the largest data pipelines in the world in orgs like Netflix, Uber, etc.</description>
+    </item>
   </channel>
 </rss>

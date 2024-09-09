@@ -351,6 +351,13 @@
       <description>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.&#xA;SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.&#xA;Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.&#xA;HTML&amp;rsquo;s Role: Peek into HTML&amp;rsquo;s role in structuring the web.</description>
     </item>
     <item>
+      <title>Kafka核心概念</title>
+      <link>https://tech.lucumt.info/docs/code/mq/kafka-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/mq/kafka-101/</guid>
+      <description>The Ultimate Kafka 101 You Cannot Miss&#xA;Kafka is super-popular but can be overwhelming in the beginning.&#xA;Here are 8 simple steps that can help you understand the fundamentals of Kafka.&#xA;1 - What is Kafka? Kafka is a distributed event store and a streaming platform. It began as an internal project at LinkedIn and now powers some of the largest data pipelines in the world in orgs like Netflix, Uber, etc.</description>
+    </item>
+    <item>
       <title>Oauth2.0详解</title>
       <link>https://tech.lucumt.info/docs/security/oauth-2.0-explained/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -482,6 +489,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/uml-class-diagrams/</guid>
       <description>UML is a standard way to visualize the design of your system and class diagrams are used across the industry.&#xA;They consist of:&#xA;1 - Class Acts as the blueprint that defines the properties and behavior of an object.&#xA;2 - Attributes Attributes in a UML class diagram represent the data fields of the class.&#xA;3 - Methods Methods in a UML class diagram represent the behavior that a class can perform.</description>
+    </item>
+    <item>
+      <title>垃圾回收工作流程</title>
+      <link>https://tech.lucumt.info/docs/code/theory/garbage-collection-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/theory/garbage-collection-101/</guid>
+      <description>How does Garbage Collection work? Garbage collection is an automatic memory management feature used in programming languages to reclaim memory no longer used by the program.&#xA;🔹 Java Java provides several garbage collectors, each suited for different use cases:&#xA;\1. Serial Garbage Collector: Best for single-threaded environments or small applications.&#xA;\2. Parallel Garbage Collector: Also known as the &amp;ldquo;Throughput Collector.&amp;rdquo;&#xA;\3. CMS (Concurrent Mark-Sweep) Garbage Collector: Low-latency collector aiming to minimize pause times.</description>
     </item>
   </channel>
 </rss>
