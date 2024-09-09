@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="SQL statements are executed by the database system in several steps, including: - Parsing the SQL statement and checking its validity - Transforming the SQL into an internal representation, such as relational algebra - Optimizing the internal representation and creating an execution plan that utilizes index information - Executing the plan and returning the results">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/db/theory/sql-query-logical-order/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="CPU使用达到100%的9个场景">
+  <meta property="og:title" content="SQL查询执行顺序">
+  <meta property="og:description" content="SQL statements are executed by the database system in several steps, including: - Parsing the SQL statement and checking its validity - Transforming the SQL into an internal representation, such as relational algebra - Optimizing the internal representation and creating an execution plan that utilizes index information - Executing the plan and returning the results">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>CPU使用达到100%的9个场景 | 个人笔记</title>
+<title>SQL查询执行顺序 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/db/theory/sql-query-logical-order/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.1ee1c31de94a847bacacc225c029439eaf73c19b00222b2efc174c45e2695f46.js" integrity="sha256-HuHDHelKhHusrMIlwClDnq9zwZsAIisu/BdMReJpX0Y=" crossorigin="anonymous"></script>
@@ -421,7 +422,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-87454da32634ac3c44203f52e01458ea" class="toggle" checked />
+    <input type="checkbox" id="section-87454da32634ac3c44203f52e01458ea" class="toggle"  />
     <label for="section-87454da32634ac3c44203f52e01458ea" class="flex justify-between">
       <a role="button" class="">运维</a>
     </label>
@@ -450,7 +451,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/monitor/top-9-cases-behind-cpu-high-usage/" class="active">CPU使用达到100%的9个场景</a>
+    <a href="/docs/monitor/top-9-cases-behind-cpu-high-usage/" class="">CPU使用达到100%的9个场景</a>
   
 
         </li>
@@ -1110,7 +1111,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0a244151e57cf93152c22fb180e3c337" class="toggle"  />
+    <input type="checkbox" id="section-0a244151e57cf93152c22fb180e3c337" class="toggle" checked />
     <label for="section-0a244151e57cf93152c22fb180e3c337" class="flex justify-between">
       <a role="button" class="">数据库</a>
     </label>
@@ -1126,7 +1127,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5743d422546d9ab3986588e18d5e3ad4" class="toggle"  />
+    <input type="checkbox" id="section-5743d422546d9ab3986588e18d5e3ad4" class="toggle" checked />
     <label for="section-5743d422546d9ab3986588e18d5e3ad4" class="flex justify-between">
       <a role="button" class="">理论</a>
     </label>
@@ -1220,7 +1221,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/db/theory/sql-query-logical-order/" class="">SQL查询执行顺序</a>
+    <a href="/docs/db/theory/sql-query-logical-order/" class="active">SQL查询执行顺序</a>
   
 
         </li>
@@ -1562,7 +1563,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>CPU使用达到100%的9个场景</strong>
+  <strong>SQL查询执行顺序</strong>
 
   <label for="toc-control">
     
@@ -1587,7 +1588,12 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p><img src="/img/monitor/top-9-cases-behind-cpu-high-usage.gif" alt="CPU使用达到100%的9个场景" /></p>
+  <article class="markdown book-article"><p><img src="/img/db/theory/sql-query-logical-order.gif" alt="扩展数据库的7种策略" /></p>
+<p>SQL statements are executed by the database system in several steps, including:
+- Parsing the SQL statement and checking its validity
+- Transforming the SQL into an internal representation, such as relational algebra
+- Optimizing the internal representation and creating an execution plan that utilizes index information
+- Executing the plan and returning the results</p>
 </article>
  
       
