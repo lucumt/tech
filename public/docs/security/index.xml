@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>安全相关 on 个人笔记</title>
+    <title>安全 on 个人笔记</title>
     <link>http://localhost:1313/docs/security/</link>
-    <description>Recent content in 安全相关 on 个人笔记</description>
+    <description>Recent content in 安全 on 个人笔记</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/docs/security/index.xml" rel="self" type="application/rss+xml" />
@@ -12,7 +12,7 @@
       <link>http://localhost:1313/docs/security/identity-manage-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/security/identity-manage-types/</guid>
-      <description></description>
+      <description>When you login to a website, your identity needs to be managed. Here is how different solutions work:&#xA;- Session - The server stores your identity and gives the browser a session ID cookie. This allows the server to track login state. But cookies don&amp;rsquo;t work well across devices.&#xA;- Token - Your identity is encoded into a token sent to the browser. The browser sends this token on future requests for authentication.</description>
     </item>
     <item>
       <title>不同认证方式的对比</title>
@@ -20,6 +20,27 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/security/authentication-types-compare/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Session和JWT的对比</title>
+      <link>http://localhost:1313/docs/security/session-vs-jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/security/session-vs-jwt/</guid>
+      <description>What’s the difference between Session-based authentication and JWTs?&#xA;Here’s a simple breakdown for both approaches:&#xA;Session-Based Authentication&#xA;In this approach, you store the session information in a database or session store and hand over a session ID to the user.&#xA;Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.&#xA;Here’s how it works:&#xA;1 - The user makes a login request and the frontend app sends the request to the backend server.</description>
+    </item>
+    <item>
+      <title>Oauth2.0详解</title>
+      <link>http://localhost:1313/docs/security/oauth-2.0-explained/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/security/oauth-2.0-explained/</guid>
+      <description>Oauth 2.0 Explained With Simple Terms.&#xA;OAuth 2.0 is a powerful and secure framework that allows different applications to securely interact with each other on behalf of users without sharing sensitive credentials.&#xA;The entities involved in OAuth are the User, the Server, and the Identity Provider (IDP).&#xA;What Can an OAuth Token Do?&#xA;When you use OAuth, you get an OAuth token that represents your identity and permissions. This token can do a few important things:</description>
+    </item>
+    <item>
+      <title>XSS攻击详解</title>
+      <link>http://localhost:1313/docs/security/cross-site-scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/security/cross-site-scripting/</guid>
+      <description>Everything You Need to Know About Cross-Site Scripting (XSS).&#xA;XSS, a prevalent vulnerability, occurs when malicious scripts are injected into web pages, often through input fields. Check out the diagram below for a deeper dive into how this vulnerability emerges when user input is improperly handled and subsequently returned to the client, leaving systems vulnerable to exploitation.&#xA;Understanding the distinction between Reflective and Stored XSS is crucial. Reflective XSS involves immediate execution of the injected script, while Stored XSS persists over time, posing long-term threats.</description>
     </item>
   </channel>
 </rss>

@@ -1,32 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>个人笔记</title>
+    <title>主页 on 个人笔记</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on 个人笔记</description>
+    <description>Recent content in 主页 on 个人笔记</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HTTP状态码</title>
-      <link>http://localhost:1313/docs/network/http-status/</link>
+      <title>8个关键数据结构</title>
+      <link>http://localhost:1313/docs/db/theory/8-key-data-structures-that-power-modern-databases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/network/http-status/</guid>
+      <guid>http://localhost:1313/docs/db/theory/8-key-data-structures-that-power-modern-databases/</guid>
+      <description>&#xA;8 Key Data Structures That Power Modern Databases&#xA;Skiplist: a common in-memory index type. Used in Redis Hash index: a very common implementation of the “Map” data structure (or “Collection”) SSTable: immutable on-disk “Map” implementation LSM tree: Skiplist + SSTable. High write throughput B-tree: disk-based solution. Consistent read/write performance Inverted index: used for document indexing. Used in Lucene Suffix tree: for string pattern search R-tree: multi-dimension search, such as finding the nearest neighbor </description>
+    </item>
+    <item>
+      <title>ChatGPT工作原理</title>
+      <link>http://localhost:1313/docs/ai/how-does-chatgpt-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/ai/how-does-chatgpt-work/</guid>
+      <description>How does ChatGPT-like system work?&#xA;Since OpenAI hasn&amp;rsquo;t provided all the details, some parts of the diagram may be inaccurate.&#xA;We attempted to explain how it works in the diagram below. The process can be broken down into two parts.&#xA;Training. To train a ChatGPT model, there are two stages:&#xA;- Pre-training: In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data.</description>
+    </item>
+    <item>
+      <title>ES使用最高的6个场景</title>
+      <link>http://localhost:1313/docs/db/es/top-6-es-use-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/db/es/top-6-es-use-cases/</guid>
+      <description>Top 6 ElasticSearch Use Cases. . . Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram below shows the top 6 use cases:&#xA;🔹 Full-Text Search Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.&#xA;🔹 Real-Time Analytics Elasticsearch&amp;rsquo;s ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.</description>
+    </item>
+    <item>
+      <title>Git常用指令</title>
+      <link>http://localhost:1313/docs/tools/git/git-commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/tools/git/git-commands/</guid>
+      <description> 添加与取消代理(局部)&#xA;1# 添加代理 其中7890是clash对外暴露的端口 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)&#xA;1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy git添加别名&#xA;在Windows系统中需要在$PWD/etc/bash.bashrc的尾部添加类似如下内容&#xA;1alias git-log=&amp;#34;git log --abbrev-commit --pretty=oneline --graph&amp;#34; 2alias git-logs=&amp;#34;git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;&amp;#34; </description>
+    </item>
+    <item>
+      <title>JavaScript是如何执行的</title>
+      <link>http://localhost:1313/docs/code/front/how-does-javascript-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/front/how-does-javascript-work/</guid>
+      <description>The cheat sheet below shows most important characteristics of Javascript.&#xA;🔹 Interpreted Language JavaScript code is executed by the browser or JavaScript engine rather than being compiled into machine language beforehand. This makes it highly portable across different platforms. Modern engines such as V8 utilize Just-In-Time (JIT) technology to compile code into directly executable machine code.&#xA;🔹 Function is First-Class Citizen In JavaScript, functions are treated as first-class citizens, meaning they can be stored in variables, passed as arguments to other functions, and returned from functions.</description>
+    </item>
+    <item>
+      <title>Kafka的5种使用场景</title>
+      <link>http://localhost:1313/docs/code/mq/top-5-kafka-use-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/mq/top-5-kafka-use-cases/</guid>
       <description></description>
     </item>
     <item>
-      <title>Visa是如何挣钱的</title>
-      <link>http://localhost:1313/docs/other/how-visa-make-money/</link>
+      <title>MySQL批量制造数据</title>
+      <link>http://localhost:1313/docs/code/block/mysql-batch-create-data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/other/how-visa-make-money/</guid>
-      <description>Why is the credit card called “𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 product in banks”? How does VISA/Mastercard make money?&#xA;The diagram below shows the economics of the credit card payment flow.&#xA;The cardholder pays a merchant $100 to buy a product.&#xA;The merchant benefits from the use of the credit card with higher sales volume, and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the “𝐦𝐞𝐫𝐜𝐡𝐚𝐧𝐭 𝐝𝐢𝐬𝐜𝐨𝐮𝐧𝐭 𝐟𝐞𝐞.</description>
+      <guid>http://localhost:1313/docs/code/block/mysql-batch-create-data/</guid>
+      <description>利用mysql的存储过程快速插入大量数据&#xA;1DELIMITER $$ 2 3USE `test`$$ 4 5DROP PROCEDURE IF EXISTS `add_user_batch`$$ 6 7CREATE DEFINER=`root`@`%` PROCEDURE `add_user_batch`(IN COUNT INT) 8BEGIN 9 DECLARE i INT; 10 DECLARE t_name VARCHAR(8); 11 DECLARE t_tag VARCHAR(20); 12 DECLARE t_age INT(2); 13 DECLARE t_sql_template VARCHAR(100); 14 DECLARE t_sql TEXT; 15 DECLARE t_tag_mod_val INT DEFAULT(25); 16 DECLARE t_commit_mod_val INT DEFAULT(100); 17 18 DECLARE t_start_time DATETIME; 19 DECLARE t_end_time DATETIME; 20 21 TRUNCATE TABLE `system_user`; 22 23 SET t_start_time=NOW(); 24 SET t_sql_template = &amp;#34;INSERT INTO `system_user`(NAME, age, tag) VALUES&amp;#34;; 25 SET t_sql = t_sql_template; 26 SET i = 1; 27 WHILE i &amp;lt;= COUNT 28 DO 29 SET t_age = FLOOR(1 + RAND() * 60); 30 SET t_name = LEFT(UUID(), 8); 31 -- 给tag随机制造空值 32 IF MOD(i, t_tag_mod_val) = 0 THEN 33 SET t_tag = &amp;#34;NULL&amp;#34;; 34 ELSE 35 SET t_tag = CONCAT(&amp;#34;&amp;#39;&amp;#34;,LEFT(UUID(), 8),&amp;#34;&amp;#39;&amp;#34;); 36 END IF; 37 38 SET t_sql = CONCAT(t_sql,&amp;#34;(&amp;#39;&amp;#34;,t_name,&amp;#34;&amp;#39;,&amp;#34;,t_age,&amp;#34;,&amp;#34;,t_tag,&amp;#34;)&amp;#34;); 39 40 IF MOD(i,t_commit_mod_val) !</description>
+    </item>
+    <item>
+      <title>Redis架构演进</title>
+      <link>http://localhost:1313/docs/db/redis/redis-architecture-evolve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/db/redis/redis-architecture-evolve/</guid>
+      <description>Rome wasn&amp;rsquo;t built in a day.&#xA;How does Redis architecture evolve?&#xA;Redis is a popular in-memory cache. How did it evolve to the architecture it is today?&#xA;🔹 2010 - Standalone Redis When Redis 1.0 was released in 2010, the architecture was quite simple. It is usually used as a cache to the business application.&#xA;However, Redis stores data in memory. When we restart Redis, we will lose all the data and the traffic directly hits the database.</description>
+    </item>
+    <item>
+      <title>Stop The War</title>
+      <link>http://localhost:1313/docs/other/stop-the-war/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/other/stop-the-war/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TCP状态变化图</title>
+      <link>http://localhost:1313/docs/network/tcp-status-change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/network/tcp-status-change/</guid>
+      <description></description>
     </item>
     <item>
       <title>不同的身份管理方式</title>
       <link>http://localhost:1313/docs/security/identity-manage-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/security/identity-manage-types/</guid>
-      <description></description>
+      <description>When you login to a website, your identity needs to be managed. Here is how different solutions work:&#xA;- Session - The server stores your identity and gives the browser a session ID cookie. This allows the server to track login state. But cookies don&amp;rsquo;t work well across devices.&#xA;- Token - Your identity is encoded into a token sent to the browser. The browser sends this token on future requests for authentication.</description>
     </item>
     <item>
       <title>不同认证方式的对比</title>
@@ -37,10 +93,38 @@
     </item>
     <item>
       <title>不同语言的工作原理</title>
-      <link>http://localhost:1313/docs/code/language-compare/</link>
+      <link>http://localhost:1313/docs/code/theory/language-compare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/code/language-compare/</guid>
+      <guid>http://localhost:1313/docs/code/theory/language-compare/</guid>
+      <description>How Do C++, Java, Python Work?&#xA;The diagram shows how the compilation and execution work.&#xA;Compiled languages are compiled into machine code by the compiler. The machine code can later be executed directly by the CPU. Examples: C, C++, Go.&#xA;A bytecode language like Java, compiles the source code into bytecode first, then the JVM executes the program. Sometimes JIT (Just-In-Time) compiler compiles the source code into machine code to speed up the execution.</description>
+    </item>
+    <item>
+      <title>云原生技术栈</title>
+      <link>http://localhost:1313/docs/cloud/cloud-tech-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/cloud/cloud-tech-stack/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>什么是gRPC</title>
+      <link>http://localhost:1313/docs/code/framework/grpc/what-is-grpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/framework/grpc/what-is-grpc/</guid>
+      <description>What is gRPC?&#xA;The diagram below shows important aspects of understanding gRPC.&#xA;gRPC is a high-performance, open-source universal RPC (Remote Procedure Call) framework initially developed by Google. It leverages HTTP/2 for transport, Protocol Buffers as the interface description language, and provides features such as authentication, load balancing, and more. gRPC is designed to enable efficient and robust communication between services in a microservices architecture, making it a popular choice for building distributed systems and APIs.</description>
+    </item>
+    <item>
+      <title>单调栈</title>
+      <link>http://localhost:1313/docs/algorithm/sorted-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/algorithm/sorted-stack/</guid>
+      <description>单调递增，从栈顶到栈底依次递增&#xA;1public static void sortStackIncrease() { 2 int[] data = {2, 7, 5, 4, 6, 3, 4, 2}; 3 Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); 4 for (Integer val : data) { 5 while (!stack.isEmpty() &amp;amp;&amp;amp; stack.peek() &amp;lt;= val) { 6 stack.pop(); 7 } 8 stack.push(val); 9 } 10 System.out.println(stack); 11} 单调递减，从栈顶到栈底依次递减&#xA;1public static void sortStackDecrease() { 2 int[] data = {4, 3, 2, 5, 7, 4, 6, 8}; 3 Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); 4 for (Integer val : data) { 5 while (!</description>
+    </item>
+    <item>
+      <title>数据管道概览</title>
+      <link>http://localhost:1313/docs/bigdata/data-pipelines-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/bigdata/data-pipelines-overview/</guid>
+      <description>Data pipelines are a fundamental component of managing and processing data efficiently within modern systems. These pipelines typically encompass 5 predominant phases: Collect, Ingest, Store, Compute, and Consume.&#xA;\1. Collect: Data is acquired from data stores, data streams, and applications, sourced remotely from devices, applications, or business systems.&#xA;\2. Ingest: During the ingestion process, data is loaded into systems and organized within event queues.&#xA;\3. Store: Post ingestion, organized data is stored in data warehouses, data lakes, and data lakehouses, along with various systems like databases, ensuring post-ingestion storage.</description>
     </item>
     <item>
       <title>文件类型说明</title>
@@ -57,11 +141,32 @@
       <description></description>
     </item>
     <item>
+      <title>系统设计的4大关键</title>
+      <link>http://localhost:1313/docs/monitor/fantastic-four-of-system-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/monitor/fantastic-four-of-system-design/</guid>
+      <description>Who are the Fantastic Four of System Design?&#xA;Scalability, Availability, Reliability, and Performance.&#xA;They are the most critical components to crafting successful software systems.&#xA;Let’s look at each of them with implementation techniques:&#xA;1 - Scalability Scalability ensures that your application can handle more load without compromising performance.&#xA;2 - Availability Availability makes sure that your application is always ready to serve the users and downtime is minimal.&#xA;3 - Reliability Reliability is about building software that consistently delivers correct results.</description>
+    </item>
+    <item>
+      <title>线程生命周期说明</title>
+      <link>http://localhost:1313/docs/code/language/java/thread-lifecycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/language/java/thread-lifecycle/</guid>
+      <description>&#xD;图解1&#xD;#&#xD;图解2&#xD;#&#xD;</description>
+    </item>
+    <item>
       <title>网关的作用</title>
       <link>http://localhost:1313/docs/microservice/develop/what-does-api-gateway-do/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/microservice/develop/what-does-api-gateway-do/</guid>
-      <description></description>
+      <description>What does API gateway do? The diagram below shows the detail.&#xA;Step 1 - The client sends an HTTP request to the API gateway.&#xA;Step 2 - The API gateway parses and validates the attributes in the HTTP request.&#xA;Step 3 - The API gateway performs allow-list/deny-list checks.&#xA;Step 4 - The API gateway talks to an identity provider for authentication and authorization.&#xA;Step 5 - The rate limiting rules are applied to the request.</description>
+    </item>
+    <item>
+      <title>6种云消息传递模式</title>
+      <link>http://localhost:1313/docs/cloud/top-6-clould-message-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/cloud/top-6-clould-message-patterns/</guid>
+      <description>How do services communicate with each other? The diagram below shows 6 cloud messaging patterns.&#xA;🔹 Asynchronous Request-Reply&#xA;This pattern aims at providing determinism for long-running backend tasks. It decouples backend processing from frontend clients.&#xA;In the diagram below, the client makes a synchronous call to the API, triggering a long-running operation on the backend. The API returns an HTTP 202 (Accepted) status code, acknowledging that the request has been received for processing.</description>
     </item>
     <item>
       <title>9中API测试方式</title>
@@ -71,11 +176,67 @@
       <description>Explaining 9 types of API testing.&#xA;🔹 Smoke Testing This is done after API development is complete. Simply validate if the APIs are working and nothing breaks.&#xA;🔹 Functional Testing This creates a test plan based on the functional requirements and compares the results with the expected results.&#xA;🔹 Integration Testing This test combines several API calls to perform end-to-end tests. The intra-service communications and data transmissions are tested.</description>
     </item>
     <item>
-      <title>文件权限说明</title>
-      <link>http://localhost:1313/docs/linux/system/linux-file-permissions/</link>
+      <title>CPU使用达到100%的9个场景</title>
+      <link>http://localhost:1313/docs/monitor/top-9-cases-behind-cpu-high-usage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/linux/system/linux-file-permissions/</guid>
+      <guid>http://localhost:1313/docs/monitor/top-9-cases-behind-cpu-high-usage/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>gRPC如何工作的</title>
+      <link>http://localhost:1313/docs/code/framework/grpc/how-does-grpc-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/framework/grpc/how-does-grpc-work/</guid>
+      <description>How does 𝐠𝐑𝐏𝐂 work? RPC (Remote Procedure Call) is called “𝐫𝐞𝐦𝐨𝐭𝐞” because it enables communications between remote services when services are deployed to different servers under microservice architecture. From the user’s point of view, it acts like a local function call.&#xA;The diagram below illustrates the overall data flow for 𝐠𝐑𝐏𝐂.&#xA;Step 1: A REST call is made from the client. The request body is usually in JSON format.</description>
+    </item>
+    <item>
+      <title>HTTP状态码说明</title>
+      <link>http://localhost:1313/docs/network/http-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/network/http-status/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>kakfa丢失消息的场景</title>
+      <link>http://localhost:1313/docs/code/mq/can-kafka-lose-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/mq/can-kafka-lose-messages/</guid>
+      <description>Error handling is one of the most important aspects of building reliable systems.&#xA;Today, we will discuss an important topic: Can Kafka lose messages?&#xA;A common belief among many developers is that Kafka, by its very design, guarantees no message loss. However, understanding the nuances of Kafka&amp;rsquo;s architecture and configuration is essential to truly grasp how and when it might lose messages, and more importantly, how to prevent such scenarios.</description>
+    </item>
+    <item>
+      <title>Matplotlib展示中文</title>
+      <link>http://localhost:1313/docs/code/block/matplotlib-show-chinese/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/block/matplotlib-show-chinese/</guid>
+      <description>在Matplotlib中展示中文，防止乱码&#xA;核心代码：&#xA;1plt.rcParams[&amp;#39;font.sans-serif&amp;#39;]=[&amp;#39;SimHei&amp;#39;] #用来正常显示中文标签 2plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False #用来正常显示负号 完整代码：&#xA;1import numpy as np 2import matplotlib.pyplot as plt 3from sklearn.linear_model import Lasso 4 5plt.rcParams[&amp;#39;font.sans-serif&amp;#39;]=[&amp;#39;SimHei&amp;#39;] #用来正常显示中文标签 6plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False #用来正常显示负号 7 8# 生成模拟数据 9np.random.seed(42) 10disciple_count = np.random.randint(50, 200, size=20) 11establishment_years = np.random.randint(1, 100, size=20) 12weapon_types = np.random.randint(1, 10, size=20) 13master_skill = 2 * disciple_count + 1.5 * establishment_years + 3 * weapon_types + np.random.randn(20) * 20 + 100 14 15# 数据转换为二维数组 16X = np.</description>
+    </item>
+    <item>
+      <title>Redis为啥这么快</title>
+      <link>http://localhost:1313/docs/db/redis/why-redis-fast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/db/redis/why-redis-fast/</guid>
+      <description>Why is Redis Fast?&#xA;Redis is fast for in-memory data storage. Its speed has made it popular for caching, session storage, and real-time analytics. But what gives Redis its blazing speed? Let&amp;rsquo;s explore:&#xA;𝗥𝗔𝗠-𝗕𝗮𝘀𝗲𝗱 𝗦𝘁𝗼𝗿𝗮𝗴𝗲&#xA;At its core, Redis primarily uses main memory for storing data. Accessing data from RAM is orders of magnitude faster than from disk. This is a major reason for Redis&amp;rsquo;s speed.&#xA;However, RAM is volatile.</description>
+    </item>
+    <item>
+      <title>Visa是如何挣钱的</title>
+      <link>http://localhost:1313/docs/other/how-visa-make-money/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/other/how-visa-make-money/</guid>
+      <description>Why is the credit card called “𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 product in banks”? How does VISA/Mastercard make money?&#xA;The diagram below shows the economics of the credit card payment flow.&#xA;The cardholder pays a merchant $100 to buy a product.&#xA;The merchant benefits from the use of the credit card with higher sales volume, and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the “𝐦𝐞𝐫𝐜𝐡𝐚𝐧𝐭 𝐝𝐢𝐬𝐜𝐨𝐮𝐧𝐭 𝐟𝐞𝐞.</description>
+    </item>
+    <item>
+      <title>如何提高前端网站加载速度</title>
+      <link>http://localhost:1313/docs/code/front/fronted-performance-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/front/fronted-performance-cheatsheet/</guid>
+      <description>How to load your websites at lightning speed?&#xA;Check out these 8 tips to boost frontend performance:&#xA;Compression Compress files and minimize data size before transmission to reduce network load.&#xA;Selective Rendering/Windowing Display only visible elements to optimize rendering performance. For example, in a dynamic list, only render visible items.&#xA;Modular Architecture with Code Splitting Split a bigger application bundle into multiple smaller bundles for efficient loading.&#xA;Priority-Based Loading Prioritize essential resources and visible (or above-the-fold) content for a better user experience.</description>
+    </item>
+    <item>
+      <title>并发不是并行</title>
+      <link>http://localhost:1313/docs/code/theory/concurrency-is-not-parallelism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/concurrency-is-not-parallelism/</guid>
+      <description>Things Every Developer Should Know: Concurrency is 𝐍𝐎𝐓 parallelism.&#xA;In system design, it is important to understand the difference between concurrency and parallelism.&#xA;As Rob Pyke(one of the creators of GoLang) stated:“ Concurrency is about 𝐝𝐞𝐚𝐥𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 lots of things at once. Parallelism is about 𝐝𝐨𝐢𝐧𝐠 lots of things at once.&amp;quot; This distinction emphasizes that concurrency is more about the 𝐝𝐞𝐬𝐢𝐠𝐧 of a program, while parallelism is about the 𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐨𝐧.</description>
     </item>
     <item>
       <title>微服务最佳实践</title>
@@ -83,6 +244,258 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/microservice/develop/microservice-best-practices/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>搜索引擎如何工作</title>
+      <link>http://localhost:1313/docs/db/theory/how-does-search-engine-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/db/theory/how-does-search-engine-work/</guid>
+      <description>The diagram below shows a high-level walk-through of a search engine.&#xA;▶️ Step 1 - Crawling Web Crawlers scan the internet for web pages. They follow the URL links from one page to another and store URLs in the URL store. The crawlers discover new content, including web pages, images, videos, and files.&#xA;▶️ Step 2 - Indexing Once a web page is crawled, the search engine parses the page and indexes the content found on the page in a database.</description>
+    </item>
+    <item>
+      <title>文件权限说明</title>
+      <link>http://localhost:1313/docs/linux/system/linux-file-permissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/linux/system/linux-file-permissions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>6种数据管理模式</title>
+      <link>http://localhost:1313/docs/db/theory/top-6-data-manage-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/db/theory/top-6-data-manage-patterns/</guid>
+      <description>How do we manage data? Here are top 6 data management patterns.&#xA;🔹 Cache Aside When an application needs to access data, it first checks the cache. If the data is not present (a cache miss), it fetches the data from the data store, stores it in the cache, and then returns the data to the user. This pattern is particularly useful for scenarios where data is read frequently but updated less often.</description>
+    </item>
+    <item>
+      <title>HTTPS连接建立过程</title>
+      <link>http://localhost:1313/docs/network/https-handshake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/network/https-handshake/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux启动过程详解</title>
+      <link>http://localhost:1313/docs/linux/system/linux-boot-process-explained/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/linux/system/linux-boot-process-explained/</guid>
+      <description>Linux Boot Process Illustrated&#xA;The diagram below shows the steps.&#xA;Step 1 - When we turn on the power, BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) firmware is loaded from non-volatile memory, and executes POST (Power On Self Test).&#xA;Step 2 - BIOS/UEFI detects the devices connected to the system, including CPU, RAM, and storage.&#xA;Step 3 - Choose a booting device to boot the OS from.</description>
+    </item>
+    <item>
+      <title>Reddit核心架构</title>
+      <link>http://localhost:1313/docs/code/mq/the-core-reddit-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/mq/the-core-reddit-architecture/</guid>
+      <description>A quick look at Reddit’s Core Architecture that helps it serve over 1 billion users every month.&#xA;This information is based on research from many Reddit engineering blogs. But since architecture is ever-evolving, things might have changed in some aspects.&#xA;The main points of Reddit’s architecture are as follows:&#xA;Reddit uses a Content Delivery Network (CDN) from Fastly as a front for the application&#xA;Reddit started using jQuery in early 2009.</description>
+    </item>
+    <item>
+      <title>Session和JWT的对比</title>
+      <link>http://localhost:1313/docs/security/session-vs-jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/security/session-vs-jwt/</guid>
+      <description>What’s the difference between Session-based authentication and JWTs?&#xA;Here’s a simple breakdown for both approaches:&#xA;Session-Based Authentication&#xA;In this approach, you store the session information in a database or session store and hand over a session ID to the user.&#xA;Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.&#xA;Here’s how it works:&#xA;1 - The user makes a login request and the frontend app sends the request to the backend server.</description>
+    </item>
+    <item>
+      <title>云计算成本降低技术</title>
+      <link>http://localhost:1313/docs/cloud/cloud-cost-reduction-techniques/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/cloud/cloud-cost-reduction-techniques/</guid>
+      <description>Irrational Cloud Cost is the biggest challenge many organizations are battling as they navigate the complexities of cloud computing.&#xA;Efficiently managing these costs is crucial for optimizing cloud usage and maintaining financial health.&#xA;The following techniques can help businesses effectively control and minimize their cloud expenses.&#xA;Reduce Usage: Fine-tune the volume and scale of resources to ensure efficiency without compromising on the performance of applications (e.g., downsizing instances, minimizing storage space, consolidating services).</description>
+    </item>
+    <item>
+      <title>微服务开发的9个最佳实践</title>
+      <link>http://localhost:1313/docs/microservice/develop/9-best-practices-for-building-microservices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/microservice/develop/9-best-practices-for-building-microservices/</guid>
+      <description>Creating a system using microservices is extremely difficult unless you follow some strong principles.&#xA;9 best practices that you must know before building microservices:&#xA;1 - Design For Failure A distributed system with microservices is going to fail.&#xA;You must design the system to tolerate failure at multiple levels such as infrastructure, database, and individual services. Use circuit breakers, bulkheads, or graceful degradation methods to deal with failures.&#xA;2 - Build Small Services A microservice should not do multiple things at once.</description>
+    </item>
+    <item>
+      <title>编写出安全有效的API</title>
+      <link>http://localhost:1313/docs/code/theory/design-effective-and-safe-apis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/design-effective-and-safe-apis/</guid>
+      <description>Note that API design is not just URL path design. Most of the time, we need to choose the proper resource names, identifiers, and path patterns. It is equally important to design proper HTTP header fields or to design effective rate-limiting rules within the API gateway.</description>
+    </item>
+    <item>
+      <title>网站的9大性能指标</title>
+      <link>http://localhost:1313/docs/monitor/top-9-website-performance-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/monitor/top-9-website-performance-metrics/</guid>
+      <description>Top 9 website performance metrics you cannot ignore:&#xA;Load Time: This is the time taken by the web browser to download and display the webpage. It’s measured in milliseconds.&#xA;Time to First Byte (TTFB): It’s the time taken by the browser to receive the first byte of data from the web server. TTFB is crucial because it indicates the general ability of the server to handle traffic.&#xA;Request Count: The number of HTTP requests a browser has to make to fully load the page.</description>
+    </item>
+    <item>
+      <title>通过脚本生成网站URL列表</title>
+      <link>http://localhost:1313/docs/code/block/python-generate-site-url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/block/python-generate-site-url/</guid>
+      <description>Python脚本用于对网站的sitemap.xml文件进行解析&#xA;1from lxml import etree 2import requests, os 3 4if __name__ == &amp;#34;__main__&amp;#34;: 5 6 file_path = r&amp;#34;e:\urls.txt&amp;#34; 7 try: 8 os.remove(file_path) 9 except OSError: 10 pass 11 12 with open(file_path, &amp;#39;a&amp;#39;) as url_file: 13 xml_dict = {} 14 15 r = requests.get(&amp;#34;https://lucumt.info/sitemap.xml&amp;#34;) 16 root = etree.fromstring(r.content) 17 count = 0 18 for sitemap in root: 19 data = sitemap.getchildren()[0].text 20 if &amp;#39;tags&amp;#39; in data or &amp;#39;categories&amp;#39; in data: 21 continue 22 count = count + 1 23 url_file.</description>
+    </item>
+    <item>
+      <title>6种心跳检测机制</title>
+      <link>http://localhost:1313/docs/monitor/top-6-heartbeat-detection-mechanisms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/monitor/top-6-heartbeat-detection-mechanisms/</guid>
+      <description>How do we detect node failures in distributed systems? . . The diagram below shows top 6 Heartbeat Detection Mechanisms.&#xA;Heartbeat mechanisms are crucial in distributed systems for monitoring the health and status of various components. Here are several types of heartbeat detection mechanisms commonly used in distributed systems:&#xA;🔹 Push-Based Heartbeat The most basic form of heartbeat involves a periodic signal sent from one node to another or to a monitoring service.</description>
+    </item>
+    <item>
+      <title>6种数据模型</title>
+      <link>http://localhost:1313/docs/db/theory/top-6-database-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/db/theory/top-6-database-models/</guid>
+      <description>The diagram below shows top 6 data models.&#xA;🔹 Flat Model The flat data model is one of the simplest forms of database models. It organizes data into a single table where each row represents a record and each column represents an attribute. This model is similar to a spreadsheet and is straightforward to understand and implement. However, it lacks the ability to efficiently handle complex relationships between data entities.</description>
+    </item>
+    <item>
+      <title>HTTPS是如何工作的</title>
+      <link>http://localhost:1313/docs/network/how-https-works/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/network/how-https-works/</guid>
+      <description>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.&#xA;SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.&#xA;Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.&#xA;HTML&amp;rsquo;s Role: Peek into HTML&amp;rsquo;s role in structuring the web.</description>
+    </item>
+    <item>
+      <title>Kafka核心概念</title>
+      <link>http://localhost:1313/docs/code/mq/kafka-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/mq/kafka-101/</guid>
+      <description>The Ultimate Kafka 101 You Cannot Miss&#xA;Kafka is super-popular but can be overwhelming in the beginning.&#xA;Here are 8 simple steps that can help you understand the fundamentals of Kafka.&#xA;1 - What is Kafka? Kafka is a distributed event store and a streaming platform. It began as an internal project at LinkedIn and now powers some of the largest data pipelines in the world in orgs like Netflix, Uber, etc.</description>
+    </item>
+    <item>
+      <title>Oauth2.0详解</title>
+      <link>http://localhost:1313/docs/security/oauth-2.0-explained/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/security/oauth-2.0-explained/</guid>
+      <description>Oauth 2.0 Explained With Simple Terms.&#xA;OAuth 2.0 is a powerful and secure framework that allows different applications to securely interact with each other on behalf of users without sharing sensitive credentials.&#xA;The entities involved in OAuth are the User, the Server, and the Identity Provider (IDP).&#xA;What Can an OAuth Token Do?&#xA;When you use OAuth, you get an OAuth token that represents your identity and permissions. This token can do a few important things:</description>
+    </item>
+    <item>
+      <title>Shell数组中模糊检测</title>
+      <link>http://localhost:1313/docs/code/block/shell-check-between-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/block/shell-check-between-arrays/</guid>
+      <description>检测数组a中的元素是否模糊包含数组b中的一个或多个元素&#xA;1#!/bin/bash 2 3# 数组a和数组b的定义 4a=(&amp;#34;tainan&amp;#34; &amp;#34;taipei&amp;#34; &amp;#34;taichung&amp;#34; &amp;#34;keelung&amp;#34; &amp;#34;taoyuan&amp;#34; &amp;#34;changhua&amp;#34; &amp;#34;nantou&amp;#34; &amp;#34;kinmen&amp;#34;) 5b=(&amp;#34;tai&amp;#34; &amp;#34;nan&amp;#34;) 6 7 8for element_a in &amp;#34;${a[@]}&amp;#34;; do 9 contains=false 10 for pattern in &amp;#34;${b[@]}&amp;#34;; do 11 if [[ $element_a =~ $pattern ]]; then 12 contains=true 13 break 14 fi 15 done 16 if [ &amp;#34;$contains&amp;#34; = true ] ; then 17 echo &amp;#34;----------$element_a符合要求---------------&amp;#34; 18 else 19 echo &amp;#34;**********$element_a不符合要求************&amp;#34; 20 fi 21done 下述改进版的，可避免双重循环&#xA;1#!/bin/bash 2 3# 数组a和数组b的定义 4a=(&amp;#34;tainan&amp;#34; &amp;#34;taipei&amp;#34; &amp;#34;taichung&amp;#34; &amp;#34;keelung&amp;#34; &amp;#34;taoyuan&amp;#34; &amp;#34;changhua&amp;#34; &amp;#34;nantou&amp;#34; &amp;#34;kinmen&amp;#34;) 5b=(&amp;#34;tai&amp;#34; &amp;#34;nan&amp;#34;) 6 7# 将数组b中的元素连接成正则表达式 8regex=$(IFS=&amp;#39;|&amp;#39;; echo &amp;#34;${b[*]}&amp;#34;) 9 10for element_a in &amp;#34;${a[@]}&amp;#34;; do 11 if echo &amp;#34;$element_a&amp;#34; | egrep -iq &amp;#34;$regex&amp;#34;; then 12 echo &amp;#34;----------$element_a符合要求---------------&amp;#34; 13 else 14 echo &amp;#34;**********$element_a不符合要求************&amp;#34; 15 fi 16done </description>
+    </item>
+    <item>
+      <title>通过Docker创建Jenkins</title>
+      <link>http://localhost:1313/docs/cloud/create-jenkins-via-docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/cloud/create-jenkins-via-docker/</guid>
+      <description> 1version: &amp;#39;3&amp;#39; 2services: 3 docker_jenkins: 4 user: root 5 restart: always 6 image: jenkins/jenkins:lts 7 container_name: jenkins_local 8 ports: 9 - 30180:8080 10 - 50000:50000 11 volumes: 12 - $PWD/jenkins_home/:/var/jenkins_home 13 - /var/run/docker.sock:/var/run/docker.sock 14 - /usr/bin/docker:/usr/bin/docker 15 - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose </description>
+    </item>
+    <item>
+      <title>Java中利用Lambda进行过滤</title>
+      <link>http://localhost:1313/docs/code/block/java-lambda-filter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/block/java-lambda-filter/</guid>
+      <description>复杂的过滤&#xD;#&#xD;1import com.google.common.collect.Lists; 2import lombok.AllArgsConstructor; 3import lombok.Data; 4import org.apache.commons.lang3.StringUtils; 5 6import java.util.List; 7import java.util.stream.Collectors; 8 9public class FilterTest { 10 11 public static void testData() { 12 List&amp;lt;Record&amp;gt; recordsA = Lists.newArrayList( 13 new Record(&amp;#34;A&amp;#34;, &amp;#34;a1&amp;#34;), 14 new Record(&amp;#34;A&amp;#34;, &amp;#34;a2&amp;#34;), 15 new Record(&amp;#34;A&amp;#34;, &amp;#34;a4&amp;#34;), 16 new Record(&amp;#34;A&amp;#34;, &amp;#34;a5&amp;#34;), 17 new Record(&amp;#34;B&amp;#34;, &amp;#34;b1&amp;#34;), 18 new Record(&amp;#34;B&amp;#34;, &amp;#34;b2&amp;#34;), 19 new Record(&amp;#34;B&amp;#34;, &amp;#34;b7&amp;#34;), 20 new Record(&amp;#34;D&amp;#34;, &amp;#34;b7&amp;#34;) 21 ); 22 List&amp;lt;Record&amp;gt; recordsB = Lists.</description>
+    </item>
+    <item>
+      <title>REST API vs GraphQL</title>
+      <link>http://localhost:1313/docs/code/theory/top-9-system-integrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/top-9-system-integrations/</guid>
+      <description>REST API Vs. GraphQL When it comes to API design, REST and GraphQL each have their own strengths and weaknesses.&#xA;REST - Uses standard HTTP methods like GET, POST, PUT, DELETE for CRUD operations. - Works well when you need simple, uniform interfaces between separate services/applications. - Caching strategies are straightforward to implement. - The downside is it may require multiple roundtrips to assemble related data from separate endpoints.</description>
+    </item>
+    <item>
+      <title>XSS攻击详解</title>
+      <link>http://localhost:1313/docs/security/cross-site-scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/security/cross-site-scripting/</guid>
+      <description>Everything You Need to Know About Cross-Site Scripting (XSS).&#xA;XSS, a prevalent vulnerability, occurs when malicious scripts are injected into web pages, often through input fields. Check out the diagram below for a deeper dive into how this vulnerability emerges when user input is improperly handled and subsequently returned to the client, leaving systems vulnerable to exploitation.&#xA;Understanding the distinction between Reflective and Stored XSS is crucial. Reflective XSS involves immediate execution of the injected script, while Stored XSS persists over time, posing long-term threats.</description>
+    </item>
+    <item>
+      <title>数据通信的9种架构模式</title>
+      <link>http://localhost:1313/docs/code/theory/rest-api-vs-graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/rest-api-vs-graphql/</guid>
+      <description>Top 9 Architectural Patterns for Data and Communication Flow&#xA;🔹 Peer-to-Peer The Peer-to-Peer pattern involves direct communication between two components without the need for a central coordinator.&#xA;🔹 API Gateway An API Gateway acts as a single entry point for all client requests to the backend services of an application.&#xA;🔹 Pub-Sub The Pub-Sub pattern decouples the producers of messages (publishers) from the consumers of messages (subscribers) through a message broker.</description>
+    </item>
+    <item>
+      <title>网络安全学习线路图</title>
+      <link>http://localhost:1313/docs/network/rodamap-for-learning-cyber-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/network/rodamap-for-learning-cyber-security/</guid>
+      <description>Cybersecurity is crucial for protecting information and systems from theft, damage, and unauthorized access. Whether you&amp;rsquo;re a beginner or looking to advance your technical skills, there are numerous resources and paths you can take to learn more about cybersecurity. Here are some structured suggestions to help you get started or deepen your knowledge:&#xA;🔹 Security Architecture 🔹 Frameworks &amp;amp; Standards 🔹 Application Security 🔹 Risk Assessment 🔹 Enterprise Risk Management 🔹 Threat Intelligence 🔹 Security Operation</description>
+    </item>
+    <item>
+      <title>选择合适的数据库</title>
+      <link>http://localhost:1313/docs/db/theory/choosing-the-right-database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/db/theory/choosing-the-right-database/</guid>
+      <description>Choosing the Right Database&#xA;When deciding which type of database to use, it can be overwhelming to choose from the many available options. Here&amp;rsquo;s a brief summary of some common database architectures and their use cases:&#xA;Relational databases: These are versatile and can solve almost any problem. They are suitable for structured data with well-defined relationships between entities.&#xA;In-memory stores: With their high speed and limited data size, in-memory databases are perfect for applications that require fast operations, such as caching or real-time analytics.</description>
+    </item>
+    <item>
+      <title>扩展数据库的7种策略</title>
+      <link>http://localhost:1313/docs/db/theory/database-scaling-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/db/theory/database-scaling-cheatsheet/</guid>
+      <description>7 must-know strategies to scale your database.&#xA;1 - Indexing: Check the query patterns of your application and create the right indexes.&#xA;2 - Materialized Views: Pre-compute complex query results and store them for faster access.&#xA;3 - Denormalization: Reduce complex joins to improve query performance.&#xA;4 - Vertical Scaling Boost your database server by adding more CPU, RAM, or storage.&#xA;5 - Caching Store frequently accessed data in a faster storage layer to reduce database load.</description>
+    </item>
+    <item>
+      <title>网络7层模型</title>
+      <link>http://localhost:1313/docs/network/what-is-osi-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/network/what-is-osi-model/</guid>
+      <description>How is data sent over the network? Why do we need so many layers in the OSI model?&#xA;The diagram below shows how data is encapsulated and de-encapsulated when transmitting over the network.&#xA;🔹 Step 1: When Device A sends data to Device B over the network via the HTTP protocol, it is first added an HTTP header at the application layer.&#xA;🔹 Step 2: Then a TCP or a UDP header is added to the data.</description>
+    </item>
+    <item>
+      <title>软件开发12准则</title>
+      <link>http://localhost:1313/docs/code/theory/12-factor-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/12-factor-app/</guid>
+      <description>Have you heard of the 12-Factor App?&#xA;The &amp;ldquo;12 Factor App&amp;rdquo; offers a set of best practices for building modern software applications. Following these 12 principles can help developers and teams in building reliable, scalable, and manageable applications.&#xA;Here&amp;rsquo;s a brief overview of each principle:&#xA;Codebase: Have one place to keep all your code, and manage it using version control like Git.&#xA;Dependencies: List all the things your app needs to work properly, and make sure they&amp;rsquo;re easy to install.</description>
+    </item>
+    <item>
+      <title>10个良好编码准则</title>
+      <link>http://localhost:1313/docs/code/theory/10-good-coding-principle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/10-good-coding-principle/</guid>
+      <description>Software development requires good system designs and coding standards. We list 10 good coding principles in the diagram below.&#xA;🔹 01 Follow Code Specifications When we write code, it is important to follow the industry&amp;rsquo;s well-established norms, like “PEP 8”, “Google Java Style”, adhering to a set of agreed-upon code specifications ensures that the quality of the code is consistent and readable.&#xA;🔹 02 Documentation and Comments Good code should be clearly documented and commented to explain complex logic and decisions, and comments should explain why a certain approach was taken (“Why”) rather than what exactly is being done (“What”).</description>
+    </item>
+    <item>
+      <title>8种主要的网络协议</title>
+      <link>http://localhost:1313/docs/network/8-popular-network-protocols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/network/8-popular-network-protocols/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL查询执行顺序</title>
+      <link>http://localhost:1313/docs/db/theory/sql-query-logical-order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/db/theory/sql-query-logical-order/</guid>
+      <description>SQL statements are executed by the database system in several steps, including: - Parsing the SQL statement and checking its validity - Transforming the SQL into an internal representation, such as relational algebra - Optimizing the internal representation and creating an execution plan that utilizes index information - Executing the plan and returning the results</description>
+    </item>
+    <item>
+      <title>系统设计的15个核心概念</title>
+      <link>http://localhost:1313/docs/code/theory/15-system-design-core-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/15-system-design-core-concepts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>编码/加密/分词</title>
+      <link>http://localhost:1313/docs/code/theory/encoding-vs-encryption-vs-tokenization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/encoding-vs-encryption-vs-tokenization/</guid>
+      <description>Encoding vs Encryption vs Tokenization. Encoding, encryption, and tokenization are three distinct processes that handle data in different ways for various purposes, including data transmission, security, and compliance. In system designs, we need to select the right approach for handling sensitive information.&#xA;🔹 Encoding Encoding converts data into a different format using a scheme that can be easily reversed. Examples include Base64 encoding, which encodes binary data into ASCII characters, making it easier to transmit data over media that are designed to deal with textual data.</description>
+    </item>
+    <item>
+      <title>如何进行失败重试</title>
+      <link>http://localhost:1313/docs/code/theory/how-we-retry-on-failures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/how-we-retry-on-failures/</guid>
+      <description>How do we retry on failures?&#xA;In distributed systems and networked applications, retry strategies are crucial for handling transient errors and network instability effectively. The diagram shows 4 common retry strategies.&#xA;🔹 Linear Backoff Linear backoff involves waiting for a progressively increasing fixed interval between retry attempts.&#xA;Advantages: Simple to implement and understand.&#xA;Disadvantages: May not be ideal under high load or in high-concurrency environments as it could lead to resource contention or &amp;ldquo;retry storms&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>UML类图说明</title>
+      <link>http://localhost:1313/docs/code/theory/uml-class-diagrams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/uml-class-diagrams/</guid>
+      <description>UML is a standard way to visualize the design of your system and class diagrams are used across the industry.&#xA;They consist of:&#xA;1 - Class Acts as the blueprint that defines the properties and behavior of an object.&#xA;2 - Attributes Attributes in a UML class diagram represent the data fields of the class.&#xA;3 - Methods Methods in a UML class diagram represent the behavior that a class can perform.</description>
+    </item>
+    <item>
+      <title>垃圾回收工作流程</title>
+      <link>http://localhost:1313/docs/code/theory/garbage-collection-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code/theory/garbage-collection-101/</guid>
+      <description>How does Garbage Collection work? Garbage collection is an automatic memory management feature used in programming languages to reclaim memory no longer used by the program.&#xA;🔹 Java Java provides several garbage collectors, each suited for different use cases:&#xA;\1. Serial Garbage Collector: Best for single-threaded environments or small applications.&#xA;\2. Parallel Garbage Collector: Also known as the &amp;ldquo;Throughput Collector.&amp;rdquo;&#xA;\3. CMS (Concurrent Mark-Sweep) Garbage Collector: Low-latency collector aiming to minimize pause times.</description>
     </item>
   </channel>
 </rss>

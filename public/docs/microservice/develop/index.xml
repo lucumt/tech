@@ -12,7 +12,7 @@
       <link>http://localhost:1313/docs/microservice/develop/what-does-api-gateway-do/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/microservice/develop/what-does-api-gateway-do/</guid>
-      <description></description>
+      <description>What does API gateway do? The diagram below shows the detail.&#xA;Step 1 - The client sends an HTTP request to the API gateway.&#xA;Step 2 - The API gateway parses and validates the attributes in the HTTP request.&#xA;Step 3 - The API gateway performs allow-list/deny-list checks.&#xA;Step 4 - The API gateway talks to an identity provider for authentication and authorization.&#xA;Step 5 - The rate limiting rules are applied to the request.</description>
     </item>
     <item>
       <title>微服务最佳实践</title>
@@ -20,6 +20,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/microservice/develop/microservice-best-practices/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>微服务开发的9个最佳实践</title>
+      <link>http://localhost:1313/docs/microservice/develop/9-best-practices-for-building-microservices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/microservice/develop/9-best-practices-for-building-microservices/</guid>
+      <description>Creating a system using microservices is extremely difficult unless you follow some strong principles.&#xA;9 best practices that you must know before building microservices:&#xA;1 - Design For Failure A distributed system with microservices is going to fail.&#xA;You must design the system to tolerate failure at multiple levels such as infrastructure, database, and individual services. Use circuit breakers, bulkheads, or graceful degradation methods to deal with failures.&#xA;2 - Build Small Services A microservice should not do multiple things at once.</description>
     </item>
   </channel>
 </rss>
