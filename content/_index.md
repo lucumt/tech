@@ -28,8 +28,9 @@ hugo server -w -D --renderToMemory
 * [Redis数据机构与使用合集](https://www.cnblogs.com/WinterSir/collections/11923)
 * [Bash编程导论](https://github.com/bobbyiliev/introduction-to-bash-scripting)
 * [CPU执行流程介绍](https://cpu.land/)
+* [[译]系统设计面试](https://learning-guide.gitbook.io/system-design-interview)
 
-# 博客网站
+# 个人网站
 
 | 地址                                                         | 内容                                                         | 微信公众号     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------- |
