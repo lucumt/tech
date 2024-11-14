@@ -30,6 +30,10 @@ hugo server -w -D --renderToMemory
 * [CPU执行流程介绍](https://cpu.land/)
 * [[译]系统设计面试](https://learning-guide.gitbook.io/system-design-interview)
 
+# 其它
+
+* [alearner.top](http://alearner.top/)，宗广大佬的网站，永远感激
+
 # 个人网站
 
 | 地址                                                         | 内容                                                         | 微信公众号     |
