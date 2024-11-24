@@ -12,7 +12,7 @@
       <link>https://tech.lucumt.info/docs/code/language/java/thread-lifecycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/language/java/thread-lifecycle/</guid>
-      <description> 图解1 # 图解2 # </description>
+      <description> 说明&#xA;线程生命周期很考验Java多线程编程的基本功 图解1 # 图解2 # </description>
     </item>
   </channel>
 </rss>

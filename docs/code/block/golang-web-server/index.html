@@ -3,28 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" 添加与取消代理(局部)
-1# 添加代理 其中7890是clash对外暴露的端口 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)
-1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy git添加别名
-在Windows系统中需要在$PWD/etc/bash.bashrc的尾部添加类似如下内容
-1alias git-log=&#34;git log --abbrev-commit --pretty=oneline --graph&#34; 2alias git-logs=&#34;git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:&#39;%Y-%m-%d %H:%M:%S&#39;&#34; ">
+<meta name="description" content="采用Golang生成Web Server无需额外处理相关的静态文件等引用，会减少代码量和维护工作量
+1package main 2 3import ( 4	&#34;encoding/json&#34; 5	&#34;io/ioutil&#34; 6	&#34;log&#34; 7	&#34;net/http&#34; 8	&#34;os&#34; 9	&#34;strconv&#34; 10) 11 12type ConfigData struct { 13	Info string `json:&#34;info&#34;` 14	File string `json:&#34;file&#34;` 15	Port int `json:&#34;port&#34;` 16} 17 18func parseConfigFile() ConfigData { 19	jsonFile, err := os.Open(&#34;config.json&#34;) 20	if err != nil { 21	log.Println(err) 22	} 23	log.Println(&#34;Successfully Opened config.json&#34;) 24 25	defer jsonFile.Close() 26 27	byteValue, _ := ioutil.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/tools/git/git-commands/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/code/block/golang-web-server/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="Git常用指令">
-  <meta property="og:description" content=" 添加与取消代理(局部)
-1# 添加代理 其中7890是clash对外暴露的端口 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)
-1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy git添加别名
-在Windows系统中需要在$PWD/etc/bash.bashrc的尾部添加类似如下内容
-1alias git-log=&#34;git log --abbrev-commit --pretty=oneline --graph&#34; 2alias git-logs=&#34;git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:&#39;%Y-%m-%d %H:%M:%S&#39;&#34; ">
+  <meta property="og:title" content="利用Go生成简易的Web Server">
+  <meta property="og:description" content="采用Golang生成Web Server无需额外处理相关的静态文件等引用，会减少代码量和维护工作量
+1package main 2 3import ( 4	&#34;encoding/json&#34; 5	&#34;io/ioutil&#34; 6	&#34;log&#34; 7	&#34;net/http&#34; 8	&#34;os&#34; 9	&#34;strconv&#34; 10) 11 12type ConfigData struct { 13	Info string `json:&#34;info&#34;` 14	File string `json:&#34;file&#34;` 15	Port int `json:&#34;port&#34;` 16} 17 18func parseConfigFile() ConfigData { 19	jsonFile, err := os.Open(&#34;config.json&#34;) 20	if err != nil { 21	log.Println(err) 22	} 23	log.Println(&#34;Successfully Opened config.json&#34;) 24 25	defer jsonFile.Close() 26 27	byteValue, _ := ioutil.">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>Git常用指令 | 个人笔记</title>
+<title>利用Go生成简易的Web Server | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/tools/git/git-commands/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/code/block/golang-web-server/">
 <link rel="stylesheet" href="/book.min.24d59dad4c58a29f708a0b2fef60065dd6e9f8199fdaee40d99dca15ae8df85d.css" integrity="sha256-JNWdrUxYop9wigsv72AGXdbp&#43;Bmf2u5A2Z3KFa6N&#43;F0=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.c7ce5f305ed3887d2c1f7ce31ec3ecf8d17c25aa0550cd08e8d04d2bca1b4aac.js" integrity="sha256-x85fMF7TiH0sH3zjHsPs&#43;NF8JaoFUM0I6NBNK8obSqw=" crossorigin="anonymous"></script>
@@ -503,7 +497,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-28a50411accaecc16bc0763b9c190330" class="toggle" checked />
+    <input type="checkbox" id="section-28a50411accaecc16bc0763b9c190330" class="toggle"  />
     <label for="section-28a50411accaecc16bc0763b9c190330" class="flex justify-between">
       <a role="button" class="">工具</a>
     </label>
@@ -519,7 +513,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1a59dcdcff5a7ac71a7de17eb2aaad29" class="toggle" checked />
+    <input type="checkbox" id="section-1a59dcdcff5a7ac71a7de17eb2aaad29" class="toggle"  />
     <label for="section-1a59dcdcff5a7ac71a7de17eb2aaad29" class="flex justify-between">
       <a role="button" class="">Git</a>
     </label>
@@ -535,7 +529,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/tools/git/git-commands/" class="active">Git常用指令</a>
+    <a href="/docs/tools/git/git-commands/" class="">Git常用指令</a>
   
 
         </li>
@@ -558,7 +552,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle"  />
+    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle" checked />
     <label for="section-b0b4a016bddda14181aeb79f92565d38" class="flex justify-between">
       <a role="button" class="">编程</a>
     </label>
@@ -798,7 +792,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a492e0e982492102fba29e206d0fb4b6" class="toggle"  />
+    <input type="checkbox" id="section-a492e0e982492102fba29e206d0fb4b6" class="toggle" checked />
     <label for="section-a492e0e982492102fba29e206d0fb4b6" class="flex justify-between">
       <a role="button" class="">代码块</a>
     </label>
@@ -879,7 +873,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/code/block/golang-web-server/" class="">利用Go生成简易的Web Server</a>
+    <a href="/docs/code/block/golang-web-server/" class="active">利用Go生成简易的Web Server</a>
   
 
         </li>
@@ -1623,7 +1617,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Git常用指令</strong>
+  <strong>利用Go生成简易的Web Server</strong>
 
   <label for="toc-control">
     
@@ -1648,35 +1642,54 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><ul>
-<li>
-<p>添加与取消代理(局部)</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#228b22"># 添加代理 其中7890是clash对外暴露的端口</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>git config http.proxy http://127.0.0.1:7890
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>git config https.proxy https://127.0.0.1:7890
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#228b22"># 去掉代理</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>git config --unset http.proxy
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>git config --unset https.proxy
-</span></span></code></pre></div></li>
-<li>
-<p>添加与取消代理(全局)</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#228b22"># 添加代理</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>git config --global http.proxy http://127.0.0.1:7890
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>git config --global https.proxy https://127.0.0.1:7890
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#228b22"># 去掉代理</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>git config --global --unset http.proxy
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>git config --global --unset https.proxy
-</span></span></code></pre></div></li>
-<li>
-<p><code>git</code>添加别名</p>
-<p>在Windows系统中需要在<code>$PWD/etc/bash.bashrc</code>的尾部添加类似如下内容</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#658b00">alias</span> git-log=<span style="color:#cd5555">&#34;git log --abbrev-commit --pretty=oneline --graph&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#658b00">alias</span> git-logs=<span style="color:#cd5555">&#34;git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:&#39;%Y-%m-%d %H:%M:%S&#39;&#34;</span>
-</span></span></code></pre></div></li>
-</ul>
-</article>
+  <article class="markdown book-article"><p>采用<code>Golang</code>生成Web Server无需额外处理相关的静态文件等引用，会减少代码量和维护工作量</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8b008b;font-weight:bold">package</span> main
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#8b008b;font-weight:bold">import</span> (
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>	<span style="color:#cd5555">&#34;encoding/json&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>	<span style="color:#cd5555">&#34;io/ioutil&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>	<span style="color:#cd5555">&#34;log&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>	<span style="color:#cd5555">&#34;net/http&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>	<span style="color:#cd5555">&#34;os&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>	<span style="color:#cd5555">&#34;strconv&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span><span style="color:#8b008b;font-weight:bold">type</span> ConfigData <span style="color:#8b008b;font-weight:bold">struct</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>	Info <span style="color:#00688b;font-weight:bold">string</span> <span style="color:#cd5555">`json:&#34;info&#34;`</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>	File <span style="color:#00688b;font-weight:bold">string</span> <span style="color:#cd5555">`json:&#34;file&#34;`</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>	Port <span style="color:#00688b;font-weight:bold">int</span>    <span style="color:#cd5555">`json:&#34;port&#34;`</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span><span style="color:#8b008b;font-weight:bold">func</span> <span style="color:#008b45">parseConfigFile</span>() ConfigData {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>	jsonFile, err := os.<span style="color:#008b45">Open</span>(<span style="color:#cd5555">&#34;config.json&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>	<span style="color:#8b008b;font-weight:bold">if</span> err != <span style="color:#8b008b;font-weight:bold">nil</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>		log.<span style="color:#008b45">Println</span>(err)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>	}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>	log.<span style="color:#008b45">Println</span>(<span style="color:#cd5555">&#34;Successfully Opened config.json&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>	<span style="color:#8b008b;font-weight:bold">defer</span> jsonFile.<span style="color:#008b45">Close</span>()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>	byteValue, _ := ioutil.<span style="color:#008b45">ReadAll</span>(jsonFile)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>	<span style="color:#8b008b;font-weight:bold">var</span> config ConfigData
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span>	err = json.<span style="color:#008b45">Unmarshal</span>(byteValue, &amp;config)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span>	<span style="color:#8b008b;font-weight:bold">if</span> err != <span style="color:#8b008b;font-weight:bold">nil</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span>		log.<span style="color:#008b45">Fatal</span>(err)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span>	}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span><span>	<span style="color:#8b008b;font-weight:bold">return</span> config
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span><span>}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span><span><span style="color:#8b008b;font-weight:bold">func</span> <span style="color:#008b45">main</span>() {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span><span>	<span style="color:#8b008b;font-weight:bold">var</span> config = <span style="color:#008b45">parseConfigFile</span>()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span><span>	log.<span style="color:#008b45">Println</span>(<span style="color:#cd5555">&#34;port: &#34;</span> + strconv.<span style="color:#008b45">Itoa</span>(config.Port))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span><span>	log.<span style="color:#008b45">Println</span>(<span style="color:#cd5555">&#34;file: &#34;</span> + config.File)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41</span><span>	log.<span style="color:#008b45">Println</span>(config.Info)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span><span>	log.<span style="color:#008b45">Println</span>(<span style="color:#cd5555">&#34;可通过 http://127.0.0.1:&#34;</span> + strconv.<span style="color:#008b45">Itoa</span>(config.Port) + <span style="color:#cd5555">&#34; 访问此系统&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span><span>	http.<span style="color:#008b45">Handle</span>(<span style="color:#cd5555">&#34;/&#34;</span>, http.<span style="color:#008b45">FileServer</span>(http.<span style="color:#008b45">Dir</span>(config.File)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span><span>	http.<span style="color:#008b45">ListenAndServe</span>(<span style="color:#cd5555">&#34;:&#34;</span>+strconv.<span style="color:#008b45">Itoa</span>(config.Port), <span style="color:#8b008b;font-weight:bold">nil</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46</span><span>}
+</span></span></code></pre></div></article>
  
       
 

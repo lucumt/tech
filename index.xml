@@ -152,7 +152,7 @@
       <link>https://tech.lucumt.info/docs/code/language/java/thread-lifecycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/language/java/thread-lifecycle/</guid>
-      <description> 图解1 # 图解2 # </description>
+      <description> 说明&#xA;线程生命周期很考验Java多线程编程的基本功 图解1 # 图解2 # </description>
     </item>
     <item>
       <title>网关的作用</title>
@@ -419,6 +419,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/db/theory/choosing-the-right-database/</guid>
       <description>Choosing the Right Database&#xA;When deciding which type of database to use, it can be overwhelming to choose from the many available options. Here&amp;rsquo;s a brief summary of some common database architectures and their use cases:&#xA;Relational databases: These are versatile and can solve almost any problem. They are suitable for structured data with well-defined relationships between entities.&#xA;In-memory stores: With their high speed and limited data size, in-memory databases are perfect for applications that require fast operations, such as caching or real-time analytics.</description>
+    </item>
+    <item>
+      <title>利用Go生成简易的Web Server</title>
+      <link>https://tech.lucumt.info/docs/code/block/golang-web-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/block/golang-web-server/</guid>
+      <description>采用Golang生成Web Server无需额外处理相关的静态文件等引用，会减少代码量和维护工作量&#xA;1package main 2 3import ( 4&#x9;&amp;#34;encoding/json&amp;#34; 5&#x9;&amp;#34;io/ioutil&amp;#34; 6&#x9;&amp;#34;log&amp;#34; 7&#x9;&amp;#34;net/http&amp;#34; 8&#x9;&amp;#34;os&amp;#34; 9&#x9;&amp;#34;strconv&amp;#34; 10) 11 12type ConfigData struct { 13&#x9;Info string `json:&amp;#34;info&amp;#34;` 14&#x9;File string `json:&amp;#34;file&amp;#34;` 15&#x9;Port int `json:&amp;#34;port&amp;#34;` 16} 17 18func parseConfigFile() ConfigData { 19&#x9;jsonFile, err := os.Open(&amp;#34;config.json&amp;#34;) 20&#x9;if err != nil { 21&#x9;log.Println(err) 22&#x9;} 23&#x9;log.Println(&amp;#34;Successfully Opened config.json&amp;#34;) 24 25&#x9;defer jsonFile.Close() 26 27&#x9;byteValue, _ := ioutil.</description>
     </item>
     <item>
       <title>扩展数据库的7种策略</title>
