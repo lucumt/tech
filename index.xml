@@ -162,6 +162,13 @@
       <description>What does API gateway do? The diagram below shows the detail.&#xA;Step 1 - The client sends an HTTP request to the API gateway.&#xA;Step 2 - The API gateway parses and validates the attributes in the HTTP request.&#xA;Step 3 - The API gateway performs allow-list/deny-list checks.&#xA;Step 4 - The API gateway talks to an identity provider for authentication and authorization.&#xA;Step 5 - The rate limiting rules are applied to the request.</description>
     </item>
     <item>
+      <title>网络配置</title>
+      <link>https://tech.lucumt.info/docs/tools/network-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/tools/network-config/</guid>
+      <description> Windows中添加Clash代理&#xA;1set http_proxy=http://127.0.0.1:7890 &amp;amp; set https_proxy=http://127.0.0.1:7890 </description>
+    </item>
+    <item>
       <title>6种云消息传递模式</title>
       <link>https://tech.lucumt.info/docs/cloud/top-6-clould-message-patterns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
