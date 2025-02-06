@@ -63,3 +63,4 @@ hugo server -w -D --renderToMemory
 | [**面向信仰编程**](https://draveness.me/)                    | 有很多关于`Golang`和计算机基础的高质量博文                   |                |
 | [**bin的技术小屋**](https://www.cnblogs.com/binlovetech)     | 有部分关于`JVM`的高质量博文                                  |                |
 | [**程序员小富**](https://www.cnblogs.com/chengxy-nds)<br>[**fire100.top**](http://fire100.top/) | 主要是关于`JavaEE`相关的博文                                 | `程序员小富`   |
+| [**东阳马生架构**](https://www.cnblogs.com/mjunz)            | 主要是关于`JavaEE`和`MySQL`相关的博文                        |                |
