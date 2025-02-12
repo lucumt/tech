@@ -14,5 +14,12 @@
       <guid>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</guid>
       <description>How does ChatGPT-like system work?&#xA;Since OpenAI hasn&amp;rsquo;t provided all the details, some parts of the diagram may be inaccurate.&#xA;We attempted to explain how it works in the diagram below. The process can be broken down into two parts.&#xA;Training. To train a ChatGPT model, there are two stages:&#xA;- Pre-training: In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data.</description>
     </item>
+    <item>
+      <title>智能体解释</title>
+      <link>https://tech.lucumt.info/docs/ai/what-is-an-ai-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/ai/what-is-an-ai-agent/</guid>
+      <description>What is an AI Agent?&#xA;An AI agent is a software program that can interact with its environment, gather data, and use that data to achieve predetermined goals. AI agents can choose the best actions to perform to meet those goals.&#xA;Key characteristics of AI agents are as follows:&#xA;An agent can perform autonomous actions without constant human intervention. Also, they can have a human in the loop to maintain control.</description>
+    </item>
   </channel>
 </rss>

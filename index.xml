@@ -267,6 +267,13 @@
       <description></description>
     </item>
     <item>
+      <title>智能体解释</title>
+      <link>https://tech.lucumt.info/docs/ai/what-is-an-ai-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/ai/what-is-an-ai-agent/</guid>
+      <description>What is an AI Agent?&#xA;An AI agent is a software program that can interact with its environment, gather data, and use that data to achieve predetermined goals. AI agents can choose the best actions to perform to meet those goals.&#xA;Key characteristics of AI agents are as follows:&#xA;An agent can perform autonomous actions without constant human intervention. Also, they can have a human in the loop to maintain control.</description>
+    </item>
+    <item>
       <title>系统设计面试中的12种算法</title>
       <link>https://tech.lucumt.info/docs/algorithm/12-algorithms-for-system-design-interviews/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -456,6 +463,13 @@
       <description>7 must-know strategies to scale your database.&#xA;1 - Indexing: Check the query patterns of your application and create the right indexes.&#xA;2 - Materialized Views: Pre-compute complex query results and store them for faster access.&#xA;3 - Denormalization: Reduce complex joins to improve query performance.&#xA;4 - Vertical Scaling Boost your database server by adding more CPU, RAM, or storage.&#xA;5 - Caching Store frequently accessed data in a faster storage layer to reduce database load.</description>
     </item>
     <item>
+      <title>数字签名如何工作</title>
+      <link>https://tech.lucumt.info/docs/security/how-digital-signatures-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/security/how-digital-signatures-work/</guid>
+      <description>How Digital Signatures Work?&#xA;A digital signature is a specific kind of electronic signature to sign and secure electronically transmitted documents.&#xA;Digital signatures are similar to physical signatures since they are unique to every person. They identify the identity of the signer.&#xA;Here’s an example of the working process of a digital signature with Alice as the sender and John as the recipient:&#xA;Alice generates a cryptographic key pair consisting of a private key and a corresponding public key.</description>
+    </item>
+    <item>
       <title>网络7层模型</title>
       <link>https://tech.lucumt.info/docs/network/what-is-osi-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -482,6 +496,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>JWT无状态身份验证的关键</title>
+      <link>https://tech.lucumt.info/docs/security/jwt-101-key-to-stateless-authentication.gif/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/security/jwt-101-key-to-stateless-authentication.gif/</guid>
+      <description>JWT 101: Key to Stateless Authentication&#xA;JWT or JSON Web Tokens is an open standard for securely transmitting information between two parties. They are widely used for authentication and authorization.&#xA;A JWT consists of three main components:&#xA;1 - Header Every JWT carries a header specifying the algorithms for signing the JWT. It’s written in JSON format.&#xA;2 - Payload The payload consists of the claims and the user data. There are different types of claims such as registered, public, and private claims.</description>
     </item>
     <item>
       <title>SQL查询执行顺序</title>

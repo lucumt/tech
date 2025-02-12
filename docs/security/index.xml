@@ -42,5 +42,19 @@
       <guid>https://tech.lucumt.info/docs/security/cross-site-scripting/</guid>
       <description>Everything You Need to Know About Cross-Site Scripting (XSS).&#xA;XSS, a prevalent vulnerability, occurs when malicious scripts are injected into web pages, often through input fields. Check out the diagram below for a deeper dive into how this vulnerability emerges when user input is improperly handled and subsequently returned to the client, leaving systems vulnerable to exploitation.&#xA;Understanding the distinction between Reflective and Stored XSS is crucial. Reflective XSS involves immediate execution of the injected script, while Stored XSS persists over time, posing long-term threats.</description>
     </item>
+    <item>
+      <title>数字签名如何工作</title>
+      <link>https://tech.lucumt.info/docs/security/how-digital-signatures-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/security/how-digital-signatures-work/</guid>
+      <description>How Digital Signatures Work?&#xA;A digital signature is a specific kind of electronic signature to sign and secure electronically transmitted documents.&#xA;Digital signatures are similar to physical signatures since they are unique to every person. They identify the identity of the signer.&#xA;Here’s an example of the working process of a digital signature with Alice as the sender and John as the recipient:&#xA;Alice generates a cryptographic key pair consisting of a private key and a corresponding public key.</description>
+    </item>
+    <item>
+      <title>JWT无状态身份验证的关键</title>
+      <link>https://tech.lucumt.info/docs/security/jwt-101-key-to-stateless-authentication.gif/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/security/jwt-101-key-to-stateless-authentication.gif/</guid>
+      <description>JWT 101: Key to Stateless Authentication&#xA;JWT or JSON Web Tokens is an open standard for securely transmitting information between two parties. They are widely used for authentication and authorization.&#xA;A JWT consists of three main components:&#xA;1 - Header Every JWT carries a header specifying the algorithms for signing the JWT. It’s written in JSON format.&#xA;2 - Payload The payload consists of the claims and the user data. There are different types of claims such as registered, public, and private claims.</description>
+    </item>
   </channel>
 </rss>
