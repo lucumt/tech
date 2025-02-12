@@ -267,6 +267,13 @@
       <description></description>
     </item>
     <item>
+      <title>系统设计面试中的12种算法</title>
+      <link>https://tech.lucumt.info/docs/algorithm/12-algorithms-for-system-design-interviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/algorithm/12-algorithms-for-system-design-interviews/</guid>
+      <description>12 Algorithms for System Design Interviews&#xA;Bloom Filter: Check if a requested item is in the cache before performing disk operations. Geohash: Used to build location-based services. HyperLogLog: Counting unique queries performed by users in a search. Consistent Hashing: Used for efficient data distribution between the cluster’s nodes. Merkle Tree: Used to detect inconsistencies between data replicas across multiple nodes. Raft Algorithm: Used to achieve consensus on log replication. Lossy Count: Network traffic analysis, web analytics, and identifying heavy hitters.</description>
+    </item>
+    <item>
       <title>6种数据管理模式</title>
       <link>https://tech.lucumt.info/docs/db/theory/top-6-data-manage-patterns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -314,6 +321,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/microservice/develop/9-best-practices-for-building-microservices/</guid>
       <description>Creating a system using microservices is extremely difficult unless you follow some strong principles.&#xA;9 best practices that you must know before building microservices:&#xA;1 - Design For Failure A distributed system with microservices is going to fail.&#xA;You must design the system to tolerate failure at multiple levels such as infrastructure, database, and individual services. Use circuit breakers, bulkheads, or graceful degradation methods to deal with failures.&#xA;2 - Build Small Services A microservice should not do multiple things at once.</description>
+    </item>
+    <item>
+      <title>算法时间复杂度说明</title>
+      <link>https://tech.lucumt.info/docs/algorithm/big-o-notation-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/algorithm/big-o-notation-101/</guid>
+      <description>Big O Notation 101: The Secret to Writing Efficient Algorithms&#xA;From simple array operations to complex sorting algorithms, understanding the Big O Notation is critical for building high-performance software solutions.&#xA;1 - O(1) This is the constant time notation. The runtime remains steady regardless of input size. For example, accessing an element in an array by index and inserting/deleting an element in a hash table.&#xA;2 - O(n) Linear time notation.</description>
     </item>
     <item>
       <title>编写出安全有效的API</title>
@@ -475,6 +489,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/db/theory/sql-query-logical-order/</guid>
       <description>SQL statements are executed by the database system in several steps, including: - Parsing the SQL statement and checking its validity - Transforming the SQL into an internal representation, such as relational algebra - Optimizing the internal representation and creating an execution plan that utilizes index information - Executing the plan and returning the results</description>
+    </item>
+    <item>
+      <title>数据库性能说明</title>
+      <link>https://tech.lucumt.info/docs/db/theory/a-cheatsheet-on-database-performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/a-cheatsheet-on-database-performance/</guid>
+      <description>Good database performance is critical since it directly impacts user experience, operational costs, and scalability.&#xA;But what impacts database performance?&#xA;- Evaluating database performance depends on key metrics such as query execution time, throughput, latency, and resource utilization. - Workload Types such as write-heavy, read-heavy, delete-heavy, and competing workloads pose unique challenges. - Other factors that impact performance are item size, item type, dataset size, concurrency expectations, consistency requirements, HA expectations, and geographic distribution.</description>
     </item>
     <item>
       <title>系统设计的15个核心概念</title>

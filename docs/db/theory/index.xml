@@ -56,5 +56,12 @@
       <guid>https://tech.lucumt.info/docs/db/theory/sql-query-logical-order/</guid>
       <description>SQL statements are executed by the database system in several steps, including: - Parsing the SQL statement and checking its validity - Transforming the SQL into an internal representation, such as relational algebra - Optimizing the internal representation and creating an execution plan that utilizes index information - Executing the plan and returning the results</description>
     </item>
+    <item>
+      <title>数据库性能说明</title>
+      <link>https://tech.lucumt.info/docs/db/theory/a-cheatsheet-on-database-performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/db/theory/a-cheatsheet-on-database-performance/</guid>
+      <description>Good database performance is critical since it directly impacts user experience, operational costs, and scalability.&#xA;But what impacts database performance?&#xA;- Evaluating database performance depends on key metrics such as query execution time, throughput, latency, and resource utilization. - Workload Types such as write-heavy, read-heavy, delete-heavy, and competing workloads pose unique challenges. - Other factors that impact performance are item size, item type, dataset size, concurrency expectations, consistency requirements, HA expectations, and geographic distribution.</description>
+    </item>
   </channel>
 </rss>

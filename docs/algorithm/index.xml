@@ -14,5 +14,19 @@
       <guid>https://tech.lucumt.info/docs/algorithm/sorted-stack/</guid>
       <description>单调递增，从栈顶到栈底依次递增&#xA;1public static void sortStackIncrease() { 2 int[] data = {2, 7, 5, 4, 6, 3, 4, 2}; 3 Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); 4 for (Integer val : data) { 5 while (!stack.isEmpty() &amp;amp;&amp;amp; stack.peek() &amp;lt;= val) { 6 stack.pop(); 7 } 8 stack.push(val); 9 } 10 System.out.println(stack); 11} 单调递减，从栈顶到栈底依次递减&#xA;1public static void sortStackDecrease() { 2 int[] data = {4, 3, 2, 5, 7, 4, 6, 8}; 3 Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); 4 for (Integer val : data) { 5 while (!</description>
     </item>
+    <item>
+      <title>系统设计面试中的12种算法</title>
+      <link>https://tech.lucumt.info/docs/algorithm/12-algorithms-for-system-design-interviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/algorithm/12-algorithms-for-system-design-interviews/</guid>
+      <description>12 Algorithms for System Design Interviews&#xA;Bloom Filter: Check if a requested item is in the cache before performing disk operations. Geohash: Used to build location-based services. HyperLogLog: Counting unique queries performed by users in a search. Consistent Hashing: Used for efficient data distribution between the cluster’s nodes. Merkle Tree: Used to detect inconsistencies between data replicas across multiple nodes. Raft Algorithm: Used to achieve consensus on log replication. Lossy Count: Network traffic analysis, web analytics, and identifying heavy hitters.</description>
+    </item>
+    <item>
+      <title>算法时间复杂度说明</title>
+      <link>https://tech.lucumt.info/docs/algorithm/big-o-notation-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/algorithm/big-o-notation-101/</guid>
+      <description>Big O Notation 101: The Secret to Writing Efficient Algorithms&#xA;From simple array operations to complex sorting algorithms, understanding the Big O Notation is critical for building high-performance software solutions.&#xA;1 - O(1) This is the constant time notation. The runtime remains steady regardless of input size. For example, accessing an element in an array by index and inserting/deleting an element in a hash table.&#xA;2 - O(n) Linear time notation.</description>
+    </item>
   </channel>
 </rss>
