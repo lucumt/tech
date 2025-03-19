@@ -512,6 +512,13 @@
       <description>SQL statements are executed by the database system in several steps, including: - Parsing the SQL statement and checking its validity - Transforming the SQL into an internal representation, such as relational algebra - Optimizing the internal representation and creating an execution plan that utilizes index information - Executing the plan and returning the results</description>
     </item>
     <item>
+      <title>将视频转化为gif</title>
+      <link>https://tech.lucumt.info/docs/code/block/convert-video-to-gif/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/block/convert-video-to-gif/</guid>
+      <description>1from moviepy import VideoFileClip 2 3 4def video_to_gif(video_path, output_path, start_time, end_time, fps=10, resize_ratio=1.0): 5 &amp;#34;&amp;#34;&amp;#34; 6 将视频片段转换为 GIF 7 参数： 8 video_path: 输入视频文件路径 9 output_path: 输出 GIF 路径 10 start_time: 开始时间（秒） 11 end_time: 结束时间（秒） 12 fps: 输出帧率（默认10） 13 resize_ratio: 缩放比例（默认1.0） 14 &amp;#34;&amp;#34;&amp;#34; 15 try: 16 # 加载视频并截取指定片段 17 with VideoFileClip(video_path) as clip: 18 subclip = clip.subclipped(start_time, end_time) 19 20 # 调整尺寸（可选） 21 if resize_ratio != 1.0: 22 subclip = subclip.</description>
+    </item>
+    <item>
       <title>数据库性能说明</title>
       <link>https://tech.lucumt.info/docs/db/theory/a-cheatsheet-on-database-performance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
