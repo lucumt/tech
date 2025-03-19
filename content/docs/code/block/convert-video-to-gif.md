@@ -1,5 +1,5 @@
 ---
-title: "将视频转化为gif"
+title: "利用Python将视频转化为gif"
 weight: 7
 # bookFlatSection: false
 # bookToc: true
