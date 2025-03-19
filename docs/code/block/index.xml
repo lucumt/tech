@@ -50,7 +50,7 @@
       <description>采用Golang生成Web Server无需额外处理相关的静态文件等引用，会减少代码量和维护工作量&#xA;1package main 2 3import ( 4&#x9;&amp;#34;encoding/json&amp;#34; 5&#x9;&amp;#34;io/ioutil&amp;#34; 6&#x9;&amp;#34;log&amp;#34; 7&#x9;&amp;#34;net/http&amp;#34; 8&#x9;&amp;#34;os&amp;#34; 9&#x9;&amp;#34;strconv&amp;#34; 10) 11 12type ConfigData struct { 13&#x9;Info string `json:&amp;#34;info&amp;#34;` 14&#x9;File string `json:&amp;#34;file&amp;#34;` 15&#x9;Port int `json:&amp;#34;port&amp;#34;` 16} 17 18func parseConfigFile() ConfigData { 19&#x9;jsonFile, err := os.Open(&amp;#34;config.json&amp;#34;) 20&#x9;if err != nil { 21&#x9;log.Println(err) 22&#x9;} 23&#x9;log.Println(&amp;#34;Successfully Opened config.json&amp;#34;) 24 25&#x9;defer jsonFile.Close() 26 27&#x9;byteValue, _ := ioutil.</description>
     </item>
     <item>
-      <title>将视频转化为gif</title>
+      <title>利用Python将视频转化为gif</title>
       <link>https://tech.lucumt.info/docs/code/block/convert-video-to-gif/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/block/convert-video-to-gif/</guid>
