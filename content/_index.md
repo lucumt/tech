@@ -31,6 +31,7 @@ hugo server -w -D --renderToMemory
 * [[译]系统设计面试](https://learning-guide.gitbook.io/system-design-interview)
 * [各种开源代码协议许可比较](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
 * [神经网络与深度学习](http://neuralnetworksanddeeplearning.com/chap1.html)
+* [万字长文带你窥探Spring中所有的扩展点](https://mp.weixin.qq.com/s/O0W6vCuqQfeAH0UB7elpeA)
 
 # 其它
 
@@ -65,3 +66,4 @@ hugo server -w -D --renderToMemory
 | [**bin的技术小屋**](https://www.cnblogs.com/binlovetech)     | 有部分关于`JVM`的高质量博文                                  |                |
 | [**程序员小富**](https://www.cnblogs.com/chengxy-nds)<br>[**fire100.top**](http://fire100.top/) | 主要是关于`JavaEE`相关的博文                                 | `程序员小富`   |
 | [**东阳马生架构**](https://www.cnblogs.com/mjunz)            | 主要是关于`JavaEE`和`MySQL`相关的博文                        |                |
+| [**Seven97 - 博客园**](https://www.cnblogs.com/seven97-top)<br/>[**Seven97 -  个人网站**](https://www.seven97.top) |                                                              | `seven97`      |
