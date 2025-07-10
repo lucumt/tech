@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Handy Git Cheatsheet
+🔧 Basic Commands
+git init – Initialize a new Git repository. git clone &lt;repo_url&gt; – Clone a remote repository. git status – Check the status of your working directory. git add &lt;file&gt; – Stage changes for commit. git commit -m &quot;message&quot; – Commit staged changes with a message. git push – Push your local commits to the remote repository. git pull – Fetch and merge changes from the remote repo.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/tools/git/git-cheatsheet/">
+  <meta property="og:site_name" content="个人笔记">
+  <meta property="og:title" content="Git常用指令备忘录">
+  <meta property="og:description" content="Handy Git Cheatsheet
+🔧 Basic Commands
+git init – Initialize a new Git repository. git clone &lt;repo_url&gt; – Clone a remote repository. git status – Check the status of your working directory. git add &lt;file&gt; – Stage changes for commit. git commit -m &#34;message&#34; – Commit staged changes with a message. git push – Push your local commits to the remote repository. git pull – Fetch and merge changes from the remote repo.">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Git常用指令备忘录 | 个人笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://tech.lucumt.info/docs/tools/git/git-cheatsheet/">
+<link rel="stylesheet" href="/book.min.b3ccae268f9c38a56a5e1cbf66c98d5332f11265d451c193c90d21d18270625f.css" integrity="sha256-s8yuJo&#43;cOKVqXhy/ZsmNUzLxEmXUUcGTyQ0h0YJwYl8=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.b8dcd4b7e493bbde776241180bfd69ed219bdd35d5f06ac3e45c6d7d99808fb2.js" integrity="sha256-uNzUt&#43;STu953YkEYC/1p7SGb3TXV8GrD5FxtfZmAj7I=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>个人笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bf811b2740dc219e21d86019d2c3653d" class="toggle"  />
+    <label for="section-bf811b2740dc219e21d86019d2c3653d" class="flex justify-between">
+      <a role="button" class="">AI</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ai/what-is-an-ai-agent/" class="">智能体解释</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ai/how-does-chatgpt-work/" class="">ChatGPT工作原理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ai/top-20-ai-concepts/" class="">20个主要的ai概念</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ai/what-is-rag/" class="">RAG概念解释</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-52a19f941dcfe66de6ed1cd418a84103" class="toggle"  />
+    <label for="section-52a19f941dcfe66de6ed1cd418a84103" class="flex justify-between">
+      <a href="/docs/linux/" class="">Linux</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a7afcaf46e150f46a978893f31be4a48" class="toggle"  />
+    <label for="section-a7afcaf46e150f46a978893f31be4a48" class="flex justify-between">
+      <a role="button" class="">Linux系统</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-file-system/" class="">文件类型说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-file-permissions/" class="">文件权限说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/linux/system/linux-boot-process-explained/" class="">Linux启动过程详解</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cba71af17e8e2d095fdfaf1ec847ef89" class="toggle"  />
+    <label for="section-cba71af17e8e2d095fdfaf1ec847ef89" class="flex justify-between">
+      <a role="button" class="">算法</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/algorithm/sorted-stack/" class="">单调栈</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/algorithm/12-algorithms-for-system-design-interviews/" class="">系统设计面试中的12种算法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/algorithm/big-o-notation-101/" class="">算法时间复杂度说明</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5d396b9ad5f816a37baf43734deffc7c" class="toggle"  />
+    <label for="section-5d396b9ad5f816a37baf43734deffc7c" class="flex justify-between">
+      <a role="button" class="">网络</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/tcp-status-change/" class="">TCP状态变化图</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/http-status/" class="">HTTP状态码说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/https-handshake/" class="">HTTPS连接建立过程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/https-under-the-hood/" class="">HTTPS连接过程揭秘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/how-https-works/" class="">HTTPS是如何工作的</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/rodamap-for-learning-cyber-security/" class="">网络安全学习线路图</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/what-is-osi-model/" class="">网络7层模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/8-popular-network-protocols/" class="">8种主要的网络协议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/what-makes-nginx-so-useful/" class="">Nginx强大的原因</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/how-ssh-works/" class="">SSH是如何工作的</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2c49013a399c9c118baaabbde9c86f47" class="toggle"  />
+    <label for="section-2c49013a399c9c118baaabbde9c86f47" class="flex justify-between">
+      <a role="button" class="">安全</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/identity-manage-types/" class="">不同的身份管理方式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/authentication-types-compare/" class="">不同认证方式的对比</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/session-vs-jwt/" class="">Session和JWT的对比</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/oauth-2.0-explained/" class="">Oauth2.0详解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/cross-site-scripting/" class="">XSS攻击详解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/how-digital-signatures-work/" class="">数字签名如何工作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/security/jwt-101-key-to-stateless-authentication.gif/" class="">JWT无状态身份验证的关键</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-87454da32634ac3c44203f52e01458ea" class="toggle"  />
+    <label for="section-87454da32634ac3c44203f52e01458ea" class="flex justify-between">
+      <a role="button" class="">运维</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/fantastic-four-of-system-design/" class="">系统设计的4大关键</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/top-9-cases-behind-cpu-high-usage/" class="">CPU使用达到100%的9个场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/top-9-website-performance-metrics/" class="">网站的9大性能指标</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/monitor/top-6-heartbeat-detection-mechanisms/" class="">6种心跳检测机制</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-28a50411accaecc16bc0763b9c190330" class="toggle" checked />
+    <label for="section-28a50411accaecc16bc0763b9c190330" class="flex justify-between">
+      <a role="button" class="">工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1a59dcdcff5a7ac71a7de17eb2aaad29" class="toggle" checked />
+    <label for="section-1a59dcdcff5a7ac71a7de17eb2aaad29" class="flex justify-between">
+      <a role="button" class="">Git</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/tools/git/git-commands/" class="">Git常用指令</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/tools/git/git-cheatsheet/" class="active">Git常用指令备忘录</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/tools/network-config/" class="">网络配置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b0b4a016bddda14181aeb79f92565d38" class="toggle"  />
+    <label for="section-b0b4a016bddda14181aeb79f92565d38" class="flex justify-between">
+      <a role="button" class="">编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-568f71b95ca56c34a1f8e3361712f1c0" class="toggle"  />
+    <label for="section-568f71b95ca56c34a1f8e3361712f1c0" class="flex justify-between">
+      <a role="button" class="">理论</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/language-compare/" class="">不同语言的工作原理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/concurrency-is-not-parallelism/" class="">并发不是并行</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/design-effective-and-safe-apis/" class="">编写出安全有效的API</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/top-9-system-integrations/" class="">REST API vs GraphQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/rest-api-vs-graphql/" class="">数据通信的9种架构模式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/12-factor-app/" class="">软件开发12准则</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/10-good-coding-principle/" class="">10个良好编码准则</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/15-system-design-core-concepts/" class="">系统设计的15个核心概念</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/encoding-vs-encryption-vs-tokenization/" class="">编码/加密/分词</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/how-we-retry-on-failures/" class="">如何进行失败重试</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/uml-class-diagrams/" class="">UML类图说明</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/theory/garbage-collection-101/" class="">垃圾回收工作流程</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-355a174475df5241187c1a79bd3c62e8" class="toggle"  />
+    <label for="section-355a174475df5241187c1a79bd3c62e8" class="flex justify-between">
+      <a href="/docs/code/front/" class="">前端</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/front/how-does-javascript-work/" class="">JavaScript是如何执行的</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/front/fronted-performance-cheatsheet/" class="">如何提高前端网站加载速度</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a492e0e982492102fba29e206d0fb4b6" class="toggle"  />
+    <label for="section-a492e0e982492102fba29e206d0fb4b6" class="flex justify-between">
+      <a role="button" class="">代码块</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/mysql-batch-create-data/" class="">MySQL批量制造数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/matplotlib-show-chinese/" class="">Matplotlib展示中文</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/python-generate-site-url/" class="">通过脚本生成网站URL列表</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/shell-check-between-arrays/" class="">Shell数组中模糊检测</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/java-lambda-filter/" class="">Java中利用Lambda进行过滤</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/golang-web-server/" class="">利用Go生成简易的Web Server</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/block/convert-video-to-gif/" class="">利用Python将视频转化为gif</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-696d705a2b46c69b305b09d50c7e21e8" class="toggle"  />
+    <label for="section-696d705a2b46c69b305b09d50c7e21e8" class="flex justify-between">
+      <a role="button" class="">编程语言</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-60c2211b06a947c255130fbdea00bc3c" class="toggle"  />
+    <label for="section-60c2211b06a947c255130fbdea00bc3c" class="flex justify-between">
+      <a role="button" class="">java</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/language/java/thread-lifecycle/" class="">线程生命周期说明</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fb3f827690f0c1bd664db67a92929f52" class="toggle"  />
+    <label for="section-fb3f827690f0c1bd664db67a92929f52" class="flex justify-between">
+      <a role="button" class="">应用框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-587392c7c45ae1c4da4ea615ec7f0634" class="toggle"  />
+    <label for="section-587392c7c45ae1c4da4ea615ec7f0634" class="flex justify-between">
+      <a role="button" class="">gRPC</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/framework/grpc/what-is-grpc/" class="">什么是gRPC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/framework/grpc/how-does-grpc-work/" class="">gRPC如何工作的</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1af73868bc0e4dde76f5f0bc39ab26ed" class="toggle"  />
+    <label for="section-1af73868bc0e4dde76f5f0bc39ab26ed" class="flex justify-between">
+      <a role="button" class="">消息中间件</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/mq/top-5-kafka-use-cases/" class="">Kafka的5种使用场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/mq/can-kafka-lose-messages/" class="">kakfa丢失消息的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/mq/the-core-reddit-architecture/" class="">Reddit核心架构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/mq/kafka-101/" class="">Kafka核心概念</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-592e3c4a3c4d07f73224af75385d9ef5" class="toggle"  />
+    <label for="section-592e3c4a3c4d07f73224af75385d9ef5" class="flex justify-between">
+      <a role="button" class="">云原生</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud/cloud-tech-stack/" class="">云原生技术栈</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud/top-6-clould-message-patterns/" class="">6种云消息传递模式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud/cloud-cost-reduction-techniques/" class="">云计算成本降低技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud/create-jenkins-via-docker/" class="">通过Docker创建Jenkins</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0a244151e57cf93152c22fb180e3c337" class="toggle"  />
+    <label for="section-0a244151e57cf93152c22fb180e3c337" class="flex justify-between">
+      <a role="button" class="">数据库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5743d422546d9ab3986588e18d5e3ad4" class="toggle"  />
+    <label for="section-5743d422546d9ab3986588e18d5e3ad4" class="flex justify-between">
+      <a role="button" class="">理论</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/8-key-data-structures-that-power-modern-databases/" class="">8个关键数据结构</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/how-does-search-engine-work/" class="">搜索引擎如何工作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/top-6-data-manage-patterns/" class="">6种数据管理模式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/top-6-database-models/" class="">6种数据模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/choosing-the-right-database/" class="">选择合适的数据库</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/database-scaling-cheatsheet/" class="">扩展数据库的7种策略</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/sql-query-logical-order/" class="">SQL查询执行顺序</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/theory/a-cheatsheet-on-database-performance/" class="">数据库性能说明</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-92687266628f975c50a36e588bcd92df" class="toggle"  />
+    <label for="section-92687266628f975c50a36e588bcd92df" class="flex justify-between">
+      <a role="button" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/redis/redis-architecture-evolve/" class="">Redis架构演进</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/redis/why-redis-fast/" class="">Redis为啥这么快</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-500d0439cb719d1250ee28df8179759c" class="toggle"  />
+    <label for="section-500d0439cb719d1250ee28df8179759c" class="flex justify-between">
+      <a role="button" class="">ElasticSearch</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/db/es/top-6-es-use-cases/" class="">ES使用最高的6个场景</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8c073bff87aa3a3939e0bb0c1cec0d44" class="toggle"  />
+    <label for="section-8c073bff87aa3a3939e0bb0c1cec0d44" class="flex justify-between">
+      <a role="button" class="">大数据</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/bigdata/data-pipelines-overview/" class="">数据管道概览</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d94d98ae724428f34f2a0587e52dd96c" class="toggle"  />
+    <label for="section-d94d98ae724428f34f2a0587e52dd96c" class="flex justify-between">
+      <a role="button" class="">微服务</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd46b2f9bd0e36ee3189e636de386fc" class="toggle"  />
+    <label for="section-bfd46b2f9bd0e36ee3189e636de386fc" class="flex justify-between">
+      <a role="button" class="">微服务开发</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/what-does-api-gateway-do/" class="">网关的作用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/microservice-best-practices/" class="">微服务最佳实践</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/microservice/develop/9-best-practices-for-building-microservices/" class="">微服务开发的9个最佳实践</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f333c9def04102358b545028113318cb" class="toggle"  />
+    <label for="section-f333c9def04102358b545028113318cb" class="flex justify-between">
+      <a role="button" class="">测试</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/test/test-method-compare/" class="">测试方法对比</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/test/9-types-api-testing/" class="">9中API测试方式</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fd2a4e7f9ddea45452efb530b97de696" class="toggle"  />
+    <label for="section-fd2a4e7f9ddea45452efb530b97de696" class="flex justify-between">
+      <a role="button" class="">其它</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/other/stop-the-war/" class="">老毛子请停止战争</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/other/how-visa-make-money/" class="">Visa是如何挣钱的</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/other/24-best-resource-to-learn/" class="">软件架构学习资料</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Git常用指令备忘录</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p><img src="/img/tools/git/git-cheatsheet.jfif" alt="Git常用指令" /></p>
+<p>Handy Git Cheatsheet</p>
+<p>🔧 Basic Commands</p>
+<ul>
+<li><code>git init</code> – Initialize a new Git repository.</li>
+<li><code>git clone &lt;repo_url&gt;</code> – Clone a remote repository.</li>
+<li><code>git status</code> – Check the status of your working directory.</li>
+<li><code>git add &lt;file&gt;</code> – Stage changes for commit.</li>
+<li><code>git commit -m &quot;message&quot;</code> – Commit staged changes with a message.</li>
+<li><code>git push</code> – Push your local commits to the remote repository.</li>
+<li><code>git pull</code> – Fetch and merge changes from the remote repo.</li>
+<li><code>git diff</code> – Show changes in the working directory (uncommitted changes).</li>
+<li><code>git diff --staged</code> – Show changes between the staging area and last commit.</li>
+</ul>
+<p>🛠️ Branching &amp; Merging</p>
+<ul>
+<li><code>git branch</code> – List branches.</li>
+<li><code>git branch &lt;branch_name&gt;</code> – Create a new branch.</li>
+<li><code>git checkout &lt;branch_name&gt;</code> – Switch to another branch.</li>
+<li><code>git checkout -b &lt;branch_name&gt;</code> – Create and switch to a new branch.</li>
+<li><code>git merge &lt;branch_name&gt;</code> – Merge a branch into the current one.</li>
+<li><code>git branch -d &lt;branch_name&gt;</code> – Delete a branch after merging.</li>
+<li><code>git branch -D &lt;branch_name&gt;</code> – Forcefully delete a branch, even if it hasn’t merged.</li>
+</ul>
+<p>🔄 Synchronization</p>
+<ul>
+<li><code>git fetch</code> – Download changes from remote without merging.</li>
+<li><code>git rebase &lt;branch&gt;</code> – Reapply commits on top of another branch to maintain linear history.</li>
+<li><code>git pull --rebase</code> – Fetch and reapply your changes on top of the latest remote changes.</li>
+<li><code>git remote add &lt;name&gt; &lt;url&gt;</code> – Add a new remote repository.</li>
+</ul>
+<p>🎯 Advanced Git</p>
+<ul>
+<li><code>git stash</code> – Temporarily save changes without committing.</li>
+<li><code>git stash pop</code> – Reapply stashed changes.</li>
+<li><code>git cherry-pick</code> <commit> – Apply a specific commit to your current branch.</li>
+<li><code>git log --oneline</code> – View simplified commit history.</li>
+<li><code>git reflog</code> – Show the history of your reference changes (e.g., checkout, resets).</li>
+<li><code>git log --graph</code> &ndash;decorate &ndash;all – Show a visual commit history.</li>
+</ul>
+<p>🚨 Undoing Changes</p>
+<ul>
+<li><code>git reset &lt;file&gt;</code> – Unstage a file.</li>
+<li><code>git reset --soft &lt;commit&gt;</code> – Reset to a commit but keep changes in the working directory.</li>
+<li><code>git reset --hard &lt;commit&gt;</code> – Completely reset to a previous commit, discarding changes.</li>
+<li><code>git revert &lt;commit&gt;</code> – Create a new commit that undoes a specific commit.</li>
+</ul>
+<p>⚙️ Collaborating with Others</p>
+<ul>
+<li><code>git pull origin &lt;branch&gt;</code> – Pull changes from the original remote branch.</li>
+<li><code>git push origin &lt;branch&gt;</code> – Push your branch to the original repository for collaboration.</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

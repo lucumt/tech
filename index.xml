@@ -197,6 +197,13 @@
       <description></description>
     </item>
     <item>
+      <title>Git常用指令备忘录</title>
+      <link>https://tech.lucumt.info/docs/tools/git/git-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/tools/git/git-cheatsheet/</guid>
+      <description>Handy Git Cheatsheet&#xA;🔧 Basic Commands&#xA;git init – Initialize a new Git repository. git clone &amp;lt;repo_url&amp;gt; – Clone a remote repository. git status – Check the status of your working directory. git add &amp;lt;file&amp;gt; – Stage changes for commit. git commit -m &amp;quot;message&amp;quot; – Commit staged changes with a message. git push – Push your local commits to the remote repository. git pull – Fetch and merge changes from the remote repo.</description>
+    </item>
+    <item>
       <title>gRPC如何工作的</title>
       <link>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -412,6 +419,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/security/oauth-2.0-explained/</guid>
       <description>Oauth 2.0 Explained With Simple Terms.&#xA;OAuth 2.0 is a powerful and secure framework that allows different applications to securely interact with each other on behalf of users without sharing sensitive credentials.&#xA;The entities involved in OAuth are the User, the Server, and the Identity Provider (IDP).&#xA;What Can an OAuth Token Do?&#xA;When you use OAuth, you get an OAuth token that represents your identity and permissions. This token can do a few important things:</description>
+    </item>
+    <item>
+      <title>RAG概念解释</title>
+      <link>https://tech.lucumt.info/docs/ai/what-is-rag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/ai/what-is-rag/</guid>
+      <description>What is Retrieval-Augmented Generation (RAG)?&#xA;RAG augments LLM outputs by referencing authoritative knowledge bases outside the model&amp;rsquo;s training data before generating responses.&#xA;This approach extends LLM capabilities to specialized domains without requiring expensive retraining or fine-tuning.&#xA;How RAG Works:&#xA;Prompt + Query The user submits a prompt through the LLM interface. The server converts this query into a vector representation.&#xA;Query The vectorized query is sent to the search system.</description>
     </item>
     <item>
       <title>Shell数组中模糊检测</title>

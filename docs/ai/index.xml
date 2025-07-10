@@ -28,5 +28,12 @@
       <guid>https://tech.lucumt.info/docs/ai/top-20-ai-concepts/</guid>
       <description>AI Concepts Developers Should Learn&#xA;Machine Learning: Core algorithms, statistics, and model training techniques. Deep Learning: Neural networks with multiple layers that learn complex patterns automatically. Neural Networks: Layered structures that model complex, nonlinear relationships in data. NLP: Techniques for processing and understanding human language in text form. Computer Vision: Algorithms that interpret and analyze images and visual data. Reinforcement Learning: Training agents through rewards and penalties in interactive environments.</description>
     </item>
+    <item>
+      <title>RAG概念解释</title>
+      <link>https://tech.lucumt.info/docs/ai/what-is-rag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/ai/what-is-rag/</guid>
+      <description>What is Retrieval-Augmented Generation (RAG)?&#xA;RAG augments LLM outputs by referencing authoritative knowledge bases outside the model&amp;rsquo;s training data before generating responses.&#xA;This approach extends LLM capabilities to specialized domains without requiring expensive retraining or fine-tuning.&#xA;How RAG Works:&#xA;Prompt + Query The user submits a prompt through the LLM interface. The server converts this query into a vector representation.&#xA;Query The vectorized query is sent to the search system.</description>
+    </item>
   </channel>
 </rss>

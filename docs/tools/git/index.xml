@@ -14,5 +14,12 @@
       <guid>https://tech.lucumt.info/docs/tools/git/git-commands/</guid>
       <description> 添加与取消代理(局部)&#xA;1# 添加代理 其中7890是clash对外暴露的端口 2git config http.proxy http://127.0.0.1:7890 3git config https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --unset http.proxy 7git config --unset https.proxy 添加与取消代理(全局)&#xA;1# 添加代理 2git config --global http.proxy http://127.0.0.1:7890 3git config --global https.proxy https://127.0.0.1:7890 4 5# 去掉代理 6git config --global --unset http.proxy 7git config --global --unset https.proxy git添加别名&#xA;在Windows系统中需要在$PWD/etc/bash.bashrc的尾部添加类似如下内容&#xA;1alias git-log=&amp;#34;git log --abbrev-commit --pretty=oneline --graph&amp;#34; 2alias git-logs=&amp;#34;git log --pretty=format:%h%x09%an%x09%ad%x09%s --graph --date=format:&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;&amp;#34; </description>
     </item>
+    <item>
+      <title>Git常用指令备忘录</title>
+      <link>https://tech.lucumt.info/docs/tools/git/git-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/tools/git/git-cheatsheet/</guid>
+      <description>Handy Git Cheatsheet&#xA;🔧 Basic Commands&#xA;git init – Initialize a new Git repository. git clone &amp;lt;repo_url&amp;gt; – Clone a remote repository. git status – Check the status of your working directory. git add &amp;lt;file&amp;gt; – Stage changes for commit. git commit -m &amp;quot;message&amp;quot; – Commit staged changes with a message. git push – Push your local commits to the remote repository. git pull – Fetch and merge changes from the remote repo.</description>
+    </item>
   </channel>
 </rss>
