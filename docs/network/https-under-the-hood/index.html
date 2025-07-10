@@ -3,19 +3,28 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="HTTPS Under the Hood
+HTTPS is a secure way to share information on the internet. It encrypts data transfer between client and server.
+But without common encryption key, how data is encrypted?
+1 - Server Certificate Check - Client and server exchange &ldquo;HELLO&rdquo; messages - Server sends its certificate - Client verifies it with a Certificate Authority
+2 - Key Exchange - Client extracts server&rsquo;s public key, creates a session key - They agree on a cipher suite - Client encrypts session key using server&rsquo;s public key - Server decrypts it">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/network/https-under-the-hood/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="CPU使用达到100%的9个场景">
+  <meta property="og:title" content="HTTPS连接过程揭秘">
+  <meta property="og:description" content="HTTPS Under the Hood
+HTTPS is a secure way to share information on the internet. It encrypts data transfer between client and server.
+But without common encryption key, how data is encrypted?
+1 - Server Certificate Check - Client and server exchange “HELLO” messages - Server sends its certificate - Client verifies it with a Certificate Authority
+2 - Key Exchange - Client extracts server’s public key, creates a session key - They agree on a cipher suite - Client encrypts session key using server’s public key - Server decrypts it">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>CPU使用达到100%的9个场景 | 个人笔记</title>
+<title>HTTPS连接过程揭秘 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/monitor/top-9-cases-behind-cpu-high-usage/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/network/https-under-the-hood/">
 <link rel="stylesheet" href="/book.min.b3ccae268f9c38a56a5e1cbf66c98d5332f11265d451c193c90d21d18270625f.css" integrity="sha256-s8yuJo&#43;cOKVqXhy/ZsmNUzLxEmXUUcGTyQ0h0YJwYl8=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.67959d4a2d65a6aa6db8d95ac4594946e3a99f5cc808ce561eaadf5430541ecc.js" integrity="sha256-Z5WdSi1lpqptuNlaxFlJRuOpn1zICM5WHqrfVDBUHsw=" crossorigin="anonymous"></script>
@@ -262,7 +271,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5d396b9ad5f816a37baf43734deffc7c" class="toggle"  />
+    <input type="checkbox" id="section-5d396b9ad5f816a37baf43734deffc7c" class="toggle" checked />
     <label for="section-5d396b9ad5f816a37baf43734deffc7c" class="flex justify-between">
       <a role="button" class="">网络</a>
     </label>
@@ -317,7 +326,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/network/https-under-the-hood/" class="">HTTPS连接过程揭秘</a>
+    <a href="/docs/network/https-under-the-hood/" class="active">HTTPS连接过程揭秘</a>
   
 
         </li>
@@ -525,7 +534,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-87454da32634ac3c44203f52e01458ea" class="toggle" checked />
+    <input type="checkbox" id="section-87454da32634ac3c44203f52e01458ea" class="toggle"  />
     <label for="section-87454da32634ac3c44203f52e01458ea" class="flex justify-between">
       <a role="button" class="">运维</a>
     </label>
@@ -554,7 +563,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/monitor/top-9-cases-behind-cpu-high-usage/" class="active">CPU使用达到100%的9个场景</a>
+    <a href="/docs/monitor/top-9-cases-behind-cpu-high-usage/" class="">CPU使用达到100%的9个场景</a>
   
 
         </li>
@@ -1757,7 +1766,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>CPU使用达到100%的9个场景</strong>
+  <strong>HTTPS连接过程揭秘</strong>
 
   <label for="toc-control">
     
@@ -1782,7 +1791,23 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p><img src="/img/monitor/top-9-cases-behind-cpu-high-usage.gif" alt="CPU使用达到100%的9个场景" /></p>
+  <article class="markdown book-article"><p><img src="/img/network/https-under-the-hood.jfif" alt="HTTPS连接建立过程" /></p>
+<p>HTTPS Under the Hood</p>
+<p>HTTPS is a secure way to share information on the internet. It encrypts data transfer between client and server.</p>
+<p>But without common encryption key, how data is encrypted?</p>
+<p>1 - Server Certificate Check
+- Client and server exchange &ldquo;HELLO&rdquo; messages
+- Server sends its certificate
+- Client verifies it with a Certificate Authority</p>
+<p>2 - Key Exchange
+- Client extracts server&rsquo;s public key, creates a session key
+- They agree on a cipher suite
+- Client encrypts session key using server&rsquo;s public key
+- Server decrypts it</p>
+<p>3 - Encrypted Tunnel for data transmission
+- Client and server both have a common key (session key)
+- They use it to encrypt and decrypt data during transmission</p>
+<p>This creates a secure, encrypted tunnel for data transfer, protecting information from eavesdropping and tampering.</p>
 </article>
  
       

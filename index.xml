@@ -295,6 +295,13 @@
       <description></description>
     </item>
     <item>
+      <title>HTTPS连接过程揭秘</title>
+      <link>https://tech.lucumt.info/docs/network/https-under-the-hood/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/https-under-the-hood/</guid>
+      <description>HTTPS Under the Hood&#xA;HTTPS is a secure way to share information on the internet. It encrypts data transfer between client and server.&#xA;But without common encryption key, how data is encrypted?&#xA;1 - Server Certificate Check - Client and server exchange &amp;ldquo;HELLO&amp;rdquo; messages - Server sends its certificate - Client verifies it with a Certificate Authority&#xA;2 - Key Exchange - Client extracts server&amp;rsquo;s public key, creates a session key - They agree on a cipher suite - Client encrypts session key using server&amp;rsquo;s public key - Server decrypts it</description>
+    </item>
+    <item>
       <title>Linux启动过程详解</title>
       <link>https://tech.lucumt.info/docs/linux/system/linux-boot-process-explained/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
