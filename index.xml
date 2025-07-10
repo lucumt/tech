@@ -519,6 +519,13 @@
       <description>1from moviepy import VideoFileClip 2 3 4def video_to_gif(video_path, output_path, start_time, end_time, fps=10, resize_ratio=1.0): 5 &amp;#34;&amp;#34;&amp;#34; 6 将视频片段转换为 GIF 7 参数： 8 video_path: 输入视频文件路径 9 output_path: 输出 GIF 路径 10 start_time: 开始时间（秒） 11 end_time: 结束时间（秒） 12 fps: 输出帧率（默认10） 13 resize_ratio: 缩放比例（默认1.0） 14 &amp;#34;&amp;#34;&amp;#34; 15 try: 16 # 加载视频并截取指定片段 17 with VideoFileClip(video_path) as clip: 18 subclip = clip.subclipped(start_time, end_time) 19 20 # 调整尺寸（可选） 21 if resize_ratio != 1.0: 22 subclip = subclip.</description>
     </item>
     <item>
+      <title>Nginx强大的原因</title>
+      <link>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</guid>
+      <description>&#xA;What Makes Nginx So Useful&#xA;Core Architecture: Master-worker process model handles connections efficiently High-Performance: Server Handles thousands of concurrent connections effortlessly Reverse Proxy: Distributes traffic across multiple backend servers Features: Built-in caching and SSL handling for speed and security </description>
+    </item>
+    <item>
       <title>数据库性能说明</title>
       <link>https://tech.lucumt.info/docs/db/theory/a-cheatsheet-on-database-performance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

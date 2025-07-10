@@ -56,5 +56,12 @@
       <guid>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Nginx强大的原因</title>
+      <link>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</guid>
+      <description>&#xA;What Makes Nginx So Useful&#xA;Core Architecture: Master-worker process model handles connections efficiently High-Performance: Server Handles thousands of concurrent connections effortlessly Reverse Proxy: Distributes traffic across multiple backend servers Features: Built-in caching and SSL handling for speed and security </description>
+    </item>
   </channel>
 </rss>
