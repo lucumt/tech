@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="SSH Under the Hood
+Secure Shell (SSH) creates an encrypted channel between client and server. The process begins with a TCP connection, followed by version negotiation. Both parties then agree on encryption algorithms, key exchange methods, and message authentication codes. The client and server perform a key exchange (typically using Diffie-Hellman) to securely generate a shared session key for encrypting the connection. For authentication, SSH commonly uses public key authentication.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/algorithm/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/network/how-ssh-works/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="算法">
+  <meta property="og:title" content="SSH是如何工作的">
+  <meta property="og:description" content="SSH Under the Hood
+Secure Shell (SSH) creates an encrypted channel between client and server. The process begins with a TCP connection, followed by version negotiation. Both parties then agree on encryption algorithms, key exchange methods, and message authentication codes. The client and server perform a key exchange (typically using Diffie-Hellman) to securely generate a shared session key for encrypting the connection. For authentication, SSH commonly uses public key authentication.">
   <meta property="og:locale" content="zh_cn">
-  <meta property="og:type" content="website">
-<title>算法 | 个人笔记</title>
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>SSH是如何工作的 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/algorithm/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/network/how-ssh-works/">
 <link rel="stylesheet" href="/book.min.b3ccae268f9c38a56a5e1cbf66c98d5332f11265d451c193c90d21d18270625f.css" integrity="sha256-s8yuJo&#43;cOKVqXhy/ZsmNUzLxEmXUUcGTyQ0h0YJwYl8=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.e8879adb7d30752e25fc5401e06b26366ff82fb15c3444a89125ffcf0c491921.js" integrity="sha256-6Iea230wdS4l/FQB4GsmNm/4L7FcNESokSX/zwxJGSE=" crossorigin="anonymous"></script>
 
   
 
-<link rel="alternate" type="application/rss+xml" href="https://tech.lucumt.info/docs/algorithm/index.xml" title="个人笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -202,9 +205,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-cba71af17e8e2d095fdfaf1ec847ef89" class="toggle" checked />
+    <input type="checkbox" id="section-cba71af17e8e2d095fdfaf1ec847ef89" class="toggle"  />
     <label for="section-cba71af17e8e2d095fdfaf1ec847ef89" class="flex justify-between">
-      <a role="button" class="active">算法</a>
+      <a role="button" class="">算法</a>
     </label>
   
 
@@ -262,7 +265,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5d396b9ad5f816a37baf43734deffc7c" class="toggle"  />
+    <input type="checkbox" id="section-5d396b9ad5f816a37baf43734deffc7c" class="toggle" checked />
     <label for="section-5d396b9ad5f816a37baf43734deffc7c" class="flex justify-between">
       <a role="button" class="">网络</a>
     </label>
@@ -382,7 +385,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/network/how-ssh-works/" class="">SSH是如何工作的</a>
+    <a href="/docs/network/how-ssh-works/" class="active">SSH是如何工作的</a>
   
 
         </li>
@@ -1744,7 +1747,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>算法</strong>
+  <strong>SSH是如何工作的</strong>
 
   <label for="toc-control">
     
@@ -1769,7 +1772,18 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"></article>
+  <article class="markdown book-article"><p><img src="/img/network/how-ssh-works.jfif" alt="SSH是如何工作的" /></p>
+<p>SSH Under the Hood</p>
+<ul>
+<li>Secure Shell (SSH) creates an encrypted channel between client and server.</li>
+<li>The process begins with a TCP connection, followed by version negotiation.</li>
+<li>Both parties then agree on encryption algorithms, key exchange methods, and message authentication codes.</li>
+<li>The client and server perform a key exchange (typically using Diffie-Hellman) to securely generate a shared session key for encrypting the connection.</li>
+<li>For authentication, SSH commonly uses public key authentication.</li>
+<li>The server verifies the client&rsquo;s identity through a challenge-response mechanism using the client&rsquo;s public key, without the private key ever being transmitted.</li>
+<li>Once authenticated, the session key encrypts all further communication, providing a secure channel.</li>
+</ul>
+</article>
  
       
 
@@ -1793,6 +1807,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+  
+  <div class="book-comments">
+
+</div>
   
  
 

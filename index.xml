@@ -540,6 +540,13 @@
       <description></description>
     </item>
     <item>
+      <title>SSH是如何工作的</title>
+      <link>https://tech.lucumt.info/docs/network/how-ssh-works/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/how-ssh-works/</guid>
+      <description>SSH Under the Hood&#xA;Secure Shell (SSH) creates an encrypted channel between client and server. The process begins with a TCP connection, followed by version negotiation. Both parties then agree on encryption algorithms, key exchange methods, and message authentication codes. The client and server perform a key exchange (typically using Diffie-Hellman) to securely generate a shared session key for encrypting the connection. For authentication, SSH commonly uses public key authentication.</description>
+    </item>
+    <item>
       <title>编码/加密/分词</title>
       <link>https://tech.lucumt.info/docs/code/theory/encoding-vs-encryption-vs-tokenization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
