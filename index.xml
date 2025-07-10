@@ -365,6 +365,13 @@
       <description>Top 9 website performance metrics you cannot ignore:&#xA;Load Time: This is the time taken by the web browser to download and display the webpage. It’s measured in milliseconds.&#xA;Time to First Byte (TTFB): It’s the time taken by the browser to receive the first byte of data from the web server. TTFB is crucial because it indicates the general ability of the server to handle traffic.&#xA;Request Count: The number of HTTP requests a browser has to make to fully load the page.</description>
     </item>
     <item>
+      <title>软件架构学习资料</title>
+      <link>https://tech.lucumt.info/docs/other/24-best-resource-to-learn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/other/24-best-resource-to-learn/</guid>
+      <description>Resources to Learn Software Architecture&#xA;Software Design Books Some books that can help are DDIA, System Design Volume 1 &amp;amp; 2, Clean Architecture, Domain-Driven Design, and Software Architecture: the Hard Parts&#xA;Tech Blogs and Newsletters Read technical blogs by companies like Netflix, Uber, Meta, and Airbnb. Also, the ByteByteGo newsletter provides insights into software design every week.&#xA;YouTube Channels and Architectural Resources YouTube channels like MIT Distributed Systems, Goto Conferences, and ByteByteGo can help with software architecture and system design.</description>
+    </item>
+    <item>
       <title>通过脚本生成网站URL列表</title>
       <link>https://tech.lucumt.info/docs/code/block/python-generate-site-url/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

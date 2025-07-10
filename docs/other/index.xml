@@ -21,5 +21,12 @@
       <guid>https://tech.lucumt.info/docs/other/how-visa-make-money/</guid>
       <description>Why is the credit card called “𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 product in banks”? How does VISA/Mastercard make money?&#xA;The diagram below shows the economics of the credit card payment flow.&#xA;The cardholder pays a merchant $100 to buy a product.&#xA;The merchant benefits from the use of the credit card with higher sales volume, and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the “𝐦𝐞𝐫𝐜𝐡𝐚𝐧𝐭 𝐝𝐢𝐬𝐜𝐨𝐮𝐧𝐭 𝐟𝐞𝐞.</description>
     </item>
+    <item>
+      <title>软件架构学习资料</title>
+      <link>https://tech.lucumt.info/docs/other/24-best-resource-to-learn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/other/24-best-resource-to-learn/</guid>
+      <description>Resources to Learn Software Architecture&#xA;Software Design Books Some books that can help are DDIA, System Design Volume 1 &amp;amp; 2, Clean Architecture, Domain-Driven Design, and Software Architecture: the Hard Parts&#xA;Tech Blogs and Newsletters Read technical blogs by companies like Netflix, Uber, Meta, and Airbnb. Also, the ByteByteGo newsletter provides insights into software design every week.&#xA;YouTube Channels and Architectural Resources YouTube channels like MIT Distributed Systems, Goto Conferences, and ByteByteGo can help with software architecture and system design.</description>
+    </item>
   </channel>
 </rss>
