@@ -57,13 +57,6 @@
       <description>Rome wasn&amp;rsquo;t built in a day.&#xA;How does Redis architecture evolve?&#xA;Redis is a popular in-memory cache. How did it evolve to the architecture it is today?&#xA;🔹 2010 - Standalone Redis When Redis 1.0 was released in 2010, the architecture was quite simple. It is usually used as a cache to the business application.&#xA;However, Redis stores data in memory. When we restart Redis, we will lose all the data and the traffic directly hits the database.</description>
     </item>
     <item>
-      <title>Stop The War</title>
-      <link>https://tech.lucumt.info/docs/other/stop-the-war/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/other/stop-the-war/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>TCP状态变化图</title>
       <link>https://tech.lucumt.info/docs/network/tcp-status-change/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -167,6 +160,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/tools/network-config/</guid>
       <description> Windows中添加Clash代理&#xA;1set http_proxy=http://127.0.0.1:7890 &amp;amp; set https_proxy=http://127.0.0.1:7890 </description>
+    </item>
+    <item>
+      <title>老毛子请停止战争</title>
+      <link>https://tech.lucumt.info/docs/other/stop-the-war/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/other/stop-the-war/</guid>
+      <description> 如果乌克兰停止战斗，乌克兰就会灭亡，如果俄罗斯停止战斗，战争就会结束 不论其他中国人的观点如何，我从第一天开始就坚定地支持乌克兰，并且会一直支持下去，正义终将战胜邪恶！ </description>
     </item>
     <item>
       <title>6种云消息传递模式</title>

@@ -26,8 +26,6 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/redis/redis-architecture-evolve/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/other/stop-the-war/</loc>
-  </url><url>
     <loc>https://tech.lucumt.info/docs/network/tcp-status-change/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/identity-manage-types/</loc>
@@ -63,6 +61,8 @@
     <loc>https://tech.lucumt.info/docs/microservice/develop/what-does-api-gateway-do/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/tools/network-config/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/other/stop-the-war/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/cloud/top-6-clould-message-patterns/</loc>
   </url><url>
