@@ -15,13 +15,6 @@
       <description>&#xA;8 Key Data Structures That Power Modern Databases&#xA;Skiplist: a common in-memory index type. Used in Redis Hash index: a very common implementation of the “Map” data structure (or “Collection”) SSTable: immutable on-disk “Map” implementation LSM tree: Skiplist + SSTable. High write throughput B-tree: disk-based solution. Consistent read/write performance Inverted index: used for document indexing. Used in Lucene Suffix tree: for string pattern search R-tree: multi-dimension search, such as finding the nearest neighbor </description>
     </item>
     <item>
-      <title>ChatGPT工作原理</title>
-      <link>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</guid>
-      <description>How does ChatGPT-like system work?&#xA;Since OpenAI hasn&amp;rsquo;t provided all the details, some parts of the diagram may be inaccurate.&#xA;We attempted to explain how it works in the diagram below. The process can be broken down into two parts.&#xA;Training. To train a ChatGPT model, there are two stages:&#xA;- Pre-training: In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data.</description>
-    </item>
-    <item>
       <title>ES使用最高的6个场景</title>
       <link>https://tech.lucumt.info/docs/db/es/top-6-es-use-cases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -134,6 +127,13 @@
       <description>The Linux file system used to resemble an unorganized town where individuals constructed their houses wherever they pleased. However, in 1994, the Filesystem Hierarchy Standard (FHS) was introduced to bring order to the Linux file system.&#xA;By implementing a standard like the FHS, software can ensure a consistent layout across various Linux distributions. Nonetheless, not all Linux distributions strictly adhere to this standard. They often incorporate their own unique elements or cater to specific requirements.</description>
     </item>
     <item>
+      <title>智能体解释</title>
+      <link>https://tech.lucumt.info/docs/ai/what-is-an-ai-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/ai/what-is-an-ai-agent/</guid>
+      <description>What is an AI Agent?&#xA;An AI agent is a software program that can interact with its environment, gather data, and use that data to achieve predetermined goals. AI agents can choose the best actions to perform to meet those goals.&#xA;Key characteristics of AI agents are as follows:&#xA;An agent can perform autonomous actions without constant human intervention. Also, they can have a human in the loop to maintain control.</description>
+    </item>
+    <item>
       <title>测试方法对比</title>
       <link>https://tech.lucumt.info/docs/test/test-method-compare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -181,6 +181,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/test/9-types-api-testing/</guid>
       <description>Explaining 9 types of API testing.&#xA;🔹 Smoke Testing This is done after API development is complete. Simply validate if the APIs are working and nothing breaks.&#xA;🔹 Functional Testing This creates a test plan based on the functional requirements and compares the results with the expected results.&#xA;🔹 Integration Testing This test combines several API calls to perform end-to-end tests. The intra-service communications and data transmissions are tested.</description>
+    </item>
+    <item>
+      <title>ChatGPT工作原理</title>
+      <link>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/ai/how-does-chatgpt-work/</guid>
+      <description>How does ChatGPT-like system work?&#xA;Since OpenAI hasn&amp;rsquo;t provided all the details, some parts of the diagram may be inaccurate.&#xA;We attempted to explain how it works in the diagram below. The process can be broken down into two parts.&#xA;Training. To train a ChatGPT model, there are two stages:&#xA;- Pre-training: In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data.</description>
     </item>
     <item>
       <title>CPU使用达到100%的9个场景</title>
@@ -267,18 +274,18 @@
       <description></description>
     </item>
     <item>
-      <title>智能体解释</title>
-      <link>https://tech.lucumt.info/docs/ai/what-is-an-ai-agent/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/ai/what-is-an-ai-agent/</guid>
-      <description>What is an AI Agent?&#xA;An AI agent is a software program that can interact with its environment, gather data, and use that data to achieve predetermined goals. AI agents can choose the best actions to perform to meet those goals.&#xA;Key characteristics of AI agents are as follows:&#xA;An agent can perform autonomous actions without constant human intervention. Also, they can have a human in the loop to maintain control.</description>
-    </item>
-    <item>
       <title>系统设计面试中的12种算法</title>
       <link>https://tech.lucumt.info/docs/algorithm/12-algorithms-for-system-design-interviews/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/algorithm/12-algorithms-for-system-design-interviews/</guid>
       <description>12 Algorithms for System Design Interviews&#xA;Bloom Filter: Check if a requested item is in the cache before performing disk operations. Geohash: Used to build location-based services. HyperLogLog: Counting unique queries performed by users in a search. Consistent Hashing: Used for efficient data distribution between the cluster’s nodes. Merkle Tree: Used to detect inconsistencies between data replicas across multiple nodes. Raft Algorithm: Used to achieve consensus on log replication. Lossy Count: Network traffic analysis, web analytics, and identifying heavy hitters.</description>
+    </item>
+    <item>
+      <title>20个主要的ai概念</title>
+      <link>https://tech.lucumt.info/docs/ai/top-20-ai-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/ai/top-20-ai-concepts/</guid>
+      <description>AI Concepts Developers Should Learn&#xA;Machine Learning: Core algorithms, statistics, and model training techniques. Deep Learning: Neural networks with multiple layers that learn complex patterns automatically. Neural Networks: Layered structures that model complex, nonlinear relationships in data. NLP: Techniques for processing and understanding human language in text form. Computer Vision: Algorithms that interpret and analyze images and visual data. Reinforcement Learning: Training agents through rewards and penalties in interactive environments.</description>
     </item>
     <item>
       <title>6种数据管理模式</title>
