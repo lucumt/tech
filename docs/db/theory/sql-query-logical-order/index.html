@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SQL statements are executed by the database system in several steps, including: - Parsing the SQL statement and checking its validity - Transforming the SQL into an internal representation, such as relational algebra - Optimizing the internal representation and creating an execution plan that utilizes index information - Executing the plan and returning the results">
+<meta name="description" content="SQL statements are executed by the database system in several steps, including:
+Parsing the SQL statement and checking its validity Transforming the SQL into an internal representation, such as relational algebra Optimizing the internal representation and creating an execution plan that utilizes index information Executing the plan and returning the results Visualizing SQL Queries
+A mental model can help visualize how SQL queries are executed. Conceptually, SQL statements execute in this sequence:">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/db/theory/sql-query-logical-order/">
   <meta property="og:site_name" content="个人笔记">
   <meta property="og:title" content="SQL查询执行顺序">
-  <meta property="og:description" content="SQL statements are executed by the database system in several steps, including: - Parsing the SQL statement and checking its validity - Transforming the SQL into an internal representation, such as relational algebra - Optimizing the internal representation and creating an execution plan that utilizes index information - Executing the plan and returning the results">
+  <meta property="og:description" content="SQL statements are executed by the database system in several steps, including:
+Parsing the SQL statement and checking its validity Transforming the SQL into an internal representation, such as relational algebra Optimizing the internal representation and creating an execution plan that utilizes index information Executing the plan and returning the results Visualizing SQL Queries
+A mental model can help visualize how SQL queries are executed. Conceptually, SQL statements execute in this sequence:">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -19,7 +23,7 @@
 <link rel="canonical" href="https://tech.lucumt.info/docs/db/theory/sql-query-logical-order/">
 <link rel="stylesheet" href="/book.min.b3ccae268f9c38a56a5e1cbf66c98d5332f11265d451c193c90d21d18270625f.css" integrity="sha256-s8yuJo&#43;cOKVqXhy/ZsmNUzLxEmXUUcGTyQ0h0YJwYl8=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.b8dcd4b7e493bbde776241180bfd69ed219bdd35d5f06ac3e45c6d7d99808fb2.js" integrity="sha256-uNzUt&#43;STu953YkEYC/1p7SGb3TXV8GrD5FxtfZmAj7I=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.00aa88801fc4222548e82e47ba7d061a3d20cf25d90b566e8b0979d2bcbf82cc.js" integrity="sha256-AKqIgB/EIiVI6C5Hun0GGj0gzyXZC1Zuiwl50ry/gsw=" crossorigin="anonymous"></script>
 
   
 
@@ -1836,11 +1840,25 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown book-article"><p><img src="/img/db/theory/sql-query-logical-order.gif" alt="扩展数据库的7种策略" /></p>
-<p>SQL statements are executed by the database system in several steps, including:
-- Parsing the SQL statement and checking its validity
-- Transforming the SQL into an internal representation, such as relational algebra
-- Optimizing the internal representation and creating an execution plan that utilizes index information
-- Executing the plan and returning the results</p>
+<p>SQL statements are executed by the database system in several steps, including:</p>
+<ul>
+<li>Parsing the SQL statement and checking its validity</li>
+<li>Transforming the SQL into an internal representation, such as relational algebra</li>
+<li>Optimizing the internal representation and creating an execution plan that utilizes index information</li>
+<li>Executing the plan and returning the results</li>
+</ul>
+<hr>
+<p>Visualizing SQL Queries</p>
+<p>A mental model can help visualize how SQL queries are executed. Conceptually, SQL statements execute in this sequence:</p>
+<ol>
+<li>FROM: Tables are identified and joined to create the initial dataset.</li>
+<li>WHERE: Filters are applied to the initial dataset based on specified criteria.</li>
+<li>GROUP BY: The filtered rows are grouped according to the specified columns.</li>
+<li>HAVING: Additional filters are applied to the grouped rows based on aggregate criteria.</li>
+<li>SELECT: Specific columns are chosen from the resultant dataset for the output.</li>
+<li>ORDER BY: The output rows are sorted by the specified columns in ascending or descending order.</li>
+<li>LIMIT: The number of rows in the output is restricted.</li>
+</ol>
 </article>
  
       
