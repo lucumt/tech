@@ -1,6 +1,6 @@
 ---
 title: "Nginx强大的原因"
-weight: 8
+weight: 20
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
