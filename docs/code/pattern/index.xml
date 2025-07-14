@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>设计模式 on 个人笔记</title>
+    <link>https://tech.lucumt.info/docs/code/pattern/</link>
+    <description>Recent content in 设计模式 on 个人笔记</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://tech.lucumt.info/docs/code/pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9种面向对象的设计模式</title>
+      <link>https://tech.lucumt.info/docs/code/pattern/9-oop-design-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/pattern/9-oop-design-patterns/</guid>
+      <description>9 OOP Design Patterns You Must Know&#xA;These patterns can be divided into 3 categories:&#xA;A - Creational Patterns Deal with object creation mechanism to decouple the client code from concrete classes.&#xA;Factory Pattern: Centralizes object creation logic and returns different subclasses based on input Singleton Pattern: Ensures only one instance of a class exists and provides global access to it. Builder Pattern: Constructs complex objects step-by-step, allowing optional configuration.</description>
+    </item>
+  </channel>
+</rss>
