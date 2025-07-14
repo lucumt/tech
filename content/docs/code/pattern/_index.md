@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
-weight: 7
-title: 消息中间件
+weight: 6
+title: 设计模式
 ---
