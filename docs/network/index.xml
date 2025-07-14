@@ -8,48 +8,6 @@
     <language>zh-cn</language>
     <atom:link href="https://tech.lucumt.info/docs/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TCP状态变化图</title>
-      <link>https://tech.lucumt.info/docs/network/tcp-status-change/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/tcp-status-change/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HTTP状态码说明</title>
-      <link>https://tech.lucumt.info/docs/network/http-status/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HTTPS连接建立过程</title>
-      <link>https://tech.lucumt.info/docs/network/https-handshake/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/https-handshake/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HTTPS连接过程揭秘</title>
-      <link>https://tech.lucumt.info/docs/network/https-under-the-hood/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/https-under-the-hood/</guid>
-      <description>HTTPS Under the Hood&#xA;HTTPS is a secure way to share information on the internet. It encrypts data transfer between client and server.&#xA;But without common encryption key, how data is encrypted?&#xA;1 - Server Certificate Check - Client and server exchange &amp;ldquo;HELLO&amp;rdquo; messages - Server sends its certificate - Client verifies it with a Certificate Authority&#xA;2 - Key Exchange - Client extracts server&amp;rsquo;s public key, creates a session key - They agree on a cipher suite - Client encrypts session key using server&amp;rsquo;s public key - Server decrypts it</description>
-    </item>
-    <item>
-      <title>HTTPS是如何工作的</title>
-      <link>https://tech.lucumt.info/docs/network/how-https-works/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/how-https-works/</guid>
-      <description>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.&#xA;SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.&#xA;Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.&#xA;HTML&amp;rsquo;s Role: Peek into HTML&amp;rsquo;s role in structuring the web.</description>
-    </item>
-    <item>
-      <title>网络安全学习线路图</title>
-      <link>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</guid>
-      <description>Cybersecurity is crucial for protecting information and systems from theft, damage, and unauthorized access. Whether you&amp;rsquo;re a beginner or looking to advance your technical skills, there are numerous resources and paths you can take to learn more about cybersecurity. Here are some structured suggestions to help you get started or deepen your knowledge:&#xA;🔹 Security Architecture 🔹 Frameworks &amp;amp; Standards 🔹 Application Security 🔹 Risk Assessment 🔹 Enterprise Risk Management 🔹 Threat Intelligence 🔹 Security Operation</description>
-    </item>
-    <item>
       <title>网络7层模型</title>
       <link>https://tech.lucumt.info/docs/network/what-is-osi-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -64,18 +22,25 @@
       <description></description>
     </item>
     <item>
+      <title>TCP状态变化图</title>
+      <link>https://tech.lucumt.info/docs/network/tcp-status-change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/tcp-status-change/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTP状态码说明</title>
+      <link>https://tech.lucumt.info/docs/network/http-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Nginx强大的原因</title>
       <link>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</guid>
       <description>&#xA;What Makes Nginx So Useful&#xA;Core Architecture: Master-worker process model handles connections efficiently High-Performance: Server Handles thousands of concurrent connections effortlessly Reverse Proxy: Distributes traffic across multiple backend servers Features: Built-in caching and SSL handling for speed and security </description>
-    </item>
-    <item>
-      <title>SSH是如何工作的</title>
-      <link>https://tech.lucumt.info/docs/network/how-ssh-works/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/how-ssh-works/</guid>
-      <description>SSH Under the Hood&#xA;Secure Shell (SSH) creates an encrypted channel between client and server. The process begins with a TCP connection, followed by version negotiation. Both parties then agree on encryption algorithms, key exchange methods, and message authentication codes. The client and server perform a key exchange (typically using Diffie-Hellman) to securely generate a shared session key for encrypting the connection. For authentication, SSH commonly uses public key authentication.</description>
     </item>
   </channel>
 </rss>

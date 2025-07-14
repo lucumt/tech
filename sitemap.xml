@@ -26,8 +26,6 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/redis/redis-architecture-evolve/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/tcp-status-change/</loc>
-  </url><url>
     <loc>https://tech.lucumt.info/docs/security/identity-manage-types/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/authentication-types-compare/</loc>
@@ -60,6 +58,8 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/microservice/develop/what-does-api-gateway-do/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/network/security/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/tools/network-config/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/other/stop-the-war/</loc>
@@ -75,8 +75,6 @@
     <loc>https://tech.lucumt.info/docs/tools/git/git-cheatsheet/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/framework/grpc/how-does-grpc-work/</loc>
-  </url><url>
-    <loc>https://tech.lucumt.info/docs/network/http-status/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/mq/can-kafka-lose-messages/</loc>
   </url><url>
@@ -106,15 +104,19 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/algorithm/12-algorithms-for-system-design-interviews/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/network/what-is-osi-model/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/ai/top-20-ai-concepts/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/theory/top-6-data-manage-patterns/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/db/es/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/https-handshake/</loc>
+    <loc>https://tech.lucumt.info/docs/network/security/https-handshake/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/https-under-the-hood/</loc>
+    <loc>https://tech.lucumt.info/docs/network/security/https-under-the-hood/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/linux/system/linux-boot-process-explained/</loc>
   </url><url>
@@ -146,7 +148,7 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/theory/top-6-database-models/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/how-https-works/</loc>
+    <loc>https://tech.lucumt.info/docs/network/security/how-https-works/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/mq/kafka-101/</loc>
   </url><url>
@@ -156,11 +158,15 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/block/shell-check-between-arrays/</loc>
   </url><url>
+    <loc>https://tech.lucumt.info/docs/network/tcp-status-change/</loc>
+  </url><url>
     <loc>https://tech.lucumt.info/docs/security/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/language/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/cloud/create-jenkins-via-docker/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/network/http-status/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/block/java-lambda-filter/</loc>
   </url><url>
@@ -172,7 +178,7 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</loc>
+    <loc>https://tech.lucumt.info/docs/network/security/rodamap-for-learning-cyber-security/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/monitor/</loc>
   </url><url>
@@ -188,13 +194,9 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/mq/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/what-is-osi-model/</loc>
-  </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/12-factor-app/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/10-good-coding-principle/</loc>
-  </url><url>
-    <loc>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/security/jwt-101-key-to-stateless-authentication.gif/</loc>
   </url><url>
@@ -204,15 +206,13 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</loc>
-  </url><url>
     <loc>https://tech.lucumt.info/docs/cloud/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/theory/a-cheatsheet-on-database-performance/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/15-system-design-core-concepts/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/how-ssh-works/</loc>
+    <loc>https://tech.lucumt.info/docs/network/security/how-ssh-works/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/</loc>
   </url><url>
@@ -227,6 +227,8 @@
     <loc>https://tech.lucumt.info/docs/microservice/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/garbage-collection-101/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/test/</loc>
   </url><url>

@@ -57,13 +57,6 @@
       <description>Rome wasn&amp;rsquo;t built in a day.&#xA;How does Redis architecture evolve?&#xA;Redis is a popular in-memory cache. How did it evolve to the architecture it is today?&#xA;🔹 2010 - Standalone Redis When Redis 1.0 was released in 2010, the architecture was quite simple. It is usually used as a cache to the business application.&#xA;However, Redis stores data in memory. When we restart Redis, we will lose all the data and the traffic directly hits the database.</description>
     </item>
     <item>
-      <title>TCP状态变化图</title>
-      <link>https://tech.lucumt.info/docs/network/tcp-status-change/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/tcp-status-change/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>不同的身份管理方式</title>
       <link>https://tech.lucumt.info/docs/security/identity-manage-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -211,13 +204,6 @@
       <description>How does 𝐠𝐑𝐏𝐂 work? RPC (Remote Procedure Call) is called “𝐫𝐞𝐦𝐨𝐭𝐞” because it enables communications between remote services when services are deployed to different servers under microservice architecture. From the user’s point of view, it acts like a local function call.&#xA;The diagram below illustrates the overall data flow for 𝐠𝐑𝐏𝐂.&#xA;Step 1: A REST call is made from the client. The request body is usually in JSON format.</description>
     </item>
     <item>
-      <title>HTTP状态码说明</title>
-      <link>https://tech.lucumt.info/docs/network/http-status/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>kakfa丢失消息的场景</title>
       <link>https://tech.lucumt.info/docs/code/mq/can-kafka-lose-messages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -288,6 +274,13 @@
       <description>12 Algorithms for System Design Interviews&#xA;Bloom Filter: Check if a requested item is in the cache before performing disk operations. Geohash: Used to build location-based services. HyperLogLog: Counting unique queries performed by users in a search. Consistent Hashing: Used for efficient data distribution between the cluster’s nodes. Merkle Tree: Used to detect inconsistencies between data replicas across multiple nodes. Raft Algorithm: Used to achieve consensus on log replication. Lossy Count: Network traffic analysis, web analytics, and identifying heavy hitters.</description>
     </item>
     <item>
+      <title>网络7层模型</title>
+      <link>https://tech.lucumt.info/docs/network/what-is-osi-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/what-is-osi-model/</guid>
+      <description>How is data sent over the network? Why do we need so many layers in the OSI model?&#xA;The diagram below shows how data is encapsulated and de-encapsulated when transmitting over the network.&#xA;🔹 Step 1: When Device A sends data to Device B over the network via the HTTP protocol, it is first added an HTTP header at the application layer.&#xA;🔹 Step 2: Then a TCP or a UDP header is added to the data.</description>
+    </item>
+    <item>
       <title>20个主要的ai概念</title>
       <link>https://tech.lucumt.info/docs/ai/top-20-ai-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -302,17 +295,24 @@
       <description>How do we manage data? Here are top 6 data management patterns.&#xA;🔹 Cache Aside When an application needs to access data, it first checks the cache. If the data is not present (a cache miss), it fetches the data from the data store, stores it in the cache, and then returns the data to the user. This pattern is particularly useful for scenarios where data is read frequently but updated less often.</description>
     </item>
     <item>
-      <title>HTTPS连接建立过程</title>
-      <link>https://tech.lucumt.info/docs/network/https-handshake/</link>
+      <title>8种主要的网络协议</title>
+      <link>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/https-handshake/</guid>
+      <guid>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTPS连接建立过程</title>
+      <link>https://tech.lucumt.info/docs/network/security/https-handshake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/security/https-handshake/</guid>
       <description></description>
     </item>
     <item>
       <title>HTTPS连接过程揭秘</title>
-      <link>https://tech.lucumt.info/docs/network/https-under-the-hood/</link>
+      <link>https://tech.lucumt.info/docs/network/security/https-under-the-hood/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/https-under-the-hood/</guid>
+      <guid>https://tech.lucumt.info/docs/network/security/https-under-the-hood/</guid>
       <description>HTTPS Under the Hood&#xA;HTTPS is a secure way to share information on the internet. It encrypts data transfer between client and server.&#xA;But without common encryption key, how data is encrypted?&#xA;1 - Server Certificate Check - Client and server exchange &amp;ldquo;HELLO&amp;rdquo; messages - Server sends its certificate - Client verifies it with a Certificate Authority&#xA;2 - Key Exchange - Client extracts server&amp;rsquo;s public key, creates a session key - They agree on a cipher suite - Client encrypts session key using server&amp;rsquo;s public key - Server decrypts it</description>
     </item>
     <item>
@@ -401,9 +401,9 @@
     </item>
     <item>
       <title>HTTPS是如何工作的</title>
-      <link>https://tech.lucumt.info/docs/network/how-https-works/</link>
+      <link>https://tech.lucumt.info/docs/network/security/how-https-works/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/how-https-works/</guid>
+      <guid>https://tech.lucumt.info/docs/network/security/how-https-works/</guid>
       <description>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.&#xA;SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.&#xA;Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.&#xA;HTML&amp;rsquo;s Role: Peek into HTML&amp;rsquo;s role in structuring the web.</description>
     </item>
     <item>
@@ -435,11 +435,25 @@
       <description>检测数组a中的元素是否模糊包含数组b中的一个或多个元素&#xA;1#!/bin/bash 2 3# 数组a和数组b的定义 4a=(&amp;#34;tainan&amp;#34; &amp;#34;taipei&amp;#34; &amp;#34;taichung&amp;#34; &amp;#34;keelung&amp;#34; &amp;#34;taoyuan&amp;#34; &amp;#34;changhua&amp;#34; &amp;#34;nantou&amp;#34; &amp;#34;kinmen&amp;#34;) 5b=(&amp;#34;tai&amp;#34; &amp;#34;nan&amp;#34;) 6 7 8for element_a in &amp;#34;${a[@]}&amp;#34;; do 9 contains=false 10 for pattern in &amp;#34;${b[@]}&amp;#34;; do 11 if [[ $element_a =~ $pattern ]]; then 12 contains=true 13 break 14 fi 15 done 16 if [ &amp;#34;$contains&amp;#34; = true ] ; then 17 echo &amp;#34;----------$element_a符合要求---------------&amp;#34; 18 else 19 echo &amp;#34;**********$element_a不符合要求************&amp;#34; 20 fi 21done 下述改进版的，可避免双重循环&#xA;1#!/bin/bash 2 3# 数组a和数组b的定义 4a=(&amp;#34;tainan&amp;#34; &amp;#34;taipei&amp;#34; &amp;#34;taichung&amp;#34; &amp;#34;keelung&amp;#34; &amp;#34;taoyuan&amp;#34; &amp;#34;changhua&amp;#34; &amp;#34;nantou&amp;#34; &amp;#34;kinmen&amp;#34;) 5b=(&amp;#34;tai&amp;#34; &amp;#34;nan&amp;#34;) 6 7# 将数组b中的元素连接成正则表达式 8regex=$(IFS=&amp;#39;|&amp;#39;; echo &amp;#34;${b[*]}&amp;#34;) 9 10for element_a in &amp;#34;${a[@]}&amp;#34;; do 11 if echo &amp;#34;$element_a&amp;#34; | egrep -iq &amp;#34;$regex&amp;#34;; then 12 echo &amp;#34;----------$element_a符合要求---------------&amp;#34; 13 else 14 echo &amp;#34;**********$element_a不符合要求************&amp;#34; 15 fi 16done </description>
     </item>
     <item>
+      <title>TCP状态变化图</title>
+      <link>https://tech.lucumt.info/docs/network/tcp-status-change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/tcp-status-change/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>通过Docker创建Jenkins</title>
       <link>https://tech.lucumt.info/docs/cloud/create-jenkins-via-docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/cloud/create-jenkins-via-docker/</guid>
       <description> 1version: &amp;#39;3&amp;#39; 2services: 3 docker_jenkins: 4 user: root 5 restart: always 6 image: jenkins/jenkins:lts 7 container_name: jenkins_local 8 ports: 9 - 30180:8080 10 - 50000:50000 11 volumes: 12 - $PWD/jenkins_home/:/var/jenkins_home 13 - /var/run/docker.sock:/var/run/docker.sock 14 - /usr/bin/docker:/usr/bin/docker 15 - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose </description>
+    </item>
+    <item>
+      <title>HTTP状态码说明</title>
+      <link>https://tech.lucumt.info/docs/network/http-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/http-status/</guid>
+      <description></description>
     </item>
     <item>
       <title>Java中利用Lambda进行过滤</title>
@@ -471,9 +485,9 @@
     </item>
     <item>
       <title>网络安全学习线路图</title>
-      <link>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</link>
+      <link>https://tech.lucumt.info/docs/network/security/rodamap-for-learning-cyber-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/rodamap-for-learning-cyber-security/</guid>
+      <guid>https://tech.lucumt.info/docs/network/security/rodamap-for-learning-cyber-security/</guid>
       <description>Cybersecurity is crucial for protecting information and systems from theft, damage, and unauthorized access. Whether you&amp;rsquo;re a beginner or looking to advance your technical skills, there are numerous resources and paths you can take to learn more about cybersecurity. Here are some structured suggestions to help you get started or deepen your knowledge:&#xA;🔹 Security Architecture 🔹 Frameworks &amp;amp; Standards 🔹 Application Security 🔹 Risk Assessment 🔹 Enterprise Risk Management 🔹 Threat Intelligence 🔹 Security Operation</description>
     </item>
     <item>
@@ -505,13 +519,6 @@
       <description>How Digital Signatures Work?&#xA;A digital signature is a specific kind of electronic signature to sign and secure electronically transmitted documents.&#xA;Digital signatures are similar to physical signatures since they are unique to every person. They identify the identity of the signer.&#xA;Here’s an example of the working process of a digital signature with Alice as the sender and John as the recipient:&#xA;Alice generates a cryptographic key pair consisting of a private key and a corresponding public key.</description>
     </item>
     <item>
-      <title>网络7层模型</title>
-      <link>https://tech.lucumt.info/docs/network/what-is-osi-model/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/what-is-osi-model/</guid>
-      <description>How is data sent over the network? Why do we need so many layers in the OSI model?&#xA;The diagram below shows how data is encapsulated and de-encapsulated when transmitting over the network.&#xA;🔹 Step 1: When Device A sends data to Device B over the network via the HTTP protocol, it is first added an HTTP header at the application layer.&#xA;🔹 Step 2: Then a TCP or a UDP header is added to the data.</description>
-    </item>
-    <item>
       <title>软件开发12准则</title>
       <link>https://tech.lucumt.info/docs/code/theory/12-factor-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -524,13 +531,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/10-good-coding-principle/</guid>
       <description>Software development requires good system designs and coding standards. We list 10 good coding principles in the diagram below.&#xA;🔹 01 Follow Code Specifications When we write code, it is important to follow the industry&amp;rsquo;s well-established norms, like “PEP 8”, “Google Java Style”, adhering to a set of agreed-upon code specifications ensures that the quality of the code is consistent and readable.&#xA;🔹 02 Documentation and Comments Good code should be clearly documented and commented to explain complex logic and decisions, and comments should explain why a certain approach was taken (“Why”) rather than what exactly is being done (“What”).</description>
-    </item>
-    <item>
-      <title>8种主要的网络协议</title>
-      <link>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/8-popular-network-protocols/</guid>
-      <description></description>
     </item>
     <item>
       <title>JWT无状态身份验证的关键</title>
@@ -554,13 +554,6 @@
       <description>1from moviepy import VideoFileClip 2 3 4def video_to_gif(video_path, output_path, start_time, end_time, fps=10, resize_ratio=1.0): 5 &amp;#34;&amp;#34;&amp;#34; 6 将视频片段转换为 GIF 7 参数： 8 video_path: 输入视频文件路径 9 output_path: 输出 GIF 路径 10 start_time: 开始时间（秒） 11 end_time: 结束时间（秒） 12 fps: 输出帧率（默认10） 13 resize_ratio: 缩放比例（默认1.0） 14 &amp;#34;&amp;#34;&amp;#34; 15 try: 16 # 加载视频并截取指定片段 17 with VideoFileClip(video_path) as clip: 18 subclip = clip.subclipped(start_time, end_time) 19 20 # 调整尺寸（可选） 21 if resize_ratio != 1.0: 22 subclip = subclip.</description>
     </item>
     <item>
-      <title>Nginx强大的原因</title>
-      <link>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</guid>
-      <description>&#xA;What Makes Nginx So Useful&#xA;Core Architecture: Master-worker process model handles connections efficiently High-Performance: Server Handles thousands of concurrent connections effortlessly Reverse Proxy: Distributes traffic across multiple backend servers Features: Built-in caching and SSL handling for speed and security </description>
-    </item>
-    <item>
       <title>数据库性能说明</title>
       <link>https://tech.lucumt.info/docs/db/theory/a-cheatsheet-on-database-performance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -576,9 +569,9 @@
     </item>
     <item>
       <title>SSH是如何工作的</title>
-      <link>https://tech.lucumt.info/docs/network/how-ssh-works/</link>
+      <link>https://tech.lucumt.info/docs/network/security/how-ssh-works/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/how-ssh-works/</guid>
+      <guid>https://tech.lucumt.info/docs/network/security/how-ssh-works/</guid>
       <description>SSH Under the Hood&#xA;Secure Shell (SSH) creates an encrypted channel between client and server. The process begins with a TCP connection, followed by version negotiation. Both parties then agree on encryption algorithms, key exchange methods, and message authentication codes. The client and server perform a key exchange (typically using Diffie-Hellman) to securely generate a shared session key for encrypting the connection. For authentication, SSH commonly uses public key authentication.</description>
     </item>
     <item>
@@ -608,6 +601,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/garbage-collection-101/</guid>
       <description>How does Garbage Collection work? Garbage collection is an automatic memory management feature used in programming languages to reclaim memory no longer used by the program.&#xA;🔹 Java Java provides several garbage collectors, each suited for different use cases:&#xA;\1. Serial Garbage Collector: Best for single-threaded environments or small applications.&#xA;\2. Parallel Garbage Collector: Also known as the &amp;ldquo;Throughput Collector.&amp;rdquo;&#xA;\3. CMS (Concurrent Mark-Sweep) Garbage Collector: Low-latency collector aiming to minimize pause times.</description>
+    </item>
+    <item>
+      <title>Nginx强大的原因</title>
+      <link>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/what-makes-nginx-so-useful/</guid>
+      <description>&#xA;What Makes Nginx So Useful&#xA;Core Architecture: Master-worker process model handles connections efficiently High-Performance: Server Handles thousands of concurrent connections effortlessly Reverse Proxy: Distributes traffic across multiple backend servers Features: Built-in caching and SSL handling for speed and security </description>
     </item>
   </channel>
 </rss>
