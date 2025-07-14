@@ -400,11 +400,18 @@
       <description>The diagram below shows top 6 data models.&#xA;🔹 Flat Model The flat data model is one of the simplest forms of database models. It organizes data into a single table where each row represents a record and each column represents an attribute. This model is similar to a spreadsheet and is straightforward to understand and implement. However, it lacks the ability to efficiently handle complex relationships between data entities.</description>
     </item>
     <item>
-      <title>HTTPS是如何工作的</title>
-      <link>https://tech.lucumt.info/docs/network/security/how-https-works/</link>
+      <title>HTTPS是如何工作的-1</title>
+      <link>https://tech.lucumt.info/docs/network/security/how-https-works-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tech.lucumt.info/docs/network/security/how-https-works/</guid>
+      <guid>https://tech.lucumt.info/docs/network/security/how-https-works-1/</guid>
       <description>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.&#xA;SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.&#xA;Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.&#xA;HTML&amp;rsquo;s Role: Peek into HTML&amp;rsquo;s role in structuring the web.</description>
+    </item>
+    <item>
+      <title>HTTPS是如何工作的-2</title>
+      <link>https://tech.lucumt.info/docs/network/security/how-https-works-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/security/how-https-works-2/</guid>
+      <description>How does HTTPS work? . . Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP.) HTTPS transmits encrypted data using Transport Layer Security (TLS.) If the data is hijacked online, all the hijacker gets is binary code.&#xA;How is the data encrypted and decrypted?&#xA;Step 1 - The client (browser) and the server establish a TCP connection.&#xA;Step 2 - The client sends a “client hello” to the server.</description>
     </item>
     <item>
       <title>Kafka核心概念</title>
@@ -482,6 +489,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</guid>
       <description>Top 9 Architectural Patterns for Data and Communication Flow&#xA;🔹 Peer-to-Peer The Peer-to-Peer pattern involves direct communication between two components without the need for a central coordinator.&#xA;🔹 API Gateway An API Gateway acts as a single entry point for all client requests to the backend services of an application.&#xA;🔹 Pub-Sub The Pub-Sub pattern decouples the producers of messages (publishers) from the consumers of messages (subscribers) through a message broker.</description>
+    </item>
+    <item>
+      <title>消息队列的演化</title>
+      <link>https://tech.lucumt.info/docs/code/mq/how-do-message-queues-evolve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/mq/how-do-message-queues-evolve/</guid>
+      <description></description>
     </item>
     <item>
       <title>网络安全学习线路图</title>

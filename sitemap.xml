@@ -148,7 +148,9 @@
   </url><url>
     <loc>https://tech.lucumt.info/docs/db/theory/top-6-database-models/</loc>
   </url><url>
-    <loc>https://tech.lucumt.info/docs/network/security/how-https-works/</loc>
+    <loc>https://tech.lucumt.info/docs/network/security/how-https-works-1/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/network/security/how-https-works-2/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/mq/kafka-101/</loc>
   </url><url>
@@ -177,6 +179,8 @@
     <loc>https://tech.lucumt.info/docs/code/framework/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/code/theory/rest-api-vs-graphql/</loc>
+  </url><url>
+    <loc>https://tech.lucumt.info/docs/code/mq/how-do-message-queues-evolve/</loc>
   </url><url>
     <loc>https://tech.lucumt.info/docs/network/security/rodamap-for-learning-cyber-security/</loc>
   </url><url>

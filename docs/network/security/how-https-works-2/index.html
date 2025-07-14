@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.
-SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.
-Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.
-HTML&rsquo;s Role: Peek into HTML&rsquo;s role in structuring the web.">
+<meta name="description" content="How does HTTPS work? . . Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP.) HTTPS transmits encrypted data using Transport Layer Security (TLS.) If the data is hijacked online, all the hijacker gets is binary code.
+How is the data encrypted and decrypted?
+Step 1 - The client (browser) and the server establish a TCP connection.
+Step 2 - The client sends a “client hello” to the server.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/network/security/how-https-works/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/network/security/how-https-works-2/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="HTTPS是如何工作的">
-  <meta property="og:description" content="HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.
-SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.
-Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.
-HTML’s Role: Peek into HTML’s role in structuring the web.">
+  <meta property="og:title" content="HTTPS是如何工作的-2">
+  <meta property="og:description" content="How does HTTPS work? . . Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP.) HTTPS transmits encrypted data using Transport Layer Security (TLS.) If the data is hijacked online, all the hijacker gets is binary code.
+How is the data encrypted and decrypted?
+Step 1 - The client (browser) and the server establish a TCP connection.
+Step 2 - The client sends a “client hello” to the server.">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>HTTPS是如何工作的 | 个人笔记</title>
+<title>HTTPS是如何工作的-2 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://tech.lucumt.info/docs/network/security/how-https-works/">
+<link rel="canonical" href="https://tech.lucumt.info/docs/network/security/how-https-works-2/">
 <link rel="stylesheet" href="/book.min.b3ccae268f9c38a56a5e1cbf66c98d5332f11265d451c193c90d21d18270625f.css" integrity="sha256-s8yuJo&#43;cOKVqXhy/ZsmNUzLxEmXUUcGTyQ0h0YJwYl8=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.441d650a1aca3af72540ff2120e72785dbb64b3299e19b4dacabfb2074eb01e6.js" integrity="sha256-RB1lChrKOvclQP8hIOcnhdu2SzKZ4ZtNrKv7IHTrAeY=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.6b5810ddffd24ffd212a8835692e2fb9d9b0dd4ff545a3a30e4fcab0084f1d1d.js" integrity="sha256-a1gQ3f/ST/0hKog1aS4vudmw3U/1RaOjDk/KsAhPHR0=" crossorigin="anonymous"></script>
 
   
 
@@ -353,7 +353,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/network/security/how-https-works/" class="active">HTTPS是如何工作的</a>
+    <a href="/docs/network/security/how-https-works-1/" class="">HTTPS是如何工作的-1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/security/how-https-works-2/" class="active">HTTPS是如何工作的-2</a>
   
 
         </li>
@@ -1282,6 +1295,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/code/mq/how-do-message-queues-evolve/" class="">消息队列的演化</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -1850,7 +1876,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>HTTPS是如何工作的</strong>
+  <strong>HTTPS是如何工作的-2</strong>
 
   <label for="toc-control">
     
@@ -1875,11 +1901,26 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p><img src="/img/network/how-https-works.jfif" alt="HTTPS是如何工作的" /></p>
-<p>HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.</p>
-<p>SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.</p>
-<p>Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.</p>
-<p>HTML&rsquo;s Role: Peek into HTML&rsquo;s role in structuring the web. Uncover how hyperlinks and content come together seamlessly. And why is it called HYPER TEXT.</p>
+  <article class="markdown book-article"><p><img src="/img/network/how-does-https-work.jfif" alt="HTTPS是如何工作的" /></p>
+<p>How does HTTPS work?
+.
+.
+Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP.) HTTPS transmits encrypted data using Transport Layer Security (TLS.) If the data is hijacked online, all the hijacker gets is binary code.</p>
+<p>How is the data encrypted and decrypted?</p>
+<p>Step 1 - The client (browser) and the server establish a TCP connection.</p>
+<p>Step 2 - The client sends a “client hello” to the server. The message contains a set of necessary encryption algorithms (cipher suites) and the latest TLS version it can support. The server responds with a “server hello” so the browser knows whether it can support the algorithms and TLS version.</p>
+<p>The server then sends the SSL certificate to the client. The certificate contains the public key, host name, expiry dates, etc. The client validates the certificate.</p>
+<p>Step 3 - After validating the SSL certificate, the client generates a session key and encrypts it using the public key. The server receives the encrypted session key and decrypts it with the private key.</p>
+<p>Step 4 - Now that both the client and the server hold the same session key (symmetric encryption), the encrypted data is transmitted in a secure bi-directional channel.</p>
+<p>Why does HTTPS switch to symmetric encryption during data transmission? There are two main reasons:</p>
+<ol>
+<li>
+<p>Security: The asymmetric encryption goes only one way. This means that if the server tries to send the encrypted data back to the client, anyone can decrypt the data using the public key.</p>
+</li>
+<li>
+<p>Server resources: The asymmetric encryption adds quite a lot of mathematical overhead. It is not suitable for data transmissions in long sessions.</p>
+</li>
+</ol>
 </article>
  
       

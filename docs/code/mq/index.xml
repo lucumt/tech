@@ -35,5 +35,12 @@
       <guid>https://tech.lucumt.info/docs/code/mq/kafka-101/</guid>
       <description>The Ultimate Kafka 101 You Cannot Miss&#xA;Kafka is super-popular but can be overwhelming in the beginning.&#xA;Here are 8 simple steps that can help you understand the fundamentals of Kafka.&#xA;1 - What is Kafka? Kafka is a distributed event store and a streaming platform. It began as an internal project at LinkedIn and now powers some of the largest data pipelines in the world in orgs like Netflix, Uber, etc.</description>
     </item>
+    <item>
+      <title>消息队列的演化</title>
+      <link>https://tech.lucumt.info/docs/code/mq/how-do-message-queues-evolve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/code/mq/how-do-message-queues-evolve/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
