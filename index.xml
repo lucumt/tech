@@ -596,6 +596,13 @@
       <description>UML is a standard way to visualize the design of your system and class diagrams are used across the industry.&#xA;They consist of:&#xA;1 - Class Acts as the blueprint that defines the properties and behavior of an object.&#xA;2 - Attributes Attributes in a UML class diagram represent the data fields of the class.&#xA;3 - Methods Methods in a UML class diagram represent the behavior that a class can perform.</description>
     </item>
     <item>
+      <title>浏览器如何处理网络请求</title>
+      <link>https://tech.lucumt.info/docs/network/what-happens-when-type-url-in-browser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/what-happens-when-type-url-in-browser/</guid>
+      <description>What happens when you type a URL into a browser?&#xA;Let’s look at the process step by step.&#xA;Step 1: The user enters a URL (bytebytego .com) into the browser and hits Enter. The first thing we need to do is to translate the URL to an IP address. The mapping is usually stored in a cache, so the browser looks for the IP address in multiple layers of cache: the browser cache, OS cache, local cache, and ISP cache.</description>
+    </item>
+    <item>
       <title>垃圾回收工作流程</title>
       <link>https://tech.lucumt.info/docs/code/theory/garbage-collection-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
