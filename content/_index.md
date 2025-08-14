@@ -32,6 +32,8 @@ hugo server -w -D --renderToMemory
 * [各种开源代码协议许可比较](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
 * [神经网络与深度学习](http://neuralnetworksanddeeplearning.com/chap1.html)
 * [万字长文带你窥探Spring中所有的扩展点](https://mp.weixin.qq.com/s/O0W6vCuqQfeAH0UB7elpeA)
+* [解读Agent 4大协议：MCP/ACP/A2A/ANP](https://www.cnblogs.com/tangshiye/p/19035765)
+* [为什么RAG技术可以缓解大模型知识固化和幻觉问题](https://www.cnblogs.com/twosedar/p/19036833)
 
 # 其它
 
