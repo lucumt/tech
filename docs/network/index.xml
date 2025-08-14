@@ -36,6 +36,13 @@
       <description></description>
     </item>
     <item>
+      <title>网络协议依赖</title>
+      <link>https://tech.lucumt.info/docs/network/network-protocol-dependencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/network/network-protocol-dependencies/</guid>
+      <description>Must-Know Network Protocol Dependencies&#xA;Understanding network protocol dependencies is essential for cybersecurity and networking. Here’s a quick understanding of the same:&#xA;IPv4 and IPv6 are the foundation of all networking. ICMP and ICMPv6 handle diagnostics, while IPsec ensures secure communication. TCP and UDP support various protocols. SCTP and DCCP serve specific cases. Some TCP-based protocols are HTTP, SSH, BGP, RDP, IMAP, SMTP, POP, etc. UDP-based protocols are DNS, DHCP, SIP, RTP, NTP, etc.</description>
+    </item>
+    <item>
       <title>浏览器如何处理网络请求</title>
       <link>https://tech.lucumt.info/docs/network/what-happens-when-type-url-in-browser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
