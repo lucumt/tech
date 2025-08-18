@@ -35,5 +35,12 @@
       <guid>https://tech.lucumt.info/docs/ai/what-is-rag/</guid>
       <description>What is Retrieval-Augmented Generation (RAG)?&#xA;RAG augments LLM outputs by referencing authoritative knowledge bases outside the model&amp;rsquo;s training data before generating responses.&#xA;This approach extends LLM capabilities to specialized domains without requiring expensive retraining or fine-tuning.&#xA;How RAG Works:&#xA;Prompt + Query The user submits a prompt through the LLM interface. The server converts this query into a vector representation.&#xA;Query The vectorized query is sent to the search system.</description>
     </item>
+    <item>
+      <title>7种提示词模板</title>
+      <link>https://tech.lucumt.info/docs/ai/gpt-chat-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tech.lucumt.info/docs/ai/gpt-chat-template/</guid>
+      <description>整体上可采用三段式提示词模板进行初步拆解&#xA;模型 指标说明 提示词 我是谁 背景分析，方便AI了解你。我自己的背景有哪些？我想让AI从什么角色进行分析 我们是双职工家庭，家里有一个老人和一个5岁的小孩 我要干什么 我的目标是啥？写文案？做图片？写诗？写减肥计划？ 制定一份家庭健身计划 我有什么要求 你要做的这件事情，具体有哪些要求，可以详细告诉AI 工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 </description>
+    </item>
   </channel>
 </rss>
