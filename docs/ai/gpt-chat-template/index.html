@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="整体上可采用三段式提示词模板进行初步拆解
-模型 指标说明 提示词 我是谁 背景分析，方便AI了解你。我自己的背景有哪些？我想让AI从什么角色进行分析 我们是双职工家庭，家里有一个老人和一个5岁的小孩 我要干什么 我的目标是啥？写文案？做图片？写诗？写减肥计划？ 制定一份家庭健身计划 我有什么要求 你要做的这件事情，具体有哪些要求，可以详细告诉AI 工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 ">
+模型 指标说明 提示词 我是谁 背景分析，方便AI了解你。我自己的背景有哪些？我想让AI从什么角色进行分析 我们是双职工家庭，家里有一个老人和一个5岁的小孩 我要干什么 我的目标是啥？写文案？做图片？写诗？写减肥计划？ 制定一份家庭健身计划 我有什么要求 你要做的这件事情，具体有哪些要求，可以详细告诉AI 工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 APE提示词模板 # 模型 指标说明 提示词 A Action行动 制定家庭健身计划 P PURPOSE目的 用碎片时间增强全家体质 E EXPECTATION期望 包含 3 种无需器械的运动（适合 5 岁儿童到 60 岁老人）每日总耗时≤40 分钟（可分早晚两次完成）附带运动效果自测表（如深蹲次数周增长目标） BROKE提示词模板 # 模型 指标说明 提示词 B BACKGROUND背景 双职工家庭，工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 R ROLE角色 请担任家庭健康管理师 O OBJECTIVES目标 设计全家适用的碎片化健身方案 K KEY RESULTS关键结果 每周总运动时长≥150 分钟儿童运动趣味度评分≥4 星（5 分制）老人关节不适感降低 30% E EVOLVE试验并改进 增加亲子互动游戏环节引入运动成就徽章系统使用运动手环数据自动调整计划 COAST提示词模板 # 模型 指标说明 提示词 C CONTEXT背景，上下文 三代同住的老小区住户，客厅面积 15 ㎡，有楼梯间可利用 O OBJECTIVE目的 实现全年龄段家庭成员体质提升 A ACTION行动 开发家庭微空间锻炼体系 S SCENARIO方案 早晨 7:00-7:30 晚间 20:00-20:40 T TASK任务 设计 3 套交替使用的「楼梯&#43;客厅」训练组合制作运动强度分级表（儿童/成人/老人版）录制家庭跟练短视频脚本（含安全提示字幕 TAG提示词模板 # 模型 指标说明 提示词 T TASK任务 创建三代同堂家庭运动计划 A ACTION行动 筛选适合各年龄段的无器械动作制定每周运动主题（如平衡周/柔韧周）设计运动数据追踪表 G GOAL目标 三个月内实现：儿童跳绳每分钟增加 20 次成人平板支撑时长突破 2 分钟老人坐姿体前屈进步 5cm RISE提示词模板 # 模型 指标说明 提示词 R ROLE角色 健身游戏化设计师 I INPUT输入 家庭成员数据：儿童（5 岁/喜欢恐龙）父母（35 岁/久坐办公）老人（60 岁/膝关节退化 S STEPS步骤 将动作改编为情景游戏（如&quot;恐龙救援深蹲&quot;）设计家庭运动积分兑换规则建立安全防护机制 E EXPECTATION期望 每日自动生成运动挑战任务每月产出全家体质分析报告运动意外风险发生率≤0.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://tech.lucumt.info/docs/ai/gpt-chat-template/">
   <meta property="og:site_name" content="个人笔记">
-  <meta property="og:title" content="7种提示词模板">
+  <meta property="og:title" content="6种提示词模板">
   <meta property="og:description" content="整体上可采用三段式提示词模板进行初步拆解
-模型 指标说明 提示词 我是谁 背景分析，方便AI了解你。我自己的背景有哪些？我想让AI从什么角色进行分析 我们是双职工家庭，家里有一个老人和一个5岁的小孩 我要干什么 我的目标是啥？写文案？做图片？写诗？写减肥计划？ 制定一份家庭健身计划 我有什么要求 你要做的这件事情，具体有哪些要求，可以详细告诉AI 工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 ">
+模型 指标说明 提示词 我是谁 背景分析，方便AI了解你。我自己的背景有哪些？我想让AI从什么角色进行分析 我们是双职工家庭，家里有一个老人和一个5岁的小孩 我要干什么 我的目标是啥？写文案？做图片？写诗？写减肥计划？ 制定一份家庭健身计划 我有什么要求 你要做的这件事情，具体有哪些要求，可以详细告诉AI 工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 APE提示词模板 # 模型 指标说明 提示词 A Action行动 制定家庭健身计划 P PURPOSE目的 用碎片时间增强全家体质 E EXPECTATION期望 包含 3 种无需器械的运动（适合 5 岁儿童到 60 岁老人）每日总耗时≤40 分钟（可分早晚两次完成）附带运动效果自测表（如深蹲次数周增长目标） BROKE提示词模板 # 模型 指标说明 提示词 B BACKGROUND背景 双职工家庭，工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 R ROLE角色 请担任家庭健康管理师 O OBJECTIVES目标 设计全家适用的碎片化健身方案 K KEY RESULTS关键结果 每周总运动时长≥150 分钟儿童运动趣味度评分≥4 星（5 分制）老人关节不适感降低 30% E EVOLVE试验并改进 增加亲子互动游戏环节引入运动成就徽章系统使用运动手环数据自动调整计划 COAST提示词模板 # 模型 指标说明 提示词 C CONTEXT背景，上下文 三代同住的老小区住户，客厅面积 15 ㎡，有楼梯间可利用 O OBJECTIVE目的 实现全年龄段家庭成员体质提升 A ACTION行动 开发家庭微空间锻炼体系 S SCENARIO方案 早晨 7:00-7:30 晚间 20:00-20:40 T TASK任务 设计 3 套交替使用的「楼梯&#43;客厅」训练组合制作运动强度分级表（儿童/成人/老人版）录制家庭跟练短视频脚本（含安全提示字幕 TAG提示词模板 # 模型 指标说明 提示词 T TASK任务 创建三代同堂家庭运动计划 A ACTION行动 筛选适合各年龄段的无器械动作制定每周运动主题（如平衡周/柔韧周）设计运动数据追踪表 G GOAL目标 三个月内实现：儿童跳绳每分钟增加 20 次成人平板支撑时长突破 2 分钟老人坐姿体前屈进步 5cm RISE提示词模板 # 模型 指标说明 提示词 R ROLE角色 健身游戏化设计师 I INPUT输入 家庭成员数据：儿童（5 岁/喜欢恐龙）父母（35 岁/久坐办公）老人（60 岁/膝关节退化 S STEPS步骤 将动作改编为情景游戏（如&#34;恐龙救援深蹲&#34;）设计家庭运动积分兑换规则建立安全防护机制 E EXPECTATION期望 每日自动生成运动挑战任务每月产出全家体质分析报告运动意外风险发生率≤0.">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>7种提示词模板 | 个人笔记</title>
+<title>6种提示词模板 | 个人笔记</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
 <link rel="canonical" href="https://tech.lucumt.info/docs/ai/gpt-chat-template/">
 <link rel="stylesheet" href="/book.min.b3ccae268f9c38a56a5e1cbf66c98d5332f11265d451c193c90d21d18270625f.css" integrity="sha256-s8yuJo&#43;cOKVqXhy/ZsmNUzLxEmXUUcGTyQ0h0YJwYl8=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.7d12229a5358642911b41436b96175ab1a8a389a954823876df8dbd5035a6455.js" integrity="sha256-fRIimlNYZCkRtBQ2uWF1qxqKOJqVSCOHbfjb1QNaZFU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b398cd9d1d1ca53a62f350bd95123765cabdf63a08a069c34d8af34e5df05f37.js" integrity="sha256-s5jNnR0cpTpi81C9lRI3Zcq99joIoGnDTYrzTl3wXzc=" crossorigin="anonymous"></script>
 
   
 
@@ -145,7 +145,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/ai/gpt-chat-template/" class="active">7种提示词模板</a>
+    <a href="/docs/ai/gpt-chat-template/" class="active">6种提示词模板</a>
   
 
         </li>
@@ -1932,7 +1932,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>7种提示词模板</strong>
+  <strong>6种提示词模板</strong>
 
   <label for="toc-control">
     
@@ -1946,7 +1946,16 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#ape提示词模板">APE提示词模板</a></li>
+    <li><a href="#broke提示词模板">BROKE提示词模板</a></li>
+    <li><a href="#coast提示词模板">COAST提示词模板</a></li>
+    <li><a href="#tag提示词模板">TAG提示词模板</a></li>
+    <li><a href="#rise提示词模板">RISE提示词模板</a></li>
+    <li><a href="#trace提示词模板">TRACE提示词模板</a></li>
+  </ul>
+</nav>
 
 
 
@@ -1981,6 +1990,221 @@ https://github.com/alex-shpak/hugo-book
 <td><code>我有什么要求</code></td>
 <td>你要做的这件事情，具体有哪些要求，可以详细告诉AI</td>
 <td>工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护</td>
+</tr>
+</tbody>
+</table>
+<h1 id="ape提示词模板">
+  APE提示词模板
+  <a class="anchor" href="#ape%e6%8f%90%e7%a4%ba%e8%af%8d%e6%a8%a1%e6%9d%bf">#</a>
+</h1>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>指标说明</th>
+<th>提示词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A</code></td>
+<td><strong>Action</strong>行动</td>
+<td>制定家庭健身计划</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td><strong>PURPOSE</strong>目的</td>
+<td>用碎片时间增强全家体质</td>
+</tr>
+<tr>
+<td><code>E</code></td>
+<td><strong>EXPECTATION</strong>期望</td>
+<td>包含 3 种无需器械的运动（适合 5 岁儿童到 60 岁老人）<br/>每日总耗时≤40 分钟（可分早晚两次完成）<br/>附带运动效果自测表（如深蹲次数周增长目标）</td>
+</tr>
+</tbody>
+</table>
+<h1 id="broke提示词模板">
+  BROKE提示词模板
+  <a class="anchor" href="#broke%e6%8f%90%e7%a4%ba%e8%af%8d%e6%a8%a1%e6%9d%bf">#</a>
+</h1>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>指标说明</th>
+<th>提示词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>B</code></td>
+<td><strong>BACKGROUND</strong>背景</td>
+<td>双职工家庭，工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td><strong>ROLE</strong>角色</td>
+<td>请担任家庭健康管理师</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td><strong>OBJECTIVES</strong>目标</td>
+<td>设计全家适用的碎片化健身方案</td>
+</tr>
+<tr>
+<td><code>K</code></td>
+<td><strong>KEY RESULTS</strong>关键结果</td>
+<td>每周总运动时长≥150 分钟<br/>儿童运动趣味度评分≥4 星（5 分制）<br/>老人关节不适感降低 30%</td>
+</tr>
+<tr>
+<td><code>E</code></td>
+<td><strong>EVOLVE</strong>试验并改进</td>
+<td>增加亲子互动游戏环节<br/>引入运动成就徽章系统<br/>使用运动手环数据自动调整计划</td>
+</tr>
+</tbody>
+</table>
+<h1 id="coast提示词模板">
+  COAST提示词模板
+  <a class="anchor" href="#coast%e6%8f%90%e7%a4%ba%e8%af%8d%e6%a8%a1%e6%9d%bf">#</a>
+</h1>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>指标说明</th>
+<th>提示词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C</code></td>
+<td><strong>CONTEXT</strong>背景，上下文</td>
+<td>三代同住的老小区住户，客厅面积 15 ㎡，有楼梯间可利用</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td><strong>OBJECTIVE</strong>目的</td>
+<td>实现全年龄段家庭成员体质提升</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td><strong>ACTION</strong>行动</td>
+<td>开发家庭微空间锻炼体系</td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td><strong>SCENARIO</strong>方案</td>
+<td>早晨 7:00-7:30 晚间 20:00-20:40</td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td><strong>TASK</strong>任务</td>
+<td>设计 3 套交替使用的「楼梯+客厅」训练组合<br/>制作运动强度分级表（儿童/成人/老人版）<br/>录制家庭跟练短视频脚本（含安全提示字幕</td>
+</tr>
+</tbody>
+</table>
+<h1 id="tag提示词模板">
+  TAG提示词模板
+  <a class="anchor" href="#tag%e6%8f%90%e7%a4%ba%e8%af%8d%e6%a8%a1%e6%9d%bf">#</a>
+</h1>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>指标说明</th>
+<th>提示词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>T</code></td>
+<td><strong>TASK</strong>任务</td>
+<td>创建三代同堂家庭运动计划</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td><strong>ACTION</strong>行动</td>
+<td>筛选适合各年龄段的无器械动作<br/>制定每周运动主题（如平衡周/柔韧周）<br/>设计运动数据追踪表</td>
+</tr>
+<tr>
+<td><code>G</code></td>
+<td><strong>GOAL</strong>目标</td>
+<td>三个月内实现：<br/>儿童跳绳每分钟增加 20 次<br/>成人平板支撑时长突破 2 分钟<br/>老人坐姿体前屈进步 5cm</td>
+</tr>
+</tbody>
+</table>
+<h1 id="rise提示词模板">
+  RISE提示词模板
+  <a class="anchor" href="#rise%e6%8f%90%e7%a4%ba%e8%af%8d%e6%a8%a1%e6%9d%bf">#</a>
+</h1>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>指标说明</th>
+<th>提示词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>R</code></td>
+<td><strong>ROLE</strong>角色</td>
+<td>健身游戏化设计师</td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td><strong>INPUT</strong>输入</td>
+<td>家庭成员数据：<br/>儿童（5 岁/喜欢恐龙）<br/>父母（35 岁/久坐办公）<br/>老人（60 岁/膝关节退化</td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td><strong>STEPS</strong>步骤</td>
+<td>将动作改编为情景游戏（如&quot;恐龙救援深蹲&quot;）<br/>设计家庭运动积分兑换规则<br/>建立安全防护机制</td>
+</tr>
+<tr>
+<td><code>E</code></td>
+<td><strong>EXPECTATION</strong>期望</td>
+<td>每日自动生成运动挑战任务<br/>每月产出全家体质分析报告<br/>运动意外风险发生率≤0.5%</td>
+</tr>
+</tbody>
+</table>
+<h1 id="trace提示词模板">
+  TRACE提示词模板
+  <a class="anchor" href="#trace%e6%8f%90%e7%a4%ba%e8%af%8d%e6%a8%a1%e6%9d%bf">#</a>
+</h1>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>指标说明</th>
+<th>提示词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>T</code></td>
+<td><strong>TASK</strong>任务</td>
+<td>制定家庭运动计划</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td><strong>REQUEST</strong>请求</td>
+<td>兼顾趣味性与科学性</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td><strong>ACTION</strong>行动</td>
+<td>将传统训练转化为亲子游戏<br/>结合家居物品开发锻炼道具<br/>设立每周&quot;运动奥斯卡&quot;颁奖仪式</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td><strong>CONTEXT</strong>上下文</td>
+<td>家庭成员时间碎片化，需利用客厅/走廊空间</td>
+</tr>
+<tr>
+<td><code>E</code></td>
+<td><strong>EXAMPLE</strong>示例</td>
+<td>如将仰卧起坐改为&quot;快递员送货&quot;游戏：<br/>儿童在家长起身时放置玩具&quot;货物&quot;<br/>老人计数并颁发&quot;最佳配送员&quot;奖章<br/>用手机记录每日&quot;送货量&quot;挑战纪录</td>
 </tr>
 </tbody>
 </table>
@@ -2023,7 +2247,16 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#ape提示词模板">APE提示词模板</a></li>
+    <li><a href="#broke提示词模板">BROKE提示词模板</a></li>
+    <li><a href="#coast提示词模板">COAST提示词模板</a></li>
+    <li><a href="#tag提示词模板">TAG提示词模板</a></li>
+    <li><a href="#rise提示词模板">RISE提示词模板</a></li>
+    <li><a href="#trace提示词模板">TRACE提示词模板</a></li>
+  </ul>
+</nav>
 
 
  

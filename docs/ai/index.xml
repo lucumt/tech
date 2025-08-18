@@ -36,11 +36,11 @@
       <description>What is Retrieval-Augmented Generation (RAG)?&#xA;RAG augments LLM outputs by referencing authoritative knowledge bases outside the model&amp;rsquo;s training data before generating responses.&#xA;This approach extends LLM capabilities to specialized domains without requiring expensive retraining or fine-tuning.&#xA;How RAG Works:&#xA;Prompt + Query The user submits a prompt through the LLM interface. The server converts this query into a vector representation.&#xA;Query The vectorized query is sent to the search system.</description>
     </item>
     <item>
-      <title>7种提示词模板</title>
+      <title>6种提示词模板</title>
       <link>https://tech.lucumt.info/docs/ai/gpt-chat-template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://tech.lucumt.info/docs/ai/gpt-chat-template/</guid>
-      <description>整体上可采用三段式提示词模板进行初步拆解&#xA;模型 指标说明 提示词 我是谁 背景分析，方便AI了解你。我自己的背景有哪些？我想让AI从什么角色进行分析 我们是双职工家庭，家里有一个老人和一个5岁的小孩 我要干什么 我的目标是啥？写文案？做图片？写诗？写减肥计划？ 制定一份家庭健身计划 我有什么要求 你要做的这件事情，具体有哪些要求，可以详细告诉AI 工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 </description>
+      <description>整体上可采用三段式提示词模板进行初步拆解&#xA;模型 指标说明 提示词 我是谁 背景分析，方便AI了解你。我自己的背景有哪些？我想让AI从什么角色进行分析 我们是双职工家庭，家里有一个老人和一个5岁的小孩 我要干什么 我的目标是啥？写文案？做图片？写诗？写减肥计划？ 制定一份家庭健身计划 我有什么要求 你要做的这件事情，具体有哪些要求，可以详细告诉AI 工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 APE提示词模板 # 模型 指标说明 提示词 A Action行动 制定家庭健身计划 P PURPOSE目的 用碎片时间增强全家体质 E EXPECTATION期望 包含 3 种无需器械的运动（适合 5 岁儿童到 60 岁老人）每日总耗时≤40 分钟（可分早晚两次完成）附带运动效果自测表（如深蹲次数周增长目标） BROKE提示词模板 # 模型 指标说明 提示词 B BACKGROUND背景 双职工家庭，工作日仅有早晨 30 分钟和晚间 1 小时空闲，需兼顾 5 岁儿童体能训练与 60 岁老人关节养护 R ROLE角色 请担任家庭健康管理师 O OBJECTIVES目标 设计全家适用的碎片化健身方案 K KEY RESULTS关键结果 每周总运动时长≥150 分钟儿童运动趣味度评分≥4 星（5 分制）老人关节不适感降低 30% E EVOLVE试验并改进 增加亲子互动游戏环节引入运动成就徽章系统使用运动手环数据自动调整计划 COAST提示词模板 # 模型 指标说明 提示词 C CONTEXT背景，上下文 三代同住的老小区住户，客厅面积 15 ㎡，有楼梯间可利用 O OBJECTIVE目的 实现全年龄段家庭成员体质提升 A ACTION行动 开发家庭微空间锻炼体系 S SCENARIO方案 早晨 7:00-7:30 晚间 20:00-20:40 T TASK任务 设计 3 套交替使用的「楼梯+客厅」训练组合制作运动强度分级表（儿童/成人/老人版）录制家庭跟练短视频脚本（含安全提示字幕 TAG提示词模板 # 模型 指标说明 提示词 T TASK任务 创建三代同堂家庭运动计划 A ACTION行动 筛选适合各年龄段的无器械动作制定每周运动主题（如平衡周/柔韧周）设计运动数据追踪表 G GOAL目标 三个月内实现：儿童跳绳每分钟增加 20 次成人平板支撑时长突破 2 分钟老人坐姿体前屈进步 5cm RISE提示词模板 # 模型 指标说明 提示词 R ROLE角色 健身游戏化设计师 I INPUT输入 家庭成员数据：儿童（5 岁/喜欢恐龙）父母（35 岁/久坐办公）老人（60 岁/膝关节退化 S STEPS步骤 将动作改编为情景游戏（如&amp;quot;恐龙救援深蹲&amp;quot;）设计家庭运动积分兑换规则建立安全防护机制 E EXPECTATION期望 每日自动生成运动挑战任务每月产出全家体质分析报告运动意外风险发生率≤0.</description>
     </item>
   </channel>
 </rss>
